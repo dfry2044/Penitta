@@ -1,0 +1,30 @@
+//  Pos
+@mixin posCenter {
+    left: 50%;
+    top:50%;
+    transform: translate(-50% , -50%);
+}
+
+@mixin posCenterX{
+    left: 50%;
+    transform: translateX(-50% );
+}
+
+@mixin posCenterY{
+    top: 50%;
+    transform: translateY(-50% );
+}
+
+// Media
+@mixin mq($size) {
+    @if $size == 'm'{
+        @media (max-width:1024px){
+            @content;
+        }
+    }
+    @else if $size == 's'{
+        @media (max-width:640px){
+            @content;
+        }
+    }
+}
