@@ -26,10 +26,12 @@ var swiper = new Swiper(".mySwiper3", {
     on: {
         transitionStart:function(){
             popImg.classList.remove('active');
+            setTimeout(() => {
+                popImg.classList.add('active');
+            }, 500);
         },
         transitionEnd:function(){
             var activeSlider = document.querySelector('.mySwiper3 .swiper-slide-active img').getAttribute( 'src' );
-            popImg.classList.add('active');
             popImg.setAttribute('src',activeSlider);
         },
     }

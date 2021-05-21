@@ -535,8 +535,8 @@ header {
             height: auto;
             transform: translateY(200px);
             opacity: 0;
+            transition: 0.3s;
             &.active {
-                transition: 0.3s;
                 transform: translateY(0);
                 opacity: 1;
             }
