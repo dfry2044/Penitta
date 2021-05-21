@@ -1,0 +1,24 @@
+// mixin media
+@mixin mq($size) {
+    @if $size == "pc1" {
+        @media all and (max-width: 1600px) {
+            @content;
+        }
+    } @else if $size == "pc2" {
+        @media all and (max-width: 1280px) {
+            @content;
+        }
+    } @else if $size == "tb1" {
+        @media all and (max-width: 1024px) {
+            @content;
+        }
+    } @else if $size == "tb2" {
+        @media all and (max-width: 768px) {
+            @content;
+        }
+    } @else if $size == "mo" {
+        @media all and (max-width: 500px) {
+            @content;
+        }
+    }
+}

@@ -6,10 +6,11 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
 });
-//c2 - slider 
+//c2 - slider
+// 위치 조정 필요 
 var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 40,
     pagination: {
         el: ".mySwiper2 .swiper-pagination",
         clickable: true,
@@ -22,11 +23,10 @@ var swiper = new Swiper(".mySwiper3", {
     slidesPerView: 'auto',
     loop: true,
     centeredSlides: true,
-    grabCursor: true,
     on: {
         transitionStart:function(){
             popImg.classList.remove('active');
-            setTimeout(() => {
+            setTimeout(function(){
                 popImg.classList.add('active');
             }, 500);
         },
@@ -43,7 +43,6 @@ ScrollTrigger.create({
     end: 99999,
     toggleClass: {className: 'active', targets: 'header'}
 });
-
 
 //pop-img-up
 var pop = document.querySelector('.pop-img');
