@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -109,6 +112,7 @@ section {
 
 body {
   line-height: 1;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 ol,
@@ -137,6 +141,14 @@ table {
 a {
   text-decoration: none;
   color: black;
+}
+
+.Nanum {
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.Roboto {
+  font-family: 'Roboto', sans-serif;
 }
 
 .hidden {
@@ -176,11 +188,16 @@ header {
   justify-content: center;
   height: 100px;
   position: fixed;
+  transition: 0.3s;
+}
+
+header.active {
+  background: white;
 }
 
 header nav {
   max-width: 2034px;
-  width: 100%;
+  width: 80%;
   position: relative;
   top: 0;
   left: 0;
@@ -190,6 +207,8 @@ header nav .logo {
   position: absolute;
   left: 0;
   top: 35px;
+  font-size: 21px;
+  font-weight: 700;
 }
 
 header nav .logo::before {
@@ -199,6 +218,7 @@ header nav .logo::before {
   width: 32px;
   height: 32px;
   vertical-align: middle;
+  margin-right: 10px;
 }
 
 header nav ul {
@@ -274,13 +294,14 @@ header nav .userMenu .ham {
 
 .c1 .slider-content-area {
   max-width: 2034px;
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: flex;
   position: relative;
 }
 
 .c1 .slider-content-area .text-wrap {
+  z-index: 1;
   width: 100%;
   position: absolute;
   left: 0;
@@ -296,6 +317,10 @@ header nav .userMenu .ham {
 
 .c1 .slider-content-area .text-wrap span {
   font-size: 19px;
+}
+
+.c1 .slider-content-area .text-wrap a {
+  display: inline-block;
 }
 
 .c1 .slider-content-area .text-wrap a .pen-icon {
@@ -356,11 +381,13 @@ header nav .userMenu .ham {
 }
 
 .c2 div {
-  width: 100%;
+  width: 80%;
   max-width: 2034px;
 }
 
 .c2 div.top-text div {
+  padding: 0 15px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -399,6 +426,7 @@ header nav .userMenu .ham {
 }
 
 .c2 div .swiper-slide .slider-content2 {
+  width: 100%;
   padding-bottom: 50px;
 }
 
@@ -408,6 +436,17 @@ header nav .userMenu .ham {
   position: relative;
 }
 
+.c2 div .swiper-slide .slider-content2 .img-wrap::after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 28px;
+  background: url(../images/icon/youtube.png);
+}
+
 .c2 div .swiper-slide .slider-content2 .img-wrap span {
   text-align: left;
   display: inline-block;
@@ -415,9 +454,9 @@ header nav .userMenu .ham {
   height: 20px;
   transform: rotate(-90deg);
   position: absolute;
-  left: -90px;
+  left: -85px;
   bottom: 65px;
-  color: #515151;
+  color: #c2c2c2;
   font-size: 16px;
 }
 
@@ -446,8 +485,8 @@ header nav .userMenu .ham {
 }
 
 .c3 div {
-  padding: 100px 0 200px;
-  width: 100%;
+  padding: 100px 0 300px;
+  width: 80%;
   max-width: 2034px;
   display: flex;
   flex-direction: column;
@@ -462,7 +501,7 @@ header nav .userMenu .ham {
 .c3 div p span {
   padding: 15px;
   font-size: 42px;
-  font-weight: 500;
+  font-weight: 700;
   color: #000;
   border: 1px solid black;
   position: relative;
@@ -514,17 +553,39 @@ header nav .userMenu .ham {
 .c4 .pop-img {
   width: 687px;
   position: absolute;
-  top: -150px;
+  top: -200px;
   left: 50%;
   z-index: 9;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(200px);
   background: white;
   padding: 40px;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.c4 .pop-img.active {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.c4 .pop-img div {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
 }
 
 .c4 .pop-img img {
   width: 100%;
   height: auto;
+  transform: translateY(200px);
+  opacity: 0;
+}
+
+.c4 .pop-img img.active {
+  transition: 0.3s;
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .c4 .pop-img a {
@@ -558,5 +619,262 @@ header nav .userMenu .ham {
   font-weight: 700;
   color: white;
   font-family: fontAwesome;
+}
+
+.c4 .swiper-wrapper {
+  height: 750px;
+}
+
+.c4 .swiper-wrapper .swiper-slide {
+  width: 60%;
+}
+
+.c5 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.c5 .area {
+  width: 60%;
+  min-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.c5 .area .box {
+  width: 24.5%;
+  background: #fafafa;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.c5 .area .box img {
+  margin: 20px 0;
+}
+
+.c5 .area .box p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.c5 .area .box span {
+  font-size: 15px;
+  margin: 20px 0;
+  color: #3f3f3f;
+  line-height: 1.4;
+}
+
+.c6 {
+  width: 100%;
+  background: #3c3933;
+  height: 440px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.c6 div:nth-of-type(1) {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.c6 div:nth-of-type(1) p {
+  font-size: 32px;
+  color: #fff;
+}
+
+.c6 div:nth-of-type(1) p span {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.c6 div:nth-of-type(1) span {
+  color: #cdc8c2;
+  margin: 20px 0;
+}
+
+.c6 div:nth-of-type(1) a {
+  margin-top: 40px;
+  display: inline-block;
+  background: #fff;
+  padding: 20px 80px;
+  border-radius: 40px;
+}
+
+.c6 div:nth-of-type(1) a span {
+  color: #3c3933;
+}
+
+.c6 div:nth-of-type(2) {
+  width: 1700px;
+  position: absolute;
+  height: 440px;
+}
+
+.c6 div:nth-of-type(2) span {
+  position: absolute;
+  display: inline-block;
+}
+
+.c6 div:nth-of-type(2) .circle1 {
+  top: -150px;
+  left: 0;
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  background: #6d604c;
+}
+
+.c6 div:nth-of-type(2) .circle2 {
+  top: 150px;
+  left: 300px;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background: #403d38;
+}
+
+.c6 div:nth-of-type(2) .circle3 {
+  bottom: -50px;
+  right: 0;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  background: #564c3c;
+}
+
+.c6 div:nth-of-type(2) .quad {
+  top: 190px;
+  right: 450px;
+  width: 150px;
+  height: 150px;
+  transform: rotate(45deg);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  padding: 50px 0 100px;
+}
+
+footer > div {
+  min-width: 1280px;
+  width: 60%;
+  display: flex;
+}
+
+footer > div div {
+  width: 15%;
+}
+
+footer > div div:nth-of-type(2) {
+  width: calc(85% - 200px);
+  display: flex;
+  flex-direction: column;
+}
+
+footer > div div:nth-of-type(2) div {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+footer > div div:nth-of-type(2) div p {
+  margin-top: 5px;
+  font-size: 16px;
+  color: black;
+}
+
+footer > div div:nth-of-type(2) div p:nth-of-type(2) {
+  margin-left: 40px;
+  font-weight: 600;
+}
+
+footer > div div:nth-of-type(2) ul {
+  display: flex;
+  margin: 5px 0;
+}
+
+footer > div div:nth-of-type(2) ul li {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+footer > div div:nth-of-type(2) ul li::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 100%;
+  background: #54585a;
+  margin-left: 10px;
+}
+
+footer > div div:nth-of-type(2) ul li:last-of-type::after {
+  display: none;
+}
+
+footer > div div:nth-of-type(2) address {
+  margin-top: 50px;
+}
+
+footer > div div:nth-of-type(3) {
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > div div:nth-of-type(3) a {
+  display: inline-block;
+  width: 40px;
+  height: 33px;
+}
+
+footer > div div:nth-of-type(3) a.blog {
+  background: url(../images/icon/blog.png);
+}
+
+footer > div div:nth-of-type(3) a.facebook {
+  background: url(../images/icon/facebook.png);
+}
+
+footer > div div:nth-of-type(3) a.insta {
+  background: url(../images/icon/insta.png);
+}
+
+footer > div div:nth-of-type(3) a.youtube {
+  background: url(../images/icon/youtube2.png);
+}
+
+footer > div .logo {
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #54585a;
+}
+
+footer > div .logo::before {
+  content: "";
+  display: inline-block;
+  background: url(../images/icon/logo.png);
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=index.css.map */
