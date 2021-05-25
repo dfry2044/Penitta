@@ -1,160 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  box-sizing: border-box;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-  font-family: "Noto Sans KR", sans-serif;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.Nanum {
-  font-family: "Nanum Myeongjo", serif;
-}
-
-.Roboto {
-  font-family: 'Roboto', sans-serif;
-}
-
-.hidden {
-  display: none;
-}
-
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -213,7 +56,7 @@ header nav .logo {
   top: 30px;
   font-size: 21px;
   font-weight: 700;
-  background: url(../images/icon/logo.png);
+  background: url(../images/common/logo.png);
 }
 
 header nav ul {
@@ -247,7 +90,7 @@ header nav .userMenu .user {
   position: relative;
   cursor: pointer;
   display: inline-block;
-  background: url(../images/icon/user.png);
+  background: url(../images/icon/ico-user.png);
   width: 23px;
   height: 20px;
   transition: 0.3s;
@@ -271,7 +114,7 @@ header nav .userMenu .ham {
   cursor: pointer;
   margin-left: 30px;
   display: inline-block;
-  background: url(../images/icon/ham.png);
+  background: url(../images/icon/ico-ham.png);
   width: 25px;
   height: 19px;
 }
@@ -298,7 +141,7 @@ header nav .userMenu .ham:hover {
 }
 
 .c1 .slider-content:nth-of-type(1) {
-  background: url(../images/main/c1/backgound.png);
+  background: url(../images/main/banner/backgound.png);
   background-size: cover;
 }
 
@@ -355,7 +198,7 @@ header nav .userMenu .ham:hover {
   display: inline-block;
   width: 18px;
   height: 21px;
-  background: url(../images/icon/pencil.png);
+  background: url(../images/icon/ico-pencil.png);
 }
 
 .c1 .slider-content-area .text-wrap a span {
@@ -464,7 +307,7 @@ header nav .userMenu .ham:hover {
   display: inline-block;
   width: 40px;
   height: 28px;
-  background: url(../images/icon/youtube.png);
+  background: url(../images/icon/ico-youtube.png);
 }
 
 .c2 div .swiper-slide .slider-content2 .img-wrap span {
@@ -902,19 +745,19 @@ footer > div div:nth-of-type(3) a:hover {
 }
 
 footer > div div:nth-of-type(3) a.blog {
-  background: url(../images/icon/blog.png);
+  background: url(../images/common/sns/ico-blog.png);
 }
 
 footer > div div:nth-of-type(3) a.facebook {
-  background: url(../images/icon/facebook.png);
+  background: url(../images/common/sns/ico-facebook.png);
 }
 
 footer > div div:nth-of-type(3) a.insta {
-  background: url(../images/icon/insta.png);
+  background: url(../images/common/sns/ico-insta.png);
 }
 
 footer > div div:nth-of-type(3) a.youtube {
-  background: url(../images/icon/youtube2.png);
+  background: url(../images/common/sns/ico-youtube.png);
 }
 
 footer > div .logo {
@@ -923,6 +766,5 @@ footer > div .logo {
   height: 40px;
   font-size: 21px;
   font-weight: 700;
-  background: url(../images/icon/logo-footer.png);
+  background: url(../images/common/logo-footer.png);
 }
-/*# sourceMappingURL=index.css.map */
