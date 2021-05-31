@@ -51,6 +51,7 @@ var swiper2 = new Swiper(".pop-img", {
         disableOnInteraction: false,
      },
     on: {
+        
         // transitionStart: function () {
         //     popImg.classList.remove('active');
         //     setTimeout(function () {
@@ -64,8 +65,24 @@ var swiper2 = new Swiper(".pop-img", {
     },
 });
 
+/*
+$( ".test" ).click(function() {
+  $( this ).find( ".mswrap" ).stop( true, true ).autoplay();
+}, function() {
+  $( this ).find( ".mswrap" ).stop( true, true ).autoplay();
+});
+*/
+
+
+
+
+
+
+
+
 
 //header-scroll 
+
 ScrollTrigger.create({
     start: 'top -80',
     end: 99999,
