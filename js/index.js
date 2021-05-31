@@ -1,4 +1,3 @@
-
 //c1 - slider
 var swiper = new Swiper(".mySwiper", {
     pagination: {
@@ -18,39 +17,51 @@ var swiper = new Swiper(".mySwiper2", {
 });
 
 //c-3 slider
+
 var popImg = document.querySelector('.pop-img-img');
 var swiper = new Swiper(".mySwiper3", {
     slidesPerView: 'auto',
     loop: true,
     centeredSlides: true,
+    autoplay: {
+       delay: 3500,
+        disableOnInteraction: false,
+     },
     on: {
-        transitionStart:function(){
+        transitionStart: function () {
             popImg.classList.remove('active');
-            setTimeout(function(){
+            setTimeout(function () {
                 popImg.classList.add('active');
             }, 500);
         },
-        transitionEnd:function(){
-            var activeSlider = document.querySelector('.mySwiper3 .swiper-slide-active img').getAttribute( 'src' );
-            popImg.setAttribute('src',activeSlider);
+        transitionEnd: function () {
+            var activeSlider = document.querySelector('.mySwiper3 .swiper-slide-active img').getAttribute('src');
+            popImg.setAttribute('src', activeSlider);
         },
-    }
+    },
 });
+
 
 //header-scroll 
 ScrollTrigger.create({
     start: 'top -80',
     end: 99999,
-    toggleClass: {className: 'active', targets: 'header'}
+    toggleClass: {
+        className: 'active',
+        targets: 'header'
+    }
 });
 
 //pop-img-up
 var pop = document.querySelector('.pop-img');
-gsap.fromTo(pop, {},{
-        scrollTrigger: {
+gsap.fromTo(pop, {}, {
+    scrollTrigger: {
         trigger: '.c3',
         start: 'top-=300',
-        end:'+=1500',
-        toggleClass: {className: 'active', targets: '.pop-img'}
-     }
+        end: '+=1500',
+        toggleClass: {
+            className: 'active',
+            targets: '.pop-img'
+        }
+    }
 });
