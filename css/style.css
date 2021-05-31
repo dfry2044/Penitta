@@ -479,12 +479,11 @@ header div.header-right > div.userMenu {
 
 .c4 .pop-img div {
     width: 100%;
-    overflow: hidden;
 }
 
 .c4 .pop-img img {
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: 100% !important;
     /*transform: translateY(400px);*/
   /*opacity: 0;
   transition: 0.5s;*/
@@ -497,7 +496,7 @@ header div.header-right > div.userMenu {
 }
 
 
-.c4 .pop-img a {
+.c4 a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -505,18 +504,20 @@ header div.header-right > div.userMenu {
     height: 6vw;
     border-radius: 6vw;
     position: absolute;
-    bottom: -3vw;
-    right: -3vw;
+    bottom: calc(280px + 4.5vw);
+    left: calc(50% + 240px);
+    transform: translateX(-50%);
     background: black;
     color: white;
     transition: 0.3s;
+    z-index: 9999;
 }
 
-.c4 .pop-img a:hover {
+.c4 a:hover {
     background: #eca15b;
 }
 
-.c4 .pop-img a span {
+.c4 a span {
     position: relative;
     text-align: center;
     font-size: 16px;
@@ -524,7 +525,7 @@ header div.header-right > div.userMenu {
     margin-bottom: 0.5vw;
 }
 
-.c4 .pop-img a span::after {
+.c4 a span::after {
     position: absolute;
     bottom: -1vw;
     left: 50%;
@@ -539,7 +540,9 @@ header div.header-right > div.userMenu {
 .c4 .swiper-wrapper {
     height: 32vw;
 }
-
+.c4 .swiper-mini .swiper-wrapper{
+    height: 280px;
+}
 
 .c4 .swiper-wrapper .swiper-slide {
     width: 55%;
