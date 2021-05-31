@@ -6,7 +6,6 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 //c2 - slider
-// 위치 조정 필요 
 var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 4,
     spaceBetween: 40,
@@ -18,51 +17,56 @@ var swiper = new Swiper(".mySwiper2", {
 
 //c-3 slider
 
-var popImg = document.querySelector('.pop-img-img');
 var swiper = new Swiper(".mySwiper3", {
     slidesPerView: 'auto',
     loop: true,
     centeredSlides: true,
+    speed: 1000,
     autoplay: {
-       delay: 3500,
-        disableOnInteraction: false,
-     },
+        delay: 3500,
+    },
     on: {
-        // transitionStart: function () {
-        //     popImg.classList.remove('active');
-        //     setTimeout(function () {
-        //         popImg.classList.add('active');
-        //     }, 500);
-        // },
-        // transitionEnd: function () {
-        //     var activeSlider = document.querySelector('.mySwiper3 .swiper-slide-active img').getAttribute('src');
-        //     popImg.setAttribute('src', activeSlider);
-        // },
+        touchStart: function(){
+            swiper.autoplay.stop();
+        },
+        touchEnd: function(){
+            swiper.autoplay.start();
+        }
     },
 });
+swiper.autoplay.stop();
+setInterval(function(){
+    swiper.autoplay.start();
+},3500);
 
 var swiper2 = new Swiper(".pop-img", {
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     loop: true,
     direction:'vertical',
     centeredSlides: true,
+    speed: 1000,
     autoplay: {
-       delay: 3500,
-        disableOnInteraction: false,
-     },
+        delay: 3500,
+    },
     on: {
-        // transitionStart: function () {
-        //     popImg.classList.remove('active');
-        //     setTimeout(function () {
-        //         popImg.classList.add('active');
-        //     }, 500);
-        // },
-        // transitionEnd: function () {
-        //     var activeSlider = document.querySelector('.mySwiper3 .swiper-slide-active img').getAttribute('src');
-        //     popImg.setAttribute('src', activeSlider);
-        // },
+        touchStart: function(){
+            swiper2.autoplay.stop();
+        },
+        touchEnd: function(){
+            swiper2.autoplay.start();
+        }
     },
 });
+swiper.on('transitionStart',function(){
+    swiper2.slideTo(this.activeIndex,1000);
+})
+swiper2.on('transitionStart',function(){
+    swiper.slideTo(this.activeIndex,1000);
+})
+swiper2.autoplay.stop();
+setInterval(function(){
+    swiper2.autoplay.start();
+},3500)
 
 
 //header-scroll 
