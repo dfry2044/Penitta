@@ -216,7 +216,7 @@ header div.header-right > div.userMenu {
     width: 492px;
     position: absolute;
     right: 5%;
-    bottom: -37px;
+    top: 8%;
     height: auto;
 }
 
@@ -527,7 +527,7 @@ header div.header-right > div.userMenu {
     height: 6vw;
     border-radius: 6vw;
     position: absolute;
-    bottom: calc(280px + 4.5vw);
+    top: 28%;
     left: 63%;
     transform: translateX(-50%);
     background: black;
