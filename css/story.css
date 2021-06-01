@@ -302,6 +302,9 @@ div.swiper-slide {
     background: #edb562 url(../images/icon/ico-check.png) no-repeat center center / auto;
 }
 
+.check p.active::before{
+    background: #edb562 url(../images/icon/ico-check.png) no-repeat center center / auto;
+}
 .search_input {
     width: 423px;
     padding: 12px 24px 12px 0;
