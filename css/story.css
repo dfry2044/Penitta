@@ -364,24 +364,23 @@ div.swiper-slide {
 
 .text-right {
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.text-right > a {
-    display: inline-block;
+.text-right > button {
     color: #8e8e8e;
 }
-
-.text-right > a:first-child {
+.text-right > button.active{
     color: #000;
 }
 
-.text-right > a:hover {
+.text-right > button:hover {
     color: #000;
 }
 
-
-
-.text-right > a:last-child::before {
+.text-right > button:last-child::before {
     content: "·";
     display: inline-block;
     padding: 0 5px;
