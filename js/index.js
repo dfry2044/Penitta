@@ -68,14 +68,6 @@ setInterval(function(){
     swiper2.autoplay.start();
 },3500)
 
-/*
-$( ".test" ).click(function() {
-  $( this ).find( ".mswrap" ).stop( true, true ).autoplay();
-}, function() {
-  $( this ).find( ".mswrap" ).stop( true, true ).autoplay();
-});
-*/
-
 
 
 
