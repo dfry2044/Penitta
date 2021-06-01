@@ -332,11 +332,11 @@ div.swiper-slide {
     margin-right: 6px;
     color: #b5b4b4;
 }
-
-.category > ul:first-child > li:first-child {
+.category li.active{
     border: #222222 solid 1px;
     color: #222222;
 }
+
 
 .category li:hover {
     border: #222222 solid 1px;
