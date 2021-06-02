@@ -34,14 +34,14 @@
 .wrap {
     width: 100%;
     overflow-x: hidden;
-    padding-top: 92px;
+    /*padding-top: 92px;*/
 }
 
 header {
     z-index: 10;
     width: 100%;
     height: 92px;
-    position: fixed;
+    position: relative;
     transition: 0.3s;
     background: #fff;
     border-bottom: #ebe9e9 solid 1px;
@@ -132,6 +132,35 @@ header div.header-right > div.userMenu {
     display: flex;
     align-content: center;
 }
+
+/*헤더 실행*/
+
+header.on {
+    /*visibility: hidden;*/
+    transform: translateY(-98px);
+    transition: 0.5s ease;
+}
+
+header.active {
+    visibility: visible;
+    position: fixed;
+    height: 72px;
+    transition: 0.5s ease;
+    
+}
+
+.header-left.active {
+    height: 72px;
+}
+
+header div.header-right > div.userMenu.active {
+    height: 72px;
+}
+
+/*.wrap.active {
+    padding-top: 92px;
+}*/
+
 
 @media (max-width: 1920px) {
     div.h-inner {
