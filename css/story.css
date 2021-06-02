@@ -135,25 +135,26 @@ header div.header-right > div.userMenu {
 
 /*헤더 실행*/
 
-header.on {
+header.fixed{
     /*visibility: hidden;*/
     transform: translateY(-98px);
     transition: 0.5s ease;
-}
-
-header.active {
-    visibility: visible;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 98989898;
     height: 72px;
-    transition: 0.5s ease;
-    
+    width: 100vw;
+}
+header.fixed.show{
+    transform: translate(0);
 }
 
-.header-left.active {
+header.fixed .header-left {
     height: 72px;
 }
 
-header div.header-right > div.userMenu.active {
+header.fixed div.header-right > div.userMenu {
     height: 72px;
 }
 

@@ -1,43 +1,49 @@
 //header
  $(window).scroll(function () {
      var browserT = $(window).scrollTop();
-     console.log(browserT);
+    //  console.log(browserT);
 
-     $('header').addClass('on');
-     if (browserT == 0) {
-         $('header').removeClass('on');
-     }
+    //  $('header').addClass('on');
+    //  if (browserT == 0) {
+    //      $('header').removeClass('on');
+    //  }
+    
+    if( browserT <= 150){
+        $("header.fixed").removeClass("show");
+    }else if(browserT >= 150){
+        $("header.fixed").addClass("show");
+    }
  });
 
- $(window).scroll(function () {
-     var browserT = $(window).scrollTop();
-     console.log(browserT);
+//  $(window).scroll(function () {
+//      var browserT = $(window).scrollTop();
+//      console.log(browserT);
 
-     $('header').addClass('active');
-     if (browserT == 0) {
-         $('header').removeClass('active');
-     }
- });
+//      $('header').addClass('active');
+//      if (browserT == 0) {
+//          $('header').removeClass('active');
+//      }
+//  });
 
- $(window).scroll(function () {
-        var browserT = $(window).scrollTop();
-        console.log(browserT);
+//  $(window).scroll(function () {
+//         var browserT = $(window).scrollTop();
+//         console.log(browserT);
 
-        $('.header-left').addClass('active');
-        if (browserT == 0) {
-            $('.header-left').removeClass('active');
-        }
-    });
+//         $('.header-left').addClass('active');
+//         if (browserT == 0) {
+//             $('.header-left').removeClass('active');
+//         }
+//     });
 
- $(window).scroll(function () {
-        var browserT = $(window).scrollTop();
-        console.log(browserT);
+//  $(window).scroll(function () {
+//         var browserT = $(window).scrollTop();
+//         console.log(browserT);
 
-        $('header div.header-right > div.userMenu').addClass('active');
-        if (browserT == 0) {
-            $('header div.header-right > div.userMenu').removeClass('active');
-        }
-    });
+//         $('header div.header-right > div.userMenu').addClass('active');
+//         if (browserT == 0) {
+//             $('header div.header-right > div.userMenu').removeClass('active');
+//         }
+//     });
 
  /*$(window).scroll(function () {
      var browserT = $(window).scrollTop();
