@@ -542,51 +542,11 @@ div.swiper-slide {
 
 /*다른분꺼*/
 
-.c5 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 80px 0;
-}
-
-.c5 .area {
-    width: 60%;
-    min-width: 1280px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.c5 .area .box {
-    width: 24.5%;
-    background: #fafafa;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.c5 .area .box img {
-    margin: 20px 0;
-}
-
-.c5 .area .box p {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.c5 .area .box span {
-    font-size: 15px;
-    margin: 20px 0;
-    color: #3f3f3f;
-    line-height: 1.4;
-}
 
 .c6 {
     width: 100%;
-    background: #3c3933;
-    height: 440px;
+    background: #282623;
+    height: 434px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -606,17 +566,20 @@ div.swiper-slide {
 .c6 div:nth-of-type(1) p {
     font-size: 32px;
     color: #fff;
+    font-weight: 300;
 }
 
 .c6 div:nth-of-type(1) p span {
     font-size: 32px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .c6 div:nth-of-type(1) span {
     color: #cdc8c2;
     margin: 20px 0;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .c6 div:nth-of-type(1) a {
@@ -624,7 +587,7 @@ div.swiper-slide {
     margin-top: 40px;
     display: inline-block;
     background: #fff;
-    padding: 20px 80px;
+    padding: 22px 72px;
     border-radius: 40px;
     transition: 0.3s;
     overflow: hidden;
@@ -642,7 +605,9 @@ div.swiper-slide {
     z-index: 1;
     position: relative;
     transition: 0.3s;
+    font-size: 18px;
     color: #3c3933;
+    font-weight: 400;
 }
 
 .c6 div:nth-of-type(2) {
@@ -661,33 +626,33 @@ div.swiper-slide {
 .c6 div:nth-of-type(2) .circle1 {
     top: -150px;
     left: 0;
-    width: 350px;
-    height: 350px;
+    width: 312px;
+    height: 312px;
     border-radius: 100%;
-    background: #6d604c;
+    background: #82430f;
 }
 
 .c6 div:nth-of-type(2) .circle2 {
     top: 150px;
     left: 300px;
-    width: 130px;
-    height: 130px;
+    width: 128px;
+    height: 128px;
     border-radius: 100%;
-    background: #403d38;
+    background: #bd9322 ;
 }
 
 .c6 div:nth-of-type(2) .circle3 {
     bottom: -50px;
     right: 0;
-    width: 250px;
-    height: 250px;
+    width: 236px;
+    height: 236px;
     border-radius: 100%;
-    background: #564c3c;
+    background: #bd9322;
 }
 
 .c6 div:nth-of-type(2) .quad {
     top: 190px;
-    right: 474px;
+    right: 477px;
     width: 150px;
     height: 150px;
     transform: rotate(45deg);
@@ -699,7 +664,7 @@ footer {
     display: flex;
     justify-content: center;
     background: #fff;
-    padding: 50px 0 100px;
+    padding: 53px 0 112px;
 }
 
 footer > div {
@@ -726,12 +691,12 @@ footer > div div:nth-of-type(2) div {
 footer > div div:nth-of-type(2) div a {
     margin-top: 10px;
     font-size: 16px;
-    color: black;
+    color: #070707;
     transition: 0.3s;
 }
 
 footer > div div:nth-of-type(2) div a:nth-of-type(2) {
-    margin-left: 40px;
+    margin-left: 32px;
     font-weight: 600;
 }
 
@@ -742,20 +707,20 @@ footer > div div:nth-of-type(2) div a:hover {
 footer > div div:nth-of-type(2) ul {
     display: flex;
     margin: 5px 0;
+    color: #525252;
 }
 
 footer > div div:nth-of-type(2) ul li {
     font-size: 15px;
     margin-right: 10px;
-    color: #525252;
 }
 
 footer > div div:nth-of-type(2) ul li::after {
     content: "";
     display: inline-block;
-    width: 2px;
-    height: 100%;
-    background: #525252;
+    width: 1px;
+    height: 10px;
+    background: #9e9e9e;
     margin-left: 10px;
 }
 
@@ -799,6 +764,7 @@ footer > div div:nth-of-type(3) a.insta {
 
 footer > div div:nth-of-type(3) a.youtube {
     background: url(../images/common/sns/ico-youtube.png);
+    margin-left: 5px;
 }
 
 footer > div .logo {

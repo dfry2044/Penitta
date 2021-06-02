@@ -30,13 +30,3 @@ checkItem.click(function(){
     checkItem.removeClass("active");
     $(this).addClass("active");
 })
-
-/*checkItem.click(function () {
-    if ($(this).text() == "제목") {
-        checkItem.removeClass("active");
-        $(".check2").addClass("active");
-    } else if ($(this).text() != "제목") {
-        categoryItem.eq(0).removeClass("active");
-    }
-    $(".check2").addClass("active");
-})*/
