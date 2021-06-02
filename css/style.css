@@ -24,8 +24,9 @@
     background: #515151 !important;
 }
 
+
 header {
-    z-index: 10;
+    z-index: 9999;
     width: 100%;
     height: 100px;
     position: fixed;
@@ -125,9 +126,17 @@ header div.header-right > div.userMenu {
     }
 }
 
+@media (max-width: 1920px) {
+    .h-inner {
+        width: 1400px;
+    }
+}
+
 .c1 {
     width: 100%;
     height: 700px;
+    position: relative;
+    overflow: hidden;
 }
 
 .c1 .swiper-wrapper {
@@ -155,34 +164,41 @@ header div.header-right > div.userMenu {
     position: relative;
 }
 
-.c1 .slider-content-area .text-wrap {
-    z-index: 1;
-    width: 100%;
+.c1 > .text-wrap {
+    z-index: 2;
+    width: 1975px;
     position: absolute;
-    left: 25px;
+    left: 50%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50% , -50%);
     text-align: left;
 }
 
-.c1 .slider-content-area .text-wrap p {
+.c1 > .text-wrap p {
     font-size: 52px;
     margin: 20px 0;
 }
 
-.c1 .slider-content-area .text-wrap span {
-    font-size: 19px;
+.c1 > .text-wrap span {
+    font-size: 20px;
+    font-weight: 300;
 }
 
-.c1 .slider-content-area .text-wrap a {
+.c1 > .text-wrap a {
     display: inline-block;
+    padding-top: 15px;
 }
 
-.c1 .slider-content-area .text-wrap a:hover .pen-icon {
+.c1 > .text-wrap > a > span:last-child {
+    padding-left: 8px;
+    font-weight: 400;
+}
+
+.c1 > .text-wrap a:hover .pen-icon {
     background: #eca15b;
 }
 
-.c1 .slider-content-area .text-wrap a .pen-icon {
+.c1 > .text-wrap a .pen-icon {
     transition: 0.3s;
     margin-top: 30px;
     width: 70px;
@@ -195,16 +211,12 @@ header div.header-right > div.userMenu {
     position: relative;
 }
 
-.c1 .slider-content-area .text-wrap a .pen-icon::after {
+.c1 > .text-wrap a .pen-icon::after {
     content: "";
     display: inline-block;
     width: 18px;
     height: 21px;
-    background: url(../images/icon/ico-pencil.png);
-}
-
-.c1 .slider-content-area .text-wrap a span {
-    font-weight: 700;
+    background: url(../images/icon/ico-pencil.png) no-repeat center center / auto;
 }
 
 .c1 .slider-content-area .img-wrap {
@@ -223,10 +235,14 @@ header div.header-right > div.userMenu {
 .c1 .swiper-pagination-fraction,
 .c1 .swiper-pagination-custom,
 .c1 .swiper-container-horizontal > .swiper-pagination-bullets {
-    bottom: 100px !important;
+    bottom: 96px !important;
 }
 
 @media (max-width: 1920px) {
+    .c1 > .text-wrap {
+        padding-left: 1.5%;
+        width: 1400px;
+    }
     .slider-content {
         padding: 20px;
     }
@@ -244,7 +260,7 @@ header div.header-right > div.userMenu {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 96px;
 }
 
 .c2-wrap {
@@ -270,8 +286,9 @@ header div.header-right > div.userMenu {
 
 .c2 div.top-text div p {
     font-size: 35px;
-    color: #515151;
+    color: #222222;
     padding-left: 20px;
+    font-weight: 300;
 }
 
 .c2 div.top-text div a {
@@ -307,7 +324,7 @@ header div.header-right > div.userMenu {
 
 .c2 div .swiper-slide .slider-content2 {
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 83px;
 }
 
 .c2 div .swiper-slide .slider-content2 .img-wrap {
@@ -349,21 +366,31 @@ header div.header-right > div.userMenu {
 .c2 div .swiper-slide .slider-content2 .text-wrap p {
     font-size: 22px;
     margin: 20px 0;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .c2 div .swiper-slide .slider-content2 .text-wrap span {
     font-size: 16px;
     color: #3f3f3f;
+    line-height: 22px;
+    font-weight: 300;
 }
 
 .c2 .swiper-pagination-bullet-active {
-    background: #eeb76e !important;
+    background: #fe811c !important;
+}
+
+.swiper-pagination{
+    bottom: 0 !important;
+}
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
 }
 
 @media (max-width: 1920px) {
     .c2 {
-        padding: 20px;
+        /*padding: 20px;*/
     }
     div .c2-wrap {
         width: calc(100% - 520px);
@@ -382,7 +409,7 @@ header div.header-right > div.userMenu {
 }
 
 .c3 div {
-    padding: 100px 0 250px;
+    padding: 100px 0 230px;
     width: 80%;
     max-width: 2034px;
     display: flex;
@@ -393,12 +420,13 @@ header div.header-right > div.userMenu {
 
 .c3 div p {
     font-size: 42px;
+    font-weight: 300;
 }
 
 .c3 div p span {
     padding: 15px;
     font-size: 42px;
-    font-weight: 700;
+    font-weight: 500;
     color: #000;
     border: 1px solid black;
     position: relative;
@@ -437,15 +465,13 @@ header div.header-right > div.userMenu {
 
 .c3 div span {
     display: inline-block;
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 20px;
+    font-weight: 300;
     color: #4e4e4e;
 }
 
 @media (max-width: 1920px) {
-    .c3 {
-        padding: 20px;
-    }
     .c3-wrap{
         width: calc(100% - 520px);
         max-width: 1400px;
@@ -467,7 +493,7 @@ header div.header-right > div.userMenu {
     transform: translateX(-50%) translateY(200px);
     background: white;
     padding: 1.5vw;
-    box-shadow: 0px 21px 10px 7px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 49px 28px 16px rgba(0, 0, 0, 0.09);
     opacity: 0;
     transition: 0.3s;
 }
@@ -581,18 +607,18 @@ header div.header-right > div.userMenu {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 80px 0;
+    padding: 61px 0 76px;
 }
 
 .c5 .area {
-    width: 60%;
-    min-width: 1280px;
+    min-width: 1500px;
     display: flex;
     justify-content: space-between;
 }
 
 .c5 .area .box {
-    width: 24.5%;
+    width: 365px;
+    height: 265px;
     background: #fafafa;
     padding: 40px 20px;
     display: flex;
@@ -600,6 +626,7 @@ header div.header-right > div.userMenu {
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 15px;
 }
 
 .c5 .area .box img {
@@ -618,10 +645,19 @@ header div.header-right > div.userMenu {
     line-height: 1.4;
 }
 
+@media (max-width: 1920px) {
+    .c5 .area {
+        min-width: 1400px;
+    }
+    .c5 .area .box {
+        width: 339px;
+    }
+}
+
 .c6 {
     width: 100%;
-    background: #3c3933;
-    height: 440px;
+    background: #282623;
+    height: 434px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -641,17 +677,20 @@ header div.header-right > div.userMenu {
 .c6 div:nth-of-type(1) p {
     font-size: 32px;
     color: #fff;
+    font-weight: 300;
 }
 
 .c6 div:nth-of-type(1) p span {
     font-size: 32px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .c6 div:nth-of-type(1) span {
     color: #cdc8c2;
     margin: 20px 0;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .c6 div:nth-of-type(1) a {
@@ -659,7 +698,7 @@ header div.header-right > div.userMenu {
     margin-top: 40px;
     display: inline-block;
     background: #fff;
-    padding: 20px 80px;
+    padding: 22px 72px;
     border-radius: 40px;
     transition: 0.3s;
     overflow: hidden;
@@ -677,7 +716,9 @@ header div.header-right > div.userMenu {
     z-index: 1;
     position: relative;
     transition: 0.3s;
+    font-size: 18px;
     color: #3c3933;
+    font-weight: 400;
 }
 
 .c6 div:nth-of-type(2) {
@@ -696,33 +737,33 @@ header div.header-right > div.userMenu {
 .c6 div:nth-of-type(2) .circle1 {
     top: -150px;
     left: 0;
-    width: 350px;
-    height: 350px;
+    width: 312px;
+    height: 312px;
     border-radius: 100%;
-    background: #6d604c;
+    background: #82430f;
 }
 
 .c6 div:nth-of-type(2) .circle2 {
     top: 150px;
     left: 300px;
-    width: 130px;
-    height: 130px;
+    width: 128px;
+    height: 128px;
     border-radius: 100%;
-    background: #403d38;
+    background: #bd9322 ;
 }
 
 .c6 div:nth-of-type(2) .circle3 {
     bottom: -50px;
     right: 0;
-    width: 250px;
-    height: 250px;
+    width: 236px;
+    height: 236px;
     border-radius: 100%;
-    background: #564c3c;
+    background: #bd9322;
 }
 
 .c6 div:nth-of-type(2) .quad {
     top: 190px;
-    right: 450px;
+    right: 477px;
     width: 150px;
     height: 150px;
     transform: rotate(45deg);
@@ -734,11 +775,11 @@ footer {
     display: flex;
     justify-content: center;
     background: #fff;
-    padding: 50px 0 100px;
+    padding: 53px 0 112px;
 }
 
 footer > div {
-    width: 1493px;
+    width: 1500px;
     display: flex;
 }
 
@@ -761,12 +802,12 @@ footer > div div:nth-of-type(2) div {
 footer > div div:nth-of-type(2) div a {
     margin-top: 10px;
     font-size: 16px;
-    color: black;
+    color: #070707;
     transition: 0.3s;
 }
 
 footer > div div:nth-of-type(2) div a:nth-of-type(2) {
-    margin-left: 40px;
+    margin-left: 32px;
     font-weight: 600;
 }
 
@@ -777,6 +818,7 @@ footer > div div:nth-of-type(2) div a:hover {
 footer > div div:nth-of-type(2) ul {
     display: flex;
     margin: 5px 0;
+    color: #525252;
 }
 
 footer > div div:nth-of-type(2) ul li {
@@ -787,9 +829,9 @@ footer > div div:nth-of-type(2) ul li {
 footer > div div:nth-of-type(2) ul li::after {
     content: "";
     display: inline-block;
-    width: 2px;
-    height: 100%;
-    background: #54585a;
+    width: 1px;
+    height: 10px;
+    background: #9e9e9e;
     margin-left: 10px;
 }
 
@@ -799,6 +841,7 @@ footer > div div:nth-of-type(2) ul li:last-of-type::after {
 
 footer > div div:nth-of-type(2) address {
     margin-top: 50px;
+    color: #525252;
 }
 
 footer > div div:nth-of-type(3) {
@@ -832,6 +875,7 @@ footer > div div:nth-of-type(3) a.insta {
 
 footer > div div:nth-of-type(3) a.youtube {
     background: url(../images/common/sns/ico-youtube.png);
+    margin-left: 5px;
 }
 
 footer > div .logo {
@@ -841,4 +885,16 @@ footer > div .logo {
     font-size: 21px;
     font-weight: 700;
     background: url(../images/common/logo-footer.png);
+}
+
+@media (max-width: 1920px) {
+    footer > div {
+        width: 1400px;
+    }
+}
+
+@media (max-width: 1501px) {
+    footer > div {
+        width: 100%;
+    }
 }

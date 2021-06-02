@@ -1,6 +1,7 @@
 .swiper-container {
     width: 100%;
-    height: 100%;/*
+    height: 100%;
+    /*
     background-color: red;
     margin-right: 0;*/
 }
@@ -30,23 +31,24 @@
     object-fit: cover;
 }
 
-.wrap{
-width:100%;
-overflow-x:hidden;
+.wrap {
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 92px;
 }
 
 header {
     z-index: 10;
     width: 100%;
     height: 92px;
-    /*마지막에 수정하깅 wrap 내리는거 잊지말기*/
-    position: inherit;
+    position: fixed;
     transition: 0.3s;
+    background: #fff;
     border-bottom: #ebe9e9 solid 1px;
 }
 
 div.h-inner {
-    width: 1862px;
+    width: 1855px;
     margin: 0 auto;
 }
 
@@ -209,6 +211,36 @@ div.swiper-slide {
     font-weight: 700;
     margin: 25px 0 20px;
     cursor: pointer;
+    position: relative;
+}
+
+.swiper-slide h3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 1px;
+    margin: auto;
+    top: 116%;
+    left: 0; /*50%;
+    transform: translateX(-50%);*/
+    background: #cacaca;
+    
+}
+
+.sub-list1 > a:nth-child(3):hover > h3::after {
+    width: 42%;
+    transition: 0.5s;
+}
+
+.sub-list2 > a:nth-child(3):hover > h3::after {
+    width: 28%;
+    transition: 0.5s;
+}
+
+.sub-list3 > a:nth-child(3):hover > h3::after {
+    width: 29%;
+    transition: 0.5s;
 }
 
 .swiper-slide p:last-child {
@@ -230,7 +262,7 @@ div.swiper-slide {
 }
 
 .swiper-pagination-bullet-active {
-    background: #eeb76e;
+    background: #fe811c;
 }
 
 @media (max-width: 1500px) {
@@ -299,12 +331,13 @@ div.swiper-slide {
 }
 
 .check p:hover::before {
-    background: #edb562 url(../images/icon/ico-check.png) no-repeat center center / auto;
+    background: #fe811c url(../images/icon/ico-check.png) no-repeat center center / auto;
 }
 
-.check p.active::before{
-    background: #edb562 url(../images/icon/ico-check.png) no-repeat center center / auto;
+.check p.active::before {
+    background: #fe811c url(../images/icon/ico-check.png) no-repeat center center / auto;
 }
+
 .search_input {
     width: 423px;
     padding: 12px 24px 12px 0;
@@ -333,17 +366,20 @@ div.swiper-slide {
     border-radius: 20px;
     padding: 2% 3%;
     margin-right: 6px;
-    color: #b5b4b4;
+    color: #b5b4b4; 
 }
-.category li.active{
-    border: #222222 solid 1px;
-    color: #222222;
+
+.category li.active {
+    border: #fff solid 1px;
+    color: #fff;
+    background: #fe811c;
 }
 
 
 .category li:hover {
-    border: #222222 solid 1px;
-    color: #222222;
+    border: #fff solid 1px;
+    color: #fff;
+    background: #fe811c;
     cursor: pointer;
 }
 
@@ -375,7 +411,8 @@ div.swiper-slide {
 .text-right > button {
     color: #8e8e8e;
 }
-.text-right > button.active{
+
+.text-right > button.active {
     color: #000;
 }
 
@@ -411,13 +448,14 @@ div.swiper-slide {
     border-radius: 10px;
 }
 
-.list-top > h3 {
+.list-top > a > h3 {
     font-size: 18px;
     line-height: 22px;
-    padding: 24px 0 13px;
+    padding: 20px 0 13px;
 }
 
-.list-top > p, .list-bot {
+.list-top > p,
+.list-bot {
     font-size: 13px;
     color: #8e8e8e;
 }
@@ -437,20 +475,21 @@ div.swiper-slide {
     display: flex;
 }
 
-.c4-react > em {
+.c4-react > button {
     display: flex;
     line-height: 22px;
+    color: #8E8E8E;
 }
 
-.list_item > div > div > em:first-child {
+.list_item > div > div > button:first-child {
     padding-right: 9px;
 }
 
-.c4-react > em::before {
+.c4-react > button::before {
     padding-right: 5px;
 }
 
-.list_item > div > div > em:first-child::before {
+.list_item > div > div > button:first-child::before {
     content: "";
     display: block;
     width: 22px;
@@ -458,7 +497,7 @@ div.swiper-slide {
     background: url(../images/icon/ico-heart.png) no-repeat center center / auto;
 }
 
-.list_item > div > div > em:last-child::before {
+.list_item > div > div > button:last-child::before {
     content: "";
     display: block;
     width: 22px;
@@ -495,6 +534,7 @@ div.swiper-slide {
     .c4_wrap {
         width: 100%;
     }
+
     .list-inner > ul {
         width: 100%;
     }
