@@ -4,6 +4,7 @@ var checkItem       = $(".check p");
 
 categoryItem.eq(0).addClass("active");
 filterItem.eq(0).addClass("active");
+checkItem.eq(0).addClass("active");
 
 categoryItem.click(function(){
     if($(this).text() == "전체"){
@@ -11,8 +12,13 @@ categoryItem.click(function(){
         $(this).addClass("active");
     }else if($(this).text() != "전체"){
         categoryItem.eq(0).removeClass("active");
+        
+        if($(this).hasClass("active")){
+            $(this).removeClass("active");
+        }else{
+            $(this).addClass("active");
+        }
     }
-    $(this).addClass("active");
 })
 
 filterItem.click(function(){
