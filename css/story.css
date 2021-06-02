@@ -212,36 +212,33 @@ div.swiper-slide {
     margin: 25px 0 20px;
     cursor: pointer;
     position: relative;
+    display: inline-block;
 }
 
 .swiper-slide h3::after {
     content: "";
-    display: block;
+    display: inline-block;
     position: absolute;
     width: 0;
     height: 1px;
     margin: auto;
-    top: 116%;
-    left: 0; /*50%;
-    transform: translateX(-50%);*/
-    background: #cacaca;
+    bottom: -8px;
+    left: 0;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    background: rgba(0, 0, 0, 0.4);
+    transition: 0.5s ease;
     
 }
 
-.sub-list1 > a:nth-child(3):hover > h3::after {
-    width: 42%;
-    transition: 0.5s;
+.swiper-slide:hover .sub > a:nth-of-type(2) > h3::after{
+    width: 100%;
 }
 
-.sub-list2 > a:nth-child(3):hover > h3::after {
-    width: 28%;
-    transition: 0.5s;
-}
-
-.sub-list3 > a:nth-child(3):hover > h3::after {
-    width: 29%;
-    transition: 0.5s;
-}
+/* 텍스트 호버 시 라인 그려짐 */
+/* [class*="sub-list"] > a:hover > h3::after {
+    width: 100%;
+} */
 
 .swiper-slide p:last-child {
     font-size: 1rem;
