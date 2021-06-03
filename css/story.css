@@ -429,9 +429,6 @@ div.swiper-slide {
 
 
 .category li:hover {
-    border: #fff solid 1px;
-    color: #fff;
-    background: #fe811c;
     cursor: pointer;
 }
 
