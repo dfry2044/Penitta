@@ -84,6 +84,16 @@ header nav ul li {
     margin-left: 50px;
 }
 
+li.hey > img {
+    padding-left: 32px;
+}
+
+li.hey > span {
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 9px;
+}
+
 header nav ul li a {
     font-size: 20px;
     font-weight: 700;
@@ -92,6 +102,26 @@ header nav ul li a {
 
 header nav ul li a:hover {
     opacity: 0.6;
+}
+
+header .header-notice{
+    margin-left: 98px;
+    display: flex;
+    align-items: center;
+}
+header .header-notice i{
+    text-indent: -99999999px;
+    width: 28px;
+    height: 19px;
+    background: url("../images/icon/ico-speaker.png") no-repeat center / cover;
+    margin-right: 10px;
+}
+
+header .header-notice p{
+    font-size: 14px;
+    font-family: "Noto Sans Kr";
+    font-weight: 300;
+    color: #131313;
 }
 
 header nav .userMenu .user {
@@ -132,9 +162,6 @@ header div.header-right > div.userMenu {
     display: flex;
     align-content: center;
 }
-
-
-
 
 /*헤더 실행*/
 
@@ -215,6 +242,7 @@ div.swiper-slide {
     cursor: pointer;
     right: 22px;
     top: 22px;
+    z-index: 99;
 }
 
 .sub > p {
@@ -228,51 +256,49 @@ div.swiper-slide {
     z-index: 20001;
 }
 
+.sub > a {
+    display: block;
+    overflow: hidden;
+}
+
 .swiper-slide img {
     width: 100%;
     display: block;
-    cursor: pointer;
+    transition: 0.5s;
+}
+
+.swiper-slide img:hover {
+    transform: scale(1.08);
+    transition: 0.5s;
 }
 
 .swiper-slide h3 {
     font-size: 22px;
     font-weight: 700;
-    margin: 25px 0 20px;
-    cursor: pointer;
+    margin: 23px 0 16px;
     position: relative;
     display: inline-block;
 }
 
-.swiper-slide h3::after {
+.swiper-slide h3:hover::after {
     content: "";
     display: inline-block;
+    width: 100%;
     position: absolute;
-    width: 0;
     height: 1px;
     margin: auto;
-    bottom: -8px;
+    bottom: -2px;
     left: 0;
-    /* left: 50%;
-    transform: translateX(-50%); */
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.8);
     transition: 0.5s ease;
     
 }
-
-.swiper-slide:hover .sub > a:nth-of-type(2) > h3::after{
-    width: 100%;
-}
-
-/* 텍스트 호버 시 라인 그려짐 */
-/* [class*="sub-list"] > a:hover > h3::after {
-    width: 100%;
-} */
-
 .swiper-slide p:last-child {
     font-size: 1rem;
     line-height: 22px;
     cursor: pointer;
     margin-bottom: 102px;
+    color: #575656;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
@@ -318,6 +344,7 @@ div.swiper-slide {
 .txt-left > p {
     font-size: 29px;
     font-weight: 500;
+    line-height: 36px
 }
 
 .txt-middle > .check {
@@ -387,7 +414,7 @@ div.swiper-slide {
 }
 
 .category li {
-    border: #b5b4b4 solid 1px;
+    border: #dcdcdc solid 1px;
     border-radius: 20px;
     padding: 2% 3%;
     margin-right: 6px;
@@ -468,19 +495,62 @@ div.swiper-slide {
     justify-content: space-between;
 }
 
+.list-top{
+    position: relative;
+}
+
+.list-top.new::after {
+    content: "NEW";
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    width: 43px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    background: #799e14;
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+    z-index: 55;
+}
+
+.list-top > a {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 .list-inner img {
     width: 353px;
-    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.list-inner img:hover {
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+
+.list-top {
+    display: flex;
+    flex-direction: column;
 }
 
 .list-top > a > h3 {
+    display: inline-block;
     font-size: 18px;
     line-height: 22px;
-    padding: 20px 0 13px;
+    padding-top: 20px;
+    border-bottom: #fff solid 1px;    
+}
+
+.list-top a:hover h3{
+    text-decoration: underline;
 }
 
 .list-top > p,
 .list-bot {
+    padding-top: 13px;
     font-size: 13px;
     color: #8e8e8e;
 }
@@ -611,14 +681,16 @@ div.swiper-slide {
     position: relative;
     margin-top: 40px;
     display: inline-block;
-    background: #fff;
+    background: transparent;
     padding: 22px 72px;
+    border: #fff solid 1px;
     border-radius: 40px;
     transition: 0.3s;
     overflow: hidden;
 }
 
 .c6 div:nth-of-type(1) a:hover {
+    border: #eca15b solid 1px;
     background: #eca15b;
 }
 
@@ -631,7 +703,7 @@ div.swiper-slide {
     position: relative;
     transition: 0.3s;
     font-size: 18px;
-    color: #3c3933;
+    color: #fff;
     font-weight: 400;
 }
 
@@ -676,7 +748,7 @@ div.swiper-slide {
 }
 
 .c6 div:nth-of-type(2) .quad {
-    top: 190px;
+    top: 176px;
     right: 477px;
     width: 150px;
     height: 150px;
@@ -754,6 +826,7 @@ footer > div div:nth-of-type(2) ul li:last-of-type::after {
 }
 
 footer > div div:nth-of-type(2) address {
+    font-size: 15px;
     margin-top: 50px;
     color: #525252;
 }
