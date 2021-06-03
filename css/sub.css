@@ -281,3 +281,6 @@ header .header-notice p{
     font-weight: 600;
     margin: 0;
 }
+.my-card ul li .card-bottom p{
+    margin-bottom: 0;
+}
