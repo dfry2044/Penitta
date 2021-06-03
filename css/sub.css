@@ -121,10 +121,11 @@ header .header-notice p{
     margin-bottom: 50px;
 }
 .my-card ul li .card-img-wrap{
-    width: 100%;
     height: 234px;
     border-radius: 10px;
     margin-bottom: 20px;
+    overflow: hidden;
+    clip-path: inset(0% 0% 0% 0% round 10px);
 }
 .my-card ul li .card-img-wrap img{
     transition: 0.3s ease;
@@ -132,6 +133,11 @@ header .header-notice p{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+.my-card ul li:hover .card-img-wrap img{
+    transform: scale(1.1);
 }
 .my-card ul li h2{
     font-size: 18px;
@@ -197,7 +203,7 @@ header .header-notice p{
     background: url("../images/icon/ico-etc.png") no-repeat center / cover;
     display: block;
 }
-.my-card li.new .card-img-wrap{
+.my-card li .card-img-wrap{
     position: relative;
 }
 .my-card li.new .card-img-wrap span{
@@ -249,4 +255,29 @@ header .header-notice p{
     color: #5d5c5c;
     margin-right: 10px;
     display: inline-block;
+}
+.my-card ul li p time{
+    color: #fe811c;
+    font-weight: 600;
+}
+.my-card ul li strong{
+    font-size: 13px;
+    font-family: "Noto Sans Kr";
+    font-weight: 300;
+    color: #5d5c5c;
+    display: block;
+    margin-bottom: 30px;
+}
+.my-card ul li.expiration{
+    opacity: 0.4;
+    
+}
+.my-card ul li.expiration a{
+    pointer-events: none;
+    cursor: default;
+}
+.my-card ul li em{
+    color: #5d5c5c;
+    font-weight: 600;
+    margin: 0;
 }

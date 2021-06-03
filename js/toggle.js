@@ -7,4 +7,6 @@ toggle.click(function(){
     }else{
         $(this).addClass("active");
     }
+
+    return false;
 })
