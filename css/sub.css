@@ -1,0 +1,252 @@
+header .header-notice{
+    margin-left: 98px;
+    display: flex;
+    align-items: center;
+}
+header .header-notice i{
+    width: 28px;
+    height: 19px;
+    background: url("../images/icon/ico-speaker.png") no-repeat center / cover;
+    margin-right: 10px;
+}
+header .header-notice p{
+    font-size: 14px;
+    font-family: "Noto Sans Kr";
+    font-weight: 300;
+    color: #131313;
+}
+.my-tab{
+    width: 100%;
+    height: 138px;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #fafafa;
+}
+.my-tab .my-tab-inner{
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+.my-tab .my-tab-inner ul{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.my-tab .my-tab-inner li{
+    width: 194px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(2px);
+}
+.my-tab .my-tab-inner li.active{
+    border-bottom: 3px solid #fe811c;
+}
+.my-tab .my-tab-inner li a{
+    font-size: 18px;
+    font-family: "Noto Sans Kr";
+    font-weight: 300;
+    color: #222222;
+    transition: 0.3s ease;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+.my-tab .my-tab-inner li.active a{
+    font-weight: 600;
+}
+.my-tab .my-tab-inner li:hover a{
+    font-weight: 600;
+}
+
+.my-card .my-card-inner{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.my-card .my-card-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.my-card .my-card-inner .card-total{
+    font-size: 16px;
+    font-family: "Noto Sans Kr";
+    font-weight: 500;
+    color: #222222;
+}
+.my-card .my-card-inner .my-card-filter button{
+    font-size: 14px;
+    font-family: "Noto Sans Kr";
+    font-weight: 500;
+    color: #8e8e8e;
+}
+.my-card .my-card-inner .my-card-filter button.active{
+    color: #222222;
+}
+.my-card-filter button:last-child:before{
+    content: "\b7\a0";
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3px;
+    height: 3px;
+    margin: 0 12px;
+}
+
+/* card */
+.my-card{
+    background-color: #fafafa;
+    padding-top: 50px;
+    padding-bottom: 135px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.my-card ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.my-card ul li{
+    margin-bottom: 50px;
+}
+.my-card ul li .card-img-wrap{
+    width: 100%;
+    height: 234px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.my-card ul li .card-img-wrap img{
+    transition: 0.3s ease;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.my-card ul li h2{
+    font-size: 18px;
+    font-family: "Noto Sans Kr";
+    font-weight: 500;
+    color: #222222;
+    margin-bottom: 15px;
+}
+.my-card ul li p{
+    font-size: 13px;
+    font-family: "Noto Sans Kr";
+    font-weight: 300;
+    color: #5d5c5c;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.my-card ul li .card-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.my-card ul li .card-bottom .card-toggle{
+    width: 34px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #eeeeee;
+    position: relative;
+    transition: 0.3s ease;
+}
+.my-card ul li .card-bottom .card-toggle .toggle-circle{
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.my-card ul li .card-bottom .card-toggle.active{
+    background-color: #fe811c;
+}
+.my-card ul li .card-bottom .card-toggle.active .toggle-circle{
+    left: 14px;
+}
+
+.my-card .card-bottom .card-down{
+    width: 20px;
+    height: 15px;
+    margin-right: 20px;
+}
+.my-card .card-bottom .card-down i{
+    width: 20px;
+    height: 15px;
+    background: url("../images/icon/ico-download.png") no-repeat center / cover;
+    display: block;
+}
+.my-card .card-bottom .card-etc i{
+    width: 3px;
+    height: 15px;
+    background: url("../images/icon/ico-etc.png") no-repeat center / cover;
+    display: block;
+}
+.my-card li.new .card-img-wrap{
+    position: relative;
+}
+.my-card li.new .card-img-wrap span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 43px;
+    height: 24px;
+    background-color: #799e14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 11px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.card-more-btn{
+    margin: 0;
+    display: block;
+    width: 248px;
+    height: 60px;
+    border-radius: 50px;
+    border:1px solid #c2c2c2;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Noto Sans Kr";
+    font-weight: 500;
+    color: #222222;
+    margin: 0 auto;
+}
+.card-more-btn i{
+    width: 14px;
+    height: 8px;
+    display: inline-block;
+    background: url("../images/icon/ico-downArrow.png") no-repeat center / cover;
+    margin-left: 11px;
+}
+
+.my-card ul li p span{
+    font-size: 13px;
+    font-family: "Noto Sans Kr";
+    font-weight: 300;
+    color: #5d5c5c;
+    margin-right: 10px;
+    display: inline-block;
+}
