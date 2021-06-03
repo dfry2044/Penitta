@@ -3,7 +3,6 @@
 $(window).scroll(function () {
 
     var browserT = $(window).scrollTop();
-    console.log(browserT);
 
     if (browserT > 300) {
         $('header').addClass('ani_fixed')
@@ -16,7 +15,6 @@ $(window).scroll(function () {
 
 $(window).scroll(function () {
     var browserT = $(window).scrollTop();
-    console.log(browserT);
 
     $('.header-left').addClass('active');
     if (browserT == 0) {
@@ -26,7 +24,6 @@ $(window).scroll(function () {
 
 $(window).scroll(function () {
     var browserT = $(window).scrollTop();
-    console.log(browserT);
 
     $('header div.header-right > div.userMenu').addClass('active');
     if (browserT == 0) {

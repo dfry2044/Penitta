@@ -3,7 +3,6 @@ var tabContent = $(".my-card .card-list");
 
 tabBtn.click(function(){
     var idx = $(this).index();
-    console.log(idx);
 
     tabContent.removeClass("show");
     tabBtn.removeClass("active");
