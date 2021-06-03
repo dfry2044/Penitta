@@ -50,7 +50,7 @@ header .header-notice p{
 .my-tab .my-tab-inner li.active{
     border-bottom: 3px solid #fe811c;
 }
-.my-tab .my-tab-inner li a{
+.my-tab .my-tab-inner li button{
     font-size: 18px;
     font-family: "Noto Sans Kr";
     font-weight: 300;
@@ -63,10 +63,10 @@ header .header-notice p{
     align-items: center;
     cursor:pointer;
 }
-.my-tab .my-tab-inner li.active a{
+.my-tab .my-tab-inner li.active button{
     font-weight: 600;
 }
-.my-tab .my-tab-inner li:hover a{
+.my-tab .my-tab-inner li:hover button{
     font-weight: 600;
 }
 
@@ -284,4 +284,16 @@ header .header-notice p{
 }
 .my-card ul li .card-bottom p{
     margin-bottom: 0;
+}
+.my-card .card-list{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    transition: 0.5s ease;
+}
+.my-card .card-list.show{
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    transition: 0.5s 0.3s ease;
 }
