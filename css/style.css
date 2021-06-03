@@ -35,6 +35,7 @@ header {
 
 div.h-inner {
     max-width: 1975px;
+    width: calc(100% - 520px);
     margin: 0 auto;
 }
 
@@ -56,7 +57,7 @@ header nav {
 
 header a {
     display: block;
-   margin: auto 0;
+    margin: auto 0;
 }
 
 
@@ -120,14 +121,13 @@ header div.header-right > div.userMenu {
 }
 
 @media (max-width: 1976px) {
-    .h-inner {
-        width: 100%;
-         padding: 0 20px;
+    div.h-inner {
+        padding: 0 20px;
     }
 }
 
 @media (max-width: 1920px) {
-    .h-inner {
+    div.h-inner {
         width: 1400px;
     }
 }
@@ -166,12 +166,13 @@ header div.header-right > div.userMenu {
 
 .c1 > .text-wrap {
     z-index: 2;
-    width: 1975px;
+    width: calc(100% - 566px);
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
     text-align: left;
+    padding-left: 10px;
 }
 
 .c1 > .text-wrap p {
@@ -240,9 +241,10 @@ header div.header-right > div.userMenu {
 
 @media (max-width: 1920px) {
     .c1 > .text-wrap {
-        padding-left: 1.5%;
+        padding-left: 1.1%;
         width: 1400px;
     }
+
     .slider-content {
         padding: 20px;
     }
@@ -266,6 +268,7 @@ header div.header-right > div.userMenu {
 .c2-wrap {
     width: calc(100% - 520px);
 }
+
 .c2 .swiper-container {
     box-sizing: content-box;
     padding-left: 39px;
@@ -285,7 +288,7 @@ header div.header-right > div.userMenu {
 }
 
 .c2 div.top-text div p {
-    font-size: 35px;
+    font-size: 32px;
     color: #222222;
     padding-left: 20px;
     font-weight: 300;
@@ -295,7 +298,7 @@ header div.header-right > div.userMenu {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 152px;
+    width: 153px;
     height: 48px;
     background: #eeb76e;
     border-radius: 40px;
@@ -309,7 +312,7 @@ header div.header-right > div.userMenu {
 .c2 div.top-text div a span {
     position: relative;
     color: white;
-    padding-right: 15px;
+    padding-right: 20px;
 }
 
 .c2 div.top-text div a span::after {
@@ -328,9 +331,22 @@ header div.header-right > div.userMenu {
 }
 
 .c2 div .swiper-slide .slider-content2 .img-wrap {
-    width: 100%;
+    width: 94.6%;
     height: auto;
     position: relative;
+}
+
+.c2 div .swiper-slide .slider-content2 .img-wrap > div {
+    overflow: hidden;
+}
+
+.c2 div .swiper-slide .slider-content2 .img-wrap img{
+    transition: 0.5s
+}
+
+.c2 div .swiper-slide .slider-content2 .img-wrap img:hover {
+    transform: scale(1.08);
+    transition: 0.5s ease;
 }
 
 .c2 div .swiper-slide .slider-content2 .img-wrap::after {
@@ -341,7 +357,7 @@ header div.header-right > div.userMenu {
     display: inline-block;
     width: 40px;
     height: 28px;
-    background: url(../images/icon/ico-youtube.png);
+    background: url(../images/icon/ico-youtube.png) no-repeat center / auto;
 }
 
 .c2 div .swiper-slide .slider-content2 .img-wrap span {
@@ -351,38 +367,51 @@ header div.header-right > div.userMenu {
     height: 20px;
     transform: rotate(-90deg);
     position: absolute;
-    left: -85px;
+    left: -87px;
     bottom: 65px;
     color: #c2c2c2;
     font-size: 16px;
 }
 
 .c2 div .swiper-slide .slider-content2 .text-wrap {
-    margin-top: 10px;
     text-align: left;
     width: 90%;
 }
 
 .c2 div .swiper-slide .slider-content2 .text-wrap p {
+    display: inline-block;
     font-size: 22px;
-    margin: 20px 0;
+    margin: 32px 0 20px;
     font-weight: 500;
+    position: relative;
 }
 
 .c2 div .swiper-slide .slider-content2 .text-wrap span {
+    display: block;
     font-size: 16px;
     color: #3f3f3f;
     line-height: 22px;
     font-weight: 300;
 }
 
+.c2 div .swiper-slide .slider-content2 .text-wrap p:hover::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
 .c2 .swiper-pagination-bullet-active {
     background: #fe811c !important;
 }
 
-.swiper-pagination{
+.swiper-pagination {
     bottom: 0 !important;
 }
+
 .swiper-pagination-bullet {
     width: 10px !important;
     height: 10px !important;
@@ -392,10 +421,12 @@ header div.header-right > div.userMenu {
     .c2 {
         /*padding: 20px;*/
     }
+
     div .c2-wrap {
         width: calc(100% - 520px);
         max-width: 1400px;
     }
+
     .c2 div {
         width: 100%;
     }
@@ -424,7 +455,7 @@ header div.header-right > div.userMenu {
 }
 
 .c3 div p span {
-    padding: 15px;
+    padding: 13px 7.6px;
     font-size: 42px;
     font-weight: 500;
     color: #000;
@@ -437,30 +468,30 @@ header div.header-right > div.userMenu {
     padding: 0;
     margin: 0;
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 9px;
+    height: 9px;
     border: 1px solid black;
     background: #fafafa;
 }
 
 .c3 div p span span:nth-of-type(1) {
-    top: -8px;
-    left: -8px;
+    top: -5px;
+    left: -5px;
 }
 
 .c3 div p span span:nth-of-type(2) {
-    top: -8px;
-    right: -8px;
+    top: -5px;
+    right: -5px;
 }
 
 .c3 div p span span:nth-of-type(3) {
-    bottom: -8px;
-    right: -8px;
+    bottom: -5px;
+    right: -5px;
 }
 
 .c3 div p span span:nth-of-type(4) {
-    bottom: -8px;
-    left: -8px;
+    bottom: -5px;
+    left: -5px;
 }
 
 .c3 div span {
@@ -472,7 +503,7 @@ header div.header-right > div.userMenu {
 }
 
 @media (max-width: 1920px) {
-    .c3-wrap{
+    .c3-wrap {
         width: calc(100% - 520px);
         max-width: 1400px;
     }
@@ -490,12 +521,10 @@ header div.header-right > div.userMenu {
     top: -19%;
     left: 50%;
     z-index: 9;
-    transform: translateX(-50%) translateY(200px);
+    transform: translateX(-50%) translateY(0);
     background: white;
     padding: 1.5vw;
     box-shadow: 0px 49px 28px 16px rgba(0, 0, 0, 0.09);
-    opacity: 0;
-    transition: 0.3s;
 }
 
 .c4 .pop-img::after {
@@ -522,10 +551,7 @@ header div.header-right > div.userMenu {
     z-index: 5;
 }
 
-.c4 .pop-img.active {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-}
+
 .c4 .pop-img div {
     width: 100%;
 }
@@ -534,13 +560,13 @@ header div.header-right > div.userMenu {
     width: 100% !important;
     height: 100% !important;
     /*transform: translateY(400px);*/
-  /*opacity: 0;
+    /*opacity: 0;
   transition: 0.5s;*/
 }
 
 .c4 .pop-img img.active {
-  /*transform: translateY(0);*/
- /* opacity: 1;
+    /*transform: translateY(0);*/
+    /* opacity: 1;
     transition: 0.5s;*/
 }
 
@@ -559,7 +585,7 @@ header div.header-right > div.userMenu {
     background: black;
     color: white;
     transition: 0.3s;
-    z-index: 9999;
+    z-index: 99;
 }
 
 .c4 a:hover {
@@ -589,7 +615,8 @@ header div.header-right > div.userMenu {
 .c4 .swiper-wrapper {
     height: 32vw;
 }
-.c4 .swiper-mini .swiper-wrapper{
+
+.c4 .swiper-mini .swiper-wrapper {
     height: 482px;
 }
 
@@ -598,9 +625,9 @@ header div.header-right > div.userMenu {
 }
 
 @media (max-width: 1960px) {
-    .c4 .swiper-mini .swiper-wrapper{
-    height: 329px;
-}
+    .c4 .swiper-mini .swiper-wrapper {
+        height: 329px;
+    }
 }
 
 .c5 {
@@ -649,6 +676,7 @@ header div.header-right > div.userMenu {
     .c5 .area {
         min-width: 1400px;
     }
+
     .c5 .area .box {
         width: 339px;
     }
@@ -749,7 +777,7 @@ header div.header-right > div.userMenu {
     width: 128px;
     height: 128px;
     border-radius: 100%;
-    background: #bd9322 ;
+    background: #bd9322;
 }
 
 .c6 div:nth-of-type(2) .circle3 {
@@ -762,7 +790,7 @@ header div.header-right > div.userMenu {
 }
 
 .c6 div:nth-of-type(2) .quad {
-    top: 190px;
+    top: 176px;
     right: 477px;
     width: 150px;
     height: 150px;
@@ -842,6 +870,7 @@ footer > div div:nth-of-type(2) ul li:last-of-type::after {
 footer > div div:nth-of-type(2) address {
     margin-top: 50px;
     color: #525252;
+    font-size: 15px;
 }
 
 footer > div div:nth-of-type(3) {
@@ -880,7 +909,7 @@ footer > div div:nth-of-type(3) a.youtube {
 
 footer > div .logo {
     display: inline-block;
-    width: 130px;
+    width: 140px;
     height: 40px;
     font-size: 21px;
     font-weight: 700;
