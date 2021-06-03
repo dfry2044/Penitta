@@ -511,7 +511,7 @@ div.swiper-slide {
     background: #799e14;
     position: absolute;
     right: 0;
-    bottom: 70px;
+    top: 210px;
     z-index: 55;
 }
 
@@ -519,6 +519,10 @@ div.swiper-slide {
     display: block;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.list-top > a:first-child {
+    height: 234px;
 }
 
 .list-inner img {
