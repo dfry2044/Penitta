@@ -154,7 +154,7 @@ header .header-notice p{
     color: #222222;
     margin-bottom: 16px;
 }
-.my-card ul.card-download li h2:hover{
+.my-card ul li h2:hover{
     text-decoration: underline;
 }
 .my-card ul li p{
