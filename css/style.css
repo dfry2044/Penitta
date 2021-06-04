@@ -135,8 +135,6 @@ header div.header-right > div.userMenu {
 .c1 {
     width: 100%;
     height: 700px;
-    position: relative;
-    overflow: hidden;
 }
 
 .c1 .swiper-wrapper {
@@ -164,42 +162,36 @@ header div.header-right > div.userMenu {
     position: relative;
 }
 
-.c1 > .text-wrap {
-    z-index: 2;
-    width: calc(100% - 566px);
+.c1 .slider-content-area .text-wrap {
+    z-index: 1;
+    width: 100%;
     position: absolute;
-    left: 50%;
+    left: 25px;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     text-align: left;
-    padding-left: 10px;
 }
 
-.c1 > .text-wrap p {
+.c1 .slider-content-area .text-wrap p {
     font-size: 52px;
     margin: 20px 0;
 }
 
-.c1 > .text-wrap span {
+.c1 .slider-content-area .text-wrap > span {
     font-size: 20px;
     font-weight: 300;
+    color: #555454;
 }
 
-.c1 > .text-wrap a {
+.c1 .slider-content-area .text-wrap a {
     display: inline-block;
-    padding-top: 15px;
 }
 
-.c1 > .text-wrap > a > span:last-child {
-    padding-left: 8px;
-    font-weight: 400;
-}
-
-.c1 > .text-wrap a:hover .pen-icon {
+.c1 .slider-content-area .text-wrap a:hover .pen-icon {
     background: #eca15b;
 }
 
-.c1 > .text-wrap a .pen-icon {
+.c1 .slider-content-area .text-wrap a .pen-icon {
     transition: 0.3s;
     margin-top: 30px;
     width: 70px;
@@ -212,12 +204,18 @@ header div.header-right > div.userMenu {
     position: relative;
 }
 
-.c1 > .text-wrap a .pen-icon::after {
+.c1 .slider-content-area .text-wrap a .pen-icon::after {
     content: "";
     display: inline-block;
     width: 18px;
     height: 21px;
-    background: url(../images/icon/ico-pencil.png) no-repeat center center / auto;
+    background: url(../images/icon/ico-pencil.png);
+}
+
+.c1 .slider-content-area .text-wrap a span {
+    font-size: 19px
+    color: #1a1a1a;
+    font-weight: 500;
 }
 
 .c1 .slider-content-area .img-wrap {
@@ -228,23 +226,40 @@ header div.header-right > div.userMenu {
 .c1 .slider-content-area .img-wrap img {
     width: 492px;
     position: absolute;
-    right: 5%;
-    top: 8%;
+    right: 8%;
+    bottom: -100px;
     height: auto;
 }
 
 .c1 .swiper-pagination-fraction,
 .c1 .swiper-pagination-custom,
 .c1 .swiper-container-horizontal > .swiper-pagination-bullets {
-    bottom: 96px !important;
+    bottom: 100px !important;
+}
+
+.text-wrap > p:first-child {
+    opacity: 0;
+}
+.text-wrap > p:nth-child(2) {
+    opacity: 0;
+}
+.text-wrap > span {
+    opacity: 0;
+}
+.swiper-slide-active .text-wrap > p:first-child {
+    opacity: 1;
+    transition: 0.5s;
+}
+.swiper-slide-active .text-wrap > p:nth-child(2) {
+    opacity: 1;
+    transition: 0.5s 0.4s;
+}
+.swiper-slide-active .text-wrap > span {
+    opacity: 1;
+    transition: 0.5s 0.6s;
 }
 
 @media (max-width: 1920px) {
-    .c1 > .text-wrap {
-        padding-left: 1.1%;
-        width: 1400px;
-    }
-
     .slider-content {
         padding: 20px;
     }

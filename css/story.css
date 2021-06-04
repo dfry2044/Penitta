@@ -285,9 +285,9 @@ div.swiper-slide {
     display: inline-block;
     width: 100%;
     position: absolute;
-    height: 1px;
+    height: 2px;
     margin: auto;
-    bottom: -2px;
+    bottom: -3px;
     left: 0;
     background: rgba(0, 0, 0, 0.8);
     transition: 0.5s ease;
@@ -498,7 +498,7 @@ div.swiper-slide {
 
 .list-top.new::after {
     content: "NEW";
-    font-size: 14px;
+    font-size: 11px;
     color: #fff;
     display: block;
     width: 43px;
@@ -811,6 +811,11 @@ footer > div div:nth-of-type(2) ul {
 footer > div div:nth-of-type(2) ul li {
     font-size: 15px;
     margin-right: 10px;
+}
+
+footer > div div:nth-of-type(2) ul li > a {
+    font-size: 15px;
+    color: #525252;
 }
 
 footer > div div:nth-of-type(2) ul li::after {

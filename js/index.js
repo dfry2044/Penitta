@@ -1,5 +1,8 @@
 //c1 - slider
 var swiper = new Swiper(".mySwiper", {
+    autoplay: true,
+    speed: 4000,
+    effect : 'fade',
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -26,47 +29,47 @@ var swiper = new Swiper(".mySwiper3", {
         delay: 3500,
     },
     on: {
-        touchStart: function(){
+        touchStart: function () {
             swiper.autoplay.stop();
         },
-        touchEnd: function(){
+        touchEnd: function () {
             swiper.autoplay.start();
         }
     },
 });
 swiper.autoplay.stop();
-setInterval(function(){
+setInterval(function () {
     swiper.autoplay.start();
-},3500);
+}, 3500);
 
 var swiper2 = new Swiper(".pop-img", {
     slidesPerView: 'auto',
     loop: true,
-    direction:'vertical',
+    direction: 'vertical',
     centeredSlides: true,
     speed: 1000,
     autoplay: {
         delay: 3500,
     },
     on: {
-        touchStart: function(){
+        touchStart: function () {
             swiper2.autoplay.stop();
         },
-        touchEnd: function(){
+        touchEnd: function () {
             swiper2.autoplay.start();
         }
     },
 });
-swiper.on('transitionStart',function(){
-    swiper2.slideTo(this.activeIndex,1000);
+swiper.on('transitionStart', function () {
+    swiper2.slideTo(this.activeIndex, 1000);
 })
-swiper2.on('transitionStart',function(){
-    swiper.slideTo(this.activeIndex,1000);
+swiper2.on('transitionStart', function () {
+    swiper.slideTo(this.activeIndex, 1000);
 })
 swiper2.autoplay.stop();
-setInterval(function(){
+setInterval(function () {
     swiper2.autoplay.start();
-},3500)
+}, 3500)
 
 
 
