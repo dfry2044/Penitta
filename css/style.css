@@ -869,6 +869,11 @@ footer > div div:nth-of-type(2) ul li {
     margin-right: 10px;
 }
 
+footer > div div:nth-of-type(2) ul li > a {
+    font-size: 15px;
+    color: #525252;
+}
+
 footer > div div:nth-of-type(2) ul li::after {
     content: "";
     display: inline-block;
@@ -883,9 +888,9 @@ footer > div div:nth-of-type(2) ul li:last-of-type::after {
 }
 
 footer > div div:nth-of-type(2) address {
+    font-size: 15px;
     margin-top: 50px;
     color: #525252;
-    font-size: 15px;
 }
 
 footer > div div:nth-of-type(3) {
@@ -931,14 +936,8 @@ footer > div .logo {
     background: url(../images/common/logo-footer.png);
 }
 
-@media (max-width: 1920px) {
-    footer > div {
-        width: 1400px;
-    }
-}
-
-@media (max-width: 1501px) {
-    footer > div {
+@media (max-width: 1500px) {
+    .footer > div {
         width: 100%;
     }
 }
