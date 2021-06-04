@@ -84,7 +84,7 @@ header .header-notice p{
 }
 .my-card .my-card-inner .card-total{
     font-size: 16px;
-    font-family: "Noto Sans Kr";
+    font-family: "Roboto";
     font-weight: 500;
     color: #222222;
 }
@@ -110,7 +110,7 @@ header .header-notice p{
 
 /* card */
 .my-card{
-    background-color: #fafafa;
+    background-color: #ffffff;
     padding-top: 50px;
     padding-bottom: 135px;
     border-bottom: 1px solid #f1f1f1;
@@ -123,7 +123,7 @@ header .header-notice p{
 .my-card ul li{
     margin-bottom: 50px;
     height: 100%;
-    min-height: 352px;
+    min-height: 354px;
 }
 .my-card ul li .card-img-wrap{
     height: 234px;
@@ -141,7 +141,10 @@ header .header-notice p{
     transform: scale(1);
     transition: 0.3s ease;
 }
-.my-card ul li:hover .card-img-wrap img{
+.my-card ul li .card-img-wrap:hover img{
+    transform: scale(1.1);
+}
+.my-card ul li .new-tooltip:hover+.card-img-wrap img{
     transform: scale(1.1);
 }
 .my-card ul li h2{
@@ -151,9 +154,12 @@ header .header-notice p{
     color: #222222;
     margin-bottom: 16px;
 }
+.my-card ul.card-download li h2:hover{
+    text-decoration: underline;
+}
 .my-card ul li p{
     font-size: 13px;
-    font-family: "Noto Sans Kr";
+    font-family: "Roboto";
     font-weight: 300;
     color: #5d5c5c;
     margin-bottom: 31px;
@@ -163,6 +169,7 @@ header .header-notice p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .my-card ul li .card-bottom .card-toggle{
     width: 34px;
@@ -201,12 +208,20 @@ header .header-notice p{
     height: 15px;
     background: url("../images/icon/ico-download.png") no-repeat center / cover;
     display: block;
+    transition: 0.3s ease;
+}
+.my-card .card-bottom .card-down:hover i{
+    background: url("../images/icon/ico-download-black.png") no-repeat center / cover;
 }
 .my-card .card-bottom .card-etc i{
     width: 3px;
     height: 15px;
     background: url("../images/icon/ico-etc.png") no-repeat center / cover;
     display: block;
+    transition: 0.3s ease;
+}
+.my-card .card-bottom .card-etc:hover i{
+    background: url("../images/icon/ico-etc-black.png") no-repeat center / cover;
 }
 .my-card li .card-img-wrap{
     position: relative;
@@ -223,6 +238,7 @@ header .header-notice p{
     bottom: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
 }
 .my-card li.new div.new-tooltip::after{
     content: "new";
@@ -316,4 +332,47 @@ header .header-notice p{
 }
 .my-card .text-right{
     margin-bottom: 14px;
+}
+.my-card .card-etc-tooltip{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 90px;
+    height: 60px;
+    border: 1px solid #bababa;
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+.my-card .card-etc-tooltip.show{
+    opacity: 1;
+    visibility: visible;
+}
+.my-card .card-etc-tooltip button{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #2f2c2c;
+    position: relative;
+    transition: 0.3s ease;
+}
+.my-card .card-etc-tooltip button:hover{
+    background-color: #dddddd;
+}
+.my-card .card-etc-tooltip button:first-child::after{
+    content: "";
+    width: 72px;
+    height: 1px;
+    background-color: #f0f0f0;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
