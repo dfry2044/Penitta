@@ -1,5 +1,5 @@
 //c1 - slider
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper_", {
     autoplay: true,
     speed: 3500,
     effect : 'fade',

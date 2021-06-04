@@ -237,24 +237,24 @@ header div.header-right > div.userMenu {
     bottom: 100px !important;
 }
 
-.text-wrap > p:first-child {
+.c1 .text-wrap > p:first-child {
     opacity: 0;
 }
-.text-wrap > p:nth-child(2) {
+.c1 .text-wrap > p:nth-child(2) {
     opacity: 0;
 }
-.text-wrap > span {
+.c1 .text-wrap > span {
     opacity: 0;
 }
-.swiper-slide-active .text-wrap > p:first-child {
+.c1 .swiper-slide-active .text-wrap > p:first-child {
     opacity: 1;
     transition: 0.5s;
 }
-.swiper-slide-active .text-wrap > p:nth-child(2) {
+.c1 .swiper-slide-active .text-wrap > p:nth-child(2) {
     opacity: 1;
     transition: 0.5s 0.4s;
 }
-.swiper-slide-active .text-wrap > span {
+.c1 .swiper-slide-active .text-wrap > span {
     opacity: 1;
     transition: 0.5s 0.6s;
 }
