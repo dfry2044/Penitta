@@ -20,4 +20,6 @@ $(document).on('click',function(e){
     }else{
         etcTooltip.removeClass("show");
     }
+
+    return false;
 })
