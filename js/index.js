@@ -1,7 +1,7 @@
 //c1 - slider
 var swiper = new Swiper(".mySwiper", {
     autoplay: true,
-    speed: 4000,
+    speed: 3500,
     effect : 'fade',
     pagination: {
         el: ".swiper-pagination",
