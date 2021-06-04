@@ -376,3 +376,8 @@ header .header-notice p{
     left: 50%;
     transform: translateX(-50%);
 }
+.my-card .card-download .InProduction .card-down,
+.my-card .card-download .expiration .card-down{
+    visibility: hidden;
+    opacity: 0;
+}
