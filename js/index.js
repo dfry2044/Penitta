@@ -76,9 +76,6 @@ setInterval(function () {
 
 
 
-
-
-
 //header-scroll 
 
 ScrollTrigger.create({

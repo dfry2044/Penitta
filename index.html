@@ -9,6 +9,7 @@
     <script src="./plugin/js/swiper.min.js"></script>
     <script src="./plugin/js/gsap.min.js"></script>
     <script src="./plugin/js/ScrollTrigger.min.js"></script>
+    <script src="plugin/js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./plugin/css/swiper.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -45,6 +46,39 @@
         </div>
     </header>
     <div class="wrap">
+        <div class="login-popup">
+            <div class="login-popup-inner">
+                <div class="login_close">
+                    <a href="#"><img src="images/icon/ico-login-close.png" alt="아이콘"></a>
+                </div>
+                <div class="login_list">
+                    <div class="login-top">
+                        <h2>로그인</h2>
+                        <input type="text" placeholder="이메일 주소를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='이메일 주소를 입력하세요.'">
+                        <input type="text" placeholder="비밀번호를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='비밀번호를 입력하세요.'">
+                        <div class="login-check">
+                            <p id="login-check">자동 로그인</p>
+                        </div>
+                        <div class="login-button">
+                            <input type="button" value="로그인">
+                        </div>
+                        <div class="people_info">
+                            <a href="#">비밀번호 찾기</a>
+                            <a href="#">회원가입</a>
+                        </div>
+                    </div>
+                    <div class="join-social">
+                        <p>소셜로 로그인하기</p>
+                        <ul>
+                            <li><a href="#"><img src="images/icon/ico-google.png" alt="구글"></a></li>
+                            <li><a href="#"><img src="images/icon/ico-naver.png" alt="네이버"></a></li>
+                            <li><a href="#"><img src="images/icon/ico-kakao.png" alt="카카오"></a></li>
+                            <li><a href="#"><img src="images/icon/ico-facebook.png" alt="페이스북"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <h1 class="hidden">Penitta-content</h1>
         <section class="contents c1">
             <h2 class="hidden">hero-swiper</h2>
@@ -287,8 +321,9 @@
             </div>
         </div>
     </footer>
-
-    <script src="./js/index.js"></script>
+    
+    <script src="js/popup.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
