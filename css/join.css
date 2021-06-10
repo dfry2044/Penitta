@@ -219,6 +219,7 @@ input::-moz-placeholder { color: #a5a5a5; }
 }
 
 .join-nickname {
+    height: 86px;
     padding: 12px 0;
 }
 
@@ -228,7 +229,7 @@ input::-moz-placeholder { color: #a5a5a5; }
     height: 61px;
     font-size: 1rem;
     color: #a5a5a5;
-    padding-left: 21px;
+    padding: 0 50px 0 21px;
     border: #dfdfdf solid 1px;
     border-radius: 8px;
 }
