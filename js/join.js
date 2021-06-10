@@ -39,16 +39,20 @@ $(function () {
     });
 });
 
-var $ipt = $('.join-input'),
-    $clearIpt = $('.icoesc');
+var $iptWrap    = $('.join-input-wrap'),
+    $ipt        = $('.join-input-wrap .join-input'),
+    $clearIpt   = $('.icoesc');
 
-$ipt.keyup(function(){
-  $(this).next().next().toggle(Boolean($(this).val()));
+var idx;
+
+$iptWrap.find(".join-input").keyup(function(){
+    idx = $(this).parent().index();
+    $(this).next().next().toggle(Boolean($(this).val()));
 });
 
 $clearIpt.toggle(Boolean($ipt.val()));
 $clearIpt.click(function(){
-  $(".join-input").val('').focus();
-  $(this).hide();
+    idx = $(this).parent().index();
+    $(".join-input").eq(idx).val('').focus();
+    $(this).hide();
 });
-
