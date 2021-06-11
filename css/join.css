@@ -317,17 +317,16 @@ input::-moz-placeholder { color: #a5a5a5; }
     margin-top: 25px;
 }
 
-.join-social > p {
+.join-social p {
     font-size: 15px;
-    font-weight: 500;
-    padding: 28px 0 26px;
+    padding-top: 12px;
 }
 
 .join-social > ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 190px;
+    padding: 32px 0 190px;
 }
 
 .join-social li {

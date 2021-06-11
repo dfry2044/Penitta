@@ -1,5 +1,12 @@
 var joincheckItem = $(".join-check > p");
 var nicknameItem = $(".nickname_check");
+var $iptWrap    = $('.join-input-wrap'),
+    $ipt        = $('.join-input-wrap .join-input'),
+    $clearIpt   = $('.icoesc');
+
+var idx;
+
+
 
 joincheckItem.click(function () {
     if ($(this).hasClass("active")) {
@@ -39,12 +46,8 @@ $(function () {
     });
 });
 
-var $iptWrap    = $('.join-input-wrap'),
-    $ipt        = $('.join-input-wrap .join-input'),
-    $clearIpt   = $('.icoesc');
 
-var idx;
-
+//삭제키
 $iptWrap.find(".join-input").keyup(function(){
     idx = $(this).parent().index();
     $(this).next().next().toggle(Boolean($(this).val()));
