@@ -50,7 +50,7 @@ $(function () {
 //삭제키
 $iptWrap.find(".join-input").keyup(function(){
     idx = $(this).parent().index();
-    $(this).next().next().toggle(Boolean($(this).val()));
+    $(this).parent().next().next().toggle(Boolean($(this).val()));
 });
 
 $clearIpt.toggle(Boolean($ipt.val()));
@@ -59,3 +59,16 @@ $clearIpt.click(function(){
     $(".join-input").eq(idx).val('').focus();
     $(this).hide();
 });
+
+
+$iptWrap.find(".join-input").keyup(function(){
+    idx = $(this).parent().index();
+    $(this).parent().parent().next().next().toggle(Boolean($(this).val()));
+});
+
+$clearIpt.toggle(Boolean($ipt.val()));
+$clearIpt.click(function(){
+    idx = $(this).parent().index();
+    $(".join-input").eq(idx).val('').focus();
+    $(this).hide();
+});s

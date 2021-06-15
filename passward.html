@@ -54,10 +54,15 @@
     <div class="wrap">
         <div class="passward-wrap">
             <div class="passward-inner">
+               <div class="back-icon">
+                    <a class="passward-back" href="./index.html"><img src="./images/icon/ico-join-back.png" alt="뒤로가기"></a>
+                </div>
                 <h2>비밀번호 찾기</h2>
                 <p>회원가입 시 사용했던 이메일 주소를 입력하세요.<br>입력하신 이메일 계정으로 비밀번호 변경 안내 메일을 보내드립니다.</p>
                 <div class="passward-button">
-                    <input type="text" placeholder="이메일 주소를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='이메일 주소를 입력하세요.'">
+                    <div class="input-style">
+                        <input type="text" placeholder="이메일 주소를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='이메일 주소를 입력하세요.'">
+                    </div>
                     <div class="passward-check passward-check-success">
                         <figure>
                             <img src="images/icon/ico-passward-true.png" alt="성공">
@@ -71,10 +76,16 @@
                         <p>등록된 이메일 계정이 없습니다! 다시 확인해보세요.</p>
                     </div>
                 </div>
-                <input type="button" value="비밀번호 변경 안내 메일 받기">
+                <div class="input-style white">
+                    <input type="button" value="비밀번호 변경 안내 메일 받기">
+                </div>
                 <div class="passward-bot">
-                    <input type="button" value="회원가입">
-                    <input type="button" value="로그인">
+                    <div class="input-style">
+                        <input type="button" value="회원가입">
+                    </div>
+                    <div class="input-style">
+                        <input type="button" value="로그인">
+                    </div>
                 </div>
             </div>
         </div>

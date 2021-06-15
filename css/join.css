@@ -66,12 +66,13 @@ header nav ul li a:hover {
     opacity: 0.6;
 }
 
-header .header-notice{
+header .header-notice {
     margin-left: 98px;
     display: flex;
     align-items: center;
 }
-header .header-notice i{
+
+header .header-notice i {
     text-indent: -99999999px;
     width: 28px;
     height: 19px;
@@ -79,7 +80,7 @@ header .header-notice i{
     margin-right: 10px;
 }
 
-header .header-notice p{
+header .header-notice p {
     font-size: 14px;
     font-family: "Noto Sans Kr";
     font-weight: 300;
@@ -127,20 +128,26 @@ header div.header-right > div.userMenu {
 
 /*헤더 실행*/
 
-@keyframes ani_dropdown{
-    0% { transform:translateY(-100%); }
-
-    100% { transform:translateY(0); }
-
+@keyframes ani_dropdown {
+    0% {
+        transform: translateY(-100%);
     }
-.ani_fixed {
-    position:fixed;
-    top:0;
-    right:0;
-    left:0;
-    height: 72px;
-    animation:ani_dropdown .3s cubic-bezier(.215,.61,.355,1)
+
+    100% {
+        transform: translateY(0);
+    }
+
 }
+
+.ani_fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 72px;
+    animation: ani_dropdown .3s cubic-bezier(.215, .61, .355, 1)
+}
+
 .header-left.active {
     height: 72px;
 }
@@ -157,12 +164,29 @@ header div.header-right > div.userMenu.active {
     }
 }
 
+@media (max-width: 600px) {
+    header {
+        display: none;
+    }
+}
+
 /*join-wrap*/
 
 .join_inner {
     width: 451px;
+    min-width: 350px;
     margin: 0 auto;
     text-align: center;
+    font-size: 62.5%;
+    padding-top: 27px;
+}
+
+.back-icon {
+    text-align: start;
+}
+
+.join-back {
+    display: none;
 }
 
 .join_inner > h2 {
@@ -176,38 +200,52 @@ header div.header-right > div.userMenu.active {
     border-bottom: #e9e8e8 solid 1px;
 }
 
-.icocheck{
+.icocheck {
     display: none;
 }
 
-.icocheck.check{
+.icocheck.check {
     display: inherit;
 }
 
 
-.join-emo > input, .join-nickname > .nickname {
-    outline: none;
+.input-style {
     width: 100%;
     height: 61px;
     font-size: 1rem;
     /*color: #a5a5a5;*/
-    padding-left: 21px;
     border: #dfdfdf solid 1px;
     border-radius: 8px;
     letter-spacing: -1px;
 }
 
-input::-ms-input-placeholder { color: #a5a5a5; }
+.input-style > input {
+    width: 92%;
+    padding: 21px 35px 0 0;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+}
 
-input::-webkit-input-placeholder { color: #a5a5a5; }
+input::-ms-input-placeholder {
+    color: #a5a5a5;
+}
 
-input::-moz-placeholder { color: #a5a5a5; }
+input::-webkit-input-placeholder {
+    color: #a5a5a5;
+}
 
-.join-emo, .join-nickname {
+input::-moz-placeholder {
+    color: #a5a5a5;
+}
+
+.join-emo,
+.join-nickname {
     position: relative;
 }
 
-.join-emo > button, .join-nickname > button {
+.join-emo > button,
+.join-nickname > button {
     position: absolute;
     bottom: 50%;
     right: 13px;
@@ -219,36 +257,58 @@ input::-moz-placeholder { color: #a5a5a5; }
 }
 
 .join-nickname {
-    height: 86px;
     padding: 12px 0;
 }
 
-.join-nickname > input:first-child {
+.flex-box > .input-style:first-child {
+    display: inline-block;
     outline: none;
-    width: 79%;
+    width: 100%;
     height: 61px;
     font-size: 1rem;
     color: #a5a5a5;
-    padding: 0 50px 0 21px;
+    padding: 0;
     border: #dfdfdf solid 1px;
     border-radius: 8px;
 }
 
 .join-nickname > button {
-    right: 24.5%;
+    right: 20.5%;
 }
-.join-nickname > input:last-child {
-    outline: none;
-    width: 20%;
+
+.flex-box > .input-style:last-child {
+    display: inline-block;
+    width: 89px;
     height: 61px;
-    font-size: 1rem;
-    letter-spacing: -2px;
     color: #000;
     border: #a6a6a6 solid 1px;
     border-radius: 8px;
     text-align: center;
     cursor: pointer;
-    background-color: #fff;
+    margin-left: 4px;
+}
+
+.flex-box > .input_nick:hover {
+    border: #fe811c solid 1px;
+    background: #fe811c;
+    transition: 0.3s ease;
+}
+
+.input-style:last-child > input {
+    outline: none;
+    font-size: 1rem;
+    letter-spacing: -2px;
+    background-color: transparent;
+    cursor: pointer;
+    padding-right: 0;
+}
+
+.flex-box > .input_nick:hover > input {
+    color: #fff !important;
+}
+
+.flex-box {
+    display: flex;
 }
 
 .join-ico {
@@ -261,7 +321,7 @@ input::-moz-placeholder { color: #a5a5a5; }
 
 .join-bottom {
     padding: 25px 0 44px;
-    border-bottom: #e9e8e8 solid 1px; 
+    border-bottom: #e9e8e8 solid 1px;
 }
 
 .join-bottom > div {
@@ -274,7 +334,8 @@ input::-moz-placeholder { color: #a5a5a5; }
     padding-bottom: 13px;
 }
 
-.join-check > p, .join-check > a {
+.join-check > p,
+.join-check > a {
     display: flex;
     align-items: center;
 }
@@ -338,11 +399,106 @@ input::-moz-placeholder { color: #a5a5a5; }
     margin-right: 0;
 }
 
-.join-nickname > .nickname_check:hover {
-    color: #fff !important;
-    border: #fe811c solid 1px;
-    background:#fe811c;
-    transition: 0.3s ease;
+@media (max-width: 600px) {
+    .join-nickname > button {
+        right: 24.9%;
+    }
+
+    .join-nickname {
+        height: 82px;
+    }
+
+    .join-back > img {
+        width: 10px;
+        height: 15px;
+    }
+
+    .join_inner {
+        width: inherit;
+        padding: 27px 22px 0 22px;
+    }
+
+    .join-back {
+        display: inline-block;
+    }
+
+    .join_inner > h2 {
+        font-size: 20px;
+        padding: 23px 0 48px;
+    }
+
+    .join-top {
+        padding-bottom: 24px;
+    }
+
+    .join-input-wrap input {
+        font-size: 16px !important;
+        font-weight: 100;
+        padding-top: 22px;
+    }
+
+    .join-nickname {
+        padding: 9px 0;
+    }
+
+    .join-top > .join-emo:last-child {
+        margin-top: 9px;
+    }
+
+    .join-emo > input,
+    .join-nickname > .nickname {
+        padding-left: 11px !important;
+    }
+
+    .join-check > p::before {
+        width: 24px;
+        height: 24px;
+    }
+
+    .join-bottom {
+        padding-bottom: 48px;
+    }
+
+    .join-bottom > div:first-child {
+        padding-bottom: 8px;
+    }
+
+    .join-bottom > div {
+        font-size: 15px;
+    }
+
+    .join-check > a::after {
+        width: 8px;
+        height: 12px;
+    }
+
+    .join-bottom > a {
+        font-size: 18px;
+        height: 54px;
+        margin-top: 23px;
+    }
+
+    .join-social > ul {
+        padding: 24px 0 190px;
+    }
+
+    .join-social > ul a > img {
+        width: 39px;
+        height: 39px;
+    }
+
+    .join-social li {
+        margin-right: 23px;
+    }
+
+    .join-social li:last-child {
+        margin-right: 0;
+    }
+
+    .join-social li > p {
+        font-size: 13.20px;
+    }
+
 }
 
 /*footer*/
@@ -473,5 +629,11 @@ footer > div .logo {
 @media (max-width: 1500px) {
     .footer > div {
         width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        display: none;
     }
 }
