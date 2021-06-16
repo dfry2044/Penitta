@@ -143,6 +143,11 @@
     margin-right: 0;
 }
 
+.join-social li > a > img {
+    width: 50px;
+    height: 50px;
+}
+
 input::-ms-input-placeholder { color: #a5a5a5; }
 
 input::-webkit-input-placeholder { color: #a5a5a5; }
