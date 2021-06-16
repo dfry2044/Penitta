@@ -66,12 +66,13 @@ header nav ul li a:hover {
     opacity: 0.6;
 }
 
-header .header-notice{
+header .header-notice {
     margin-left: 98px;
     display: flex;
     align-items: center;
 }
-header .header-notice i{
+
+header .header-notice i {
     text-indent: -99999999px;
     width: 28px;
     height: 19px;
@@ -79,7 +80,7 @@ header .header-notice i{
     margin-right: 10px;
 }
 
-header .header-notice p{
+header .header-notice p {
     font-size: 14px;
     font-family: "Noto Sans Kr";
     font-weight: 300;
@@ -127,20 +128,26 @@ header div.header-right > div.userMenu {
 
 /*헤더 실행*/
 
-@keyframes ani_dropdown{
-    0% { transform:translateY(-100%); }
-
-    100% { transform:translateY(0); }
-
+@keyframes ani_dropdown {
+    0% {
+        transform: translateY(-100%);
     }
-.ani_fixed {
-    position:fixed;
-    top:0;
-    right:0;
-    left:0;
-    height: 72px;
-    animation:ani_dropdown .3s cubic-bezier(.215,.61,.355,1)
+
+    100% {
+        transform: translateY(0);
+    }
+
 }
+
+.ani_fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 72px;
+    animation: ani_dropdown .3s cubic-bezier(.215, .61, .355, 1)
+}
+
 .header-left.active {
     height: 72px;
 }
@@ -168,7 +175,7 @@ header div.header-right > div.userMenu.active {
 
 .passward-inner {
     width: 451px;
-    min-width: 350px;
+    min-width: 360px;
     margin: 0 auto;
     text-align: center;
     padding-top: 27px;
@@ -195,14 +202,14 @@ header div.header-right > div.userMenu.active {
     letter-spacing: -1px;
 }
 
-.input-style{
+.input-style {
     width: 100%;
     height: 61px;
     /*color: #a5a5a5;*/
     border: #dfdfdf solid 1px;
     border-radius: 8px;
     letter-spacing: -1px;
-    
+
 }
 
 .input-style > input {
@@ -216,24 +223,26 @@ header div.header-right > div.userMenu.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 32px;
+    padding: 0 21px;
 }
 
-input::-ms-input-placeholder { color: #a5a5a5; }
+input::-ms-input-placeholder {
+    color: #a5a5a5;
+}
 
-input::-webkit-input-placeholder { color: #a5a5a5; }
+input::-webkit-input-placeholder {
+    color: #a5a5a5;
+}
 
-input::-moz-placeholder { color: #a5a5a5; }
-
-.passward-button {
-    border-bottom: #e9e8e8 solid 1px;
+input::-moz-placeholder {
+    color: #a5a5a5;
 }
 
 .passward-button > .input-style:first-child {
     margin-bottom: 12px;
 }
 
-.passward-inner > .input-style{
+.passward-inner > .input-style {
     width: 100%;
     height: 61px;
     background: #fe811c;
@@ -244,10 +253,15 @@ input::-moz-placeholder { color: #a5a5a5; }
     border-radius: 8px;
 }
 
+.passward-bot {
+    border-top: #e9e8e8 solid 1px;
+}
+
 .input-style.white > input {
     color: #fff !important;
     font-size: 18px;
     letter-spacing: -1px;
+    cursor: pointer;
 }
 
 .passward-check {
@@ -274,19 +288,20 @@ input::-moz-placeholder { color: #a5a5a5; }
 }
 
 /*성공시 박스테두리*/
-.passward-button > input:first-child.success {
-     border: #7594e8 solid 2px;
+.passward-button .box-style.success {
+    border: #7594e8 solid 2px;
 }
 
 /*실패시 박스테두리*/
-.passward-button > input:first-child.false {
-     border: #fe811c solid 2px;
+.passward-button .box-style.false {
+    border: #fe811c solid 2px;
 }
 
 /**/
 .passward-check {
     display: none;
 }
+
 /*-------------------------------------*/
 .passward-bot {
     display: flex;
@@ -303,24 +318,59 @@ input::-moz-placeholder { color: #a5a5a5; }
     cursor: pointer;
 }
 
-.passward-bot input{
+.passward-bot input {
     color: #000;
-} 
+    cursor: pointer;
+}
 
 @media (max-width: 600px) {
     .passward-inner {
         width: inherit;
-        padding: 27px 22px 0 22px;
+        padding: 27px 20px 0 20px;
+    }
+
+    .passward-inner > h2 {
+        font-size: 21px;
+        padding-top: 22px;
+    }
+
+    .passward-inner > p {
+        line-height: 16px;
+        font-size: 14px;
     }
     
+    .passward-inner > .input-style {
+        margin-bottom: 48px;
+    }
+
+    .input-style {
+        height: 54px !important;
+    }
+
+    .input-style > input {
+        padding: 0 12px;
+        font-size: 16px !important;
+    }
+
     .passward-back > img {
         width: 10px;
         height: 15px;
     }
 
-    .passward-back  {
+    .passward-back {
         display: inline-block;
     }
+
+    .passward-bot {
+        display: flex;
+        justify-content: space-between;
+        padding: 23px 0 227px;
+    }
+
+    .passward-bot > .input-style {
+        width: 49%;
+    }
+
 }
 
 
@@ -460,4 +510,3 @@ footer > div .logo {
         display: none;
     }
 }
-
