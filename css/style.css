@@ -1,3 +1,5 @@
+
+
 /*popup*/
 
 .login-popup {
@@ -154,6 +156,10 @@ input::-webkit-input-placeholder { color: #a5a5a5; }
 
 input::-moz-placeholder { color: #a5a5a5; }
 
+.box.test svg{
+    width: 67px;
+    height: 55px;
+}
 
 @media (max-width: 600px) {
     .login_list {
@@ -333,7 +339,7 @@ header nav .userMenu .ham:hover {
 header div.header-right > div.userMenu {
     height: 100px;
     display: flex;
-    align-content: center;
+    align-items: center;
 }
 
 @media (max-width: 1976px) {
@@ -371,20 +377,15 @@ header div.header-right > div.userMenu {
 }
 
 .c1 .slider-content-area {
-    max-width: 2034px;
+    max-width: 1980px;
     width: calc(100% - 520px);
     height: 100%;
     display: flex;
-    position: relative;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .c1 .slider-content-area .text-wrap {
-    z-index: 1;
-    width: 100%;
-    position: absolute;
-    left: 25px;
-    top: 50%;
-    transform: translateY(-50%);
     text-align: left;
 }
 
@@ -429,22 +430,13 @@ header div.header-right > div.userMenu {
 }
 
 .c1 .slider-content-area .text-wrap a span {
-    font-size: 19px
+    font-size: 19px;
     color: #1a1a1a;
     font-weight: 500;
 }
 
 .c1 .slider-content-area .img-wrap {
-    width: 100%;
-    position: relative;
-}
-
-.c1 .slider-content-area .img-wrap img {
-    width: 492px;
-    position: absolute;
-    right: 8%;
-    bottom: -100px;
-    height: auto;
+    transform: translate(-98px, 90px);
 }
 
 .c1 .swiper-pagination-fraction,
@@ -476,13 +468,14 @@ header div.header-right > div.userMenu {
 }
 
 @media (max-width: 1920px) {
+
     .slider-content {
         padding: 20px;
     }
 
     .c1 .slider-content-area {
         max-width: 1400px;
-        width: 100%;
+        width: 1360px;
         justify-content: space-between;
     }
 }
@@ -497,6 +490,7 @@ header div.header-right > div.userMenu {
 }
 
 .c2-wrap {
+    overflow: hidden;
     width: calc(100% - 520px);
 }
 
@@ -869,22 +863,21 @@ header div.header-right > div.userMenu {
 }
 
 .c5 .area {
-    min-width: 1500px;
     display: flex;
-    justify-content: space-between;
+    width: 1500px;
 }
 
 .c5 .area .box {
     width: 365px;
-    height: 265px;
+    height: 269px;
     background: #fafafa;
-    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 15px;
+    margin-right: 13px;
 }
 
 .c5 .area .box img {
@@ -903,13 +896,20 @@ header div.header-right > div.userMenu {
     line-height: 1.4;
 }
 
-@media (max-width: 1920px) {
-    .c5 .area {
-        min-width: 1400px;
-    }
+/* 테스트 */
 
-    .c5 .area .box {
-        width: 339px;
+.test1 > p::before {
+    content: "";
+    display: block;
+    width: 69px;
+    height: 59px;
+    margin: 0 auto;
+    background: url(../images/icon/ico-c5-3.png) no-repeat center / auto;
+}
+
+@media (max-width: 1520px) {
+    .scroll-over {
+        overflow-x: scroll;
     }
 }
 
