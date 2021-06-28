@@ -288,12 +288,12 @@ input::-moz-placeholder {
 }
 
 /*성공시 박스테두리*/
-.passward-button .box-style.success {
+.input-style.box-style.success {
     border: #7594e8 solid 2px;
 }
 
 /*실패시 박스테두리*/
-.passward-button .box-style.false {
+.input-style.box-style.false {
     border: #fe811c solid 2px;
 }
 

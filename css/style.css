@@ -896,16 +896,6 @@ header div.header-right > div.userMenu {
     line-height: 1.4;
 }
 
-/* 테스트 */
-
-.test1 > p::before {
-    content: "";
-    display: block;
-    width: 69px;
-    height: 59px;
-    margin: 0 auto;
-    background: url(../images/icon/ico-c5-3.png) no-repeat center / auto;
-}
 
 @media (max-width: 1520px) {
     .scroll-over {

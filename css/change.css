@@ -113,6 +113,25 @@ input::-ms-clear {display:none;} /*pc에서 보여지는 삭제는 안보이게 
     background:url(../images/icon/ico-esc.png) no-repeat 0 0 / 100%; text-indent:-9999px;
 }
 
+.confirm-pw,
+.new-pw-confirm{
+    padding-top: 11px;
+}
+
+.input-nickname-success{
+    text-align: start;
+    font-size: 14px;
+    color: #7594e8;
+}
+
+.new-pw-success {
+    padding-bottom: 12px;
+}
+
+.new-pw-confirm-success {
+    padding-top: 12px;
+}
+
 /*-------------------------------------*/
 /*닉네임 중복 시*/
 .input-nickname {
@@ -130,8 +149,44 @@ input::-ms-clear {display:none;} /*pc에서 보여지는 삭제는 안보이게 
     letter-spacing: -1px;
 }
 
-/* 중복시 박스테두리
-.change-check > .nick-box {
+.change-nickname ,
+.overlap-pw ,
+.confirm-pw,
+.new-pw,
+.new-pw-confirm,
+.new-pw-success,
+.new-pw-confirm-success {
+    display: none;
+}
+
+/*내 정보 변경 닉네임 혹은 중복시 박스테두리*/
+.change-check > .nick-box.overlap {
     border: #fe811c solid 2px;
-} */
+} 
+
+/* 내 정보 변경 비밀번호확인 박스테두리 */
+.box-list > .confirm-pw-box-style.confirm {
+    border: #fe811c solid 2px;
+}
+
+/* 비밀번호 입력 올바른 정보를 기입하지 않은 경우 박스 테두리 */
+.new-pw-box-style.false{
+    border: #fe811c solid 2px;
+}
+
+/* 비밀번호 확인 올바른 정보를 기입하지 않은 경우 박스 테두리 */
+.new-pw-confirm-box-style.false{
+    border: #fe811c solid 2px;
+}
+
+/* 비밀번호 입력 올바른 정보를 기입한 경우 박스 테두리 */
+.new-pw-box-style.success{
+    border: #7594e8 solid 2px;
+}
+
+/* 비밀번호 확인 올바른 정보를 기입한 경우 박스 테두리 */
+.new-pw-confirm-box-style.success{
+    border: #7594e8 solid 2px;
+}
+
 /*-------------------------------------*/
