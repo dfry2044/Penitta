@@ -179,7 +179,6 @@ makeSlidePrevBtn.click(function(){
     
     if(slideIdx == 0){
 
-        // makeSlideActiveItemIdx = makeSlideItem.length - 1;
         slideIdx = makeSlideItem.length - 1;
         makeSlideCurrentNum.text(makeSlideItem.length);
     
@@ -205,13 +204,12 @@ makeSlideNextBtn.click(function(){
     
     makeSlideItem.removeClass("active");
     
-    slideIdx = 3;
+    slideIdx++;
 
     if(slideIdx == makeSlideItem.length){
 
-        // makeSlideActiveItemIdx = makeSlideItem.length - 1;
         slideIdx = 0;
-
+        
         makeSlideCurrentNum.text(1);
     
         makeSlideActiveImg = makeSlideItem.eq(slideIdx).find("img").attr("src");    
@@ -219,55 +217,15 @@ makeSlideNextBtn.click(function(){
         makeSlideItem.eq(slideIdx).addClass("active");
         
     }else{
-        slideIdx++;
         
-        makeSlideCurrentNum.text(slideIdx);        
+        makeSlideCurrentNum.text(slideIdx + 1);        
         
         makeSlideActiveImg = makeSlideItem.eq(slideIdx).find("img").attr("src");    
         makeCanvasImg.attr("src",makeSlideActiveImg);
         
         makeSlideItem.eq(slideIdx).addClass("active");
     }
-
-    console.log(slideIdx);
 })
-// makeSlideNextBtn.click(function(){
-//     makeSlideActiveItemIdx = $(".make-list-item.active").index();
-
-//     makeSlideItem.removeClass("active");
-//     if(slideIdx == makeSlideItem.length){
-//         slideIdx = 1;
-//         makeSlideCurrentNum.text(slideIdx);
-
-//         makeSlideActiveImg = makeSlideItem.eq(0).find("img").attr("src");    
-//         makeCanvasImg.attr("src",makeSlideActiveImg);
-//         makeSlideItem.eq(0).addClass("active");
-        
-//     }else if(slideIdx == 0){
-//         console.log("0이다요");
-//         makeSlideCurrentNum.text(2);
-
-        
-//         makeSlideActiveImg = makeSlideItem.eq(slideIdx).find("img").attr("src");    
-//         makeCanvasImg.attr("src",makeSlideActiveImg);
-        
-//         makeSlideItem.eq(slideIdx).addClass("active");
-        
-//         slideIdx++;
-//     }else{
-//         makeSlideCurrentNum.text(slideIdx);
-
-        
-//         makeSlideActiveImg = makeSlideItem.eq(slideIdx).find("img").attr("src");    
-//         makeCanvasImg.attr("src",makeSlideActiveImg);
-        
-//         makeSlideItem.eq(slideIdx).addClass("active");
-
-//         slideIdx++;
-//     }
-    
-//     console.log(slideIdx);
-// })
 
 // range
 $('input[type=range]').on('input', function(){
