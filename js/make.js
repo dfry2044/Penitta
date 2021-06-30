@@ -168,6 +168,7 @@ var makeSlideCurrentNum = $(".make-slide .current-number");
 var makeSlideTotalNum = $(".make-slide .total-number");
 var makeSlideActiveItem;
 var makeSlideActiveImg;
+var slideIdx = 0;
 
 makeSlideTotalNum.text(makeSlideItem.length);
 
@@ -176,57 +177,97 @@ makeSlidePrevBtn.click(function(){
     
     makeSlideItem.removeClass("active");
     
-    if(makeSlideActiveItemIdx == 0){
+    if(slideIdx == 0){
 
-        makeSlideActiveItemIdx = makeSlideItem.length - 1;
+        // makeSlideActiveItemIdx = makeSlideItem.length - 1;
+        slideIdx = makeSlideItem.length - 1;
         makeSlideCurrentNum.text(makeSlideItem.length);
     
         makeSlideActiveImg = makeSlideItem.eq(makeSlideItem.length - 1).find("img").attr("src");    
         makeCanvasImg.attr("src",makeSlideActiveImg);
         makeSlideItem.eq(makeSlideItem.length - 1).addClass("active");
         
-        console.log("prev : 0");
     }else{
-        console.log("prev : not 0");
-
-        makeSlideCurrentNum.text(makeSlideActiveItemIdx);        
-        makeSlideActiveImg = makeSlideItem.eq(makeSlideActiveItemIdx - 1).find("img").attr("src");    
+        makeSlideCurrentNum.text(slideIdx);        
+        
+        slideIdx--;
+        
+        makeSlideActiveImg = makeSlideItem.eq(slideIdx).find("img").attr("src");    
         makeCanvasImg.attr("src",makeSlideActiveImg);
         
-        makeSlideItem.eq(makeSlideActiveItemIdx - 1).addClass("active");
+        makeSlideItem.eq(slideIdx).addClass("active");
     }
 
-    console.log(makeSlideActiveItemIdx);
+    console.log(slideIdx);
 })
-
 makeSlideNextBtn.click(function(){
     makeSlideActiveItemIdx = $(".make-list-item.active").index();
-
+    
     makeSlideItem.removeClass("active");
+    
+    slideIdx = 3;
 
-    if(makeSlideActiveItemIdx + 1 == makeSlideItem.length){
-        makeSlideActiveItemIdx = 0;
+    if(slideIdx == makeSlideItem.length){
+
+        // makeSlideActiveItemIdx = makeSlideItem.length - 1;
+        slideIdx = 0;
+
         makeSlideCurrentNum.text(1);
-
-        makeSlideActiveImg = makeSlideItem.eq(0).find("img").attr("src");    
+    
+        makeSlideActiveImg = makeSlideItem.eq(slideIdx).find("img").attr("src");    
         makeCanvasImg.attr("src",makeSlideActiveImg);
-        makeSlideItem.eq(0).addClass("active");
-
-        console.log("next : total");
-
+        makeSlideItem.eq(slideIdx).addClass("active");
+        
     }else{
-        console.log("next : not total");
-
-        makeSlideCurrentNum.text(makeSlideActiveItemIdx + 1);
-        makeSlideActiveImg = makeSlideItem.eq(makeSlideActiveItemIdx + 1).find("img").attr("src");    
+        slideIdx++;
+        
+        makeSlideCurrentNum.text(slideIdx);        
+        
+        makeSlideActiveImg = makeSlideItem.eq(slideIdx).find("img").attr("src");    
         makeCanvasImg.attr("src",makeSlideActiveImg);
         
-        makeSlideItem.eq(makeSlideActiveItemIdx + 1).addClass("active");
+        makeSlideItem.eq(slideIdx).addClass("active");
     }
-    
-    console.log(makeSlideActiveItemIdx);
 
+    console.log(slideIdx);
 })
+// makeSlideNextBtn.click(function(){
+//     makeSlideActiveItemIdx = $(".make-list-item.active").index();
+
+//     makeSlideItem.removeClass("active");
+//     if(slideIdx == makeSlideItem.length){
+//         slideIdx = 1;
+//         makeSlideCurrentNum.text(slideIdx);
+
+//         makeSlideActiveImg = makeSlideItem.eq(0).find("img").attr("src");    
+//         makeCanvasImg.attr("src",makeSlideActiveImg);
+//         makeSlideItem.eq(0).addClass("active");
+        
+//     }else if(slideIdx == 0){
+//         console.log("0이다요");
+//         makeSlideCurrentNum.text(2);
+
+        
+//         makeSlideActiveImg = makeSlideItem.eq(slideIdx).find("img").attr("src");    
+//         makeCanvasImg.attr("src",makeSlideActiveImg);
+        
+//         makeSlideItem.eq(slideIdx).addClass("active");
+        
+//         slideIdx++;
+//     }else{
+//         makeSlideCurrentNum.text(slideIdx);
+
+        
+//         makeSlideActiveImg = makeSlideItem.eq(slideIdx).find("img").attr("src");    
+//         makeCanvasImg.attr("src",makeSlideActiveImg);
+        
+//         makeSlideItem.eq(slideIdx).addClass("active");
+
+//         slideIdx++;
+//     }
+    
+//     console.log(slideIdx);
+// })
 
 // range
 $('input[type=range]').on('input', function(){
@@ -307,3 +348,43 @@ colorpickerPrevBtn.click(function(){
 
     colorpickerChangeBtn.removeClass("hide");
 })
+
+// make canvas scale
+var canvasImg = $(".make-img-container img");
+var canvasImgWidth;
+var canvasImgHeight;
+var winX;
+var winY;
+var currentX;
+
+$(window).resize(function(){
+    canvasImgWidth = canvasImg.css("width");
+    canvasImgWidth = Number(canvasImgWidth.split("px")[0]);
+
+    canvasImgHeight = canvasImg.css("height");
+    canvasImgWidth = Number(canvasImgHeight.split("px")[0]);
+    
+    winX = $(window).innerWidth();
+    winY = $(window).innerHeight();
+
+    currentX = winX - canvasImgWidth - 493 - 183;
+    
+    // console.log(currentX);
+    
+    if(currentX < 150){
+        
+        canvasImgWidth = canvasImg.css("width");
+        canvasImgWidth = Number(canvasImgWidth.split("px")[0]);
+        
+        canvasImgHeight = canvasImg.css("height");
+        canvasImgHeight = Number(canvasImgHeight.split("px")[0]);
+        
+        console.log(canvasImgWidth);
+        console.log(canvasImgHeight);
+
+        canvasImg.css({
+            width : `${canvasImgWidth -= 8}px`,
+            height : `${canvasImgWidth}px`
+        })
+    }
+});
