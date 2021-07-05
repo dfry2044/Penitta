@@ -168,62 +168,58 @@ var makeSlideCurrentNum = $(".make-slide .current-number");
 var makeSlideTotalNum = $(".make-slide .total-number");
 var makeSlideActiveItem;
 var makeSlideActiveImg;
+var slideClickIdx;
 var slideIdx = 0;
 
-makeSlideTotalNum.text(makeSlideItem.length);
+// makeSlideTotalNum.text(makeSlideItem.length);
 
-makeSlidePrevBtn.click(function(){
-    makeSlideActiveItemIdx = $(".make-list-item.active").index();
+makeSlideItem.click(function(){
+    slideClickIdx = $(this).index();
     
     makeSlideItem.removeClass("active");
+
+    makeSlideActiveImg = makeSlideItem.eq(slideClickIdx).find("img").attr("src");
+    makeCanvasImg.attr("src",makeSlideActiveImg);
+    makeSlideItem.eq(slideClickIdx).addClass("active");
+})
+
+makeSlidePrevBtn.click(function(){
     
     if(slideIdx == 0){
 
-        slideIdx = makeSlideItem.length - 1;
-        makeSlideCurrentNum.text(makeSlideItem.length);
-    
-        makeSlideActiveImg = makeSlideItem.eq(makeSlideItem.length - 1).find("img").attr("src");    
-        makeCanvasImg.attr("src",makeSlideActiveImg);
-        makeSlideItem.eq(makeSlideItem.length - 1).addClass("active");
+        slideIdx = 4;
+        makeSlideCurrentNum.text(makeSlideTotalNum.text());
         
     }else{
         makeSlideCurrentNum.text(slideIdx);        
         
         slideIdx--;
-        
-        makeSlideActiveImg = makeSlideItem.eq(slideIdx).find("img").attr("src");    
-        makeCanvasImg.attr("src",makeSlideActiveImg);
-        
-        makeSlideItem.eq(slideIdx).addClass("active");
     }
 
-    console.log(slideIdx);
 })
 makeSlideNextBtn.click(function(){
-    makeSlideActiveItemIdx = $(".make-list-item.active").index();
-    
-    makeSlideItem.removeClass("active");
     
     slideIdx++;
 
-    if(slideIdx == makeSlideItem.length){
+    console.log(slideIdx);
+    if(slideIdx == makeSlideTotalNum.text()){
 
         slideIdx = 0;
         
         makeSlideCurrentNum.text(1);
     
-        makeSlideActiveImg = makeSlideItem.eq(slideIdx).find("img").attr("src");    
-        makeCanvasImg.attr("src",makeSlideActiveImg);
-        makeSlideItem.eq(slideIdx).addClass("active");
+        // makeSlideActiveImg = makeSlideItem.eq(slideIdx).find("img").attr("src");    
+        // makeCanvasImg.attr("src",makeSlideActiveImg);
+        // makeSlideItem.eq(slideIdx).addClass("active");
         
     }else{
         
         makeSlideCurrentNum.text(slideIdx + 1);        
         
-        makeSlideActiveImg = makeSlideItem.eq(slideIdx).find("img").attr("src");    
-        makeCanvasImg.attr("src",makeSlideActiveImg);
+        // makeSlideActiveImg = makeSlideItem.eq(slideIdx).find("img").attr("src");    
+        // makeCanvasImg.attr("src",makeSlideActiveImg);
         
-        makeSlideItem.eq(slideIdx).addClass("active");
+        // makeSlideItem.eq(slideIdx).addClass("active");
     }
 })
 
@@ -246,7 +242,6 @@ toggleBtn.click(function(){
 // tab menu
 var tabMenuBtn = $(".make-editer-tab li");
 var tabMenuContent = $(".make-editer-tab-content>li");
-console.log(tabMenuContent);
 tabMenuBtn.click(function(){
     var idx = $(this).index();
     
@@ -306,43 +301,3 @@ colorpickerPrevBtn.click(function(){
 
     colorpickerChangeBtn.removeClass("hide");
 })
-
-// make canvas scale
-var canvasImg = $(".make-img-container img");
-var canvasImgWidth;
-var canvasImgHeight;
-var winX;
-var winY;
-var currentX;
-
-$(window).resize(function(){
-    canvasImgWidth = canvasImg.css("width");
-    canvasImgWidth = Number(canvasImgWidth.split("px")[0]);
-
-    canvasImgHeight = canvasImg.css("height");
-    canvasImgWidth = Number(canvasImgHeight.split("px")[0]);
-    
-    winX = $(window).innerWidth();
-    winY = $(window).innerHeight();
-
-    currentX = winX - canvasImgWidth - 493 - 183;
-    
-    // console.log(currentX);
-    
-    if(currentX < 150){
-        
-        canvasImgWidth = canvasImg.css("width");
-        canvasImgWidth = Number(canvasImgWidth.split("px")[0]);
-        
-        canvasImgHeight = canvasImg.css("height");
-        canvasImgHeight = Number(canvasImgHeight.split("px")[0]);
-        
-        console.log(canvasImgWidth);
-        console.log(canvasImgHeight);
-
-        canvasImg.css({
-            width : `${canvasImgWidth -= 8}px`,
-            height : `${canvasImgWidth}px`
-        })
-    }
-});

@@ -250,14 +250,14 @@ input::-moz-placeholder { color: #a5a5a5; }
 header {
     z-index: 99;
     width: 100%;
-    height: 100px;
+    height: 92px;
     position: fixed;
     transition: 0.3s;
 }
 
 div.h-inner {
+    width: 100%;
     max-width: 1975px;
-    width: calc(100% - 520px);
     margin: 0 auto;
 }
 
@@ -272,7 +272,7 @@ header nav {
 }
 
 .header-left {
-    height: 100px;
+    height: 92px;
     display: flex;
     align-content: center;
 }
@@ -342,6 +342,12 @@ header div.header-right > div.userMenu {
     align-items: center;
 }
 
+header .logo{
+    margin-right: 110px;
+}
+header nav ul li:first-child{
+    margin-left: 0;
+}
 @media (max-width: 1976px) {
     div.h-inner {
         padding: 0 20px;
@@ -405,7 +411,7 @@ header div.header-right > div.userMenu {
 }
 
 .c1 .slider-content-area .text-wrap a:hover .pen-icon {
-    background: #eca15b;
+    opacity: 0.7;
 }
 
 .c1 .slider-content-area .text-wrap a .pen-icon {
@@ -417,7 +423,7 @@ header div.header-right > div.userMenu {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background: #eeb76e;
+    background: #fe811c;
     position: relative;
 }
 
@@ -525,13 +531,13 @@ header div.header-right > div.userMenu {
     align-items: center;
     width: 153px;
     height: 48px;
-    background: #eeb76e;
+    background: #fe811c;
     border-radius: 40px;
     transition: 0.3s;
 }
 
 .c2 div.top-text div a:hover {
-    background: #eca15b;
+    opacity: 0.7;
 }
 
 .c2 div.top-text div a span {
@@ -814,7 +820,7 @@ header div.header-right > div.userMenu {
 }
 
 .c4 a:hover {
-    background: #eca15b;
+    background: #fe811c;
 }
 
 .c4 a span {
@@ -864,7 +870,8 @@ header div.header-right > div.userMenu {
 
 .c5 .area {
     display: flex;
-    width: 1500px;
+    width: 100%;
+    max-width: 1500px;
 }
 
 .c5 .area .box {
@@ -879,9 +886,27 @@ header div.header-right > div.userMenu {
     border-radius: 15px;
     margin-right: 13px;
 }
-
+.c5 .area .box:last-child{
+    margin-right: 0;
+}
 .c5 .area .box img {
     margin: 20px 0;
+}
+.c5 .area .box:nth-child(1) img {
+    width: 79px;
+    height: 57px;
+}
+.c5 .area .box:nth-child(2) img {
+    width: 69px;
+    height: 59px;
+}
+.c5 .area .box:nth-child(3) img {
+    width: 67px;
+    height: 55px;
+}
+.c5 .area .box:nth-child(4) img {
+    width: 59px;
+    height: 55px;
 }
 
 .c5 .area .box p {
@@ -900,6 +925,9 @@ header div.header-right > div.userMenu {
 @media (max-width: 1520px) {
     .scroll-over {
         overflow-x: scroll;
+    }
+    .c5>.scroll-over{
+        overflow: hidden;
     }
 }
 
@@ -954,7 +982,7 @@ header div.header-right > div.userMenu {
 }
 
 .c6 div:nth-of-type(1) a:hover {
-    background: #eca15b;
+    background: #fe811c;
 }
 
 .c6 div:nth-of-type(1) a:hover span {
@@ -1143,7 +1171,340 @@ footer > div .logo {
 }
 
 @media (max-width: 1500px) {
+    header{
+        height: 60px;
+    }
+    .header-left{
+        height: 60px;
+    }
+    header div.header-right > div.userMenu{
+        height: 60px;
+    }
+    div.h-inner{
+        width: 100%;
+        max-width: 1160px;
+        padding: 0;
+    }
+    header .logo{
+        margin-right: 50px;
+    }
     .footer > div {
         width: 100%;
     }
+    header nav ul li a{
+        font-size: 12px;
+    }
+    header .logo img{
+        width: 72px;
+    }
+    header nav .userMenu .user img{
+        width: 15px;
+    }
+    header nav .userMenu .user::after{
+        font-size: 10px;
+    }
+    header nav .userMenu .ham img{
+        width: 15px;
+    }
+    .c1{
+        height: 407px;
+    }
+    .c1 .swiper-wrapper{
+        height: 366px;
+    }
+    .c1 .slider-content-area .text-wrap p{
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .c1 .slider-content-area .text-wrap > span{
+        font-size: 12px;
+    }
+    .c1 .slider-content-area{
+        width: 100%;
+        max-width: 1160px;
+    }
+    .c1 .slider-content-area .text-wrap a .pen-icon{
+        width: 42px;
+        height: 42px;
+    }
+    .c1 .slider-content-area .text-wrap a .pen-icon::after{
+        width: 12px;
+        height: 14px;
+        background-size: cover;
+        background-position: center;
+    }
+    .c1 .slider-content-area .text-wrap a span{
+        margin-left: 5px;
+        font-size: 12px;
+    }
+    .c1 .slider-content-area .img-wrap{
+        transform: translate(-98px, 60px);
+    }
+    .c1 .slider-content-area .img-wrap img{
+        width: 266px;
+    }
+    .c2{
+        padding-bottom: 55px;
+    }
+    .c2 div{
+        max-width: 1160px;
+    }
+    .c2 div.top-text div p{
+        font-size: 20px;
+    }
+    .c2 div.top-text div a{
+        font-size: 11px;
+        width: 90px;
+        height: 30px;
+    }
+    .c2 div.top-text div a span{
+        padding-right: 8px;
+    }
+    .c2 div.top-text div a span::after{
+        font-size: 12px;
+    }
+    .c2 div.top-text div{
+        margin-bottom: 15px;
+    }
+    .c2 div.swiper-wrapper .swiper-slide{
+        width: calc(1160px / 4 - 38px) !important;
+        margin-right: 44px !important;
+    }
+    .c2 div .swiper-slide .slider-content2 .img-wrap span{
+        font-size: 12px;
+        left: -80px;
+    }
+    .c2 div .swiper-slide .slider-content2 .img-wrap{
+        width: 100%;
+    }
+    .c2 div .swiper-slide .slider-content2 .img-wrap::after{
+        width: 24px;
+        height: 17px;
+        background-size: cover;
+    }
+    .c2 div .swiper-slide .slider-content2 .text-wrap p{
+        margin: 16px 0 10px;
+        font-size: 13px;
+    }
+    .c2 div .swiper-slide .slider-content2 .text-wrap span{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .c2 div .swiper-slide .slider-content2{
+        padding-bottom: 48px;
+    }
+    .swiper-pagination-bullet{
+        width: 7px !important;
+        height: 7px !important;
+    }
+    .c3 div{
+        padding: 55px 0 135px 0;
+    }
+    .c3 div p{
+        font-size: 24px;
+    }
+    .c3 div p span{
+        font-size: 24px;
+        padding: 8px;
+    }
+    .c3 div span{
+        margin: 5px 0;
+        font-size: 12px;
+    }
+    .c3-wrap img{
+        width: 80px;
+    }
+    .c4 a span{
+        font-size: 11px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+    .c4 a span::after{
+        bottom: -17.5px;
+    }
+    .c5{
+        padding: 36px 0;
+    }
+    .c5 .area{
+        max-width: 875px;
+    }
+    .c5 .area .box{
+        width: calc(875px / 4);
+        height: 158px;
+        margin-right: 8px;
+    }
+    .c5 .area .box:nth-child(1) img{
+        width: 46px;
+        height: auto;
+    }
+    .c5 .area .box:nth-child(2) img{
+        width: 41px;
+        height: auto;
+    }
+    .c5 .area .box:nth-child(3) img{
+        width: 40px;
+        height: auto;
+    }
+    .c5 .area .box:nth-child(4) img{
+        width: 36px;
+        height: auto;
+    }
+    .c5 .area .box p{
+        font-size: 12px;
+    }
+    .c5 .area .box span{
+        font-size: 9px;
+        margin: 10px 0;
+    }
+    .c6{
+        height: 254px;
+    }
+    .c6 div:nth-of-type(1) p{
+        font-size: 18px;
+    }
+    .c6 div:nth-of-type(1) p span{
+        font-size: 18px;
+    }
+    .c6 div:nth-of-type(1) span{
+        font-size: 11px;
+        margin: 12px 0;
+    }
+    .c6 div:nth-of-type(1) a{
+        margin-top: 18px;
+        padding: 0;
+        width: 145px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .c6 div:nth-of-type(1) a span{
+        font-size: 11px;
+    }
+    footer > div{
+        max-width: 875px;
+    }
+    footer > div .logo{
+        width: 73px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 20px;
+    }
+    footer > div div:nth-of-type(2) div a{
+        margin-top: 0;
+        font-size: 11px;
+    }
+    footer > div div:nth-of-type(2) div{
+        margin-bottom: 15px;
+    }
+    footer > div div:nth-of-type(2) ul li{
+        font-size: 10px;
+    }
+    footer > div div:nth-of-type(2) ul li > a{
+        font-size: 10px;
+    }
+    footer > div div:nth-of-type(2) address{
+        font-size: 10px;
+        margin-top: 30px;
+    }
+    footer > div div:nth-of-type(3) a{
+    }
+    footer > div div:nth-of-type(3) a.blog{
+        width: 24px;
+        height: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    footer > div div:nth-of-type(3) a.facebook{
+        width: 24px;
+        height: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    footer > div div:nth-of-type(3) a.insta{
+        width: 24px;
+        height: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    footer > div div:nth-of-type(3) a.youtube{
+        width: 24px;
+        height: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .login-popup-inner{
+        width: 340px;
+        height: 412px;
+    }
+    .login_close > a{
+        padding: 14px 14px 0 0;
+    }
+    .login_close > a img{
+        width: 10px;
+        height: 10px;
+    }
+    .login_list{
+        padding: 0 38px;
+    }
+    .login-top > h2{
+        font-size: 21px; 
+        padding: 20px 0 25px 0
+    }
+    .input-style{
+        padding-left: 15px;
+        height: 36px;
+
+        margin-bottom: 7px;
+    }
+    .input-style > input{
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    .login-check > p::before{
+        width: 18px;
+        height: 18px;
+    }
+    .login-check > p{
+        font-size: 11px;
+    }
+    .login-check > p.active::before {
+        background: #fe811c url(../images/icon/ico-join-check.png) no-repeat center center / 7px 6px;
+    }
+    .login-button > .input-style{
+        height: 35px;
+        font-size: 11px;
+        margin: 17px 0 15px 0;
+    }
+    .people_info > a{
+        font-size: 9px;
+    }
+    .login-top{
+        padding-bottom: 20px;
+    }
+    .join-social > ul{
+        padding-top: 15px;
+    }
+    .join-social li{
+        margin-right: 14px;
+    }
+    .join-social li > a > img{
+        width: 30px;
+        height: 30px;
+    }
+    .join-social p{
+        font-size: 11px;
+        padding-top: 10px;
+    }
+}
+@media all and (max-width:1024px){
+    /* div.h-inner{
+        width: 100%;
+        max-width: 768px;
+    } */
 }

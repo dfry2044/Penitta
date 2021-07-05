@@ -30,8 +30,8 @@
                     <a href="./index.html" class="logo"><img src="images/common/logo.png" alt="로고이미지"></a>
                     <ul>
                         <li><a href="./story.html">스토리</a></li>
-                        <li><a href="#">만들기</a></li>
-                        <li><a href="#">템플릿</a></li>
+                        <li><a href="./make_player.html">만들기</a></li>
+                        <li><a href="./template.html">템플릿</a></li>
                         <li><a href="#">메뉴얼</a></li>
                         <li><a href="#">멤버십</a></li>
                     </ul>
@@ -91,67 +91,71 @@
             </div>
             <div class="make-canvas">
                 <div class="make-canvas-inner">
-                    <div class="make-header">
-                        <div class="make-category-select">
-                            <button class="select-top">
-                                <span>카테고리 선택</span>
-                                <i class="select-ico"></i>
-                            </button>
-                            <div class="select-content">
-                                <ul>
-                                    <li>
-                                        <button>전체</button>
-                                    </li>
-                                    <li><button>사랑/이별</button></li>
-                                    <li><button>일상/다이어리</button></li>
-                                    <li><button>위로/공감</button></li>
-                                    <li><button>연예</button></li>
-                                    <li><button>팬픽션</button></li>
-                                    <li><button>영화/드라마</button></li>
-                                    <li><button>스포츠</button></li>
-                                    <li><button>여행</button></li>
-                                    <li><button>요리/음식</button></li>
-                                    <li><button>문학/예술</button></li>
-                                    <li><button>사회/정치</button></li>
-                                    <li><button>반려동물</button></li>
-                                    <li><button>기타</button></li>
-                                </ul>
+                    <div class="make-canvas-wrap">
+                        <div class="make-img-container">
+                            <div class="main-img">
+                                <div class="make-header">
+                                    <div class="make-category-select">
+                                        <button class="select-top">
+                                            <span>카테고리 선택</span>
+                                            <i class="select-ico"></i>
+                                        </button>
+                                        <div class="select-content">
+                                            <ul>
+                                                <li>
+                                                    <button>전체</button>
+                                                </li>
+                                                <li><button>사랑/이별</button></li>
+                                                <li><button>일상/다이어리</button></li>
+                                                <li><button>위로/공감</button></li>
+                                                <li><button>연예</button></li>
+                                                <li><button>팬픽션</button></li>
+                                                <li><button>영화/드라마</button></li>
+                                                <li><button>스포츠</button></li>
+                                                <li><button>여행</button></li>
+                                                <li><button>요리/음식</button></li>
+                                                <li><button>문학/예술</button></li>
+                                                <li><button>사회/정치</button></li>
+                                                <li><button>반려동물</button></li>
+                                                <li><button>기타</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="make-category-input">
+                                        <input type="text" placeholder="제목을 입력하세요." id="title-input">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="nondisclosure">
+                                            <label for="nondisclosure">
+                                                <i></i>
+                                            </label>
+                                            <span>비공개</span>
+                                        </div>
+                                    </div>
+                                    <div class="make-tag-input">
+                                        <input type="text" placeholder="# 태그 입력하세요.(쉼표추가 최대 10개)" id="tag-input">
+                                    </div>
+                                </div>
+                                <img src="./images/maker/background00.jpg" alt="main-img">
                             </div>
                         </div>
-                        <div class="make-category-input">
-                            <input type="text" placeholder="제목을 입력하세요." id="title-input">
-                            <div class="checkbox">
-                                <input type="checkbox" id="nondisclosure">
-                                <label for="nondisclosure">
+                        <div class="make-footer">
+                            <div class="make-slide">
+                                <button class="prev-btn">
                                     <i></i>
-                                </label>
-                                <span>비공개</span>
+                                </button>
+                                <div class="make-slide-number">
+                                    <span class="current-number">1</span>
+                                    /
+                                    <span class="total-number">5</span>
+                                </div>
+                                <button class="next-btn">
+                                    <i></i>
+                                </button>
                             </div>
-                        </div>
-                        <div class="make-tag-input">
-                            <input type="text" placeholder="# 태그 입력하세요.(쉼표추가 최대 10개)" id="tag-input">
-                        </div>
-                    </div>
-                    <div class="make-img-container">
-                        <img src="./images/maker/background00.jpg" alt="main-img">
-                    </div>
-                    <div class="make-footer">
-                        <div class="make-slide">
-                            <button class="prev-btn">
-                                <i></i>
-                            </button>
-                            <div class="make-slide-number">
-                                <span class="current-number">1</span>
-                                /
-                                <span class="total-number">5</span>
+                            <div class="source-input">
+                                <input type="text" placeholder="출처가 필요한 경우 입력해 주세요.">
+                                <i></i> 
                             </div>
-                            <button class="next-btn">
-                                <i></i>
-                            </button>
-                        </div>
-                        <div class="source-input">
-                            <input type="text" placeholder="출처가 필요한 경우 입력해 주세요.">
-                            <i></i> 
                         </div>
                     </div>
                 </div>

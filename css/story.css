@@ -48,7 +48,8 @@ header {
 
 
 div.h-inner {
-    width: 1855px;
+    width: 100%;
+    max-width: 1975px;
     margin: 0 auto;
 }
 
@@ -72,8 +73,9 @@ header a {
     display: block;
     margin: auto 0;
 }
-
-
+header .logo{
+    margin-right: 110px;
+}
 header nav ul {
     display: flex;
     height: 100%;
@@ -82,6 +84,9 @@ header nav ul {
 
 header nav ul li {
     margin-left: 50px;
+}
+header nav ul li:first-child{
+    margin-left: 0;
 }
 
 li.hey > img {
@@ -200,7 +205,6 @@ header div.header-right > div.userMenu.active {
 .c2-wrap {
     position: relative;
 }
-
 .c2-wrap::after {
     content: "";
     display: block;
@@ -213,7 +217,8 @@ header div.header-right > div.userMenu.active {
 }
 
 .top-text {
-    width: 1549px;
+    width: 100%;
+    max-width:1500px;
     margin: 0 auto;
 }
 
@@ -476,7 +481,8 @@ div.swiper-slide {
 }
 
 .list-inner > ul {
-    width: 1500px;
+    max-width: 1500px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -625,6 +631,10 @@ div.swiper-slide {
     font-weight: bold;
 }
 
+.c2-swiper-inner{
+    overflow: hidden;
+    max-width: 1542px;
+}
 @media (max-width: 1500px) {
     .c4_wrap {
         width: 100%;
@@ -690,8 +700,8 @@ div.swiper-slide {
 }
 
 .c6 div:nth-of-type(1) a:hover {
-    border: #eca15b solid 1px;
-    background: #eca15b;
+    border: #fe811c solid 1px;
+    background: #fe811c;
 }
 
 .c6 div:nth-of-type(1) a:hover span {

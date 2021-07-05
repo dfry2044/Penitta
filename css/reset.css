@@ -182,3 +182,11 @@ button{
   outline: none;
   cursor: pointer;
 }
+
+input{
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
