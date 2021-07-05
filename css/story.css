@@ -890,7 +890,284 @@ footer > div .logo {
 }
 
 @media (max-width: 1500px) {
+    header{
+        height: 60px;
+    }
+    .header-left{
+        height: 60px;
+    }
+    header div.header-right > div.userMenu{
+        height: 60px;
+    }
+    div.h-inner{
+        width: 100%;
+        max-width: 1160px;
+        padding: 0;
+    }
+    header .logo{
+        margin-right: 50px;
+    }
     .footer > div {
         width: 100%;
     }
+    header nav ul li a{
+        font-size: 12px;
+    }
+    header .logo img{
+        width: 72px;
+    }
+    header nav .userMenu .user img{
+        width: 15px;
+    }
+    header nav .userMenu .user::after{
+        font-size: 10px;
+    }
+    header nav .userMenu .ham img{
+        width: 15px;
+    }
+    footer > div{
+        max-width: 875px;
+    }
+    footer > div .logo{
+        width: 73px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 20px;
+    }
+    footer > div div:nth-of-type(2) div a{
+        margin-top: 0;
+        font-size: 11px;
+    }
+    footer > div div:nth-of-type(2) div{
+        margin-bottom: 15px;
+    }
+    footer > div div:nth-of-type(2) ul li{
+        font-size: 10px;
+    }
+    footer > div div:nth-of-type(2) ul li > a{
+        font-size: 10px;
+    }
+    footer > div div:nth-of-type(2) address{
+        font-size: 10px;
+        margin-top: 30px;
+    }
+    footer > div div:nth-of-type(3) a{
+    }
+    footer > div div:nth-of-type(3) a.blog{
+        width: 24px;
+        height: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    footer > div div:nth-of-type(3) a.facebook{
+        width: 24px;
+        height: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    footer > div div:nth-of-type(3) a.insta{
+        width: 24px;
+        height: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    footer > div div:nth-of-type(3) a.youtube{
+        width: 24px;
+        height: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .top-text > div > p{
+        width: 100%;
+        max-width: 880px;
+        font-size: 20px;
+        padding: 44px 0 30px 0;
+    }
+    .c2-swiper-inner{
+        max-width: 920px;
+    }
+    .sub > a{
+        width: 272px;
+        height: 182px;
+    }
+    .swiper-slide > .sub::before{
+        width: 25px;
+        height: 18px;
+    }
+    .sub > p{
+        font-size: 12px;
+        top: 56%;
+    }
+    .sub a:nth-of-type(2),
+    .sub a:nth-of-type(3){
+        height: auto;
+    }
+    .swiper-slide h3{
+        font-size: 14px;
+        margin: 12px 0 10px 0;
+    }
+    .swiper-slide p:last-child{
+        font-size: 11px;
+        line-height: 16px;
+        margin-bottom: 60px;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets{
+        bottom: 32px;
+    }
+    .swiper-pagination-bullet{
+        width: 6px;
+        height: 6px;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+        margin: 0 2px;
+    }
+    .c3-w-inner{
+        padding: 40px 0 33px 0;
+        width: 100%;
+        max-width: 880px;
+    }
+    .c3-w-inner > div{
+        width: 304px;
+    }
+    .txt-left > p{
+        font-size: 17px;
+        line-height: 23px;
+    }
+    .c3-w-inner em{
+        font-size: 13px;
+    }
+    .check{
+        padding: 24px 0 20px 0;
+    }
+    .check p{
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .check p::before{
+        width: 20px;
+        height: 20px;
+    }
+    .check p.active::before{
+        background-size: 9px 6px;
+    }
+    .search_input{
+        width: 273px;
+    }
+    .search_input{
+        width: 273px;
+        padding: 10px 16px 10px 0;
+        background-size: 13px 13px;
+    }
+    .search_container{
+        width: max-content;
+    }
+    .category > ul{
+        font-size:inherit;
+    }
+    .category li{
+        font-size: 8px !important;
+        margin-right: 3px;
+    }
+    .category li.active{
+        font-size: 8px !important;
+        margin-right: 3px;
+    }
+    .list-inner > ul{
+        width: 100%;
+        max-width: 880px;
+        margin: 0 auto;
+    }
+    .list_item{
+        width: calc(100% / 4 - 16px);
+        height: 346px;
+    }
+    .list-top > a:first-child{
+        height: 204px;
+    }
+    .list-inner img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .list-top.new::after{
+        top: 180px;
+    }
+    .list-top > a > h3{
+        font-size: 12px;
+        padding-top: 12px;
+    }
+    .list-top > p, .list-bot{
+        padding-top: 6px;
+        font-size: 8px;
+    }
+    .list-bot > span{
+        font-size: 7px;
+    }
+    .c4_wrap{
+        width: 100%;
+        max-width: 880px;
+    }
+    .c4-react > button{
+        font-size: 7px;
+    }
+    .list_item > div > div > button:first-child::before{
+        background-size: 14px 12px;
+    }
+    .list_item > div > div > button:last-child::before{
+        background-size: 13px 12px;
+    }
+    .text-left em{
+        font-size: 11px;
+    }
+    .text-right button{
+        font-size: 11px;
+    }
+    .btn-wrap > a{
+        width: 145px;
+        height: 38px;
+        font-size: 11px;
+        line-height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-wrap > a::after{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .c6{
+        height: 254px;
+    }
+    .c6 div:nth-of-type(1) p{
+        font-size: 18px;
+    }
+    .c6 div:nth-of-type(1) p span{
+        font-size: 18px;
+    }
+    .c6 div:nth-of-type(1) span{
+        font-size: 11px;
+        margin: 12px 0;
+    }
+    .c6 div:nth-of-type(1) a{
+        margin-top: 18px;
+        padding: 0;
+        width: 145px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .c6 div:nth-of-type(1) a span{
+        font-size: 11px;
+    }
+    .btn-wrap{
+        padding: 50px 0 68px 0;
+    }
 }
+
