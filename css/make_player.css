@@ -78,7 +78,16 @@ header nav ul {
 header nav ul li {
     margin-left: 50px;
 }
+header nav ul li.active a{
+    color: #000;
+}
 
+header nav ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+    color: #a2a2a2
+}
 li.hey > img {
     padding-left: 32px;
 }
@@ -90,8 +99,8 @@ li.hey > span {
 }
 
 header nav ul li a {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 500;
     transition: 0.3s;
 }
 
@@ -422,8 +431,8 @@ header div.header-right > div.userMenu {
 }
 #nondisclosure + label{
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border: 2px solid #bcbcbc;
     cursor: pointer;
     border-radius:5px;
@@ -848,6 +857,14 @@ header div.header-right > div.userMenu {
     color: #000;
     padding: 0 15px;
 }
+.bgm-select.select .select-content{
+    bottom: 0;
+    top: auto;
+}
+.voice-select.select .select-content{
+    bottom: 0;
+    top: auto;
+}
 .select .select-content{
     position: absolute;
     top:0;
@@ -1006,9 +1023,9 @@ input[type=range]::-webkit-slider-thumb {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 2px;
-    width: 26px;
-    height: 26px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
     background-color: #ff7800;
     border-radius: 100%;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
@@ -1017,7 +1034,7 @@ input[type=range]::-webkit-slider-thumb {
     transition: 0.3s ease
 }
 .voice-toggle .voice-toggle-btn.active{
-    left: 34px;
+    left: 32px;
 }
 .slide-speed .slide-choice-select .select-top{
     width: 100%;
@@ -1375,10 +1392,10 @@ input[type=range]::-webkit-slider-thumb {
 
 .colorpicker-content{
     position: absolute;
-    top: 30%;
-    right: 50%;
+    top: 26%;
+    right: 25px;
     width: 290px;
-    z-index: 9999;
+    z-index: 999999999999;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -1387,7 +1404,6 @@ input[type=range]::-webkit-slider-thumb {
     transition: 0.3s ease;
     opacity: 0;
     visibility: hidden;
-    
 }
 .colorpicker-content.show{
     opacity: 1;

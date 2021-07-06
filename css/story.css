@@ -99,9 +99,22 @@ li.hey > span {
     padding-left: 9px;
 }
 
+header nav ul li {
+    margin-left: 50px;
+}
+header nav ul li.active a{
+    color: #000;
+}
+
 header nav ul li a {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+    color: #a2a2a2
+}
+header nav ul li a {
+    font-size: 18px;
+    font-weight: 500;
     transition: 0.3s;
 }
 
@@ -230,7 +243,7 @@ div.swiper-slide {
     width: 1500px;
     margin: 0 auto;
     padding: 76px 0 52px 0;
-    font-size: 35px;
+    font-size: 32px;
     font-weight: 300;
 }
 
@@ -489,7 +502,8 @@ div.swiper-slide {
 }
 
 .list_item {
-    height: 423px;
+    width: calc(1500px / 4 - 30px);
+    height: 537;
 }
 
 .list_item {
@@ -514,7 +528,7 @@ div.swiper-slide {
     background: #799e14;
     position: absolute;
     right: 0;
-    top: 210px;
+    top: 329px;
     z-index: 55;
 }
 
@@ -522,14 +536,18 @@ div.swiper-slide {
     display: block;
     border-radius: 10px;
     overflow: hidden;
+    clip-path: inset(0% 0% 0% 0% round 10px);
 }
 
 .list-top > a:first-child {
-    height: 234px;
+    height: 353px;
 }
 
 .list-inner img {
     transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .list-inner img:hover {
@@ -574,18 +592,22 @@ div.swiper-slide {
 
 .c4-react {
     display: flex;
+    position: relative;
 }
 
 .c4-react > button {
     display: flex;
+    align-items: center;
     line-height: 22px;
     color: #8E8E8E;
 }
 
-.list_item > div > div > button:first-child {
+.list_item > div > div > button:first-child{
     padding-right: 9px;
 }
-
+.list_item > div > div > button:nth-child(2) {
+    padding-right: 20px;
+}
 .c4-react > button::before {
     padding-right: 5px;
 }
@@ -598,7 +620,7 @@ div.swiper-slide {
     background: url(../images/icon/ico-heart.png) no-repeat center center / auto;
 }
 
-.list_item > div > div > button:last-child::before {
+.list_item > div > div > button:nth-child(2)::before {
     content: "";
     display: block;
     width: 22px;
@@ -889,6 +911,60 @@ footer > div .logo {
     background: url(../images/common/logo-footer.png);
 }
 
+.card-etc i{
+    width: 3px;
+    height: 15px;
+    background: url(../images/icon/ico-etc.png) no-repeat center / cover;
+    display: block;
+    transition: 0.3s ease;
+}
+.card-etc-tooltip{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+    width: 90px;
+    height: 99px;
+    border: 1px solid #bababa;
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+.card-etc-tooltip.show {
+    opacity: 1;
+    visibility: visible;
+}
+.card-etc-tooltip button {
+    width: 100%;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #2f2c2c;
+    position: relative;
+    transition: 0.3s ease;
+}
+.card-etc-tooltip button:hover{
+    background-color: #dddddd;
+}
+.card-etc-tooltip button:after {
+    content: "";
+    width: 72px;
+    height: 1px;
+    background-color: #f0f0f0;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card-etc-tooltip button:last-child::after{
+    display: none;
+}
 @media (max-width: 1500px) {
     header{
         height: 60px;
@@ -1118,7 +1194,7 @@ footer > div .logo {
     .list_item > div > div > button:first-child::before{
         background-size: 14px 12px;
     }
-    .list_item > div > div > button:last-child::before{
+    .list_item > div > div > button:nth-child(2)::before{
         background-size: 13px 12px;
     }
     .text-left em{
