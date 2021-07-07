@@ -731,25 +731,6 @@
                                 <li class="bgm-choice-select">
                                     <div class="bgm-select select">
                                         <button class="select-top">
-                                            <span>배경음악 선택</span>
-                                            <i class="select-ico"></i>
-                                        </button>
-                                        <div class="select-content">
-                                            <ul>
-                                                <li><button>배경음악1</button></li>
-                                                <li><button>배경음악2</button></li>
-                                                <li><button>배경음악3</button></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="volume-cont">
-                                        <i></i>
-                                        <input type="range" id="bgm-volume" value="0">
-                                    </div>
-                                </li>
-                                <li class="voice-choice-select">
-                                    <div class="voice-select select">
-                                        <button class="select-top">
                                             <span>목소리 선택</span>
                                             <i class="select-ico"></i>
                                         </button>
@@ -772,46 +753,83 @@
                                         </ul>
                                     </div>
                                 </li>
+                                <li class="voice-choice-select">
+                                    <div class="voice-select select">
+                                        <button class="select-top">
+                                            <span>속도 선택</span>
+                                            <i class="select-ico"></i>
+                                        </button>
+                                        <div class="select-content">
+                                            <ul>
+                                                <li><button>30</button></li>
+                                                <li><button>50</button></li>
+                                                <li><button>70</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
-                        </div>
-                        
-                    </div>
-
-                    <div class="slide-speed">
-                        <div class="slide-speed-title">
-                            <i></i>
-                            <span>슬라이드 속도</span>
-                        </div>
-                        <div class="slide-choice-select select">
-                            <button class="select-top">
-                                <span>30</span>
-                                <i class="select-ico"></i>
-                            </button>
-                            <div class="select-content">
-                                <ul>
-                                    <li><button>30</button></li>
-                                    <li><button>50</button></li>
-                                    <li><button>60</button></li>
-                                </ul>
-                            </div>
-                        </div>
+                        </div>  
                     </div>
                 </div>
             </div>
             <div class="make-final">
-                <button class="preview-btn">
+                <button class="bgm-btn tooltip">
                     <div class="icon-group">
                         <i></i>
                         <i></i>
                     </div>
-                    미리보기
+                    <span>배경음악</span>
                 </button>
-                <button class="download-btn">
+                <div class="bgm-select">
+                    <div class="bgm-title">
+                        <p>배경음악</p>
+                        <button class="bgm-select-close-btn">
+                            <i></i>
+                        </button>
+                    </div>
+                    <div class="bgm-select-content">
+                        <ul>
+                            <li>배경음악 1</li>
+                            <li>배경음악 2</li>
+                            <li>배경음악 3</li>
+                            <li>배경음악 1</li>
+                            <li>배경음악 2</li>
+                            <li>배경음악 3</li>
+                            <li>배경음악 1</li>
+                            <li>배경음악 2</li>
+                            <li>배경음악 3</li>
+                            <li>배경음악 1</li>
+                            <li>배경음악 2</li>
+                            <li>배경음악 3</li>
+                            <li>배경음악 1</li>
+                            <li>배경음악 2</li>
+                            <li>배경음악 3</li>
+                            <li>배경음악 1</li>
+                            <li>배경음악 2</li>
+                            <li>배경음악 3</li>
+                        </ul>
+                    </div>
+                    <div class="bgm-volume">
+                        <div class="volume-cont">
+                            <i></i>
+                            <input type="range" id="bgm-volume" value="0">
+                        </div>
+                    </div>
+                </div>
+                <button class="preview-btn tooltip">
                     <div class="icon-group">
                         <i></i>
                         <i></i>
                     </div>
-                    저장
+                    <span>미리보기</span>
+                </button>
+                <button class="download-btn tooltip">
+                    <div class="icon-group">
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <span>저장</span>
                 </button>
                 <button class="upload-btn">
                     <div class="icon-group">
@@ -902,7 +920,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <script src="./js/category.js"></script>
     <script src="./js/story.js"></script>

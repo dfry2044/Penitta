@@ -301,3 +301,15 @@ colorpickerPrevBtn.click(function(){
 
     colorpickerChangeBtn.removeClass("hide");
 })
+
+// bgm button
+var bgmOpenBtn = $(".bgm-btn");
+var bgmContent = $(".bgm-select");
+var bgmCloseBtn = $(".bgm-select-close-btn");
+
+bgmOpenBtn.click(function(){
+    bgmContent.addClass("active");
+})
+bgmCloseBtn.click(function(){
+    bgmContent.removeClass("active");
+})
