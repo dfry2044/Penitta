@@ -7,8 +7,6 @@ toggle.click(function(){
     }else{
         $(this).addClass("active");
     }
-
-    return false;
 })
 
 var etcTooltipBtn = $(".card-etc");
@@ -20,6 +18,4 @@ $(document).on('click',function(e){
     }else{
         etcTooltip.removeClass("show");
     }
-
-    return false;
 })

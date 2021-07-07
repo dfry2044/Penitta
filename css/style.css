@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
 	position: fixed;
-	z-index: 100;
+	z-index: 999999999999999999999999999999999999999999999;
     width: 100%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.4)
@@ -68,11 +68,14 @@
     width: 100%;
     height: 100%;
 }
-
+.login-check{
+    text-align: left;
+}
 .login-check > p {
-    display: flex;
+    display: inline-flex;
     justify-content: flex-start;
     align-items: center;
+    cursor: pointer;
 }
 
 .login-check > p::before {
@@ -161,62 +164,6 @@ input::-moz-placeholder { color: #a5a5a5; }
     height: 55px;
 }
 
-@media (max-width: 600px) {
-    .login_list {
-        padding: 0 20px;
-    }
-    .login-popup {
-        display: flex;
-        justify-content: start;
-        align-items: flex-end;
-        position: fixed;
-        z-index: 100;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .input-style{
-        height: 51px;
-    }
-
-    .login-popup-inner {
-        width: 100%;
-        height: 90%;
-        background: #fff;
-        border-radius: 20px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        text-align: center;
-    }
-    .login-top > h2 {
-        font-size: 20.17px;
-        font-weight: 700;
-        padding: 18px 0 44px;
-    }
-    .login-check > p {
-        font-size: 12.49px;
-    }
-    .login-check > p::before  {
-        width: 24px;
-        height: 24px;
-    }
-    .login-button > .input-style {
-        height: 51px;
-    }
-    .login-button input {
-        font-size: 16px;
-    }
-    .people_info > a {
-        font-size: 12.49px;
-    }
-    .join-social li > a > img {
-        width: 39px;
-        height: 39px;
-    }
-    .join-social p {
-        font-size: 11.21px;
-    }
-}
 
 
 /*스와이퍼*/
@@ -235,12 +182,12 @@ input::-moz-placeholder { color: #a5a5a5; }
     align-items: center;
 }
 
-.swiper-slide img {
+/* .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 .swiper-pagination-bullet-active {
     background: #515151 !important;
@@ -1516,9 +1463,60 @@ footer > div .logo {
         width: auto;
     }
 }
-@media all and (max-width:1024px){
-    /* div.h-inner{
+
+@media (max-width: 1024px) {
+    .login_list {
+        padding: 0 20px;
+    }
+    .login-popup {
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        position: fixed;
+        z-index: 100;
         width: 100%;
-        max-width: 768px;
-    } */
+        height: 100vh;
+    }
+
+    .input-style{
+        height: 51px;
+    }
+
+    .login-popup-inner {
+        width: 100%;
+        height: 90%;
+        background: #fff;
+        border-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        text-align: center;
+    }
+    .login-top > h2 {
+        font-size: 20.17px;
+        font-weight: 700;
+        padding: 18px 0 44px;
+    }
+    .login-check > p {
+        font-size: 12.49px;
+    }
+    .login-check > p::before  {
+        width: 24px;
+        height: 24px;
+    }
+    .login-button > .input-style {
+        height: 51px;
+    }
+    .login-button input {
+        font-size: 16px;
+    }
+    .people_info > a {
+        font-size: 12.49px;
+    }
+    .join-social li > a > img {
+        width: 39px;
+        height: 39px;
+    }
+    .join-social p {
+        font-size: 11.21px;
+    }
 }
