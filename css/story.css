@@ -965,6 +965,24 @@ footer > div .logo {
 .card-etc-tooltip button:last-child::after{
     display: none;
 }
+@media all and (max-width:1920px){
+    div.h-inner{
+        max-width:1440px;
+        padding: 0;
+    }
+    .c2-swiper-inner{
+        max-width:1480px;
+    }
+    .top-text > div > p{
+        width: 100%;
+        max-width:1440px;
+    }
+    .swiper-slide{
+        justify-content:flex-end;
+    }
+    .swiper-container{
+    }
+}
 @media (max-width: 1500px) {
     header{
         height: 60px;

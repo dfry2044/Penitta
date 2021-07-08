@@ -1271,6 +1271,7 @@ input[type=range]::-webkit-slider-thumb {
 .bgm-btn .icon-group{
     width:16px;
     height:18px;
+    transform: translate(-1px,1px);
 }
 .make-final .tooltip{
     position: relative;
@@ -1503,6 +1504,7 @@ input[type=range]::-webkit-slider-thumb {
     width: 7px;
     height: 12px;
     background: url("../images/icon/ico-prevArrow-black.png") no-repeat center / cover;
+    transform: translateX(-2px);
 }
 .colorpicker-title div.active{
     opacity: 1; 
@@ -1780,6 +1782,127 @@ body.maker header div.h-inner{
     opacity:1 !important;
     visibility: visible !important;
 }
+header .mo{
+    display:none
+}
+.preview-dim{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999999999;
+}
+.preview{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1200px;
+    height: 900px;
+    background-color:#fff;
+    border-radius: 30px;
+    z-index: 99999999999;
+    padding: 25px;
+    display: flex;
+}
+.preview-content{
+    width: 850px;
+    height: 850px;
+}
+.preview-content ul{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.preview-content ul li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+    transition: 0.3s ease;
+    height: 100%;
+}
+.preview-content ul li.active{
+    z-index: 1;
+    opacity: 1;
+}
+.preview-content ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.preview-editer{
+    padding-left: 40px;
+    width: 310px;
+}
+.preview-editer .preview-close-btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 45px;
+}
+.preview-editer .preview-close-btn i{
+    width: 20px;
+    height: 20px;
+    background: url("../images/icon/ico-close-gray.png") no-repeat center / cover;
+}
+.preview-editer .preview-text .preview-title{
+    font-size: 32px;
+    font-family: "Noto Sans Kr";
+    font-weight: 500;
+    color: #222222;
+    line-height: 42px;
+    margin-bottom: 24px;
+}
+.preview-editer .preview-text .preview-tag{
+    font-size: 18px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #5d5c5c;
+    line-height: 26px;
+}
+.preview-editer .preview-editer-content{
+    position: absolute;
+    bottom: 25px;
+}
+.preview-editer .preview-editer-content .preview-number{
+    font-size: 24px;
+    font-family: "Roboto";
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.preview-number span:nth-child(1){
+    color:#000;
+}
+.preview-number span:nth-child(2){
+    color:#d8d8d8;
+}
+.preview-number span:nth-child(3){
+    color:#a9a9a9;
+}
+.preview-controller{
+    display: flex;
+    align-items: center;
+}
+.preview-controller button{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.preview-controller .prev-btn,
+.preview-controller .next-btn{
+    border: 1px solid #cecece;
+}
+.preview-controller .prev-btn i{
+    width: 11px;
+    height: 17px;
+} 
 @media all and (max-width:1600px){
     .make-header .make-category-select{
     
@@ -1967,5 +2090,149 @@ body.maker header div.h-inner{
     .make-canvas,
     .make-editer{
         height: calc(100vh - 60px);
+    }
+}
+@media all and (max-width:1280px){
+    .make-final{
+        z-index:909090909090;
+    }
+    .make-final .upload-btn{
+        width: 38px;
+        position:relative;
+        border-radius:50%;
+    }
+    .make-final .upload-btn span{
+        visibility:hidden;
+        width:120px;
+        background-color: #555;
+        color:#fff;
+        text-align:center;
+        border-radius:6px;
+        padding:5px 0;
+        position:absolute;
+        bottom:125%;
+        left:50%;
+        opacity:0;
+        transform:translateX(-50%);
+        transition: opacity 0.3s;
+    }
+    .make-final .upload-btn:hover span{
+        opacity:1;
+        visibility:visible;
+    }
+    .make-final .upload-btn .icon-group{
+        margin-right:0;
+    }
+    .make-footer .source-input{
+        width: 100px;
+    }
+    .make-footer .source-input input{
+        padding: 0 5px 0 5px;
+    }
+    .next-btn i,
+    .prev-btn i{
+        width: 4px;
+        height: 8px;
+    }
+    .make-footer .make-slide .make-slide-number{
+        font-size:10px;
+    }
+}
+@media all and (max-width:1080px){
+    header .pc{
+        display:none;
+    }
+    header .mo{
+        display:flex;
+    }
+    header h1 a img{
+        width: 150px;
+    }
+    header .h-inner{
+        height: 100%;
+    }
+    header nav{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header{
+        height: 102px;
+    }
+    body.maker header div.h-inner{
+        max-width: calc(100vw - 80px);
+    }
+    header .mo ul{
+        display: flex;
+        align-items: center;
+    }
+    header .mo li{
+        margin-left: 34px;
+    }
+    header .mo li:last-child{
+        margin-left: 64px;
+    }
+    header button{
+        position: relative;
+    }
+    header button i{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+    }
+    .mo-bgm-btn{
+        width: 36px;
+        height: 40px;
+    }
+    .mo-bgm-btn i{background-image: url("../images/icon/ico-bgm-gray-m.png");}
+    .mo-play-btn{
+        width: 40px;
+        height: 40px;
+    }
+    .mo-play-btn i{background-image: url("../images/icon/ico-play-gray-m.png");}
+    .mo-download-btn{
+        width: 40px;
+        height: 40px;
+    }
+    .mo-download-btn i{background-image: url("../images/icon/ico-download-gray-m.png");}
+    .mo-upload-btn{
+        width: 39px;
+        height: 39px;
+    }
+    .mo-upload-btn i{background-image: url("../images/icon/ico-upload-orange-m.png");}
+
+    header .mo-hambuger-open-btn{
+        width: 38px;
+        height: 29px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    header .mo-hambuger-open-btn span{
+        width: 100%;
+        height: 4px;
+        background-color: #000;
+    }
+    .make-main{
+        grid-template-columns: none;
+        grid-template-rows: 165px 1fr;
+    }
+    .make-list{
+        height: 165px;
+        width: 100vw;
+    }
+    .make-list ul{
+        display: flex;
+    }
+    .make-canvas{
+        width: 100vw;
+        height: calc(100vh - 167px);
+    }
+    .make-editer{
+        position: absolute;
     }
 }

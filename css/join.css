@@ -10,7 +10,7 @@ header {
 
 
 div.h-inner {
-    width: 1855px;
+    width: 1975px;
     margin: 0 auto;
 }
 
@@ -646,7 +646,18 @@ footer > div .logo {
     font-weight: 700;
     background: url(../images/common/logo-footer.png);
 }
-
+header .logo{
+    margin-right:110px;
+}
+header nav ul li:first-child{
+    margin-left: 0;
+}
+@media all and (max-width:1920px){
+    div.h-inner{
+        max-width:1440px;
+        padding: 0;
+    }
+}
 @media (max-width: 1500px) {
     .footer > div {
         width: 100%;

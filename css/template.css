@@ -213,7 +213,7 @@ header div.header-right > div.userMenu.active {
 
 /*tempalate-wrap*/
 .template-inner {
-    max-width: 1500px;
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
 }
@@ -427,7 +427,12 @@ footer > div .logo {
     font-weight: 700;
     background: url(../images/common/logo-footer.png);
 }
-
+@media all and (max-width: 1920px){
+    div.h-inner{
+        max-width:1440px;
+        padding: 0;
+    }
+}
 @media (max-width: 1500px) {
     .footer > div {
         width: 100%;

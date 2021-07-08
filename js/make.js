@@ -171,8 +171,6 @@ var makeSlideActiveImg;
 var slideClickIdx;
 var slideIdx = 0;
 
-// makeSlideTotalNum.text(makeSlideItem.length);
-
 makeSlideItem.click(function(){
     slideClickIdx = $(this).index();
     
@@ -207,19 +205,10 @@ makeSlideNextBtn.click(function(){
         slideIdx = 0;
         
         makeSlideCurrentNum.text(1);
-    
-        // makeSlideActiveImg = makeSlideItem.eq(slideIdx).find("img").attr("src");    
-        // makeCanvasImg.attr("src",makeSlideActiveImg);
-        // makeSlideItem.eq(slideIdx).addClass("active");
         
     }else{
         
         makeSlideCurrentNum.text(slideIdx + 1);        
-        
-        // makeSlideActiveImg = makeSlideItem.eq(slideIdx).find("img").attr("src");    
-        // makeCanvasImg.attr("src",makeSlideActiveImg);
-        
-        // makeSlideItem.eq(slideIdx).addClass("active");
     }
 })
 
@@ -312,4 +301,11 @@ bgmOpenBtn.click(function(){
 })
 bgmCloseBtn.click(function(){
     bgmContent.removeClass("active");
+})
+
+// list swiper
+var listSwiper = new swiper(".list-swiper",{
+    slidesPerView: 4,
+    spaceBetween: 12,
+    freeMode: true
 })
