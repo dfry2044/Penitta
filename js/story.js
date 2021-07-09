@@ -36,6 +36,7 @@ $(window).scroll(function () {
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     slidesPerGroup: 3,
+    spaceBetween:40,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {

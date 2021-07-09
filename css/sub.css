@@ -123,12 +123,12 @@ header .header-notice p{
 .my-card ul li{
     margin-bottom: 50px;
     height: 100%;
-    min-height: 354px;
+    min-height: 465px;
 }
 .my-card ul li .card-img-wrap{
-    height: 234px;
+    height: 353px;
     border-radius: 10px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     overflow: hidden;
     clip-path: inset(0% 0% 0% 0% round 10px);
 }
@@ -152,7 +152,8 @@ header .header-notice p{
     font-family: "Noto Sans Kr";
     font-weight: 500;
     color: #222222;
-    margin-bottom: 16px;
+    line-height: 22px;
+    margin-bottom: 13px;
 }
 .my-card ul li h2:hover{
     text-decoration: underline;
@@ -162,7 +163,7 @@ header .header-notice p{
     font-family: "Roboto";
     font-weight: 300;
     color: #5d5c5c;
-    margin-bottom: 31px;
+    margin-bottom: 20px;
     display: inline-block;
 }
 .my-card ul li .card-bottom{
@@ -228,7 +229,7 @@ header .header-notice p{
 }
 .my-card li>a{
     width: 100%;
-    height: 234px;
+    height: 353px;
     position: relative;
     display: block;
 }
@@ -295,12 +296,13 @@ header .header-notice p{
     font-weight: 600;
 }
 .my-card ul li strong{
-    font-size: 13px;
+    font-size: 14px;
     font-family: "Noto Sans Kr";
     font-weight: 300;
     color: #5d5c5c;
     display: block;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 .my-card ul li.expiration{
     opacity: 0.4;
@@ -380,4 +382,13 @@ header .header-notice p{
 .my-card .card-download .expiration .card-down{
     visibility: hidden;
     opacity: 0;
+}
+.my-card .keep-content .card-etc-tooltip{
+    height: 30px;
+}
+.my-card .keep-content .card-etc-tooltip button{
+    height: 100%;
+}
+.my-card .keep-content .card-etc-tooltip button:first-child::after{
+    display: none;
 }

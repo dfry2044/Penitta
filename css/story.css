@@ -965,11 +965,19 @@ footer > div .logo {
 .card-etc-tooltip button:last-child::after{
     display: none;
 }
+.toggle-group{
+    display: flex;
+    align-items: center;
+}
+.toggle-group p{
+    margin-left: 15px;
+}
 @media all and (max-width:1920px){
     div.h-inner{
         max-width:1440px;
         padding: 0;
     }
+    
     .c2-swiper-inner{
         max-width : 1508px;
     }

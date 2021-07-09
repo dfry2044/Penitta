@@ -304,11 +304,11 @@ bgmCloseBtn.click(function(){
 })
 
 // list swiper
-// var listSwiper = new swiper(".list-swiper",{
-//     slidesPerView: 4,
-//     spaceBetween: 12,
-//     freeMode: true
-// })
+var listSwiper = new Swiper(".list-swiper",{
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    freeMode: true
+})
 
 // preview
 var previewOpenBtn = $(".preview-btn");

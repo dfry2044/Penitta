@@ -68,6 +68,9 @@ header a {
     margin: auto 0;
 }
 
+header a.logo{
+    margin-right:83px;
+}
 
 header nav ul {
     display: flex;
@@ -78,10 +81,12 @@ header nav ul {
 header nav ul li {
     margin-left: 50px;
 }
+header nav ul li:first-child{
+    margin-left: 0;
+}
 header nav ul li.active a{
     color: #000;
 }
-
 header nav ul li a {
     font-size: 18px;
     font-weight: 500;
@@ -2194,6 +2199,14 @@ header .mo{
     .make-editer{
         height: calc(100vh - 60px);
     }
+
+    header a.logo{
+        margin-right:50px;
+    }
+    header nav ul li:first-child{
+        margin-left:0 !important;
+    }
+
 }
 @media all and (max-width:1280px){
     .make-final{
@@ -2242,11 +2255,17 @@ header .mo{
     }
 }
 @media all and (max-width:1080px){
+    .pc{
+        display: none;
+    }
+    .mo{
+        display: block;
+    }
     header .pc{
         display:none;
     }
     header .mo{
-        display:flex;
+        display:flex !important;
     }
     header h1 a img{
         width: 150px;
@@ -2271,10 +2290,10 @@ header .mo{
         align-items: center;
     }
     header .mo li{
-        margin-left: 34px;
+        margin-left: 34px !important;
     }
     header .mo li:last-child{
-        margin-left: 64px;
+        margin-left: 64px !important;
     }
     header button{
         position: relative;
@@ -2325,11 +2344,13 @@ header .mo{
         grid-template-rows: 165px 1fr;
     }
     .make-list{
-        height: 165px;
         width: 100vw;
+        padding: 23px 50px;
+        height: max-content;
     }
     .make-list ul{
         display: flex;
+        overflow: visible;
     }
     .make-canvas{
         width: 100vw;
@@ -2337,5 +2358,43 @@ header .mo{
     }
     .make-editer{
         position: absolute;
+        bottom: 0;
+    }
+    .swiper-container{
+        width: calc(100% - 212px);
+        height: 192px;
+        margin: 0;
+    }
+    .make-list ul{
+        height: 100%;
+        padding: 0;
+    }
+    .make-list > ul.pc{
+        display: none;
+    }
+    .make-list ul .make-list-item{
+        height: 100% !important;
+        width: 192px !important;
+        margin: 0;
+    }
+    .make-list ul .make-list-item img{
+        border-radius: 8px;
+    }
+    .make-list-item-addBtn{
+        width:192px;
+        height: 192px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px dashed #979595;
+    }
+    .make-list-item-addBtn i{
+        width: 44px;
+        height: 44px;
+        background: url("../images/icon/ico-plus-gray-m.png") no-repeat center / cover;
+    }
+    .make-list-mo{
+        display: flex;
+        justify-content: space-between;
     }
 }

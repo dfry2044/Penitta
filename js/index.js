@@ -10,7 +10,7 @@ var swiper = new Swiper(".mySwiper_", {
 });
 //c2 - slider
 var swiper = new Swiper(".mySwiper2", {
-    slidesPerView: 4,
+    slidesPerView: 5,
     spaceBetween: 40,
     pagination: {
         el: ".mySwiper2 .swiper-pagination",
