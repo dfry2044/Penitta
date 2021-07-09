@@ -2268,7 +2268,7 @@ header .mo{
         display:flex !important;
     }
     header h1 a img{
-        width: 150px;
+        width: 14.648vw;
     }
     header .h-inner{
         height: 100%;
@@ -2280,20 +2280,20 @@ header .mo{
         align-items: center;
     }
     header{
-        height: 102px;
+        height: 9.961vw;
     }
     body.maker header div.h-inner{
-        max-width: calc(100vw - 80px);
+        max-width: calc(100vw - 7.813vw);
     }
     header .mo ul{
         display: flex;
         align-items: center;
     }
     header .mo li{
-        margin-left: 34px !important;
+        margin-left: 3.320vw !important;
     }
     header .mo li:last-child{
-        margin-left: 64px !important;
+        margin-left: 6.250vw !important;
     }
     header button{
         position: relative;
@@ -2307,62 +2307,58 @@ header .mo{
         display: block;
     }
     .mo-bgm-btn{
-        width: 36px;
-        height: 40px;
+        width: 3.516vw;
+        height: 3.906vw;
     }
     .mo-bgm-btn i{background-image: url("../images/icon/ico-bgm-gray-m.png");}
     .mo-play-btn{
-        width: 40px;
-        height: 40px;
+        width: 3.906vw;
+        height: 3.906vw;
     }
     .mo-play-btn i{background-image: url("../images/icon/ico-play-gray-m.png");}
     .mo-download-btn{
-        width: 40px;
-        height: 40px;
+        width: 3.906vw;
+        height: 3.906vw;
     }
     .mo-download-btn i{background-image: url("../images/icon/ico-download-gray-m.png");}
     .mo-upload-btn{
-        width: 39px;
-        height: 39px;
+        width: 3.809vw;
+        height: 3.809vw;
     }
     .mo-upload-btn i{background-image: url("../images/icon/ico-upload-orange-m.png");}
 
     header .mo-hambuger-open-btn{
-        width: 38px;
-        height: 29px;
+        width: 3.711vw;
+        height: 2.832vw;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
     header .mo-hambuger-open-btn span{
         width: 100%;
-        height: 4px;
+        height: 0.391vw;
         background-color: #000;
     }
     .make-main{
         grid-template-columns: none;
-        grid-template-rows: 165px 1fr;
+        grid-template-rows: 23.242vw 1fr;
     }
     .make-list{
         width: 100vw;
-        padding: 23px 50px;
+        padding: 2.246vw 4.883vw;
         height: max-content;
     }
     .make-list ul{
         display: flex;
         overflow: visible;
     }
-    .make-canvas{
-        width: 100vw;
-        height: calc(100vh - 167px);
-    }
     .make-editer{
         position: absolute;
         bottom: 0;
     }
     .swiper-container{
-        width: calc(100% - 212px);
-        height: 192px;
+        width: calc(100% - 20.703vw);
+        height: 18.750vw;
         margin: 0;
     }
     .make-list ul{
@@ -2374,27 +2370,49 @@ header .mo{
     }
     .make-list ul .make-list-item{
         height: 100% !important;
-        width: 192px !important;
+        width: 18.750vw !important;
         margin: 0;
     }
     .make-list ul .make-list-item img{
         border-radius: 8px;
     }
     .make-list-item-addBtn{
-        width:192px;
-        height: 192px;
+        width:18.750vw;
+        height: 18.750vw;
         display: flex;
         justify-content: center;
         align-items: center;
         border: 2px dashed #979595;
+        border-radius: 8px;
     }
     .make-list-item-addBtn i{
-        width: 44px;
-        height: 44px;
+        width: 4.297vw;
+        height: 4.297vw;
         background: url("../images/icon/ico-plus-gray-m.png") no-repeat center / cover;
     }
     .make-list-mo{
         display: flex;
         justify-content: space-between;
+    }
+    .make-editer{
+        height: 24.707vw;
+        top: auto;
+    }
+    .make-final{
+        display: none;
+    }
+    .make-main{
+        height: calc(100vh - 9.961vw);
+    }
+    .make-canvas{
+        width: 100vw;
+        height: 100%;
+    }
+    .wrap{
+        height: calc(100vh - 9.961vw);
+    }
+    .make-canvas-wrap {
+        grid-template-columns: minmax(5.371vw, auto) fit-content(100%) minmax(5.371vw, auto);
+        grid-template-rows: minmax(22.461vw, auto) fit-content(100%) minmax(24.707vw, auto);
     }
 }
