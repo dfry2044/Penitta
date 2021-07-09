@@ -420,7 +420,9 @@ function autoplay(){
         }
     }
 }
-var autoPlayInterval = setInterval(autoplay, 500);
+var autoPlaySpeed = 500;
+var autoPlayInterval = setInterval(autoplay, autoPlaySpeed);
+
 clearInterval(autoPlayInterval);
 var autoPlayToggle = true;
 
@@ -433,7 +435,7 @@ function autoPlayPreview(){
     }else{
         previewAutoPlayBtn.addClass("play");
 
-        autoPlayInterval = setInterval(autoplay,500);
+        autoPlayInterval = setInterval(autoplay,autoPlaySpeed);
         autoPlayToggle = true;
     }
 }

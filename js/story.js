@@ -61,3 +61,15 @@ $(function () {
         }
     })
 })
+
+// template preview
+var templateItem = $(".t-list_item");
+var templatePreviewCloseBtn = $(".preview-close-btn");
+var templatePreviewContent = $(".template-preview");
+
+templateItem.click(function(){
+    templatePreviewContent.addClass("show");
+})
+templatePreviewCloseBtn.click(function(){
+    templatePreviewContent.removeClass("show");
+})

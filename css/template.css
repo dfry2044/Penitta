@@ -427,6 +427,92 @@ footer > div .logo {
     font-weight: 700;
     background: url(../images/common/logo-footer.png);
 }
+
+/* template preview */
+.template-preview{
+    background-color:rgba(0,0,0,0.5);
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    opacity:0;
+    visibility:hidden;
+    z-index:98989898989898989;
+    transition:0.3s ease;
+}
+.template-preview.show{
+    opacity:1;
+    visibility:visible;
+}
+.template-preview .preview-content{
+    width: 1228px;
+    background-color: #fff;
+    border-radius:30px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+.preview-content .preview-title{
+    padding: 30px 50px 25px;
+    border-bottom: 1px solid #d1d1d1;
+}
+.preview-content .preview-btn-group{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+.preview-content button{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.preview-content button i{
+    width:20px;
+    height:20px;
+    background:url("../images/icon/ico-close-gray.png") no-repeat center / cover;
+}
+.preview-content p{
+    font-size:20px;
+    font-family: "Noto Sans Kr";
+    font-weight:400;
+    color:#5b5b5b;
+    margin-bottom:10px;
+}
+.preview-content h2{
+    font-size: 32px;
+    font-family:"Noto Sans Kr";
+    font-weight:500;
+    color:#222222;
+    margin-bottom: 25px;
+}
+.preview-content ul{
+    padding: 50px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.preview-content ul li{
+    width: 267px;
+    height:267px;
+    margin-bottom:20px;
+}
+.preview-content a{
+    font-size: 16px;
+    font-family: "Noto Sans Kr";
+    font-weight:500;
+    color:#222222;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:247px;
+    height:60px;
+    border: 1px solid #c2c2c2;
+    border-radius: 30px;
+    margin:0 auto 50px auto;
+}
 @media all and (max-width: 1920px){
     div.h-inner{
         max-width:1440px;
