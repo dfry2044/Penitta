@@ -304,8 +304,136 @@ bgmCloseBtn.click(function(){
 })
 
 // list swiper
-var listSwiper = new swiper(".list-swiper",{
-    slidesPerView: 4,
-    spaceBetween: 12,
-    freeMode: true
+// var listSwiper = new swiper(".list-swiper",{
+//     slidesPerView: 4,
+//     spaceBetween: 12,
+//     freeMode: true
+// })
+
+// preview
+var previewOpenBtn = $(".preview-btn");
+var previewCloseBtn = $(".preview-close-btn");
+var previewContent = $(".preview");
+var previewDim = $(".preview-dim");
+var previewItem = $(".preview-content li");
+var previewPrevBtn = $(".preview-controller .prev-btn");
+var previewNextBtn = $(".preview-controller .next-btn");
+var previewAutoPlayBtn = $(".preview-controller .autoplay-btn");
+var previewCurrent = $(".preview-number .current");
+var previewTotal = $(".preview-number .total");
+
+var previewIdx = 1;
+var previewItemLength;
+
+previewOpenBtn.click(function(){
+    showPreview();
 })
+previewCloseBtn.click(function(){
+    hidePreview();
+})
+previewPrevBtn.click(function(){
+    prevPreview();
+})
+previewNextBtn.click(function(){
+    nextPreview();
+})
+previewAutoPlayBtn.click(function(){
+    autoPlayPreview();
+})
+
+function showPreview(){
+    previewItemLength = previewItem.length;
+
+    previewContent.addClass("show");
+    previewDim.addClass("show");
+
+    previewCurrent.text("1");
+    previewTotal.text(previewItemLength);
+}
+
+function hidePreview(){
+    previewContent.removeClass("show");
+    previewDim.removeClass("show");
+}
+
+function prevPreview(){
+    if(previewIdx == 1){
+
+        return false;
+    }else{
+        previewNextBtn.removeClass("last");
+        previewIdx--;
+        previewCurrent.text(previewIdx);
+        
+        previewItem.removeClass("active");
+        previewItem.eq(previewIdx - 1).addClass("active");
+        
+        if(previewIdx == 1){
+            
+            previewPrevBtn.addClass("last");
+            
+            return false;
+        }
+    }
+}
+
+function nextPreview(){
+    if(previewIdx == previewItemLength){
+
+        return false;
+    }else{
+        previewPrevBtn.removeClass("last");
+        previewIdx++;
+        previewCurrent.text(previewIdx);
+
+        previewItem.removeClass("active");
+        previewItem.eq(previewIdx - 1).addClass("active");
+
+        if(previewIdx == previewItemLength){
+
+            previewNextBtn.addClass("last");
+            
+            return false;
+        }
+    }
+}
+
+function autoplay(){
+    if(previewIdx == previewItemLength){
+                
+        clearInterval(autoplay);
+
+        return false;
+    }else{
+        previewPrevBtn.removeClass("last");
+        previewIdx++;
+        previewCurrent.text(previewIdx);
+
+        previewItem.removeClass("active");
+        previewItem.eq(previewIdx - 1).addClass("active");
+
+        if(previewIdx == previewItemLength){
+
+            previewNextBtn.addClass("last");
+
+            return false;
+        }
+    }
+}
+var autoPlayInterval = setInterval(autoplay, 500);
+clearInterval(autoPlayInterval);
+var autoPlayToggle = true;
+
+function autoPlayPreview(){
+    if(previewAutoPlayBtn.hasClass("play")){
+        previewAutoPlayBtn.removeClass("play");
+
+        clearInterval(autoPlayInterval);
+        autoPlayToggle = false;
+    }else{
+        previewAutoPlayBtn.addClass("play");
+
+        autoPlayInterval = setInterval(autoplay,500);
+        autoPlayToggle = true;
+    }
+}

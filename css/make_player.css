@@ -1793,6 +1793,13 @@ header .mo{
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999999999;
+    opacity:0;
+    visibility:hidden;
+    transition:0.3s ease;
+}
+.preview-dim.show{
+    opacity:1;
+    visibility:visible;
 }
 .preview{
     position: fixed;
@@ -1806,6 +1813,13 @@ header .mo{
     z-index: 99999999999;
     padding: 25px;
     display: flex;
+    opacity:0;
+    visibility:hidden;
+    transition:0.3s ease;
+}
+.preview.show{
+    opacity:1;
+    visibility:visible;
 }
 .preview-content{
     width: 850px;
@@ -1856,6 +1870,7 @@ header .mo{
     color: #222222;
     line-height: 42px;
     margin-bottom: 24px;
+    word-break:keep-all;
 }
 .preview-editer .preview-text .preview-tag{
     font-size: 18px;
@@ -1895,14 +1910,102 @@ header .mo{
     align-items: center;
     border-radius: 50%;
 }
+.preview-controller .btn-group{
+    display:flex;
+    align-items:center;
+}
+.preview-controller .prev-btn{
+    margin-right: 6px;
+}
+.preview-controller .btn-group::after{
+    content: "";
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width: 1px;
+    height: 20px;
+    background-color: #eeeeee;
+    margin: 0 14px;
+}
 .preview-controller .prev-btn,
 .preview-controller .next-btn{
     border: 1px solid #cecece;
 }
-.preview-controller .prev-btn i{
-    width: 11px;
+.preview-controller .prev-btn .icon-group,
+.preview-controller .next-btn .icon-group{
+    width: 10px;
     height: 17px;
-} 
+    position: relative;
+}
+.preview-controller .prev-btn .icon-group i,
+.preview-controller .next-btn .icon-group i{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    opacity:0;
+    transition:0.3s ease;
+}
+.preview-controller .prev-btn .icon-group i:nth-child(2),
+.preview-controller .next-btn .icon-group i:nth-child(2){
+    opacity:1;
+}
+.preview-controller .prev-btn i{
+    background: url("../images/icon/ico-prevArrow-gray.png") no-repeat center / cover;
+}
+.preview-controller .prev-btn i:nth-child(2){
+    background: url("../images/icon/ico-prevArrow-black.png") no-repeat center / cover;
+}
+.preview-controller .next-btn i{
+    background: url("../images/icon/ico-nextArrow-gray.png") no-repeat center / cover;
+}
+.preview-controller .next-btn i:nth-child(2){
+    background: url("../images/icon/ico-nextArrow-black.png") no-repeat center / cover;
+}
+.preview-controller .prev-btn.last i{
+    opacity:1;
+}
+.preview-controller .prev-btn.last i:nth-child(2){
+    opacity:0;
+}
+.preview-controller .next-btn.last i{
+    opacity:1;
+}
+.preview-controller .next-btn.last i:nth-child(2){
+    opacity:0;
+}
+.autoplay-btn{
+    background-color: #eeeeee;
+}
+.autoplay-btn .icon-group{
+    position:relative;
+    width:14px;
+    height:18px;
+}
+.autoplay-btn i{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+}
+.autoplay-btn i:nth-child(1){
+    background:url("../images/icon/ico-play-black.png") no-repeat center / cover;
+    opacity:1;
+}
+.autoplay-btn i:nth-child(2){
+    background:url("../images/icon/ico-stop-black.png") no-repeat center / cover;
+    opacity:0;
+}
+.autoplay-btn.play i:nth-child(1){
+    opacity:0;
+}
+.autoplay-btn.play i:nth-child(2){
+    opacity:1;
+}
 @media all and (max-width:1600px){
     .make-header .make-category-select{
     
