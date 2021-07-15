@@ -11,11 +11,6 @@ loginItem.click(function(){
     }
 });
 
-
-$('.login_close img').click(function(){
-                $('.login-popup').hide();
-            });
-
 $(function() {           
 
     $(".login_list input").focus(function(){

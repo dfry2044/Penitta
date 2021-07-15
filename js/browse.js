@@ -29,11 +29,9 @@ function deviceCheck() {
             } else {
             
                 browser='익스플로러';
-                $(".make-canvas").css({
-                    height:"calc(80vh - 59.809vw)"
-                });
-                alert(browser);
+                
             }
+            alert(browser);
         } else {
             console.log('PC');
             var userAgent=navigator.userAgent.toLowerCase();
@@ -56,8 +54,11 @@ function deviceCheck() {
                 browser='파이어폭스';
                 
             } else {
+            
                 browser='익스플로러';
+                
             }
+            alert(browser);
         }
     }
 }
