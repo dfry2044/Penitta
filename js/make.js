@@ -160,12 +160,12 @@ function blurAnim(el){
 }
 
 // slide
-var makeSlideItem = $(".make-list-item");
 var makeCanvasImg = $(".make-img-container img");
 var makeSlidePrevBtn = $(".make-slide .prev-btn");
 var makeSlideNextBtn = $(".make-slide .next-btn");
 var makeSlideCurrentNum = $(".make-slide .current-number");
 var makeSlideTotalNum = $(".make-slide .total-number");
+var makeSlideItem = $(".make-slide-wrap-pc li");
 var makeSlideActiveItem;
 var makeSlideActiveImg;
 var slideClickIdx;
@@ -181,34 +181,46 @@ makeSlideItem.click(function(){
     makeSlideItem.eq(slideClickIdx).addClass("active");
 })
 
+var makeSwiper = new Swiper(".make-slide-wrap",{
+    effect:"fade",
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+})
+
 makeSlidePrevBtn.click(function(){
     
     if(slideIdx == 0){
 
-        slideIdx = 4;
-        makeSlideCurrentNum.text(makeSlideTotalNum.text());
-        
+        return false;
+
     }else{
         makeSlideCurrentNum.text(slideIdx);        
         
         slideIdx--;
+
+        makeSlideItem.removeClass("active");
+
+        makeSlideItem.eq(slideIdx).addClass("active");
     }
 
 })
 makeSlideNextBtn.click(function(){
     
-    slideIdx++;
 
     console.log(slideIdx);
-    if(slideIdx == makeSlideTotalNum.text()){
+    if(slideIdx == makeSlideItem.length - 1){
 
-        slideIdx = 0;
-        
-        makeSlideCurrentNum.text(1);
-        
+        return false;
     }else{
+        slideIdx++;
         
         makeSlideCurrentNum.text(slideIdx + 1);        
+        
+        makeSlideItem.removeClass("active");
+        
+        makeSlideItem.eq(slideIdx).addClass("active");
     }
 })
 
@@ -439,3 +451,15 @@ function autoPlayPreview(){
         autoPlayToggle = true;
     }
 }
+
+// mobile - tag input open&close
+var tagInputMobile = $("#tag-input-m");
+var tagInputOpenBtn = $(".make-tag-btn");
+var tagInputCloseBtn = $(".tag-input-m-close");
+
+tagInputOpenBtn.click(function(){
+    tagInputMobile.addClass("show");
+})
+tagInputCloseBtn.click(function(){
+    tagInputMobile.removeClass("show");
+})
