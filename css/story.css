@@ -334,6 +334,10 @@ div.swiper-slide {
     background: #fe811c;
 }
 
+.swiper-wrapper {
+    margin-left: 12px;
+}
+
 @media (max-width: 1500px) {
     .top-text {
         width: 100%;
@@ -1012,6 +1016,9 @@ footer > div .logo {
     }
     footer > div {
         width: 1440px;
+    }
+    .swiper-slide img {
+        width: 452px;
     }
 }
 @media (max-width: 1500px) {

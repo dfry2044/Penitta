@@ -230,17 +230,6 @@ header div.header-right > div.userMenu.active {
     position: relative;
 }
 
-.template-inner > h2 > span::after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background: #fe811c;
-    position: absolute;
-    left: 0;
-    bottom: 3px;
-}
-
 .t-box-list {
     width: 100%;
 }
