@@ -22,8 +22,8 @@ var swiper = new Swiper(".mySwiper2", {
 
 var swiper = new Swiper(".mySwiper3", {
     slidesPerView: 'auto',
-    loop: true,
     centeredSlides: true,
+    loop: true,
     speed: 1000,
     autoplay: {
         delay: 3500,

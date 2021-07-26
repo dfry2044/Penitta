@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -13,10 +14,10 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./plugin/css/swiper.css">
     <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="./css/template.css">
+    <link rel="stylesheet" href="./css/story-search.css">
     <link rel="stylesheet" href="css/common.css">
 
-    <title>Penitta-template</title>
+    <title>story-search</title>
 </head>
 
 <body>
@@ -31,9 +32,9 @@
                     <a href="./index.html" class="logo"><img src="images/common/logo.png" alt="로고이미지"></a>
                     <ul>
                         <li><a href="./index.html">HOME</a></li>
-                        <li><a href="./story.html">스토리</a></li>
+                        <li class="active"><a href="./story.html">스토리</a></li>
                         <li><a href="./make_player.html">만들기</a></li>
-                        <li class="active"><a href="./template.html">템플릿</a></li>
+                        <li><a href="./template.html">템플릿</a></li>
                         <li><a href="#">매뉴얼</a></li>
                         <li><a href="#">멤버십</a></li>
                     </ul>
@@ -74,9 +75,24 @@
     <div class="wrap">
         <div class="template-wrap">
             <div class="template-inner">
-                <h2>마음에 드는 <span>템플릿</span>으로 시작해보세요.</h2>
+                <h2>스토리 하나로 마음이 이어지는 공간입니다.</h2>
                 <div class="t-top-wrap">
                     <div class="input-stlye">
+                        <div class="make-category-select">
+                            <button class="story-select-top">
+                                <span>제목</span>
+                                <i class="story-select-ico"></i>
+                            </button>
+                            <div class="story-select-content">
+                                <ul>
+                                    <li>
+                                        <button>선택</button>
+                                    </li>
+                                    <li><button>제목</button></li>
+                                    <li><button>태그</button></li>
+                                </ul>
+                            </div>
+                        </div>
                         <input class="t-input-search" type="text" placeholder="검색어를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='검색어를 입력하세요.'" style="color: #a5a5a5;">
                         <span class="form-control-clear form-control-feedback hidden">검색어 삭제</span>
                         <i class="t-search-ico"></i>
@@ -292,6 +308,7 @@
     <script src="js/story.js"></script>
     <script src="js/popup.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/make.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,170 @@
+.my-tab .my-notice-inner ul {
+  height: 35%;
+}
+.my-card ul li, .my-card ul li h2, .my-card ul li p {
+    min-height: auto;
+    margin-bottom: 0;
+}
+
+.my-card ul li h2{
+  line-height: 26px;
+  font-size: 16px;
+  letter-spacing: -1px;
+}
+
+.my-card ul li h2:hover {
+    text-decoration: none;
+}
+
+.my-card ul li p {
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+}
+
+.my-card ul li {
+  width: 100%;
+}
+
+.my-tab .my-notice-inner li  {
+    width: 103px;
+}
+
+.my-tab {
+  height: 221px;
+}
+
+.my-notice-inner > p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+  #wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 39px;
+  }
+  /* Accordion Container */
+  .container {
+    width: 100%;
+    position: relative;
+  }
+  /* shadow */
+  .accordionTitle {
+    position: relative;
+    height: 86px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    transition: ease-in-out 0.2s all;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .title-left {
+    display: flex;
+    align-items: center;
+  }
+  .title-left > em {
+    display: block;
+    font-size: 16px;
+    font-weight: 400 !important;
+    padding: 0 16.5px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    background-color: #d1d1d1;
+    border-radius: 100px;
+    margin-right: 11px !important;
+  }
+  .title-right {
+    margin-right: 46px;
+  }
+  .my-card ul li p{
+    font-size: 14px;
+    line-height: 14px;
+  }
+  /* Accordion Item line */
+  .accordionTitle:before, .accordionTitle:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    border-radius: 50px;
+    transition: ease-in-out 0.6s all;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .accordionTitle:before {
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  .accordionTitle:after {
+    background-image: linear-gradient(90deg, #898989, #e3e3e3);
+    width: 0%;
+  }
+  .accordionTitle:hover::after {
+    width: 100%;
+  }
+  /* Accordion Item Icon  */
+  .accIcon {
+    float: right;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .accIcon > i{
+    background: url(../images/icon/ico-mn-downarrow.png)no-repeat center / cover;
+    width: 18px;
+    height: 10px;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    right: 28px;
+    transition: ease 0.3s all;
+  }
+
+  /* Text Content */
+  .accordion .item .text {
+    opacity: 0;
+    height: 0;
+    padding: 0px 20px;
+    position: relative;
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 300;
+    transition: all 0.6s cubic-bezier(0.42, 0.2, 0.08, 1);
+    overflow: hidden;
+    background-color: #f8f8f8;
+    letter-spacing: 0.5px;
+  }
+  /* Text Content - Class for JS to hide and show */
+  .accordion .item .text.show {
+    opacity: 1;
+    height: auto;
+    padding: 30px 20px;
+    position: relative;
+    z-index: 0;
+    border-radius: 0px 0px 3px 3px;
+  }
+  
+  .title-left > em.show {
+    background-color: #fe811c;
+    color: #fff;
+  }
+
+  .accIcon > i.show{
+    background: url(../images/icon/ico-mn-uparrow.png)no-repeat center / cover;
+  }
