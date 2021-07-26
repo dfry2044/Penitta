@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./plugin/css/swiper.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="./css/make_player.css">
 
     <title>make_player</title>
@@ -46,7 +47,25 @@
                 <div class="header-right">
                     <div class="userMenu">
                         <a href="#" class="user"><img src="images/icon/ico-user.png" alt="사람이모티콘"></a>
-                        <a href="#" class="ham"><img src="images/icon/ico-ham.png" alt="햄버거버튼"></a>
+                        <p class="userNick"><span class="login-Nickname">Nickname님</span></p>
+                        <ul class="no-login-menu">
+                            <li><button class="popup-button">로그인</button></li>
+                            <li><a href="./join.html">회원가입</a></li>
+                        </ul>
+                        <ul class="login-menu">
+                            <li>
+                                <i class="dropdown-head"></i>
+                                <a href="#">나의스토리</a></li>
+                            <li><a href="#">나의정보</a></li>
+                            <li><a href="#">비밀번호 변경</a></li>
+                            <li><a href="#">결제내역</a></li>
+                            <li><a href="#">알림글</a></li>
+                            <li><a href="#">궁금해요</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li class="drop-last">
+                                <i class="dropdown-bottom"></i>
+                                <a href="#">로그아웃</a></li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -198,8 +217,55 @@
                                     <div class="make-tag-input mo">
                                         <button class="make-tag-btn">#</button>
                                     </div>
+                                    <div id="tag-input-m" class="mo">
+                                        <input type="text" placeholder="# 태그 입력(쉼표로 구분)">
+                                        <button class="tag-input-m-close">
+                                            <i></i>
+                                        </button>
+                                    </div>
                                 </div>
-                                <img src="./images/maker/background00.jpg" alt="main-img">
+                                <ul class="pc make-slide-wrap-pc">
+                                    <div class="make-slide-img-group active">
+                                        <img src="./images/maker/background00.jpg" alt="main-img" class="active">
+                                        <img src="./images/maker/background01.jpg" alt="main-img">
+                                        <img src="./images/maker/background02.jpg" alt="main-img">
+                                        <img src="./images/maker/background00.jpg" alt="main-img">
+                                        <img src="./images/maker/background01.jpg" alt="main-img">
+                                    </div>
+                                    <div class="make-slide-img-group">
+                                        <img src="./images/maker/background01.jpg" alt="main-img" class="active">
+                                        <img src="./images/maker/background02.jpg" alt="main-img">
+                                        <img src="./images/maker/background00.jpg" alt="main-img">
+                                        <img src="./images/maker/background01.jpg" alt="main-img">
+                                        <img src="./images/maker/background02.jpg" alt="main-img">
+                                    </div>
+                                    <div class="make-slide-img-group">
+                                        <img src="./images/maker/background02.jpg" alt="main-img" class="active">
+                                        <img src="./images/maker/background01.jpg" alt="main-img">
+                                        <img src="./images/maker/background00.jpg" alt="main-img">
+                                        <img src="./images/maker/background01.jpg" alt="main-img">
+                                        <img src="./images/maker/background02.jpg" alt="main-img">
+                                    </div>
+                                </ul>
+                                <div class="swiper-container make-slide-wrap mo">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./images/maker/background00.jpg" alt="main-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/maker/background01.jpg" alt="main-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/maker/background02.jpg" alt="main-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/maker/background00.jpg" alt="main-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/maker/background01.jpg" alt="main-img">
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="make-footer mo">
                                     <div class="make-slide">
                                         <button class="prev-btn">
@@ -223,7 +289,7 @@
                         </div>
                         <div class="make-footer pc">
                             <div class="make-slide">
-                                <button class="prev-btn">
+                                <button class="prev-btn swiper-button-prev">
                                     <i></i>
                                 </button>
                                 <div class="make-slide-number">
@@ -231,7 +297,7 @@
                                     /
                                     <span class="total-number">5</span>
                                 </div>
-                                <button class="next-btn">
+                                <button class="next-btn swiper-button-next">
                                     <i></i>
                                 </button>
                             </div>
@@ -1158,5 +1224,7 @@
     <script src="./js/category.js"></script>
     <script src="./js/story.js"></script>
     <script src="./js/browse.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/popup.js"></script>
 </body>
 </html>

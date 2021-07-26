@@ -34,9 +34,9 @@ $(window).scroll(function () {
 
 //c2 swiper
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    spaceBetween:40,
+    slidesPerView: 4,
+    slidesPerGroup: 4,
+    spaceBetween: 1,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
@@ -67,10 +67,27 @@ $(function () {
 var templateItem = $(".t-list_item");
 var templatePreviewCloseBtn = $(".preview-close-btn");
 var templatePreviewContent = $(".template-preview");
+var storyicoRotationStart = $(".story-select-top");
+var storyico = $('.story-select-ico');
+var storyicoRotationEnd = $(".story-select-content");
 
 templateItem.click(function(){
     templatePreviewContent.addClass("show");
 })
 templatePreviewCloseBtn.click(function(){
     templatePreviewContent.removeClass("show");
+})
+
+storyicoRotationStart.click(function(){
+    storyico.addClass("active");
+})
+storyicoRotationEnd.click(function(){
+    storyico.removeClass("active");
+})
+
+storyico.click(function(){
+    storyico.addClass("active");
+})
+storyico.click(function(){
+    storyico.removeClass("active");
 })

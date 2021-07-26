@@ -35,7 +35,9 @@
     height: 61px;
     color: #a5a5a5;
     border: #dfdfdf solid 1px;
-    border-radius: 10px;
+    border-radius: 5px;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 .input-style > input {

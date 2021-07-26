@@ -295,19 +295,20 @@ input::-moz-placeholder { color: #a5a5a5; }
 /* ---- */
 header div.header-right > div.userMenu {
     width: 50px;
-    height: 92px;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-content: center;
     position: relative;
 }
 
 .userMenu > .userNick {
-    width: 70px;
-    font-size: 11px;
+    width: 80px;
+    font-size: 14px;
     position: absolute;
     bottom: 39px;
     left: 44px;
+    font-weight: 500;
 }
 
 /* user-popup .no-login*/
@@ -333,7 +334,6 @@ header div.header-right > div.userMenu {
 .userMenu > .no-login-menu > li > button:hover {
     color: rgba(255, 255, 255, 0.8);
     font-weight: 600;
-    font-size: 14px;
     transition: 0.5s ease;
 }
 
@@ -342,8 +342,8 @@ header div.header-right > div.userMenu {
     display: inline-block;
     width: 1px;
     height: 12px;
-    background-color: #fff;
-    margin-left: 6px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-left: 11px;
 }
 
 .userMenu > .no-login-menu {
@@ -351,12 +351,12 @@ header div.header-right > div.userMenu {
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    width: calc(100% + 96px);
-    height: 46px;
+    width: calc(100% + 98px);
+    height: 40px;
     padding: 0 19px;
-    background: #fe811c;
-    border-radius: 18px;
-    bottom: -40px;
+    background: #ff7800;
+    border-radius: 12px;
+    bottom: -36px;
     left: -49px;
     text-align: start;
     box-shadow: 2px 4px 8px rgb(0 0 0 / 16%);
@@ -364,9 +364,9 @@ header div.header-right > div.userMenu {
 
 .userMenu > .no-login-menu::before {
     content: '◆';
-    color: #fe811c;
+    color: #ff7800;
     position: absolute;
-    bottom: 39px;
+    bottom: 31px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -391,7 +391,7 @@ header div.header-right > div.userMenu {
 
 .userMenu > .login-menu > li {
     margin-left: 0 !important;
-    height: 32px;
+    height: 44px;
     position: relative;
 }
 
@@ -403,10 +403,10 @@ header div.header-right > div.userMenu {
     content: '';
     display: block;
     height: 1px;
-    width: 83px;
-    background-color: #eeeded;
+    width: 107px;
+    background-color: #eceaea;
     position: absolute;
-    bottom: -1px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     transition: 0.3s;
@@ -439,11 +439,13 @@ header div.header-right > div.userMenu {
 
 .userMenu > .login-menu > li > a {
     color: #000;
-    font-size: 11.25px;
-    padding-left: 14px;
+    font-size: 15px;
+    padding-left: 19px;
     height: 100%;
     line-height: 32px;
     font-weight: 500;
+    display: flex;
+    align-items: center;
 }
 
 .userMenu > .login-menu > li:hover > a {
@@ -454,13 +456,13 @@ header div.header-right > div.userMenu {
 .userMenu > .login-menu {
     display: block;
     position: absolute;
-    width: calc(100% + 62px);
-    height: 257px;
+    width: calc(100% + 98px);
+    height: 351px;
     background: #f8f8f8;
     border-left: 1px solid #ebe9e9;
     border-right: 1px solid #ebe9e9;
-    bottom: -260px;
-    left: 8px;
+    bottom: -357px;
+    left: -1px;
 }
 
 .userMenu > .login-menu i.dropdown-bottom{
@@ -489,4 +491,61 @@ header div.header-right > div.userMenu {
 
 .login-popup.active{
     display: flex;
+}
+
+@media all and (max-width: 1920px){
+    .userMenu > .no-login-menu {
+        width: calc(100% + 62px);
+        height: 30px;
+        border-radius: 10px;
+        padding: 0 14px;
+        bottom: -28px;
+        left: -31.5px;
+    }
+    .userMenu > .no-login-menu::before {
+        bottom: 21px;
+        font-size: 15px;
+    }
+    .userMenu > .no-login-menu > li {
+        display: flex;
+        align-items: center;
+    }
+    .userMenu > .no-login-menu > li > button {
+        font-size: 10.5px;
+    }
+    .userMenu > .no-login-menu > li > a{
+        font-size: 10.5px;
+    }
+    .userMenu > .no-login-menu > li:first-child > button::after {
+        height: 9px;
+        margin-left: 8px;
+    }
+
+    .userMenu > .userNick{
+        font-size: 11px;
+    }
+
+    .userMenu > .login-menu {
+        width: calc(100% + 62px);
+        height: 257px;
+        bottom: -260px;
+        left: 11px;
+    }
+    .userMenu > .login-menu > li {
+        height: 32px;
+    }
+    .userMenu > .login-menu > li > a {
+        font-size: 11.25px;
+        padding-left: 14px;
+        line-height: 32px;
+    }
+    .userMenu > .login-menu > li::after {
+        height: 1px;
+        width: 83px;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.3s;
+    }
 }
