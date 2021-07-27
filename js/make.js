@@ -161,25 +161,18 @@ function blurAnim(el){
 
 // slide
 var makeCanvasImg = $(".make-img-container img");
+var makeListItem = $(".make-list ul .make-list-item");
 var makeSlidePrevBtn = $(".make-slide .prev-btn");
 var makeSlideNextBtn = $(".make-slide .next-btn");
 var makeSlideCurrentNum = $(".make-slide .current-number");
 var makeSlideTotalNum = $(".make-slide .total-number");
-var makeSlideItem = $(".make-slide-wrap-pc li");
+var makeSlideWrap = $(".make-slide-wrap-pc .make-slide-img-group");
+var makeSlideItem = $(".make-slide-wrap-pc .make-slide-img-group img");
 var makeSlideActiveItem;
 var makeSlideActiveImg;
 var slideClickIdx;
+var slideItemIdx = 0;
 var slideIdx = 0;
-
-makeSlideItem.click(function(){
-    slideClickIdx = $(this).index();
-    
-    makeSlideItem.removeClass("active");
-
-    makeSlideActiveImg = makeSlideItem.eq(slideClickIdx).find("img").attr("src");
-    makeCanvasImg.attr("src",makeSlideActiveImg);
-    makeSlideItem.eq(slideClickIdx).addClass("active");
-})
 
 var makeSwiper = new Swiper(".make-slide-wrap",{
     effect:"fade",
@@ -187,6 +180,18 @@ var makeSwiper = new Swiper(".make-slide-wrap",{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+})
+
+makeListItem.click(function(){
+    slideItemIdx = $(this).index();
+    
+    makeSlideWrap.removeClass("active");
+
+    makeSlideWrap.eq(slideItemIdx).addClass("active");
+
+    makeListItem.removeClass("active");
+
+    makeListItem.eq(slideItemIdx).addClass("active");
 })
 
 makeSlidePrevBtn.click(function(){
@@ -200,27 +205,29 @@ makeSlidePrevBtn.click(function(){
         
         slideIdx--;
 
-        makeSlideItem.removeClass("active");
+        makeSlideWrap.eq(slideItemIdx).find(makeSlideItem).removeClass("active");
 
-        makeSlideItem.eq(slideIdx).addClass("active");
+        makeSlideWrap.eq(slideItemIdx).find(makeSlideItem).eq(slideIdx).addClass("active");
     }
 
 })
 makeSlideNextBtn.click(function(){
     
-
-    console.log(slideIdx);
-    if(slideIdx == makeSlideItem.length - 1){
+    if(slideIdx == makeSlideWrap.eq(slideItemIdx).find(makeSlideItem).length - 1){
 
         return false;
+
     }else{
         slideIdx++;
         
         makeSlideCurrentNum.text(slideIdx + 1);        
         
-        makeSlideItem.removeClass("active");
-        
-        makeSlideItem.eq(slideIdx).addClass("active");
+        makeSlideWrap.eq(slideItemIdx).find(makeSlideItem).removeClass("active");
+
+        makeSlideWrap.eq(slideItemIdx).find(makeSlideItem).eq(slideIdx).addClass("active");
+        console.log(
+            makeSlideWrap.eq(slideItemIdx).find(makeSlideItem).eq(slideIdx)
+        )
     }
 })
 
