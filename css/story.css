@@ -7,6 +7,7 @@
 }
 
 .swiper-slide {
+    width: 386px !important;
     text-align: start;
     font-size: 18px;
     /* Center slide text vertically */
@@ -22,6 +23,7 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    margin-right: 0px !important ;
 }
 
 .swiper-slide img {
@@ -149,15 +151,6 @@ header nav .userMenu .user {
     transition: 0.3s;
 }
 
-header nav .userMenu .user::after {
-    position: absolute;
-    right: -10px;
-    top: 3px;
-    content: "\f0d7";
-    display: inline-block;
-    font-family: fontAwesome;
-}
-
 header nav .userMenu .user:hover {
     opacity: 0.6;
 }
@@ -217,6 +210,7 @@ header div.header-right > div.userMenu.active {
 
 .c2-wrap {
     position: relative;
+    height: 690px;
 }
 .c2-wrap::after {
     content: "";
@@ -230,21 +224,19 @@ header div.header-right > div.userMenu.active {
 }
 
 .top-text {
-    width: 100%;
-    max-width:1500px;
+    max-width: 1500px;
     margin: 0 auto;
+    padding-top: 60px;
+}
+
+.top-text > p {
+    width: 100%;
+    font-size: 32px;
+    font-weight: 600;
 }
 
 div.swiper-slide {
     width: 464px;
-}
-
-.top-text > div > p {
-    width: 1500px;
-    margin: 0 auto;
-    padding: 76px 0 52px 0;
-    font-size: 32px;
-    font-weight: 300;
 }
 
 .swiper-slide > .sub {
@@ -277,6 +269,8 @@ div.swiper-slide {
 .sub > a {
     display: block;
     overflow: hidden;
+    width: 327px;
+    border-radius: 10px;
 }
 
 .swiper-slide img {
@@ -321,7 +315,7 @@ div.swiper-slide {
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 54px;
-    left: 23px;
+    left: 34px;
     text-align: left;
 }
 
@@ -337,6 +331,7 @@ div.swiper-slide {
 .swiper-wrapper {
     margin-left: 12px;
 }
+
 
 @media (max-width: 1500px) {
     .top-text {
@@ -360,7 +355,7 @@ div.swiper-slide {
 }
 
 .c3-w-inner > div {
-    width: 464px;
+    width: 29%;
 }
 
 .txt-left > p {
@@ -412,13 +407,25 @@ div.swiper-slide {
     background: #fe811c url(../images/icon/ico-check.png) no-repeat center center / auto;
 }
 
+.search_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: #000 solid 1px;
+}
+
 .search_input {
-    width: 423px;
+    width: 95%;
     padding: 12px 24px 12px 0;
     outline: none;
     border: none;
-    border-bottom: #000 solid 1px;
-    background: url(../images/icon/ico-search.png) no-repeat center right / auto;
+}
+
+.search_container > i {
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon/ico-search.png) no-repeat center right / cover;
+    cursor: pointer;
 }
 
 .search_input:focus {
@@ -609,7 +616,10 @@ div.swiper-slide {
 .list_item > div > div > button:first-child{
     padding-right: 9px;
 }
-.list_item > div > div > button:nth-child(2) {
+.list_item > div > div > button:nth-child(2){
+    padding-right: 9px;
+}
+.list_item > div > div > button:nth-child(3) {
     padding-right: 20px;
 }
 .c4-react > button::before {
@@ -619,9 +629,9 @@ div.swiper-slide {
 .list_item > div > div > button:first-child::before {
     content: "";
     display: block;
-    width: 22px;
+    width: 27px;
     height: 22px;
-    background: url(../images/icon/ico-heart.png) no-repeat center center / auto;
+    background: url(../images/icon/ico-eye.png) no-repeat center center / auto;
 }
 
 .list_item > div > div > button:nth-child(2)::before {
@@ -629,9 +639,16 @@ div.swiper-slide {
     display: block;
     width: 22px;
     height: 22px;
-    background: url(../images/icon/ico-Balloon.png) no-repeat center center / auto;
+    background: url(../images/icon/ico-heart.png) no-repeat center center / auto;
 }
 
+.list_item > div > div > button:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/icon/ico-Balloon.png) no-repeat center center / auto;
+}
 
 .btn-wrap {
     padding: 23px 0 118px;
@@ -658,8 +675,13 @@ div.swiper-slide {
 }
 
 .c2-swiper-inner{
-    overflow: hidden;
-    max-width: 1542px;
+    max-width: 1545px;
+    text-align: center;
+    position: absolute;
+    right: 50%;
+    transform: translateX(49.4%);
+    z-index: 2;
+    top: 19%;
 }
 @media (max-width: 1500px) {
     .c4_wrap {
@@ -928,7 +950,7 @@ footer > div .logo {
     top: 0;
     z-index: 99999;
     width: 90px;
-    height: 99px;
+    height: 132px;
     border: 1px solid #bababa;
     background-color: #ffffff;
     opacity: 0;
@@ -939,6 +961,7 @@ footer > div .logo {
     opacity: 1;
     visibility: visible;
 }
+
 .card-etc-tooltip button {
     width: 100%;
     height: 33px;
@@ -955,7 +978,7 @@ footer > div .logo {
 .card-etc-tooltip button:hover{
     background-color: #dddddd;
 }
-.card-etc-tooltip button:after {
+.card-etc-tooltip button::after {
     content: "";
     width: 72px;
     height: 1px;
@@ -969,6 +992,35 @@ footer > div .logo {
 .card-etc-tooltip button:last-child::after{
     display: none;
 }
+
+.card-etc-tooltip button > i {
+    margin-right: 8px;
+}
+
+.card-etc-tooltip button > i.ico-bookmark {
+    width: 10px;
+    height: 15px;
+    background: url(../images/icon/ico-bookmark.png)no-repeat center / cover;
+}
+
+.card-etc-tooltip button > i.ico-tag {
+    width: 15px;
+    height: 15px;
+    background: url(../images/icon/ico-tag.png)no-repeat center / cover;
+}
+
+.card-etc-tooltip button > i.ico-share {
+    width: 13px;
+    height: 15px;
+    background: url(../images/icon/ico-share.png)no-repeat center / cover;
+}
+
+.card-etc-tooltip button > i.ico-report {
+    width: 15px;
+    height: 15px;
+    background: url(../images/icon/ico-report.png)no-repeat center / cover;
+}
+
 .toggle-group{
     display: flex;
     align-items: center;
@@ -978,50 +1030,27 @@ footer > div .logo {
 }
 @media all and (max-width:1920px){
     div.h-inner{
-        max-width:1440px;
+        max-width:1500px;
         padding: 0;
-    }
-    
-    .c2-swiper-inner{
-        max-width : 1508px;
-    }
-    .swiper-container-horizontal > .swiper-pagination-bullets {
-        left: 32px;
     }
     .c3-w-inner > div {
         width: 29%;
-    }
-    
-    .c3-w-inner > .txt-left {
-        margin-left: 2px;
-    }
-    
-    .c3-w-inner > .txt-right {
-        margin-right: 6px;
-    }
-    .c3-w-inner{
-        width: 1440px;
-    }
-    .c4_wrap {
-        width: 1440px;
     }
     .top-text > div > p{
         width: 100%;
         max-width:1440px;
     }
-    .swiper-slide{
-        justify-content:flex-end;
-    }
+
     .swiper-container{
     }
     footer > div {
         width: 1440px;
     }
     .swiper-slide img {
-        width: 452px;
+        width: 100%;
     }
 }
-@media (max-width: 1500px) {
+/* @media (max-width: 1500px) {
     header{
         height: 60px;
     }
@@ -1050,9 +1079,6 @@ footer > div .logo {
     }
     header nav .userMenu .user img{
         width: 15px;
-    }
-    header nav .userMenu .user::after{
-        font-size: 10px;
     }
     header nav .userMenu .ham img{
         width: 15px;
@@ -1301,5 +1327,5 @@ footer > div .logo {
     .btn-wrap{
         padding: 50px 0 68px 0;
     }
-}
+} */
 

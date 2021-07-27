@@ -104,15 +104,6 @@ header nav .userMenu .user {
     transition: 0.3s;
 }
 
-header nav .userMenu .user::after {
-    position: absolute;
-    right: -10px;
-    top: 3px;
-    content: "\f0d7";
-    display: inline-block;
-    font-family: fontAwesome;
-}
-
 header nav .userMenu .user:hover {
     opacity: 0.6;
 }
@@ -166,31 +157,28 @@ header div.header-right > div.userMenu.active {
     height: 72px;
 }
 
-
-@media (max-width: 1920px) {
-    div.h-inner {
-        width: 100%;
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 600px) {
-    header {
-        display: none;
-    }
-}
-
-
-
 /*join-wrap*/
 
+.join_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 1058px;
+    background-color: #f8f8f8;
+}
+
 .join_inner {
-    width: 451px;
+    width: 558px;
     min-width: 350px;
+    height: 849px;
     margin: 0 auto;
     text-align: center;
     font-size: 62.5%;
     padding-top: 27px;
+    padding: 27px 53px 0 53px;
+    border: #f7f7f7 solid 1px;
+    background-color: #fff;
 }
 
 .back-icon {
@@ -204,7 +192,7 @@ header div.header-right > div.userMenu.active {
 .join_inner > h2 {
     font-size: 41px;
     font-weight: 700;
-    padding: 142px 0 44px 0
+    padding: 71px 0 44px 0
 }
 
 .join-top {
@@ -229,6 +217,8 @@ header div.header-right > div.userMenu.active {
     border: #dfdfdf solid 1px;
     border-radius: 8px;
     letter-spacing: -1px;
+    padding-left: 0;
+    margin-bottom: 12px;
 }
 
 .input-style > input {
@@ -273,8 +263,8 @@ input::-moz-placeholder {
     margin-top: 12px;
 }
 
-.join-nickname {
-    padding: 12px 0;
+.join-top > div:nth-child(3) {
+    margin-top: 12px;
 }
 
 .flex-box > .input-style:first-child {
@@ -287,6 +277,7 @@ input::-moz-placeholder {
     padding: 0;
     border: #dfdfdf solid 1px;
     border-radius: 8px;
+    margin-bottom: 0;
 }
 
 .join-nickname > button {
@@ -303,6 +294,7 @@ input::-moz-placeholder {
     text-align: center;
     cursor: pointer;
     margin-left: 4px;
+    margin-bottom: 0;
 }
 
 .flex-box > .input_nick:hover {
@@ -420,107 +412,6 @@ input::-moz-placeholder {
 .join-social li > a > img {
     width: 50px;
     height: 50px;
-}
-
-@media (max-width: 600px) {
-    .join-nickname > button {
-        right: 24.9%;
-    }
-
-    .join-nickname {
-        height: 82px;
-    }
-
-    .join-back > img {
-        width: 10px;
-        height: 15px;
-    }
-
-    .join_inner {
-        width: inherit;
-        padding: 27px 22px 0 22px;
-    }
-
-    .join-back {
-        display: inline-block;
-    }
-
-    .join_inner > h2 {
-        font-size: 20px;
-        padding: 23px 0 48px;
-    }
-
-    .join-top {
-        padding-bottom: 24px;
-    }
-
-    .join-input-wrap input {
-        font-size: 16px !important;
-        font-weight: 100;
-    }
-
-    .join-nickname {
-        padding: 9px 0;
-    }
-
-    .join-top > .join-emo:last-child {
-        margin-top: 9px;
-    }
-
-    .join-emo > input,
-    .join-nickname > .nickname {
-        padding-left: 11px !important;
-    }
-
-    .join-check > p::before {
-        width: 24px;
-        height: 24px;
-    }
-
-    .join-bottom {
-        padding-bottom: 48px;
-    }
-
-    .join-bottom > div:first-child {
-        padding-bottom: 8px;
-    }
-
-    .join-bottom > div {
-        font-size: 15px;
-    }
-
-    .join-check > a::after {
-        width: 8px;
-        height: 12px;
-    }
-
-    .join-bottom > a {
-        font-size: 18px;
-        height: 54px;
-        margin-top: 23px;
-    }
-
-    .join-social > ul {
-        padding: 24px 0 190px;
-    }
-
-    .join-social > ul a > img {
-        width: 39px;
-        height: 39px;
-    }
-
-    .join-social li {
-        margin-right: 23px;
-    }
-
-    .join-social li:last-child {
-        margin-right: 0;
-    }
-
-    .join-social li > p {
-        font-size: 13.20px;
-    }
-
 }
 
 /*footer*/
@@ -653,10 +544,119 @@ header .logo{
 header nav ul li:first-child{
     margin-left: 0;
 }
-@media all and (max-width:1920px){
+
+@media all and (max-width: 1920px) {
+    div.h-inner {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    header {
+        display: none;
+    }
+
+    .join-nickname > button {
+        right: 24.9%;
+    }
+
+    .join-back > img {
+        width: 10px;
+        height: 15px;
+    }
+
+    .join_inner {
+        width: inherit;
+        padding: 27px 22px 0 22px;
+    }
+
+    .join-back {
+        display: inline-block;
+    }
+
+    .join_inner > h2 {
+        font-size: 20px;
+        padding: 23px 0 48px;
+    }
+
+    .join-top {
+        padding-bottom: 24px;
+    }
+
+    .join-input-wrap input {
+        font-size: 16px !important;
+        font-weight: 100;
+    }
+
+    .join-top > .join-emo:last-child {
+        margin-top: 9px;
+    }
+
+    .join-emo > input,
+    .join-nickname > .nickname {
+        padding-left: 11px !important;
+    }
+
+    .join-check > p::before {
+        width: 24px;
+        height: 24px;
+    }
+
+    .join-bottom {
+        padding-bottom: 48px;
+    }
+
+    .join-bottom > div:first-child {
+        padding-bottom: 8px;
+    }
+
+    .join-bottom > div {
+        font-size: 15px;
+    }
+
+    .join-check > a::after {
+        width: 8px;
+        height: 12px;
+    }
+
+    .join-bottom > a {
+        font-size: 18px;
+        height: 54px;
+        margin-top: 23px;
+    }
+
+    .join-social > ul {
+        padding: 24px 0 190px;
+    }
+
+    .join-social > ul a > img {
+        width: 39px;
+        height: 39px;
+    }
+
+    .join-social li {
+        margin-right: 23px;
+    }
+
+    .join-social li:last-child {
+        margin-right: 0;
+    }
+
+    .join-social li > p {
+        font-size: 13.20px;
+    }
+
+}
+
+/* @media all and (max-width:1920px){
     div.h-inner{
         max-width:1440px;
         padding: 0;
+    }
+    div.h-inner {
+        width: 100%;
+        padding: 0 20px;
     }
 }
 @media (max-width: 1500px) {
@@ -691,9 +691,6 @@ header nav ul li:first-child{
     }
     header nav .userMenu .user img{
         width: 15px;
-    }
-    header nav .userMenu .user::after{
-        font-size: 10px;
     }
     header nav .userMenu .ham img{
         width: 15px;
@@ -850,9 +847,9 @@ header nav ul li:first-child{
         margin-right: 14px;
     }
 }
-
+*/
 @media (max-width: 600px) {
     footer {
         display: none;
     }
-}
+} 
