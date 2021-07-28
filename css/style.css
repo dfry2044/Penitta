@@ -1,6 +1,4 @@
 
-
-
 /*스와이퍼*/
 .swiper-container {
     width: 100%;
@@ -32,29 +30,33 @@
 header {
     z-index: 99;
     width: 100%;
-    height: 92px;
+    height: 95px;
     position: fixed;
     transition: 0.3s;
+    border-bottom: #ebe9e9 solid 1px;
 }
 
 div.h-inner {
     width: 100%;
     max-width: 1975px;
+    height: 100%;
     margin: 0 auto;
 }
 
 header.active {
     background: white;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-bottom: none; 
 }
 
 header nav {
+    height: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 .header-left {
-    height: 92px;
+    height: 100%;
     display: flex;
     align-content: center;
 }
@@ -125,6 +127,7 @@ header .logo{
 header nav ul li:first-child{
     margin-left: 0;
 }
+
 @media (max-width: 1976px) {
     div.h-inner {
         padding: 0 20px;
@@ -639,318 +642,10 @@ header nav ul li:first-child{
     }
 }
 
-.c5 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 61px 0 76px;
-}
 
-.c5 .area {
-    display: flex;
-    width: 100%;
-    max-width: 1500px;
-}
-
-.c5 .area .box {
-    width: 365px;
-    height: 269px;
-    background: #fafafa;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 15px;
-    margin-right: 13px;
-}
-.c5 .area .box:last-child{
-    margin-right: 0;
-}
-.c5 .area .box img {
-    margin: 20px 0;
-}
-.c5 .area .box:nth-child(1) img {
-    width: 79px;
-    height: 57px;
-}
-.c5 .area .box:nth-child(2) img {
-    width: 69px;
-    height: 59px;
-}
-.c5 .area .box:nth-child(3) img {
-    width: 67px;
-    height: 55px;
-}
-.c5 .area .box:nth-child(4) img {
-    width: 59px;
-    height: 55px;
-}
-
-.c5 .area .box p {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.c5 .area .box span {
-    font-size: 15px;
-    margin: 20px 0;
-    color: #3f3f3f;
-    line-height: 1.4;
-}
-
-
-@media (max-width: 1520px) {
-    .scroll-over {
-        overflow-x: scroll;
-    }
-    .c5>.scroll-over{
-        overflow: hidden;
-    }
-}
-
-.c6 {
-    width: 100%;
-    background: #282623;
-    height: 434px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-
-.c6 div:nth-of-type(1) {
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.c6 div:nth-of-type(1) p {
-    font-size: 32px;
-    color: #fff;
-    font-weight: 300;
-}
-
-.c6 div:nth-of-type(1) p span {
-    font-size: 32px;
-    color: #fff;
-    font-weight: 500;
-}
-
-.c6 div:nth-of-type(1) span {
-    color: #cdc8c2;
-    margin: 20px 0;
-    font-size: 18px;
-    font-weight: 300;
-}
-
-.c6 div:nth-of-type(1) a {
-    position: relative;
-    margin-top: 40px;
-    display: inline-block;
-    background: #fff;
-    padding: 22px 72px;
-    border-radius: 40px;
-    transition: 0.3s;
-    overflow: hidden;
-}
-
-.c6 div:nth-of-type(1) a:hover {
-    background: #fe811c;
-}
-
-.c6 div:nth-of-type(1) a:hover span {
-    color: #fff;
-}
-
-.c6 div:nth-of-type(1) a span {
-    z-index: 1;
-    position: relative;
-    transition: 0.3s;
-    font-size: 18px;
-    color: #3c3933;
-    font-weight: 400;
-}
-
-.c6 div:nth-of-type(2) {
-    width: 1700px;
-    position: absolute;
-    height: 440px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.c6 div:nth-of-type(2) span {
-    position: absolute;
-    display: inline-block;
-}
-
-.c6 div:nth-of-type(2) .circle1 {
-    top: -150px;
-    left: 0;
-    width: 312px;
-    height: 312px;
-    border-radius: 100%;
-    background: #82430f;
-}
-
-.c6 div:nth-of-type(2) .circle2 {
-    top: 150px;
-    left: 300px;
-    width: 128px;
-    height: 128px;
-    border-radius: 100%;
-    background: #bd9322;
-}
-
-.c6 div:nth-of-type(2) .circle3 {
-    bottom: -50px;
-    right: 0;
-    width: 236px;
-    height: 236px;
-    border-radius: 100%;
-    background: #bd9322;
-}
-
-.c6 div:nth-of-type(2) .quad {
-    top: 176px;
-    right: 477px;
-    width: 150px;
-    height: 150px;
-    transform: rotate(45deg);
-    background: rgba(255, 255, 255, 0.05);
-}
-
-footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background: #fff;
-    padding: 53px 0 112px;
-}
-
-footer > div {
-    width: 1500px;
-    display: flex;
-}
-
-footer > div div {
-    width: 15%;
-}
-
-footer > div div:nth-of-type(2) {
-    width: calc(85% - 200px);
-    display: flex;
-    flex-direction: column;
-}
-
-footer > div div:nth-of-type(2) div {
-    width: 100%;
-    display: flex;
-    margin-bottom: 20px;
-}
-
-footer > div div:nth-of-type(2) div a {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #070707;
-    transition: 0.3s;
-}
-
-footer > div div:nth-of-type(2) div a:nth-of-type(2) {
-    margin-left: 32px;
-    font-weight: 600;
-}
-
-footer > div div:nth-of-type(2) div a:hover {
-    opacity: 0.6;
-}
-
-footer > div div:nth-of-type(2) ul {
-    display: flex;
-    margin: 5px 0;
-    color: #525252;
-}
-
-footer > div div:nth-of-type(2) ul li {
-    font-size: 15px;
-    margin-right: 10px;
-}
-
-footer > div div:nth-of-type(2) ul li > a {
-    font-size: 15px;
-    color: #525252;
-}
-
-footer > div div:nth-of-type(2) ul li::after {
-    content: "";
-    display: inline-block;
-    width: 1px;
-    height: 10px;
-    background: #9e9e9e;
-    margin-left: 10px;
-}
-
-footer > div div:nth-of-type(2) ul li:last-of-type::after {
-    display: none;
-}
-
-footer > div div:nth-of-type(2) address {
-    font-size: 15px;
-    margin-top: 50px;
-    color: #525252;
-}
-
-footer > div div:nth-of-type(3) {
-    width: 200px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-footer > div div:nth-of-type(3) a {
-    display: inline-block;
-    width: 40px;
-    height: 33px;
-    transition: 0.3s;
-}
-
-footer > div div:nth-of-type(3) a:hover {
-    opacity: 0.6;
-}
-
-footer > div div:nth-of-type(3) a.blog {
-    background: url(../images/common/sns/ico-blog.png);
-}
-
-footer > div div:nth-of-type(3) a.facebook {
-    background: url(../images/common/sns/ico-facebook.png);
-}
-
-footer > div div:nth-of-type(3) a.insta {
-    background: url(../images/common/sns/ico-insta.png);
-}
-
-footer > div div:nth-of-type(3) a.youtube {
-    background: url(../images/common/sns/ico-youtube.png);
-    margin-left: 5px;
-}
-
-footer > div .logo {
-    display: inline-block;
-    width: 140px;
-    height: 40px;
-    font-size: 21px;
-    font-weight: 700;
-    background: url(../images/common/logo-footer.png);
-}
 @media all and (max-width:1920px){
     div.h-inner{
         max-width:1440px;
-        padding: 0;
     }
     .c1 .slider-content-area{
         max-width:1440px;
@@ -990,27 +685,19 @@ footer > div .logo {
     }
     div.h-inner{
         width: 100%;
-        max-width: 1160px;
-        padding: 0;
+        max-width: 1125px;
     }
     header .logo{
         margin-right: 50px;
     }
-    .footer > div {
-        width: 100%;
-    }
     header nav ul li a{
-        font-size: 12px;
+        font-size: 14px;
     }
     header .logo img{
-        width: 72px;
+        width: 90px;
     }
     header nav .userMenu .user img{
-        width: 15px;
-    }
-    
-    header nav .userMenu .ham img{
-        width: 15px;
+        width: 18px;
     }
     .c1{
         height: 407px;
@@ -1187,61 +874,17 @@ footer > div .logo {
     .c6 div:nth-of-type(1) a span{
         font-size: 11px;
     }
-    footer > div{
-        max-width: 875px;
+}
+
+@media (max-width: 1125px){
+    .header-left > ul , .header-left > div , header div.header-right > div.userMenu {
+        display: none;
     }
-    footer > div .logo{
-        width: 73px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 20px;
+    .ham-btn {
+        display: block;
     }
-    footer > div div:nth-of-type(2) div a{
-        margin-top: 0;
-        font-size: 11px;
-    }
-    footer > div div:nth-of-type(2) div{
-        margin-bottom: 15px;
-    }
-    footer > div div:nth-of-type(2) ul li{
-        font-size: 10px;
-    }
-    footer > div div:nth-of-type(2) ul li > a{
-        font-size: 10px;
-    }
-    footer > div div:nth-of-type(2) address{
-        font-size: 10px;
-        margin-top: 30px;
-    }
-    footer > div div:nth-of-type(3) a{
-    }
-    footer > div div:nth-of-type(3) a.blog{
-        width: 24px;
-        height: 15px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    footer > div div:nth-of-type(3) a.facebook{
-        width: 24px;
-        height: 15px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    footer > div div:nth-of-type(3) a.insta{
-        width: 24px;
-        height: 15px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    footer > div div:nth-of-type(3) a.youtube{
-        width: 24px;
-        height: 15px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+    .header-right {
+        display: flex;
+        align-items: center;
     }
 }

@@ -1,21 +1,3 @@
-header .header-notice{
-    margin-left: 98px;
-    display: flex;
-    align-items: center;
-}
-header .header-notice i{
-    text-indent: -99999999px;
-    width: 28px;
-    height: 19px;
-    background: url("../images/icon/ico-speaker.png") no-repeat center / cover;
-    margin-right: 10px;
-}
-header .header-notice p{
-    font-size: 14px;
-    font-family: "Noto Sans Kr";
-    font-weight: 300;
-    color: #131313;
-}
 .my-tab{
     width: 100%;
     height: 140px;
@@ -127,7 +109,8 @@ header .header-notice p{
     min-height: 465px;
 }
 .my-card ul li .card-img-wrap{
-    height: 353px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
     overflow: hidden;
@@ -275,7 +258,7 @@ header .header-notice p{
     position: relative;
 }
 .my-card li>a{
-    width: 100%;
+    width: 353px;
     height: 353px;
     position: relative;
     display: block;
@@ -705,21 +688,14 @@ ul.my-comment-inner li .preview-head {
 }
 
 @media all and (max-width:1500px) {
-    div.h-inner {
-        max-width: 1125px;
-    }
     .my-card .my-card-inner{
         max-width: 1125px;
     }
-    .card-img-wrap {
-        width: 260px;
-        height: 260px !important;
-    }
     .my-card ul li h2 {
-        width: 246px;
         word-break: keep-all;
     }
-    .my-card li.new div.new-tooltip{
-        bottom: 93px;
+    .my-card li>a{
+        width: 260px;
+        height: 260px;
     }
 }

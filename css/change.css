@@ -192,3 +192,82 @@ input::-ms-clear {display:none;} /*pc에서 보여지는 삭제는 안보이게 
 }
 
 /*-------------------------------------*/
+
+
+/* 비밀번호 변경 완료시 page.css */
+
+.change-done-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.change-done-inner {
+    width: 558px;
+    min-width: 350px;
+    height: 504px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 54px 0 54px;
+    border: #eaeaea solid 1px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.ico-style{
+padding: 70px 0 35px;
+}
+
+.ico-style > i {
+    display: block;
+    width: 110px;
+    height: 110px;
+    background: url(../images/icon/ico-change-done.png) no-repeat center / cover;
+    margin: 0 auto;
+}
+
+.change-done-inner > h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.change-done-inner > p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #353535;
+    padding: 20px 0 54px;
+}
+
+.done-input-style{
+    width: 100%;
+    height: 61px;
+    background-color: #fe811c;
+    border-radius: 100px;
+}
+
+.done-input-style > button {
+    font-family: 'Noto Sans KR';
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -1px;
+}
+
+.done-input-style > a {
+    font-family: 'Noto Sans KR';
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -1px;
+}

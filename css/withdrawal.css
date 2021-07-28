@@ -1,0 +1,153 @@
+.withdrawal_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.withdrawal_inner {
+    width: 558px;
+    min-width: 350px;
+    height: 860px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 53px;
+    border: #eaeaea solid 1px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.wd-top {
+    border-bottom: #ededed solid 1px;
+}
+
+.wd-top > h2 {
+    font-size: 41px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+.wd-top > p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #353535;
+    padding: 22px 0 30px;
+    letter-spacing: -1px;
+}
+
+.wd-middle-check {
+    padding: 40px 0 36px;
+}
+
+.join-check > p {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -1px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.join-check > p::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #eaeaea;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+.wd-middle-check > div {
+    text-align: start;
+    padding-bottom: 12px;
+}
+
+.wd-middle-check > div:last-child{
+    padding-bottom: 0;
+}
+
+.join-check > p.active::before {
+    background: #fe811c url(../images/icon/ico-join-check.png) no-repeat center / 14px 10px;
+}
+
+input::-ms-clear {display:none;} /*pc에서 보여지는 삭제는 안보이게 처리*/
+.input-style {position:relative;}
+.input-style input {
+    width:100%; height:100%;
+}
+.input-style > span {
+    position:absolute; 
+    bottom: 50%;
+    transform: translateY(50%);
+    right:12px;
+    width:26px; 
+    height:26px;
+    background:url(../images/icon/ico-esc.png) no-repeat 0 0 / 100%; text-indent:-9999px;
+}
+
+.box-list > div:last-child {
+    margin-bottom: 0;
+}
+
+.wd-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.bot-style {
+    width: 48.9%;
+    height: 61px;
+    background-color: #fff;
+    border: #cfcfcf solid 1px;
+    border-radius: 100px;
+}
+
+.bot-style > button {
+    font-family: 'Noto Sans KR';
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -1px;
+}
+
+.withdrawl-input-style{
+    width: 48.9%;
+    height: 61px;
+    background-color: #fe811c;
+    border-radius: 100px;
+}
+
+.withdrawl-input-style > input {
+    font-family: 'Noto Sans KR';
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff !important;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -1px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.userEmail-style > input {
+    color: #000 !important;
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+}
