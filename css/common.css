@@ -681,8 +681,7 @@ header div.header-right > div.userMenu {
 }
 
 .userMenu > .no-login-menu {
-    display: none; 
-    /* flex 입력해야함 */
+    display: none;
 }
 
 .userMenu > .no-login-menu.show {
@@ -792,6 +791,10 @@ header div.header-right > div.userMenu {
 .userMenu > .login-menu {
     display: none;
     /* block 이어야함 */
+}
+
+.userMenu > .login-menu.active {
+    display: block;
 }
 
 .login-popup {
