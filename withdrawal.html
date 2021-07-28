@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="./plugin/css/swiper.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="./css/join.css">
+    <link rel="stylesheet" href="css/withdrawal.css">
 
-    <title>Penitta-join</title>
+    <title>withdrawl</title>
 </head>
 
 <body>
@@ -72,74 +72,55 @@
         </div>
     </header>
     <div class="wrap">
-        <div class="join_wrap">
-            <div class="join_inner">
-                <div class="back-icon">
-                    <a class="join-back" href="./index.html"><img src="./images/icon/ico-join-back.png" alt="뒤로가기"></a>
-                </div>
-                <h2>회원가입</h2>
-                <div class="join-top">
-                    <div class="join-emo join-input-wrap">
-                        <div class="input-style">
-                            <input class="join-input email" type="text" placeholder="이메일 주소를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='이메일 주소를 입력하세요.'" style="color: #a5a5a5;">
-                        </div>
-                        <button class="icocheck"><img src="images/icon/ico-login-check.png" alt=""></button>
-                        <button class="icoesc"><img src="images/icon/ico-esc.png" alt="삭제"></button>
-                    </div>
-                    <div class="join-nickname join-input-wrap">
-                        <div class="flex-box">
-                            <div class="input-style">
-                                <input class="join-input nickname" type="text" placeholder="닉네임을 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='닉네임을 입력하세요.'" style="color: #a5a5a5;">
-                            </div>
-                            <div class="input-style input_nick">
-                                <input class="nickname_check" type="button" value="중복확인">
-                            </div>
-                        </div>
-                        <button class="icocheck"><img src="images/icon/ico-login-check.png" alt=""></button>
-                        <button class="icoesc"><img src="images/icon/ico-esc.png" alt="삭제"></button>
-                    </div>
-                    <div class="join-emo join-input-wrap">
-                        <div class="input-style">
-                            <input class="join-input pw" type="password" placeholder="비밀번호를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='비밀번호를 입력하세요.'" style="color: #a5a5a5;">
-                        </div>
-                        <button class="icocheck"><img src="images/icon/ico-login-check.png" alt=""></button>
-                        <button class="icoesc"><img src="images/icon/ico-esc.png" alt="삭제"></button>
-                    </div>
-                    <div class="join-emo join-input-wrap">
-                        <div class="input-style">
-                            <input class="join-input pwCheck" type="password" placeholder="비밀번호를 확인하세요." onfocus="this.placeholder=''" onblur="this.placeholder='비밀번호를 확인하세요.'" style="color: #a5a5a5;">
-                        </div>
-                        <button class="icocheck"><img src="images/icon/ico-login-check.png" alt=""></button>
-                        <button class="icoesc"><img src="images/icon/ico-esc.png" alt="삭제"></button>
-                    </div>
-                </div>
-                <div class="join-bottom">
+        <div class="withdrawal_wrap">
+            <div class="withdrawal_inner">
+               <div class="wd-top">
+                <h2>회원탈퇴</h2>
+                <p>탈퇴하면 기존 작성하신 데이터는 남겨지며,
+                    <br>탈퇴하신 후에는 삭제가 불가능합니다.</p>
+               </div>
+               <div class="wd-middle-check">
                     <div class="join-check">
-                        <p>이용약관 동의</p>
-                        <a href="#">자세히보기</a>
+                        <p>서비스가 마음에 들지 않아서</p>
                     </div>
                     <div class="join-check">
-                        <p>개인정보보호정책 동의</p>
-                        <a href="#">자세히보기</a>
+                        <p>계속 이용할 필요가 없어서</p>
                     </div>
-                    <a href="#">회원가입</a>
+                    <div class="join-check">
+                        <p>재미가 없어서</p>
+                    </div>
+                    <div class="join-check">
+                        <p>만드는 자료가 부족해서</p>
+                    </div>
+                    <div class="join-check">
+                        <p>기타</p>
+                    </div>
+               </div>
+               <div class="wd-middle-box">
+                <div class="box-list">
+                    <div class="input-style userEmail-style">
+                        <input type="text" id="authnum" title="userNick" value="샤밍떼샤밍"  autocomplete="off" disabled="" style="color: #5c5d5d;">
+                    </div>
+                    <div class="change-check">
+                        <div class="input-style nick-box form-group has-feedback has-clear">
+                            <input class="join-input1 form-control c_nickname" type="text" placeholder="비밀번호를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='비밀번호를 입력하세요.'" style="color: #a5a5a5;">
+                            <span class="form-control-clear form-control-feedback hidden">검색어 삭제</span>
+                        </div>
+                    </div>
+                    <div class="input-style confirm-pw-box-style form-group has-feedback has-clear">
+                        <input class="join-input2 form-control nickname" type="password" placeholder="비밀번호를 확인하세요." onfocus="this.placeholder=''" onblur="this.placeholder='비밀번호를 확인하세요.'" style="color: #a5a5a5;">
+                        <span class="form-control-clear form-control-feedback hidden">검색어 삭제</span>
+                    </div>
                 </div>
-                <div class="join-social">
-                    <ul>
-                        <li><a href="#"><img src="images/icon/ico-google.png" alt="구글"></a>
-                            <p>구글</p>
-                        </li>
-                        <li><a href="#"><img src="images/icon/ico-naver.png" alt="네이버"></a>
-                            <p>네이버</p>
-                        </li>
-                        <li><a href="#"><img src="images/icon/ico-kakao.png" alt="카카오"></a>
-                            <p>카카오톡</p>
-                        </li>
-                        <li><a href="#"><img src="images/icon/ico-facebook.png" alt="페이스북"></a>
-                            <p>페이스북</p>
-                        </li>
-                    </ul>
-                </div>
+               </div>
+               <div class="wd-bottom">
+                    <div class="bot-style">
+                        <button>취소하기</button>
+                    </div>
+                    <div class="withdrawl-input-style">
+                        <input type="button" value="탈퇴하기">
+                    </div>
+               </div>
             </div>
         </div>
 
@@ -228,6 +209,7 @@
     <script src="js/story.js"></script>
     <script src="js/join.js"></script>
     <script src="js/popup.js"></script>
+    <script src="js/change.js"></script>
     <script src="js/common.js"></script>
 </body>
 
