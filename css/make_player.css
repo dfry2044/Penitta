@@ -234,9 +234,9 @@ body{
     width: 100%;
     height: 100%;
 }
-/* 0727 수정 */
-.make-img-container{
-    width: 850px;
+.make-img-container{  
+/* 0728 수정 */
+    width: 50%;
     max-width: 80%;
     height: auto;
     display: flex;
@@ -294,8 +294,9 @@ body{
     -ms-grid-row:3;
     -ms-grid-column:3;
 }
-/* 0727 수정 */
+
 .make-slide-img-group.active{
+/* 0728 수정 */    
     width: 100%;
     height:100%;
     display:block;
@@ -303,6 +304,7 @@ body{
     position:absolute;
     top:0;
     left:0;
+    background-color: #fff;
 }
 .make-slide-img-group{
     max-width:100%;
@@ -321,11 +323,12 @@ body{
     max-height: 100%;
     object-fit: cover;
 }
-/* 0727 수정 */
+
 .make-header{
+/* 0728 수정 */
     position: absolute;
     z-index: 500;
-    width: 850px;
+    width: 100%;
     max-width:100%;
     height: auto;
     display: -webkit-box;
@@ -563,7 +566,9 @@ body{
     color: #000;
     margin-left:8px;
 }
+
 #tag-input{
+/* 0728 수정 */ 
     height:100%;
     background-color: transparent;
     border: none;
@@ -572,7 +577,6 @@ body{
     font-weight: 500;
     color: #000;
     outline: none;
-    padding-right: 20px;
     width: 100%;
 }
 #tag-input::-webkit-input-placeholder{
@@ -2101,11 +2105,6 @@ input[type=range]::-webkit-slider-thumb {
         -ms-transform: translateY(200%);
             transform: translateY(200%);
 }
-
-body.maker header div.h-inner{
-    width: 100%;
-    max-width: calc(100vw - 66px);
-}
 .bgm-select{
     position:absolute;
     top: -525px;
@@ -2761,27 +2760,6 @@ header .mo{
     }
     header h1 a img{
         width: 20vw;
-    }
-    header .h-inner{
-        height: 100%;
-    }
-    header nav{
-        height: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-    }
-    header{
-        height: 13.231vw;
-    }
-    body.maker header div.h-inner{
-        max-width: calc(100vw - 7.813vw);
     }
     header .mo ul{
         display: -webkit-box;
