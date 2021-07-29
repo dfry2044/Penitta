@@ -329,7 +329,7 @@ padding: 30px 0 158px 0;
 .preview-content h2{
     font-size: 32px;
     font-family:"Noto Sans Kr";
-    font-weight:500;
+    font-weight: 600;
     color:#222222;
     margin-bottom: 25px;
 }
@@ -413,6 +413,46 @@ padding: 30px 0 158px 0;
     .t-list_item > p {
         padding: 14px 0 35px;
         font-size: 13.5px;
+    }
+
+    /* template-popup */
+
+    .template-preview .preview-content{
+        width: 922px;
+    }
+    .preview-content .preview-title{
+        padding: 24px 36px 4px;
+    }
+    .preview-content button i{
+        width:15px;
+        height:15px;
+    }
+    .preview-content p{
+        font-size:15px;
+        margin-bottom:9px;
+    }
+    .preview-content h2{
+        font-size: 24.01px;
+        margin-bottom: 15px;
+    }
+    .preview-content ul{
+        padding: 36px;
+    }
+    .preview-content ul li{
+        width: 201px;
+        height:201px;
+        margin-bottom:15px;
+    }
+
+    .preview-content ul li img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .preview-content a{
+        font-size: 12px;
+        width:186px;
+        height:47px;
     }
 }
 @media (max-width: 1500px) {
