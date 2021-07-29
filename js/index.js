@@ -26,8 +26,8 @@ var twoSwiper = new Swiper(".mySwiper2", {
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next2",
+      prevEl: ".swiper-button-prev2",
     },
   });
 

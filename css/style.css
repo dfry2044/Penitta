@@ -1,13 +1,9 @@
 
 /*스와이퍼*/
 .swiper-slide {
-    text-align: center;
     font-size: 18px;
     background: #fff;
     /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .swiper-slide img {
@@ -315,12 +311,154 @@ header nav ul li:first-child{
     transform-origin: center;
 }
 
-.mySwiper2 {
+.c2-wrap {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
+    position: relative;
 }
 
+.mySwiper2 {
+    padding-top: 36px;
+    height: 560px;
+}
+
+.c2-wrap > p {
+    margin: 120px 0 0;
+    color: #222222;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.c2-list-top {
+    width: 352px;
+    height: 352px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.c2-list-top  > a {
+    width: 100%;
+    height: 100%;
+}
+
+.list-bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-top > a > h3 {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 20px;
+    border-bottom: #fff solid 1px;
+    font-weight: 500;
+}
+
+.list-top a:hover h3{
+    text-decoration: underline;
+}
+
+.list-top > p,
+.list-bot {
+    padding-top: 13px;
+    font-size: 13px;
+    color: #8e8e8e;
+}
+
+.list-bot {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 59px;
+    font-weight: 300;
+}
+
+.list-bot > span {
+    line-height: 22px;
+}
+
+.c4-react {
+    display: flex;
+    position: relative;
+}
+
+.c4-react > button {
+    display: flex;
+    align-items: center;
+    line-height: 22px;
+    color: #8E8E8E;
+}
+
+.list-bot> div > button:first-child{
+    margin-right: 9px;
+}
+.list-bot > div > button:nth-child(2){
+    margin-right: 9px;
+}
+.list-bot > div > button:nth-child(3) {
+    margin-right: 20px;
+}
+
+.list-bot > div > button::before {
+    margin-right: 4px;
+}
+
+.list-bot > div > button:first-child::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 22px;
+    background: url(../images/icon/ico-eye.png) no-repeat center center / auto;
+}
+
+.list-bot > div > button:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/icon/ico-heart.png) no-repeat center center / auto;
+}
+
+.list-bot > div > button:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/icon/ico-Balloon.png) no-repeat center center / auto;
+}
+
+
+.swiper-button-prev2, .swiper-button-next2 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.swiper-button-prev2, .swiper-button-next2 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.c2 .swiper-button-prev2, .swiper-container-rtl .swiper-button-next2 {
+    width: 10px;
+    height: 18px;
+    background: url(../images/icon/ico-c2-Larrow.png) no-repeat center / cover;
+    left: auto;
+    right: 40px;
+    top: 18px;
+}
+
+.c2 .swiper-button-next2, .swiper-container-rtl .swiper-button-prev2 {
+    width: 10px;
+    height: 18px;
+    background: url(../images/icon/ico-c2-Rarrow.png) no-repeat center / cover;
+    left: auto;
+    right: 0;
+    top: 18px;
+}
 .c3 {
     width: 100%;
     background: #fafafa;
