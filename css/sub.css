@@ -1,0 +1,701 @@
+.my-tab{
+    width: 100%;
+    height: 140px;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #fafafa;
+}
+.my-tab .my-tab-inner{
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+.my-tab .my-tab-inner ul{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.my-tab .my-tab-inner li{
+    width: 194px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(2px);
+}
+.my-tab .my-tab-inner li.active{
+    border-bottom: 3px solid #fe811c;
+}
+.my-tab .my-tab-inner li button{
+    font-size: 17px;
+    font-family: "Noto Sans Kr";
+    font-weight: 300;
+    color: #222222;
+    transition: 0.3s ease;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+.my-tab .my-tab-inner li.active button{
+    font-weight: 600;
+}
+.my-tab .my-tab-inner li:hover button{
+    font-weight: 600;
+    color: #fe811c;
+}
+
+.my-card .my-card-inner{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.my-card .my-card-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.my-card .my-card-inner .card-total{
+    font-size: 16px;
+    font-family: "Noto sans Kr";
+    font-weight: 500;
+    color: #222222;
+    letter-spacing: -1px;
+}
+.my-card .my-card-inner .my-card-filter button{
+    font-size: 14px;
+    font-family: "Noto Sans Kr";
+    font-weight: 500;
+    color: #8e8e8e;
+    height: 0;
+}
+.my-card .my-card-inner .my-card-filter button.active{
+    color: #222222;
+}
+.my-card-filter button:last-child:before{
+    content: "\b7\a0";
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3px;
+    height: 3px;
+    margin: 0 12px;
+}
+
+/* card */
+.my-card{
+    background-color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 129px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.my-card ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.my-card ul li{
+    margin-bottom: 50px;
+    height: 100%;
+    min-height: 465px;
+}
+.my-card ul li .card-img-wrap{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    clip-path: inset(0% 0% 0% 0% round 10px);
+}
+.my-card ul li .card-img-wrap img{
+    transition: 0.3s ease;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+.my-card ul li .card-img-wrap:hover img{
+    transform: scale(1.1);
+}
+.my-card ul li .new-tooltip:hover+.card-img-wrap img{
+    transform: scale(1.1);
+}
+
+.card-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.togle-box {
+    width: 50px;
+    height: 24px;
+    text-align: center;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+.togle-box > button {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    font-size: 13px;
+    color: #686868;
+    font-family: 'Noto sans KR';
+    font-weight: 400;
+    transition: 0.2s ease;
+}
+
+.my-card ul li h2{
+    font-size: 18px;
+    font-family: "Noto Sans Kr";
+    font-weight: 500;
+    color: #222222;
+    line-height: 22px;
+    margin-bottom: 13px;
+}
+.my-card ul li h2:hover{
+    text-decoration: underline;
+}
+.my-card ul li p{
+    font-size: 13px;
+    font-family: "Roboto";
+    font-weight: 300;
+    color: #5d5c5c;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.my-card ul li .card-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.ico-group  {
+    display: flex;
+    position: relative;
+}
+
+.ico-group  > button {
+    display: flex;
+    align-items: center;
+    line-height: 22px;
+    color: #8E8E8E;
+}
+
+.ico-group > button:first-child{
+    padding-right: 9px;
+}
+.ico-group > button:nth-child(2){
+    padding-right: 9px;
+}
+.ico-group > button::before {
+    padding-right: 5px;
+}
+
+.ico-group > button:first-child::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 22px;
+    background: url(../images/icon/ico-eye.png) no-repeat center center / auto;
+}
+
+.ico-group > button:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/icon/ico-heart.png) no-repeat center center / auto;
+}
+
+.ico-group > button:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/icon/ico-Balloon.png) no-repeat center center / auto;
+}
+
+.my-card .card-bottom .card-down{
+    width: 20px;
+    height: 15px;
+    margin-right: 20px;
+}
+.my-card .card-bottom .card-down i{
+    width: 20px;
+    height: 15px;
+    background: url("../images/icon/ico-download.png") no-repeat center / cover;
+    display: block;
+    transition: 0.3s ease;
+}
+.my-card .card-bottom .card-down:hover i{
+    background: url("../images/icon/ico-download-black.png") no-repeat center / cover;
+}
+.my-card .card-bottom .card-etc i{
+    width: 3px;
+    height: 15px;
+    background: url("../images/icon/ico-etc.png") no-repeat center / cover;
+    display: block;
+    transition: 0.3s ease;
+}
+.my-card .card-bottom .card-etc:hover i{
+    background: url("../images/icon/ico-etc-black.png") no-repeat center / cover;
+}
+.my-card li .card-img-wrap{
+    position: relative;
+}
+.my-card li>a{
+    width: 353px;
+    height: 353px;
+    position: relative;
+    display: block;
+}
+.my-card li.new div.new-tooltip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.my-card li.new div.new-tooltip::after{
+    content: "new";
+    width: 43px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #799e14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.card-more-btn{
+    margin: 0;
+    display: block;
+    width: 248px;
+    height: 60px;
+    border-radius: 50px;
+    border:1px solid #c2c2c2;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Noto Sans Kr";
+    font-weight: 500;
+    color: #222222;
+    margin: 0 auto;
+}
+.card-more-btn i{
+    width: 14px;
+    height: 8px;
+    display: inline-block;
+    background: url("../images/icon/ico-downArrow.png") no-repeat center / cover;
+    margin-left: 11px;
+}
+
+.my-card ul li p span{
+    font-size: 13px;
+    font-family: "Noto Sans Kr";
+    font-weight: 300;
+    color: #5d5c5c;
+    margin-right: 10px;
+    display: inline-block;
+}
+.my-card ul li p time{
+    color: #fe811c;
+    font-weight: 600;
+}
+.my-card ul li strong{
+    font-size: 14px;
+    font-family: "Noto Sans Kr";
+    font-weight: 300;
+    color: #5d5c5c;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.my-card ul li.expiration{
+    opacity: 0.4;
+    
+}
+.my-card ul li.expiration a{
+    pointer-events: none;
+    cursor: default;
+}
+.my-card ul li em{
+    color: #5d5c5c;
+    font-weight: 600;
+    margin: 0;
+}
+.my-card ul li .card-bottom p{
+    margin-bottom: 0;
+}
+.my-card .card-list{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    transition: 0.5s ease;
+}
+.my-card .card-list.show{
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    transition: 0.5s 0.3s ease;
+}
+.my-card .text-right{
+    margin-bottom: 14px;
+}
+.my-card .card-etc-tooltip{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 90px;
+    height: 60px;
+    border: 1px solid #bababa;
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+.my-card .card-etc-tooltip.show{
+    opacity: 1;
+    visibility: visible;
+}
+.my-card .card-etc-tooltip button{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #2f2c2c;
+    position: relative;
+    transition: 0.3s ease;
+}
+.my-card .card-etc-tooltip button:hover{
+    background-color: #dddddd;
+}
+.my-card .card-etc-tooltip button:first-child::after{
+    content: "";
+    width: 72px;
+    height: 1px;
+    background-color: #f0f0f0;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.my-card .card-download .InProduction .card-down,
+.my-card .card-download .expiration .card-down{
+    visibility: hidden;
+    opacity: 0;
+}
+.my-card .keep-content .card-etc-tooltip{
+    height: 30px;
+}
+.my-card .keep-content .card-etc-tooltip button{
+    height: 100%;
+}
+.my-card .keep-content .card-etc-tooltip button:first-child::after{
+    display: none;
+}
+
+/* comment */
+ul.my-comment-inner {
+    border-top: #e2e1e1 solid 1px;
+    font-family: 'Noto sans KR';
+}
+ul.my-comment-inner li p {
+    font-family: 'Noto sans KR';
+    margin-bottom: 0;
+}
+.my-comment-top > .card-total {
+    padding-bottom: 18px;
+}
+.my-comment-inner > li.new {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 192px;
+    padding: 30px 0;
+    margin-bottom: 0;
+    border-bottom: #f1f1f1 solid 1px;
+}
+
+.comment-list ul li div.card-bottom {
+    align-items: start;
+}
+
+.my-comment-ico {
+    padding: 6px 9px 0 0;
+}
+
+.my-comment-wrap > .my-comment-ico > i {
+    display: block;
+    width: 21px;
+    height: 19px;
+    background: url(../images/icon/ico-mystory-Balloon.png) no-repeat center/cover;
+
+}
+.my-comment-wrap {
+    display: flex;
+}
+
+.comment-bottom {
+    display: flex;
+    padding-top: 27px;
+}
+
+.comment-middle > .comment-txt {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+.comment-img {
+    width: 76px;
+    height: 51px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 16px;
+}
+
+.comment-img > img {
+    width: 100%;
+    height: 100%;
+}
+
+ul.my-comment-inner li .preview-head {
+    font-size: 15px;
+    font-weight: 500;
+    color: #222222;
+    padding-bottom: 11px;
+    letter-spacing: -1px;
+}
+.my-card ul li .preview-txt-bot {
+    font-size: 13px;
+    font-family: "Roboto";
+    font-weight: 300;
+    color: #868686;
+}
+
+.my-card ul li .preview-txt-bot >p:first-child:after {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background-color: #c5c5c5;
+    border-radius: 50%;
+    margin: 0 3px 2px 6px;
+}
+
+.card-bottom-right{
+    display: flex;
+    align-items: center;
+}
+
+.card-bottom-right > span {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Roboto';
+    color: #868686;
+    padding-right: 18px;
+    letter-spacing: -1px;
+    white-space: nowrap;
+}
+
+.comment-list > .card-more-btn {
+    margin-top: 39px;
+}
+
+.comment-edit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-comment-wrap{
+    width: 100%;
+}
+
+.comment-edit {
+    width: 100%;
+}
+
+.edit-box-style {
+    width: 100%;
+    height: 130px;
+    border: #e3e3e3 solid 1px;
+    border-radius: 8px;
+}
+
+#ce-box{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    resize: none;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 14px;
+    letter-spacing: -1px;
+    font-size: 14px;
+    font-family: 'Noto Sans KR';
+}
+
+.edit-button-list > div {
+    width: 82px;
+    height: 32px;
+    border: #e3e3e3 solid 1px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.edit-button-list > div:hover {
+    border: #fe811c solid 1px;
+    background-color: #fe811c;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.edit-button-list button {
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR';
+    outline: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease;
+}
+
+.edit-button-list > div:hover > button{
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+.edit-button-list {
+    margin-left: 9px;
+}
+
+.edit-button-box {
+    margin-bottom: 8px;
+}
+
+.my-card .card-bottom .ico-trash i {
+    width: 15px;
+    height: 15px;
+    background: url(../images/icon/ico-trash.png)no-repeat center / cover;
+}
+
+.my-card .card-bottom .ico-trash:hover i{
+    background: url("../images/icon/ico-trash-hover.png") no-repeat center / cover;
+}
+
+/* 댓글 수정창 */
+.comment-edit {
+    display: none;
+}
+
+.comment-edit.click {
+    display: flex;
+}
+
+.comment-edit-click2.active{
+    display: none !important;
+}
+
+.comment-edit-click.active {
+    display: none !important;
+}
+/* ---- */
+
+@media all and (max-width:1920px) {
+    .my-card .my-card-inner .card-total {
+        font-size: 14px;
+        padding-bottom: 14px;
+    }
+    .my-comment-inner > li.new {
+        height: 100%;
+        min-height: 143px;
+        padding: 20px 0;
+    }
+    .my-comment-ico {
+        padding: 6px 8px 0 0;
+    }
+    .my-comment-wrap > .my-comment-ico > i {
+        width: 17px;
+        height: 15px;
+    }
+    .comment-middle > .comment-txt {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -1px;
+    }
+    ul.my-comment-inner li .preview-head {
+        font-size: 13.5px;
+        padding-bottom: 11px;
+    }
+    .comment-bottom {
+        padding-top: 20px;
+    }
+    .comment-img {
+        width: 58px;
+        height: 39px;
+        border-radius: 5px;
+        margin-right: 11px;
+    }
+    .card-more-btn {
+        width: 186px;
+        height: 48px;
+        font-size: 13px;
+    }
+    .card-more-btn i {
+        width: 11px;
+        height: 7px;
+    }
+    .card-bottom-right > span {
+        font-size: 13.5px;
+    }
+}
+
+@media all and (max-width:1500px) {
+    .my-card .my-card-inner{
+        max-width: 1125px;
+    }
+    .my-card ul li h2 {
+        word-break: keep-all;
+    }
+    .my-card li>a{
+        width: 260px;
+        height: 260px;
+    }
+}

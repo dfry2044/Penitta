@@ -1,15 +1,402 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="./js/index.js" defer></script>
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="./plugin/js/swiper.min.js"></script>
+    <script src="./plugin/js/gsap.min.js"></script>
+    <script src="./plugin/js/ScrollTrigger.min.js"></script>
+    <script src="plugin/js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./plugin/css/swiper.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Penitta-main</title>
 </head>
+
 <body>
-    
+    <div id="skip">
+        <a rel="bookmark" href="#content">본문바로가기</a>
+    </div>
+    <header>
+        <h1 class="hidden">Penitta</h1>
+        <div class="h-inner">
+            <nav class="pc nav">
+                <div class="header-left">
+                    <a href="./index.html" class="logo"><img src="images/common/logo.png" alt="로고이미지"></a>
+                    <ul>
+                        <li class="active"><a href="./index.html">HOME</a></li>
+                        <li><a href="./story.html">스토리</a></li>
+                        <li><a href="./make_player.html">만들기</a></li>
+                        <li><a href="./template.html">템플릿</a></li>
+                        <li><a href="#">매뉴얼</a></li>
+                        <li><a href="#">멤버십</a></li>
+                    </ul>
+                </div>
+                <div class="header-right">
+                    <div class="userMenu">
+                        <a href="#" class="user"><img src="images/icon/ico-user.png" alt="사람이모티콘"></a>
+                        <p class="userNick"><span class="login-Nickname">Nickname님</span></p>
+                        <ul class="no-login-menu">
+                            <li><button class="popup-button">로그인</button></li>
+                            <li><a href="./join.html">회원가입</a></li>
+                        </ul>
+                        <ul class="login-menu">
+                            <li>
+                                <i class="dropdown-head"></i>
+                                <a href="#">나의스토리</a></li>
+                            <li><a href="#">나의정보</a></li>
+                            <li><a href="#">비밀번호 변경</a></li>
+                            <li><a href="#">결제내역</a></li>
+                            <li><a href="#">알림글</a></li>
+                            <li><a href="#">궁금해요</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li class="drop-last">
+                                <i class="dropdown-bottom"></i>
+                                <a href="#">로그아웃</a></li>
+                        </ul>
+                    </div>
+                    <div class="ham-btn">
+                        <span class="line">전체메뉴</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="wrap">
+        <h1 class="hidden">Penitta-content</h1>
+        <section class="contents c1">
+            <h2 class="hidden">hero-swiper</h2>
+            <div class="main-slide-inner">
+                <div class="main-txt">
+                    <h3>Penitta</h3>
+                    <p>나만의 스토리를 담다.</p>
+                    <em>사진에 이야기를 담고, 소리를 통해 담겨진 이야기를 부른다.</em>
+                </div>
+                <div class="main-button">
+                    <a href="./make_player.html">
+                        <i></i>
+                        <p><span>스토</span>리 만들기</p>
+                    </a>
+                </div>
+                <div class="swiper-container mySwiper1">
+                    <div class="swiper-wrapper main-wrapper">
+                      <div class="swiper-slide main-list main-img-style1">
+                        <div class="main-content">
+                            <a href="javascript:return false;"><img src="./images/main/slide/c1/banner01.jpg" alt="배경"></a>
+                            <div class="main-content-txt">
+                                <h3>반려동물과 함께 살기</h3>
+                                <p>모든 집사들의 가장 큰 고민. 반려견과 반려묘가 머물기 좋은
+                                <br>최상의 공간 만드는 방법</p>
+                            </div>
+                        </div>
+                        <div class="main-list-two">
+                            <div class="main-content">
+                                <a href="javascript:return false;"><img src="./images/main/slide/c1/banner02.jpg" alt="배경"></a>
+                                <div class="main-content-txt">
+                                    <h3>반려동물과 함께 살기</h3>
+                                    <p>모든 집사들의 가장 큰 고민.
+                                    <br>최상의 공간 만드는 방법</p>
+                                </div>
+                            </div>  
+                            <div class="main-content">
+                                <a href="javascript:return false;"><img src="./images/main/slide/c1/banner03.jpg" alt="배경"></a>
+                                <div class="main-content-txt">
+                                    <h3>반려동물과 함께 살기</h3>
+                                    <p>모든 집사들의 가장 큰 고민.
+                                    <br>최상의 공간 만드는 방법</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide main-list main-img-style2">
+                        <div class="main-content">
+                            <a href="javascript:return false;"><img src="./images/main/slide/c1/banner04.jpg" alt="배경"></a>
+                            <div class="main-content-txt">
+                                <h3>반려동물과 함께 살기</h3>
+                                <p>모든 집사들의 가장 큰 고민. 반려견과 반려묘가 머물기 좋은
+                                <br>최상의 공간 만드는 방법</p>
+                            </div>
+                        </div>
+                        <div class="main-content">
+                            <a href="javascript:return false;"><img src="./images/main/slide/c1/banner05.jpg" alt="배경"></a>
+                            <div class="main-content-txt">
+                                <h3>반려동물과 함께 살기</h3>
+                                <p>모든 집사들의 가장 큰 고민. 반려견과 반려묘가 머물기 좋은
+                                <br>최상의 공간 만드는 방법</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide main-list main-img-style3">
+                            <div class="main-content">
+                                <a href="javascript:return false;"><img src="./images/main/slide/c1/banner06.jpg" alt="배경"></a>
+                                <div class="main-content-txt">
+                                    <h3>반려동물과 함께 살기</h3>
+                                    <p>모든 집사들의 가장 큰 고민. 반려견과 반려묘가 머물기 좋은
+                                    <br>최상의 공간 만드는 방법</p>
+                                </div>
+                            </div>
+                            <div class="main-list-two">
+                                <div class="main-content">
+                                    <a href="javascript:return false;"><img src="./images/main/slide/c1/banner02.jpg" alt="배경"></a>
+                                    <div class="main-content-txt">
+                                        <h3>반려동물과 함께 살기</h3>
+                                        <p>모든 집사들의 가장 큰 고민.
+                                        <br>최상의 공간 만드는 방법</p>
+                                    </div>
+                                </div>  
+                                <div class="main-content">
+                                    <a href="javascript:return false;"><img src="./images/main/slide/c1/banner03.jpg" alt="배경"></a>
+                                    <div class="main-content-txt">
+                                        <h3>반려동물과 함께 살기</h3>
+                                        <p>모든 집사들의 가장 큰 고민.
+                                        <br>최상의 공간 만드는 방법</p>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="swiper-slide main-list main-img-style4">
+                        <div class="main-content">
+                            <a href="javascript:return false;"><img src="./images/main/slide/c1/banner04.jpg" alt="배경"></a>
+                            <div class="main-content-txt">
+                                <h3>반려동물과 함께 살기</h3>
+                                <p>모든 집사들의 가장 큰 고민. 반려견과 반려묘가 머물기 좋은
+                                <br>최상의 공간 만드는 방법</p>
+                            </div>
+                        </div>
+                        <div class="main-content">
+                            <a href="javascript:return false;"><img src="./images/main/slide/c1/banner05.jpg" alt="배경"></a>
+                            <div class="main-content-txt">
+                                <h3>반려동물과 함께 살기</h3>
+                                <p>모든 집사들의 가장 큰 고민. 반려견과 반려묘가 머물기 좋은
+                                <br>최상의 공간 만드는 방법</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+        </section>
+        <section class="contents c2">
+            <h2 class="hidden">contents-swiper</h2>
+            <div class="c2-wrap">
+                <h3>새로 올라온 스토리</h3>
+                <div class="swiper-container mySwiper2">
+                    <div class="swiper-wrapper c2-list-wrap">
+                      <div class="swiper-slide">
+                          <div class="list-top new">
+                            <div class="c2-list-top">
+                                <a href="#"><img src="./images/story/story-c4/frame01.jpg" alt="썸네일"></a>
+                            </div>
+                            <a href="#"><h3 class="story-head">MTB자전거 쉽게 점프하는 방법</h3></a>
+                            <p class="story-sub-head">쉐프스토리</p>
+                        </div>
+                        <div class="list-bot">
+                            <span class="Roboto">30분전</span>
+                            <div class="c4-react">
+                                <button class="Roboto">30</button>
+                                <button class="Roboto">30</button>
+                                <button class="Roboto">30</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="list-top new">
+                          <div class="c2-list-top">
+                              <a href="#"><img src="./images/story/story-c4/frame01.jpg" alt="썸네일"></a>
+                          </div>
+                          <a href="#"><h3 class="story-head">MTB자전거 쉽게 점프하는 방법</h3></a>
+                          <p class="story-sub-head">쉐프스토리</p>
+                      </div>
+                      <div class="list-bot">
+                          <span class="Roboto">30분전</span>
+                          <div class="c4-react">
+                              <button class="Roboto">30</button>
+                              <button class="Roboto">30</button>
+                              <button class="Roboto">30</button>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="list-top new">
+                          <div class="c2-list-top">
+                              <a href="#"><img src="./images/story/story-c4/frame01.jpg" alt="썸네일"></a>
+                          </div>
+                          <a href="#"><h3 class="story-head">MTB자전거 쉽게 점프하는 방법</h3></a>
+                          <p class="story-sub-head">쉐프스토리</p>
+                      </div>
+                      <div class="list-bot">
+                          <span class="Roboto">30분전</span>
+                          <div class="c4-react">
+                              <button class="Roboto">30</button>
+                              <button class="Roboto">30</button>
+                              <button class="Roboto">30</button>
+                          </div>
+                      </div>
+                    </div>
+                      <div class="swiper-slide">Slide 4</div>
+                      <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+        </section>
+        <section class="contents c3">
+            <h2 class="hidden">contents-3</h2>
+            <div class="c3-wrap">
+                <p>마음에 드는
+                    <span>
+                        템플릿
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    으로 시작해보세요.
+                </p>
+                <span>
+                    penitta에서 당신이 만들고 싶은 스토리를 만들어 보세요.
+                </span>
+            </div>
+        </section>
+        <section class="contents c4">
+            <h2 class="hidden">contents-4</h2>
+            <div class="pop-img swiper-container swiper-mini">
+                <div class="swiper-wrapper mswrap">
+                    <img class="m-test swiper-slide ms-1" src="./images/main/slide/c2/contents1.jpg" alt="c4-contents1" class="pop-img-img">
+                    <img class="m-test swiper-slide ms-2" src="./images/main/slide/c2/contents2.jpg" alt="c4-contents1" class="pop-img-img">
+                    <img class="m-test swiper-slide ms-3" src="./images/main/slide/c2/contents3.jpg" alt="c4-contents1" class="pop-img-img">
+                    <img class="m-test swiper-slide ms-1" src="./images/main/slide/c2/contents1.jpg" alt="c4-contents1" class="pop-img-img">
+                    <img class="m-test swiper-slide ms-2" src="./images/main/slide/c2/contents2.jpg" alt="c4-contents1" class="pop-img-img">
+                    <img class="m-test swiper-slide ms-3" src="./images/main/slide/c2/contents3.jpg" alt="c4-contents1" class="pop-img-img">
+                    <img class="m-test swiper-slide ms-1" src="./images/main/slide/c2/contents1.jpg" alt="c4-contents1" class="pop-img-img">
+                    <img class="m-test swiper-slide ms-2" src="./images/main/slide/c2/contents2.jpg" alt="c4-contents1" class="pop-img-img">
+                    <img class="m-test swiper-slide ms-3" src="./images/main/slide/c2/contents3.jpg" alt="c4-contents1" class="pop-img-img">
+                </div>
+            </div>
+            <a href="./template.html">
+                <span>템플릿<br />보기</span>
+            </a>
+            <div class="swiper-container mySwiper3">
+                <div class="swiper-wrapper swrap">
+                    <div class="swiper-slide"><img class="test s-1" src="./images/main/slide/c2/contents1.jpg" alt="c4 contents1"></div>
+                    <div class="swiper-slide"><img class="test s-2" src="./images/main/slide/c2/contents2.jpg" alt="c4 contents2"></div>
+                    <div class="swiper-slide"><img class="test s-3" src="./images/main/slide/c2/contents3.jpg" alt="c4 contents3"></div>
+                    <div class="swiper-slide"><img class="test s-1" src="./images/main/slide/c2/contents1.jpg" alt="c4 contents1"></div>
+                    <div class="swiper-slide"><img class="test s-2" src="./images/main/slide/c2/contents2.jpg" alt="c4 contents2"></div>
+                    <div class="swiper-slide"><img class="test s-3" src="./images/main/slide/c2/contents3.jpg" alt="c4 contents3"></div>
+                    <div class="swiper-slide"><img class="test s-1" src="./images/main/slide/c2/contents1.jpg" alt="c4 contents1"></div>
+                    <div class="swiper-slide"><img class="test s-2" src="./images/main/slide/c2/contents2.jpg" alt="c4 contents2"></div>
+                    <div class="swiper-slide"><img class="test s-3" src="./images/main/slide/c2/contents3.jpg" alt="c4 contents3"></div>
+                </div>
+            </div>
+        </section>
+        <section class="contents c5">
+            <h2 class="hidden">contents-5</h2>
+            
+        </section>
+        <section class="contents c6">
+            <h2 class="hidden">contents-6</h2>
+            
+        </section>
+    </div>
+    <footer>
+        <h1 class="hidden">Penitta-footer</h1>
+        <div class="footer-inner">
+            <div class="footer-left">
+                <div class="footer-style">
+                    <div>
+                        <a href="#">이용약관</a>
+                        <a href="#">개인정보보호정책</a>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li>㈜에이아이콜라보</li>
+                        <li>대표이사:김종철</li>
+                        <li>경기도 성남시 수정구 대왕판교로 815 기업지원허브 P816호</li>
+                    </ul>
+                    <ul>
+                        <li>사업자등록번호 866-86-01723</li>
+                        <li>제휴 및 문의 <a href="mailto:mk@aicollabo.com" class="email">mk@aicollabo.com</a></li>
+                    </ul>
+                </div>
+                <p class="Roboto">Copyright &copy;2021AIcollabo Inc. </p>
+                <div class="footer-logo">
+                    <img src="./images/common/logo-footer.png" alt="푸터로고">
+                </div>
+            </div>
+            <div class="footer-right">
+                <a href="#" class="blog"><i></i></a>
+                <a href="#" class="facebook"><i></i></a>
+                <a href="#" class="insta"><i></i></a>
+                <a href="#" class="youtube"><i></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="login-popup">
+        <div class="login-popup-inner">
+            <div class="login_close">
+                <a href="#"><img src="images/icon/ico-login-close.png" alt="아이콘"></a>
+            </div>
+            <div class="login_list">
+                <div class="login-top">
+                    <h2>로그인</h2>
+                    <div class="input-style">
+                        <input type="text" placeholder="이메일 주소를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='이메일 주소를 입력하세요.'">
+                    </div>
+                    <div class="input-style">
+                        <input type="password" placeholder="비밀번호를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='비밀번호를 입력하세요.'">
+                    </div>
+                    <div class="login-check">
+                        <p id="login-check">자동 로그인</p>
+                    </div>
+                    <div class="login-button">
+                       <div class="input-style">
+                        <input type="button" value="로그인">
+                       </div>
+                    </div>
+                    <div class="people_info">
+                        <a href="./passward.html">비밀번호 찾기</a>
+                        <a href="./join.html">회원가입</a>
+                    </div>
+                </div>
+                <div class="join-social">
+                    <ul>
+                        <li><a href="#"><img src="images/icon/ico-google.png" alt="구글"></a>
+                            <p>구글</p>
+                        </li>
+                        <li><a href="#"><img src="images/icon/ico-naver.png" alt="네이버"></a>
+                            <p>네이버</p>
+                        </li>
+                        <li><a href="#"><img src="images/icon/ico-kakao.png" alt="카카오"></a>
+                            <p>카카오톡</p>
+                        </li>
+                        <li><a href="#"><img src="images/icon/ico-facebook.png" alt="페이스북"></a>
+                            <p>페이스북</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/popup.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/common.js"></script>
 </body>
+
 </html>

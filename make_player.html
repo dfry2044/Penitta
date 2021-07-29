@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="./plugin/js/gsap.min.js"></script>
+    <script src="./plugin/js/ScrollTrigger.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="./plugin/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./plugin/css/swiper.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="./css/make_player.css">
+
+    <title>make_player</title>
+</head>
+
+<body class="maker">
+    <div id="skip">
+        <a rel="bookmark" href="#content">본문바로가기</a>
+    </div>
+    <header>
+        <h1 class="hidden">Penitta</h1>
+        <div class="h-inner">
+            <nav class="pc nav">
+                <div class="header-left">
+                    <a href="./index.html" class="logo"><img src="images/common/logo.png" alt="로고이미지"></a>
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./story.html">스토리</a></li>
+                        <li class="active"><a href="./make_player.html">만들기</a></li>
+                        <li><a href="./template.html">템플릿</a></li>
+                        <li><a href="#">매뉴얼</a></li>
+                        <li><a href="#">멤버십</a></li>
+                    </ul>
+                    <div class="header-notice">
+                        <i>이모티콘</i>
+                        <p>
+                            만들기에 새로운 기능이 추가 되었습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="userMenu">
+                        <a href="#" class="user"><img src="images/icon/ico-user.png" alt="사람이모티콘"></a>
+                        <p class="userNick"><span class="login-Nickname">Nickname님</span></p>
+                        <ul class="no-login-menu">
+                            <li><button class="popup-button">로그인</button></li>
+                            <li><a href="./join.html">회원가입</a></li>
+                        </ul>
+                        <ul class="login-menu">
+                            <li>
+                                <i class="dropdown-head"></i>
+                                <a href="#">나의스토리</a></li>
+                            <li><a href="#">나의정보</a></li>
+                            <li><a href="#">비밀번호 변경</a></li>
+                            <li><a href="#">결제내역</a></li>
+                            <li><a href="#">알림글</a></li>
+                            <li><a href="#">궁금해요</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li class="drop-last">
+                                <i class="dropdown-bottom"></i>
+                                <a href="#">로그아웃</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="wrap">
+        <main class="make-main">
+            <div class="make-list">
+                <ul class="pc">
+                    <li class="make-list-item active">
+                        <img src="./images/maker/background00.jpg" alt="thumbnail">
+                        <div class="make-hover-item">
+                            <div class="make-hover-inner">
+                                <button class="move-btn"><i></i></button>
+                                <button class="trash-btn"><i></i></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="make-list-item">
+                        <img src="./images/maker/background01.jpg" alt="thumbnail">
+                        <div class="make-hover-item">
+                            <div class="make-hover-inner">
+                                <button class="move-btn"><i></i></button>
+                                <button class="trash-btn"><i></i></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="make-list-item ">
+                        <img src="./images/maker/background02.jpg" alt="thumbnail">
+                        <div class="make-hover-item">
+                            <div class="make-hover-inner">
+                                <button class="move-btn"><i></i></button>
+                                <button class="trash-btn"><i></i></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="make-add">
+                        <button class="make-list-plus-btn">
+                            <i></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="make-list-mo">
+                    <div class="swiper-container list-swiper mo">
+                        <ul class="mo swiper-wrapper">
+                            <li class="make-list-item swiper-slide">
+                                <img src="./images/maker/background00.jpg" alt="thumbnail">
+                            </li>
+                            <li class="make-list-item swiper-slide">
+                                <img src="./images/maker/background00.jpg" alt="thumbnail">
+                            </li>
+                            <li class="make-list-item swiper-slide">
+                                <img src="./images/maker/background00.jpg" alt="thumbnail">
+                            </li>
+                            <li class="make-list-item swiper-slide">
+                                <img src="./images/maker/background00.jpg" alt="thumbnail">
+                            </li>
+                            <li class="make-list-item swiper-slide">
+                                <img src="./images/maker/background00.jpg" alt="thumbnail">
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="make-list-item-addBtn">
+                        <i></i>
+                    </button>
+                </div>
+            </div>
+            <div class="make-canvas">
+                <div class="make-canvas-inner">
+                    <div class="make-canvas-wrap">
+                        <div class="make-img-container">
+                            <div class="main-img">
+                                <div class="make-header">
+                                    <div class="make-category-select">
+                                        <button class="select-top">
+                                            <span>카테고리 선택</span>
+                                            <i class="select-ico"></i>
+                                        </button>
+                                        <div class="select-content">
+                                            <ul>
+                                                <li>
+                                                    <button>전체</button>
+                                                </li>
+                                                <li><button>사랑/이별</button></li>
+                                                <li><button>일상/다이어리</button></li>
+                                                <li><button>위로/공감</button></li>
+                                                <li><button>연예</button></li>
+                                                <li><button>팬픽션</button></li>
+                                                <li><button>영화/드라마</button></li>
+                                                <li><button>스포츠</button></li>
+                                                <li><button>여행</button></li>
+                                                <li><button>요리/음식</button></li>
+                                                <li><button>문학/예술</button></li>
+                                                <li><button>사회/정치</button></li>
+                                                <li><button>반려동물</button></li>
+                                                <li><button>기타</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="make-category-input">
+                                        <input type="text" placeholder="제목을 입력하세요." id="title-input">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="nondisclosure">
+                                            <label for="nondisclosure">
+                                                <i></i>
+                                            </label>
+                                            <span>비공개</span>
+                                        </div>
+                                    </div>
+                                    <div class="make-tag-input pc">
+                                        <input type="text" placeholder="# 태그 입력(쉼표로 구분)" id="tag-input">
+                                    </div>
+                                    <div class="make-tag-input mo">
+                                        <button class="make-tag-btn">#</button>
+                                    </div>
+                                    <div id="tag-input-m" class="mo">
+                                        <input type="text" placeholder="# 태그 입력(쉼표로 구분)">
+                                        <button class="tag-input-m-close">
+                                            <i></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <ul class="pc make-slide-wrap-pc">
+                                    <div class="make-slide-img-group active">
+                                        <img src="./images/maker/background00.jpg" alt="main-img" class="active">
+                                        <img src="./images/maker/background01.jpg" alt="main-img">
+                                        <img src="./images/maker/background02.jpg" alt="main-img">
+                                        <img src="./images/maker/background00.jpg" alt="main-img">
+                                        <img src="./images/maker/background01.jpg" alt="main-img">
+                                    </div>
+                                    <div class="make-slide-img-group">
+                                        <img src="./images/maker/background01.jpg" alt="main-img" class="active">
+                                        <img src="./images/maker/background02.jpg" alt="main-img">
+                                        <img src="./images/maker/background00.jpg" alt="main-img">
+                                        <img src="./images/maker/background01.jpg" alt="main-img">
+                                        <img src="./images/maker/background02.jpg" alt="main-img">
+                                    </div>
+                                    <div class="make-slide-img-group">
+                                        <img src="./images/maker/background02.jpg" alt="main-img" class="active">
+                                        <img src="./images/maker/background01.jpg" alt="main-img">
+                                        <img src="./images/maker/background00.jpg" alt="main-img">
+                                        <img src="./images/maker/background01.jpg" alt="main-img">
+                                        <img src="./images/maker/background02.jpg" alt="main-img">
+                                    </div>
+                                </ul>
+                                <div class="swiper-container make-slide-wrap mo">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./images/maker/background00.jpg" alt="main-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/maker/background01.jpg" alt="main-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/maker/background02.jpg" alt="main-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/maker/background00.jpg" alt="main-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/maker/background01.jpg" alt="main-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="make-footer mo">
+                                    <div class="make-slide">
+                                        <button class="prev-btn">
+                                            <i></i>
+                                        </button>
+                                        <div class="make-slide-number">
+                                            <span class="current-number">1</span>
+                                            /
+                                            <span class="total-number">5</span>
+                                        </div>
+                                        <button class="next-btn">
+                                            <i></i>
+                                        </button>
+                                    </div>
+                                    <div class="source-input">
+                                        <input type="text" placeholder="출처가 필요한 경우 입력해 주세요.">
+                                        <i></i> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="make-footer pc">
+                            <div class="make-slide">
+                                <button class="prev-btn swiper-button-prev">
+                                    <i></i>
+                                </button>
+                                <div class="make-slide-number">
+                                    <span class="current-number">1</span>
+                                    /
+                                    <span class="total-number">5</span>
+                                </div>
+                                <button class="next-btn swiper-button-next">
+                                    <i></i>
+                                </button>
+                            </div>
+                            <div class="source-input">
+                                <input type="text" placeholder="출처가 필요한 경우 입력해 주세요.">
+                                <i></i> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="make-editer pc">
+                <div class="make-editer-content">
+                    <ul class="make-editer-tab">
+                        <li class="active">
+                            <button>
+                                <div class="ico-group">
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                                <span>이미지</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <div class="ico-group">
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                                <span>GIF 이미지</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <div class="ico-group">
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                                <span>업로드</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <div class="ico-group">
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                                <span>템플릿</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <div class="ico-group">
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                                <span>텍스트</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="make-editer-tab-content">
+                        <li class="active">
+                            <div class="search-input">
+                                <i class="search-icon"></i>
+                                <input type="text" placeholder="검색어를 입력하세요.">
+                            </div>
+                            <div class="make-editer-tab-content-list">
+                                <ul>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="source-text"></p>
+                        </li>
+                        <li>
+                            <div class="search-input">
+                                <i class="search-icon"></i>
+                                <input type="text" placeholder="Search Tenor GIF's">
+                            </div>
+                            <div class="make-editer-tab-content-list">
+                                <ul>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="source-text"></p>
+                        </li>
+                        <li>
+                            <div class="search-input">
+                                <i class="search-icon"></i>
+                                <input type="text" placeholder="내 이미지 업로드">
+                            </div>
+                            <div class="make-editer-tab-content-list">
+                                <ul>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="source-text"></p>
+                        </li>
+                        <li>
+                            <div class="search-input">
+                                <i class="search-icon"></i>
+                                <input type="text" placeholder="검색어를 입력하세요.">
+                            </div>
+                            <div class="make-editer-tab-content-list">
+                                <ul>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                    <li>
+                                        <button><img src="./images/maker/background00.jpg" alt="thumbnail"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="source-text"></p>
+                        </li>
+                        <li>
+                            <div class="text-editer">
+                                <div class="add-text">
+                                    <button class="add-text-btn"><i></i></button>
+                                    <span>텍스트 상자</span>
+                                </div>
+                                <div class="font-choice-select select">
+                                    <button class="select-top">
+                                        <span>나눔고딕</span>
+                                        <i class="select-ico"></i>
+                                    </button>
+                                    <div class="select-content">
+                                        <ul>
+                                            <li><button>나눔고딕</button></li>
+                                            <li><button>나눔고딕</button></li>
+                                            <li><button>나눔고딕</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="font-style">
+                                    <div class="weight-choice-select select">
+                                        <button class="select-top">
+                                            <span>보통 굵기</span>
+                                            <i class="select-ico"></i>
+                                        </button>
+                                        <div class="select-content">
+                                            <ul>
+                                                <li><button>보통굵기</button></li>
+                                                <li><button>보통굵기</button></li>
+                                                <li><button>보통굵기</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="size-choice-select select">
+                                        <button class="select-top">
+                                            <span>14 pt</span>
+                                            <i class="select-ico"></i>
+                                        </button>
+                                        <div class="select-content">
+                                            <ul>
+                                                <li><button>14 pt</button></li>
+                                                <li><button>14 pt</button></li>
+                                                <li><button>14 pt</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="font-color">
+                                    <span>색상</span>
+                                    <button class="colorpicker">
+                                        <div class="color"></div>
+                                        <div class="icon-group">
+                                            <i></i>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="font-align">
+                                    <ul>
+                                        <li>
+                                            <button class="left-btn"><i></i></button>
+                                        </li>
+                                        <li>
+                                            <button class="center-btn"><i></i></button>
+                                        </li>
+                                        <li>
+                                            <button class="right-btn"><i></i></button>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <button class="row-btn"><i></i></button>
+                                        </li>
+                                        <li>
+                                            <button class="column-btn"><i></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="make-editer-other">
+                    <div class="voice-editer">
+                        <div class="voice-title">
+                            <i></i>
+                            <span>음성</span>
+                        </div>
+                        <div class="voice-content">
+                            <ul>
+                                <li class="bgm-choice-select">
+                                    <div class="bgm-select select">
+                                        <button class="select-top">
+                                            <span>목소리 선택</span>
+                                            <i class="select-ico"></i>
+                                        </button>
+                                        <div class="select-content">
+                                            <ul>
+                                                <li><button>목소리1</button></li>
+                                                <li><button>목소리2</button></li>
+                                                <li><button>목소리3</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button class="voice-play-btn">
+                                        <i></i>
+                                    </button>
+                                    <div class="voice-toggle">
+                                        <button class="voice-toggle-btn"></button>
+                                        <ul>
+                                            <li>ON</li>
+                                            <li>OFF</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="voice-choice-select">
+                                    <div class="voice-select select">
+                                        <button class="select-top">
+                                            <span>속도 선택</span>
+                                            <i class="select-ico"></i>
+                                        </button>
+                                        <div class="select-content">
+                                            <ul>
+                                                <li><button>30</button></li>
+                                                <li><button>50</button></li>
+                                                <li><button>70</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="make-editer mo">
+                <div class="make-editer-tab-mo">
+                    <ul>
+                        <li>
+                            <button class="img-btn-m">
+                                <i></i>
+                                <span>이미지</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="gif-btn-m">
+                                <i></i>
+                                <span>GIF 이미지</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="upload-btn-m">
+                                <i></i>
+                                <span>업로드</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="template-btn-m">
+                                <i></i>
+                                <span>템플릿</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="text-btn-m">
+                                <i></i>
+                                <span>텍스트</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="voice-btn-m">
+                                <i></i>
+                                <span>음성</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="make-editer-cotnetn-m">
+                    <ul>
+                        <li>
+                            <div class="search-input">
+                                <i class="search-icon"></i>
+                                <input type="text" placeholder="검색어를 입력하세요.">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="search-input">
+                                <i class="search-icon"></i>
+                                <input type="text" placeholder="Search Tenor GIF's">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="search-input">
+                                <i class="search-icon"></i>
+                                <input type="text" placeholder="내 이미지 업로드">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="search-input">
+                                <i class="search-icon"></i>
+                                <input type="text" placeholder="검색어를 입력하세요.">
+                            </div>
+                        </li>
+                        <li>
+                            
+                        </li>
+                        <li>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="make-final">
+                <button class="bgm-btn tooltip">
+                    <div class="icon-group">
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <span>배경음악</span>
+                </button>
+                <div class="bgm-select">
+                    <div class="bgm-title">
+                        <p>배경음악</p>
+                        <button class="bgm-select-close-btn">
+                            <i></i>
+                        </button>
+                    </div>
+                    <div class="bgm-select-content">
+                        <ul>
+                            <li>배경음악 1</li>
+                            <li>배경음악 2</li>
+                            <li>배경음악 3</li>
+                            <li>배경음악 1</li>
+                            <li>배경음악 2</li>
+                            <li>배경음악 3</li>
+                            <li>배경음악 1</li>
+                            <li>배경음악 2</li>
+                            <li>배경음악 3</li>
+                            <li>배경음악 1</li>
+                            <li>배경음악 2</li>
+                            <li>배경음악 3</li>
+                            <li>배경음악 1</li>
+                            <li>배경음악 2</li>
+                            <li>배경음악 3</li>
+                            <li>배경음악 1</li>
+                            <li>배경음악 2</li>
+                            <li>배경음악 3</li>
+                        </ul>
+                    </div>
+                    <div class="bgm-volume">
+                        <div class="volume-cont">
+                            <i></i>
+                            <input type="range" id="bgm-volume" value="0">
+                        </div>
+                    </div>
+                </div>
+                <button class="preview-btn tooltip">
+                    <div class="icon-group">
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <span>미리보기</span>
+                </button>
+                <button class="download-btn tooltip">
+                    <div class="icon-group">
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <span>저장</span>
+                </button>
+                <button class="upload-btn">
+                    <div class="icon-group">
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <span>스토리 완성</span>
+                </button>
+            </div>
+        </main>
+
+        <div class="colorpicker-content">
+            <div class="colorpicker-title">
+                <div class="active">
+                    <span>색상</span>
+                    <button class="colorpicker-close-btn">
+                        <i></i>
+                    </button>
+                </div>
+                <div>
+                    <button class="colorpicker-prev-btn">
+                        <i></i>
+                    </button>
+                    <span>작업지정</span>
+                </div>
+            </div>
+            <div class="colorpicker-main">
+                <div class="default-color active">
+                    <p>기본색상</p>
+                    <ul>
+                        <li style="background-color: #000000; border-color: #000000;"></li>
+                        <li style="background-color: #595959; border-color: #494949;"></li>
+                        <li style="background-color: #848383; border-color: #747373;"></li>
+                        <li style="background-color: #a6a5a5; border-color: #888787;"></li>
+                        <li style="background-color: #c6c6c6; border-color: #a2a2a2;"></li>
+                        <li style="background-color: #eeeeee; border-color: #c3c3c3;"></li>
+                        <li style="background-color: #ffffff; border-color: #d2d2d2;"></li>
+                        <li style="background-color: #fecdbe; border-color: #d0a89c;"></li>
+                        <li style="background-color: #ffeab6; border-color: #d2c29a;"></li>
+                        <li style="background-color: #ddecca; border-color: #b5c1a6;"></li>
+                        <li style="background-color: #b8e6e1; border-color: #97bdb8;"></li>
+                        <li style="background-color: #b9e9ff; border-color: #98bfd1;"></li>
+                        <li style="background-color: #cbd1ef; border-color: #a6abc4;"></li>
+                        <li style="background-color: #e0bee5; border-color: #e0bee5 ;"></li>
+                        <li style="background-color: #fd8b6a; border-color: #cf7257;"></li>
+                        <li style="background-color: #ffcd4b; border-color: #ffcd4b ;"></li>
+                        <li style="background-color: #afd384; border-color: #8fad6c;"></li>
+                        <li style="background-color: #81cac4; border-color: #6aa6a1;"></li>
+                        <li style="background-color: #5acbff; border-color: #4aa6d1;"></li>
+                        <li style="background-color: #9fa9d8; border-color: #8890b4;"></li>
+                        <li style="background-color: #b96bc6; border-color: #9858a3;"></li>
+                        <li style="background-color: #fc522f; border-color: #cf4327;"></li>
+                        <li style="background-color: #fd9f28; border-color: #cf8221;"></li>
+                        <li style="background-color: #7cb248; border-color: #66923b;"></li>
+                        <li style="background-color: #30a699; border-color: #27887d;"></li>
+                        <li style="background-color: #16a7f1; border-color: #1289c6;"></li>
+                        <li style="background-color: #5d6cbd; border-color: #4c599b;"></li>
+                        <li style="background-color: #9930ae; border-color: #7d278f;"></li>
+                        <li style="background-color: #d94924; border-color: #b23c1e;"></li>
+                        <li style="background-color: #fd6e21; border-color: #cf5a1b;"></li>
+                        <li style="background-color: #568a35; border-color: #46712b;"></li>
+                        <li style="background-color: #10887a; border-color: #0d6f64;"></li>
+                        <li style="background-color: #1487ce; border-color: #106fa9;"></li>
+                        <li style="background-color: #3a4ca8; border-color: #303e8a;"></li>
+                        <li style="background-color: #6a2598; border-color: #602b83;"></li>
+                    </ul>
+                </div>
+                <div class="pallate-color">
+                    <div class="pallate">
+                        <div class="pallate-console"></div>
+                    </div>
+                    <div class="pallate-bar">
+                        <div class="bar-console"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="colorpicker-fot">
+                <button class="open-pallate-btn">
+                    <i></i>
+                </button>
+                <button class="spoid">
+                    <i></i>
+                    <i></i>
+                </button>
+                <div class="hax">
+                    <div class="color"></div>
+                    <input type="text" value="#000000" maxLength="7">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="login-popup">
+        <div class="login-popup-inner">
+            <div class="login_close">
+                <a href="#"><img src="images/icon/ico-login-close.png" alt="아이콘"></a>
+            </div>
+            <div class="login_list">
+                <div class="login-top">
+                    <h2>로그인</h2>
+                    <div class="input-style">
+                        <input type="text" placeholder="이메일 주소를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='이메일 주소를 입력하세요.'">
+                    </div>
+                    <div class="input-style">
+                        <input type="password" placeholder="비밀번호를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='비밀번호를 입력하세요.'">
+                    </div>
+                    <div class="login-check">
+                        <p id="login-check">자동 로그인</p>
+                    </div>
+                    <div class="login-button">
+                       <div class="input-style">
+                        <input type="button" value="로그인">
+                       </div>
+                    </div>
+                    <div class="people_info">
+                        <a href="./passward.html">비밀번호 찾기</a>
+                        <a href="./join.html">회원가입</a>
+                    </div>
+                </div>
+                <div class="join-social">
+                    <ul>
+                        <li><a href="#"><img src="images/icon/ico-google.png" alt="구글"></a>
+                            <p>구글</p>
+                        </li>
+                        <li><a href="#"><img src="images/icon/ico-naver.png" alt="네이버"></a>
+                            <p>네이버</p>
+                        </li>
+                        <li><a href="#"><img src="images/icon/ico-kakao.png" alt="카카오"></a>
+                            <p>카카오톡</p>
+                        </li>
+                        <li><a href="#"><img src="images/icon/ico-facebook.png" alt="페이스북"></a>
+                            <p>페이스북</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="preview-dim"></div>
+    <div class="preview">
+        <div class="preview-content">
+            <ul>
+                <li class="active">
+                    <img src="./images/maker/preview-img01.jpg" alt="preview-img">
+                </li>
+                <li>
+                    <img src="./images/maker/background01.jpg" alt="preview-img">
+                </li>
+                <li>
+                    <img src="./images/maker/background02.jpg" alt="preview-img">
+                </li>
+                <li>
+                    <img src="./images/maker/background00.jpg" alt="preview-img">
+                </li>
+                <li>
+                    <img src="./images/maker/background01.jpg" alt="preview-img">
+                </li>
+                <li>
+                    <img src="./images/maker/background02.jpg" alt="preview-img">
+                </li>
+                <li>
+                    <img src="./images/maker/background00.jpg" alt="preview-img">
+                </li>
+                <li>
+                    <img src="./images/maker/background01.jpg" alt="preview-img">
+                </li>
+                <li>
+                    <img src="./images/maker/background02.jpg" alt="preview-img">
+                </li>
+            </ul>
+        </div>
+        <div class="preview-editer">
+            <button class="preview-close-btn">
+                <i></i>
+            </button>
+            <div class="preview-text">
+                <h2 class="preview-title">
+                    반려동물과 함께 하는 삶
+                </h2>
+                <p class="preview-tag">#동물, #강아지, #가족</p>
+            </div>
+            <div class="preview-editer-content">
+                <div class="preview-number">
+                    <span class="current">1</span>
+                    <span>/</span>
+                    <span class="total">17</span>
+                </div>
+                <div class="preview-controller">
+                    <div class="btn-group">
+                        <button class="prev-btn last">
+                            <div class="icon-group">
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </button>
+                        <button class="next-btn">
+                            <div class="icon-group">
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </button>
+                    </div>
+                    <button class="autoplay-btn">
+                        <div class="icon-group">
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/make.js"></script>
+    <script src="./js/category.js"></script>
+    <script src="./js/story.js"></script>
+    <script src="./js/browse.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/popup.js"></script>
+</body>
+</html>
