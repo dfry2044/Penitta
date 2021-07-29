@@ -91,3 +91,28 @@ storyico.click(function(){
 storyico.click(function(){
     storyico.removeClass("active");
 })
+
+
+$('.card-etc-tooltip > button:nth-child(3)').click(function(){
+    $('.share-popup').addClass('active');
+});
+
+$('.share-ico-close').click(function(){
+    $('.share-popup').removeClass('active');
+});
+
+$('.card-etc-tooltip > button:nth-child(2)').click(function(){
+    $('.tag-popup').addClass('active');
+});
+
+$('.tag-ico-close').click(function(){
+    $('.tag-popup').removeClass('active');
+});
+
+$('.list-top > a').click(function(){
+    $('.view-popup').addClass('active');
+});
+
+$('.view-ico-close').click(function(){
+    $('.view-popup').removeClass('active');
+});

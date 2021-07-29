@@ -65,7 +65,7 @@
 }
 
 .template-inner > h2 > span {
-    font-weight: 500;
+    font-weight: 700;
     position: relative;
 }
 .t-top-wrap > .input-stlye {
@@ -511,6 +511,14 @@ padding: 30px 0 158px 0;
     border-radius: 30px;
     margin:0 auto 50px auto;
 }
+
+.name-inner > h2 {
+    padding-bottom: 39px;
+}
+
+.name_search {
+    padding-top: 0;
+}
 @media all and (max-width: 1920px){
     div.h-inner{
         max-width:1606px;
@@ -606,6 +614,12 @@ padding: 30px 0 158px 0;
     }
     .template_search {
         padding: 50px 0 12px;
+    }
+    .name-inner > h2 {
+        padding-bottom: 29px;
+    }
+    .name_search {
+        padding-top: 0 ;
     }
 }
 @media (max-width: 1500px) {

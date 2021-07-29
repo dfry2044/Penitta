@@ -3,7 +3,7 @@
 header {
     z-index: 10000000;
     width: 100%;
-    height: 92px;
+    height: 95px;
     position: relative;
     background: #fff;
     border-bottom: #ebe9e9 solid 1px;
@@ -12,6 +12,7 @@ header {
 
 div.h-inner {
     width: 100%;
+    height: 100%;
     max-width: 1975px;
     margin: 0 auto;
 }
@@ -22,12 +23,13 @@ header.active {
 }
 
 header nav {
+    height: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 .header-left {
-    height: 92px;
+    height: 100%;
     display: flex;
     align-content: center;
 }
@@ -680,6 +682,8 @@ header div.header-right > div.userMenu {
     transform: translateX(-50%);
 }
 
+
+/* no-login-menu 적용부분 0728수정*/
 .userMenu > .no-login-menu {
     display: none;
 }
@@ -788,9 +792,9 @@ header div.header-right > div.userMenu {
     position: absolute;
 }
 
+/* login-menu 적용부분 0728수정*/
 .userMenu > .login-menu {
     display: none;
-    /* block 이어야함 */
 }
 
 .userMenu > .login-menu.active {
