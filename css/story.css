@@ -1130,8 +1130,7 @@ input[type=range]::-webkit-slider-thumb {
 .play-icon {
     margin-right: 31px;
 }
-.play-icon i {
-    display: block;
+.play-icon button {
     width: 12px;
     height: 16px;
     background: url(../images/icon/ico-play-stop.png) no-repeat center / cover;
@@ -1139,8 +1138,7 @@ input[type=range]::-webkit-slider-thumb {
 .volum-icon {
     margin-right: 21px;
 }
-.volum-icon i {
-    display: block;
+.volum-icon button {
     width: 21px;
     height: 18px;
     background: url(../images/icon/ico-play-volum.png) no-repeat center / cover;
@@ -1155,8 +1153,7 @@ input[type=range]::-webkit-slider-thumb {
     font-weight: 300;
 }
 
-.play-icon-right i {
-    display: block;
+.play-icon-right button {
     width: 16px;
     height: 16px;
     background: url(../images/icon/ico-play-plus.png) no-repeat center / cover;
@@ -1353,18 +1350,31 @@ textarea::placeholder {
     width: 5.2px; 
 }
 
-::-webkit-scrollbar-track { background-color:#fff; } /* 스크롤 바 밑의 배경 */
+::-webkit-scrollbar-track 
+{ 
+    background-color:#fff; 
+} 
 
-::-webkit-scrollbar-thumb { 
+::-webkit-scrollbar-thumb 
+{ 
     background: #ddd; 
     border-radius: 10px;
-} /* 실질적 스크롤 바 */
+}
 
-::-webkit-scrollbar-thumb:hover { background: #404040; } /* 실질적 스크롤 바 위에 마우스를 올려다 둘 때 */
+::-webkit-scrollbar-thumb:hover 
+{ 
+    background: #404040; 
+}
 
-::-webkit-scrollbar-thumb:active { background: #808080; } /* 실질적 스크롤 바를 클릭할 때 */
+::-webkit-scrollbar-thumb:active 
+{ 
+    ackground: #808080; 
+}
 
-::-webkit-scrollbar-button { display: none; } /* 스크롤 바 상 하단 버튼 */
+::-webkit-scrollbar-button 
+{ 
+    display: none; 
+}
 
 .comment-list {
     width: 100%;
@@ -1466,6 +1476,10 @@ textarea::placeholder {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.comment-popup.active{
+    display: flex;
 }
 
 @media all and (max-width:1920px){
@@ -1947,16 +1961,16 @@ textarea::placeholder {
     .play-icon {
         margin-right: 22px;
     }
-    .play-icon i {
+    .play-icon button {
         width: 11px;
         height: 14px;
     }
     .volum-icon {
         margin-right: 15px;
     }
-    .volum-icon i {
-        width: 19px;
-        height: 16px;
+    .volum-icon button {
+        width: 17px;
+        height: 14px;
 
     }
 
@@ -1964,8 +1978,8 @@ textarea::placeholder {
         font-size: 10.75px;
     }
 
-    .play-icon-right i {
-        width: 13px;
+    .play-icon-right button {
+        width: 12px;
         height: 13px;
     }
     .view-play-bot {
@@ -2012,5 +2026,111 @@ textarea::placeholder {
     .view-play-bot > div > button:nth-child(3)::before {
         width: 18px;
         height: 17px;
+    }
+
+    /* .comment-popup */
+
+    .comment-popup-inner {
+        width: 729px;
+        height: 773px;
+        padding: 23px 25px 0;
+        border-radius: 25px;
+    }
+
+    .comment-popup-inner > i {
+        width: 15px;
+        height: 14px;
+        top: 4px;
+        right: -25px;
+    }
+
+    .comment-popup-box > h2 {
+        font-size: 12px;
+        padding-bottom: 13px;
+    }
+
+    .comment-box {
+        padding: 12px 14px 9px;
+    }
+
+    .comment-box p {
+        font-size: 11.5px;
+        margin-bottom: 12px;
+    }
+
+    textarea::placeholder {
+        font-size: 14px;
+    }
+
+    .popup-comment{
+        font-size: 14px;
+    }
+
+    .comment-camera i {
+        width: 17px;
+        height: 14px;
+        margin-right: 10px;
+    }
+
+    .comment-pic i {
+        width: 18px;
+        height: 15px;
+        margin-right: 14px;
+    }
+
+    .comment-button {
+        width: 57px;
+        height: 28px;
+        line-height: 25px;
+    }
+
+    .comment-button > button {
+        font-size: 12px;
+    }
+
+    .comment-list-wrap {
+        height: 819px;
+    }
+
+
+    .comment-list {
+        height: 142px;
+    }
+
+    .comment-list:last-child {
+        border-bottom: none;
+    }
+
+    .comment-list-top {
+        padding-right: 8px;
+    }
+
+    .comment-list-top > p {
+        font-size: 11.5px;
+    }
+
+    .popup-comment-result {
+        font-size: 13px;
+        line-height: 20.5px;
+        padding: 11px 0 16px;
+    }
+
+    .popup-comment-react button {
+        font-size: 10.5px;
+    }
+
+    .popup-comment-react button:first-child {
+        margin-right: 14px;
+    }
+
+    .popup-comment-react button::before {
+        width: 17px;
+        height: 15px;
+        margin-right: 5px;
+    }
+
+    .comment-etc-tooltip{
+        right: 8px;
+        top: 20px;
     }
 }

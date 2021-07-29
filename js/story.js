@@ -116,3 +116,12 @@ $('.list-top > a').click(function(){
 $('.view-ico-close').click(function(){
     $('.view-popup').removeClass('active');
 });
+
+$('.c4-react > button:nth-child(3)').click(function(){
+    $('.comment-popup').addClass('active');
+});
+
+
+$('.comment-ico-close').click(function(){
+    $('.comment-popup').removeClass('active');
+});
