@@ -9,11 +9,11 @@ header {
     border-bottom: #ebe9e9 solid 1px;
 }
 
-
+/* 0729 수정 */
 div.h-inner {
     width: 100%;
     height: 100%;
-    max-width: 1975px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 

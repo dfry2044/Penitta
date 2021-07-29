@@ -1,22 +1,35 @@
-//c1 - slider
-var swiper = new Swiper(".mySwiper_", {
-    autoplay: true,
-    speed: 3500,
-    effect : 'fade',
+
+// c1
+var mainSwiper = new Swiper(".mySwiper1", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    mousewheel: false,
+    keyboard: true,
+    slidesPerView: 2,
+    centeredSlides: true,
+    spaceBetween: 0,
+    grabCursor: false,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
-});
-//c2 - slider
-var swiper = new Swiper(".mySwiper2", {
-    slidesPerView: 5,
-    spaceBetween: 40,
-    pagination: {
-        el: ".mySwiper2 .swiper-pagination",
-        clickable: true,
+  });
+
+//c2
+
+var twoSwiper = new Swiper(".mySwiper2", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 4,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-});
+  });
 
 //c-3 slider
 
