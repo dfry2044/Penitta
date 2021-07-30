@@ -180,18 +180,29 @@ var makeSwiper = new Swiper(".make-slide-wrap",{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    pagination: {
+        el : ".make-slide-number-pagination",
+        type : "fraction"
+    }
 })
 
 makeListItem.click(function(){
     slideItemIdx = $(this).index();
+
+    if($(window).innerWidth() >= 1024){
+        makeSlideWrap.removeClass("active");
     
-    makeSlideWrap.removeClass("active");
+        makeSlideWrap.eq(slideItemIdx).addClass("active");
+    
+        makeListItem.removeClass("active");
+    
+        makeListItem.eq(slideItemIdx).addClass("active");
+    }else{
 
-    makeSlideWrap.eq(slideItemIdx).addClass("active");
-
-    makeListItem.removeClass("active");
-
-    makeListItem.eq(slideItemIdx).addClass("active");
+        makeListItem.closest(".swiper-wrapper").find("li.make-list-item").removeClass("active");
+    
+        makeListItem.closest(".swiper-wrapper").find("li.make-list-item").eq(slideItemIdx).addClass("active");
+    }
 })
 
 makeSlidePrevBtn.click(function(){
@@ -259,6 +270,28 @@ tabMenuBtn.click(function(){
     tabMenuBtn.eq(idx).addClass("active");
 })
 
+var tabMenuBtnMo = $(".make-editer-tab-mo li");
+var tabMenuContentMo = $(".make-editer.mo .make-editer-tab-content>li");
+var makeEditerMo = $(".make-editer.mo");
+var makeEditerDimMo = $(".make-editer.mo .dim");
+
+tabMenuBtnMo.click(function(){
+    var idx = $(this).index();
+
+    tabMenuContentMo.removeClass("active");
+    tabMenuBtnMo.removeClass("active");
+    tabMenuContentMo.eq(idx).addClass("active");
+    tabMenuBtnMo.eq(idx).addClass("active");
+    
+    makeEditerMo.addClass("show");
+    makeEditerDimMo.addClass("shopw");
+})
+
+makeEditerDimMo.click(function(){
+    makeEditerMo.removeClass("show");
+    makeEditerDimMo.removeClass("show");
+})
+
 // colorpicker popup
 var colorpicker = $(".colorpicker-content");
 var colorpickerOpenBtn = $(".colorpicker");
@@ -268,12 +301,15 @@ var colorpickerHeader = $(".colorpicker-title > div");
 var colorpickerContents = $(".colorpicker-main > div");
 var colorpickerChangeBtn = $(".open-pallate-btn");
 var colorpickerSpoid = $(".spoid");
+var colorpickerDim = $(".colorpicker-dim");
 
 colorpickerOpenBtn.click(function(){
     colorpicker.addClass("show");
+    colorpickerDim.addClass("show");
 })
 colorpickerCloseBtn.click(function(){
     colorpicker.removeClass("show");
+    colorpickerDim.removeClass("show");
 })
 colorpickerPrevBtn.click(function(){
     if(colorpickerContents.eq(0).hasClass("active")){
@@ -294,18 +330,26 @@ colorpickerSpoid.click(function(){
 colorpickerChangeBtn.click(function(){
     colorpickerContents.eq(0).removeClass("active");
     colorpickerContents.eq(1).addClass("active");
+    colorpickerContents.eq(2).removeClass("active");
+    colorpickerContents.eq(3).addClass("active");
     
     colorpickerHeader.eq(0).removeClass("active");
     colorpickerHeader.eq(1).addClass("active");
+    colorpickerHeader.eq(2).removeClass("active");
+    colorpickerHeader.eq(3).addClass("active");
 
     colorpickerChangeBtn.addClass("hide");
 })
 colorpickerPrevBtn.click(function(){
     colorpickerContents.eq(0).addClass("active");
     colorpickerContents.eq(1).removeClass("active");
+    colorpickerContents.eq(2).addClass("active");
+    colorpickerContents.eq(3).removeClass("active");
 
     colorpickerHeader.eq(0).addClass("active");
     colorpickerHeader.eq(1).removeClass("active");
+    colorpickerHeader.eq(2).addClass("active");
+    colorpickerHeader.eq(3).removeClass("active");
 
     colorpickerChangeBtn.removeClass("hide");
 })
@@ -314,12 +358,15 @@ colorpickerPrevBtn.click(function(){
 var bgmOpenBtn = $(".bgm-btn");
 var bgmContent = $(".bgm-select");
 var bgmCloseBtn = $(".bgm-select-close-btn");
+var bgmSelectDim = $(".bgm-select-dim");
 
 bgmOpenBtn.click(function(){
     bgmContent.addClass("active");
+    bgmSelectDim.addClass("active");
 })
 bgmCloseBtn.click(function(){
     bgmContent.removeClass("active");
+    bgmSelectDim.removeClass("active");
 })
 
 // list swiper
