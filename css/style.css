@@ -15,110 +15,13 @@
 
 
 header {
-    z-index: 99;
-    width: 100%;
-    height: 95px;
     position: fixed;
-    transition: 0.3s;
-    border-bottom: #ebe9e9 solid 1px;
 }
 
-div.h-inner {
-    width: 100%;
-    max-width: 1500px;
-    height: 100%;
-    margin: 0 auto;
-}
 
 header.active {
     background: white;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    border-bottom: none; 
-}
-
-header nav {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-left {
-    height: 100%;
-    display: flex;
-    align-content: center;
-}
-
-header a {
-    display: block;
-    margin: auto 0;
-}
-
-
-header nav ul {
-    display: flex;
-    height: 100%;
-    align-items: center;
-}
-
-header nav ul li {
-    margin-left: 50px;
-}
-header nav ul li.active a{
-    color: #000;
-}
-
-header nav ul li a {
-    font-size: 18px;
-    font-weight: 500;
-    transition: 0.3s;
-    color: #a2a2a2
-}
-
-header nav ul li a:hover {
-    opacity: 0.6;
-}
-
-header nav .userMenu .user {
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    transition: 0.3s;
-}
-
-header nav .userMenu .user:hover {
-    opacity: 0.6;
-}
-
-header nav .userMenu .ham {
-    transition: 0.3s;
-    cursor: pointer;
-    margin-left: 30px;
-    display: inline-block;
-    width: 25px;
-    height: 19px;
-}
-
-header nav .userMenu .ham:hover {
-    opacity: 0.6;
-}
-
-header div.header-right > div.userMenu {
-    height: 100px;
-    display: flex;
-    align-items: center;
-}
-
-header .logo{
-    margin-right: 110px;
-}
-header nav ul li:first-child{
-    margin-left: 0;
-}
-
-@media (max-width: 1976px) {
-    div.h-inner {
-        padding: 0 20px;
-    }
 }
 
 .wrap {
@@ -130,6 +33,10 @@ header nav ul li:first-child{
 .c1 {
     position: relative;
     height: 100%;
+}
+
+.mySwiper1 {
+    padding-left: 173px;
 }
 
 .main-slide-inner {
@@ -197,7 +104,8 @@ header nav ul li:first-child{
     height: 81px;
     position: absolute;
     left: -25PX;
-    top: -31PX;
+    top: 50%;
+    transform: translateY(-50%);
     background-color:#fe811c;
     border-radius: 50%;
 }
@@ -235,8 +143,9 @@ header nav ul li:first-child{
     display: block;
     width: 100%;
     object-fit: cover;
+    transform: scale(1);
+    transition: 0.3s ease;
 }
-
 
 .main-list {
     display: flex;
@@ -246,11 +155,22 @@ header nav ul li:first-child{
     position: relative;
     width: 570px;
     height: 570px;
+    overflow: hidden;
 }
 
 .main-list-two .main-content {
     width: 285px;
     height: 285px;
+}
+
+.main-list img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.main-content-txt:hover + a img {
+    transform: scale(1.1);
+    transition: 0.3s ease;
 }
 
 .main-content-txt {
@@ -260,6 +180,8 @@ header nav ul li:first-child{
     transform: translate(-50%, 50%);
     color: #fff;
     width: 100%;
+    z-index: 10;
+    cursor: pointer;
 }
 
 .main-content-txt h3 {
@@ -282,7 +204,7 @@ header nav ul li:first-child{
     height: 101px;
     background: rgba(0, 0, 0, 0.7) url(../images/icon/ico-main-Larrow.png) no-repeat center /32px 27px;
     border-radius: 50%;
-    left: 78px;
+    left: 55px;
     transform: translateY(-50%);
 }
 
@@ -652,6 +574,85 @@ header nav ul li:first-child{
     
 }
 
+.c5 .sec-inner{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+.c5 .sec-inner ul{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.c5 .sec-inner ul li{
+    width: calc(100% / 4);
+    display:flex;
+    align-items: flex-start;
+}
+.c5 .sec-inner ul img{
+    margin-right: 30px;
+}
+.c5 .sec-inner ul h3{
+    font-size:20px;
+    font-family: "Noto Sans Kr";
+    font-weight: 500;
+    color: #010101;
+    margin-bottom: 14px;
+}
+.c5 .sec-inner ul p{
+    font-size:15px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #616060;
+    line-height: 24px;
+    word-break: keep-all;
+}
+
+.c6{
+    padding: 74px 0 96px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.c6-text{
+    text-align: center;
+}
+.c6-text h3{
+    font-size: 32px;
+    font-family: "Noto Sans Kr";
+    font-weight: 300;
+    color: #242424;
+    margin-bottom: 14px;
+}
+.c6-text h3 strong{
+    font-weight: 500;
+}
+.c6-text p{
+    font-size: 18px;
+    font-family: "Noto Sans Kr";
+    font-weight: 300;
+    color: #242424;
+    margin-bottom: 34px;
+}
+.c6-text a{
+    font-size: 18px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #3c3933;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 247px;
+    height: 60px;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.03);
+    margin: 0 auto;
+}
+
 @media (max-width: 1960px) {
     .c4 .swiper-mini .swiper-wrapper {
         height: 329px;
@@ -660,8 +661,57 @@ header nav ul li:first-child{
 
 
 @media all and (max-width:1920px){
-    div.h-inner{
-        max-width:1650px;
+    .main-txt {
+        max-width: 1125px;
+    }
+    .main-txt h3 {
+        font-size: 39px;
+    }
+    .main-txt p{
+        font-size: 39px;
+        padding: 9px 0 24px;
+    }
+    .main-txt em {
+        font-size: 15px;
+    }
+    .main-button a {
+        position: absolute;
+        top: 18%;
+        left: 43.4%;
+        display: flex;
+    }
+    .main-button a::before {
+        width: 60px;
+        height: 60px;
+        left: -18PX;
+        top: 50%;
+    transform: translateY(-50%);
+    }
+    .main-button i {
+        width: 18px;
+        height: 15px;
+    }
+    .main-button p {
+        font-size: 13px;
+    }
+    /* .main-content-txt h3 {
+        font-size: 18px;
+    }
+    .main-list-two .main-content-txt h3{
+        font-size: 15px;
+    }
+    .main-content-txt p {
+        font-size: 12px;
+        line-height: 18.75px;
+        padding-top: 16px;
+    } */
+    .main-content {
+        width: 520px;
+        height: 520px;
+    }
+    .main-list-two .main-content {
+        width: 260px;
+        height: 260px;
     }
 }
 @media (max-width: 1500px) {

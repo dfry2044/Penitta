@@ -5,16 +5,19 @@ var mainSwiper = new Swiper(".mySwiper1", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    
     mousewheel: false,
     keyboard: true,
-    slidesPerView: 2,
-    centeredSlides: true,
+    slidesPerView: 'auto',
+    slidesPerGroup: 1,
+    centeredSlides: false,
     spaceBetween: 0,
     grabCursor: false,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
+    touchRatio: 0
   });
 
 //c2

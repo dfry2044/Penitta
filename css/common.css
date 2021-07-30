@@ -1,8 +1,9 @@
 /* sub page header */
 
+/* 0730 수정 */
 header {
     z-index: 10000000;
-    width: 100%;
+    width: 100vw;
     height: 95px;
     position: relative;
     background: #fff;
@@ -80,11 +81,21 @@ header nav ul li a:hover {
     opacity: 0.6;
 }
 
+/* 0730수정 */
 header .header-notice{
-    margin-left: 98px;
     display: flex;
     align-items: center;
 }
+
+header .header-notice::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 17px;
+    background-color: #e2dddd;
+    margin: 0 23px 0 63px;
+}
+
 header .header-notice i{
     text-indent: -99999999px;
     width: 28px;
@@ -178,13 +189,6 @@ header div.header-right > div.userMenu.active {
 
 .ham-btn::after {
     bottom: 0;
-}
-
-@media (max-width: 1920px) {
-    div.h-inner {
-        width: 100%;
-        padding: 0 20px;
-    }
 }
 
 /* footer */
@@ -811,13 +815,30 @@ header div.header-right > div.userMenu {
 
 @media all and (max-width: 1920px){
     div.h-inner{
-        max-width: 1650px;
+        max-width: 1125px;
+    
+    }
+    header nav ul li a {
+        font-size: 15px;
+        white-space: nowrap;
     }
 
-    div.h-inner {
-        width: 100%;
-        padding: 0 20px;
+    header .logo {
+        margin-right: 85px;
     }
+
+    header nav ul li {
+        margin-left: 29px;
+    }
+
+    header .header-notice p{
+        font-size: 11.5px;
+    }
+
+    header .header-notice::before {
+        margin: 0 16px 0 49px;
+    }
+
     .footer-inner {
         max-width: 1125px;
         padding-bottom: 54px;
