@@ -11,6 +11,20 @@ body{
   width: 100vw;
   overflow-x: hidden;
 }
+br.mo{
+  display: none;
+}
+br.pc{
+  display: block;
+}
+@media all and (max-width:1024px){
+  br.mo{
+    display: block;
+  }
+  br.pc{
+    display: none;
+  }
+}
 html,
 body,
 div,

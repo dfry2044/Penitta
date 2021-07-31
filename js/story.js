@@ -92,6 +92,15 @@ storyico.click(function(){
     storyico.removeClass("active");
 })
 
+templatePreviewContent.on('scroll touchmove mousewheel', function(e){
+
+    e.preventDefault();
+    
+    e.stopPropagation(); 
+    
+    return false;
+})
+
 
 $('.card-etc-tooltip > button:nth-child(3)').click(function(){
     $('.share-popup').addClass('active');

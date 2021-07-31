@@ -699,3 +699,25 @@ ul.my-comment-inner li .preview-head {
         height: 260px;
     }
 }
+
+@media all and (max-width:1024px){
+    .my-card{
+        padding: 36px 0 130px;
+    }
+    .my-tab{
+        height: 50px;
+    }
+    .my-tab .my-tab-inner{
+        max-width: 100%;
+    }
+    .my-tab .my-tab-inner ul{
+        height: 100%;
+        width: 100%;
+    }
+    .my-tab .my-tab-inner li{
+        width: 50%;
+    }
+    .my-tab .my-tab-inner li button{
+        font-size: 15px;
+    }
+}

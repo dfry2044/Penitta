@@ -495,3 +495,122 @@ padding: 30px 0 158px 0;
         bottom: 0px;
     }
 }
+
+@media all and (max-width:1024px){
+    .template-inner{
+        max-width: calc( 100% - 40px);
+    }
+    .template-inner > h2{
+        font-size: 21px;
+        line-height: 26px;
+        padding: 28px 0 20px 0;
+    }
+    .t-top-wrap > .input-stlye{
+        width: 100%;
+        height: 44px;
+    }
+    .t-input-search{
+        width: 92.5%;
+    }
+    .template_search{
+        padding: 24px 0 16px 0;
+    }
+    .t-search-head{
+        font-weight: 600;
+    }
+    .t-search-right > button{
+        font-size: 12px;
+    }
+    .t-box-list > .t-list{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 12px;
+    }
+    .t-list_item > .t-list-box{
+        height: auto;
+    }
+    .t-list-box::before{
+        font-size: 11px;
+        width: 43px;
+        height: 24px;
+        transform: translateY(-1px);
+        line-height: 24px;
+    }
+    .t-list_item > p{
+        padding: 15px 0;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    #t-js-btn-wrap{
+        padding: 13px 0 62px;
+    }
+    #t-js-btn-wrap a{
+        width: 170px;
+        height: 44px;
+        font-size: 14px;
+    }
+    .t-btn-wrap > a::after{
+        padding-left: 10px;
+    }
+    .template-preview .preview-content{
+        left:0;
+        top: auto;
+        bottom:-100%;
+        width: 100vw;
+        height: calc(100vh - 5%);
+        transform: translate(0,0);
+        border-radius: 25px 25px 0 0;
+        opacity: 1;
+        transition: 0.3s ease;
+        overflow-y: scroll;
+    }
+    .preview-content .preview-title{
+        border-bottom: none;
+        position: relative;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .preview-content .preview-btn-group{
+        position: absolute;
+        right: 20px;
+        top: 26px;
+    }
+    .preview-content p{
+        font-size: 15px;
+        font-weight: 600;
+        padding: 24px 0;
+        border-bottom: 1px solid #f1f1f1;
+        margin-bottom: 24px;
+    }
+    .preview-content h2{
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    .preview-content ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+        padding-bottom: 38px;
+    }
+    .preview-content ul li{
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    .preview-content a{
+        font-size: 14px;
+        width: 170px;
+        height: 44px;
+        margin: 0 auto 134px auto;
+    }
+    .template-preview.show .preview-content{
+        bottom: 0;
+    }
+    .input-stlye > span{
+        right: 10%;
+    }
+    .t-search-result{
+        font-size: 13px;
+    }
+}

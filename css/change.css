@@ -271,3 +271,69 @@ padding: 70px 0 35px;
     justify-content: center;
     letter-spacing: -1px;
 }
+
+@media all and (max-width:1024px){
+    .change-nickname-inner{
+        width: calc(100vw - 40px);
+    }
+    .change-nickname-inner > p{
+        font-size: 15px;
+        line-height: 1.5;
+        font-weight: 500;
+        padding-bottom: 28px;
+    }
+    .input-style{
+        height: 48px;
+    }
+    .input-style > input{
+        font-size: 14px;
+        padding: 0 16px;
+    }
+    .input-style > input::placeholder{
+        font-size: 14px;
+    }
+    .change-check{
+        padding: 8px 0;
+    }
+    
+    .change-done-inner{
+        width: 100vw;
+        min-width: calc(100% - 40px);
+        height: 100%;
+        border: 0;
+        padding: 0 20px;
+    }
+    .ico-style{
+        padding: 46px 0 28px 0;
+    }
+    .ico-style > i{
+        width: 88px;
+        height: 88px;
+    }
+    .change-done-inner > h2{
+        font-size: 25px;
+    }
+    .change-done-inner > p{
+        font-size: 14px;
+        line-height: 20px;
+        padding: 18px 0 38px 0;
+    }
+    .done-input-style{
+        height: 55px;
+    }
+    .done-input-style > button{
+        font-size: 15px;
+    }
+    .done-input-style > a{
+        font-size: 15px;
+    }
+    body.done{
+        height: 100vh;
+    }
+    body.done .wrap{
+        height: 100%;
+        height: calc(100% - 60px - 295px);
+    }
+    body.done .change-done-wrap{
+    }
+}
