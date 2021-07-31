@@ -13,11 +13,22 @@ var mainSwiper = new Swiper(".mySwiper1", {
     centeredSlides: false,
     spaceBetween: 0,
     grabCursor: false,
+    touchRatio: false,
+    freeMode : false,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
-    touchRatio: 0
+    breakpoints: {
+        1920: {
+          slidesPerView: 'auto',
+        },
+        1024: {
+            slidesPerView: 'auto',
+            touchRatio: true,
+            freeMode: true
+          },
+      }
   });
 
 //c2
@@ -28,10 +39,22 @@ var twoSwiper = new Swiper(".mySwiper2", {
     slidesPerGroup: 4,
     loop: true,
     loopFillGroupWithBlank: true,
+    freeMode: false,
     navigation: {
       nextEl: ".swiper-button-next2",
       prevEl: ".swiper-button-prev2",
     },
+    breakpoints: {
+        1920: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            freeMode: true,
+          },
+      }
   });
 
 //c-3 slider

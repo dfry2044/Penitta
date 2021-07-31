@@ -33,7 +33,7 @@ $(window).scroll(function () {
 
 
 //c2 swiper
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 4,
     slidesPerGroup: 4,
     spaceBetween: 1,
@@ -43,10 +43,13 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    /*navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },*/
+    breakpoints: {
+        1920: {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+            spaceBetween: 20,
+        },
+      }
 });
 
 //c4 button
