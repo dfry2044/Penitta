@@ -813,6 +813,172 @@ header div.header-right > div.userMenu {
     display: flex;
 }
 
+/* menu - mobile */
+.menu{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000000000000;
+}
+.menu.show{
+    opacity: 1;
+    visibility: visible;
+}
+.menu-content-wrap{
+    position:absolute;
+    right:-100%;
+    width: calc(100% - 18.667vw);
+    height: 100%;
+    padding: 20px 20px 42px 28px;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+.menu.show .menu-content-wrap{
+    right: 0;
+}
+.menu-content-wrap .menu-close-btn{
+    width: 18px;
+    height: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-bottom: 12px;
+}
+.menu-content-wrap .menu-close-btn span{
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform-origin: left center;
+}
+.menu-content-wrap .menu-close-btn span:first-child{
+    transform: rotate(45deg);
+    transform-origin: left;
+}
+.menu-content-wrap .menu-close-btn span:nth-child(2){
+    width: 0;
+}
+.menu-content-wrap .menu-close-btn span:last-child{
+    transform: rotate(-45deg);
+}
+.menu-content-wrap h3{
+    font-size: 24px;
+    font-family: "Noto Sans Kr";
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.menu-content-wrap .menu-link{
+    font-size: 15px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #ff821c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 72px);
+    height: 44px;
+    border-radius: 25px;
+    border: 1px solid #ff821c;
+    margin: 0 auto;
+}
+.menu-content-wrap .menu-link i{
+    width: 20px;
+    height: 16px;
+    background: url("../images/icon/ico-main-pencil-orange.png") no-repeat center / cover;
+    margin-right: 11px;
+}
+.menu-content{
+    width: calc(100% - 12px);
+    margin-left: auto;
+    padding: 35px 0;
+    padding-right: 10px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.menu-content:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+}
+.menu-content:nth-of-type(1) a{
+    display: flex;
+    flex-direction: column;
+    height: 55px;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-content:nth-of-type(1) i{
+    display: flex;
+    margin: 0 auto;
+}
+.menu-content:nth-of-type(1) li:nth-child(1) i{
+    width: 38px;
+    height: 29px;
+    background: url("../images/icon/ico-story-menu.png") no-repeat center / cover;
+}
+.menu-content:nth-of-type(1) li:nth-child(2) i{
+    width: 29px;
+    height: 29px;
+    background: url("../images/icon/ico-template-menu.png") no-repeat center / cover;
+}
+.menu-content:nth-of-type(1) li:nth-child(3) i{
+    width: 29px;
+    height: 29px;
+    background: url("../images/icon/ico-menual-menu.png") no-repeat center / cover;
+}
+.menu-content:nth-of-type(1) li:nth-child(4) i{
+    width: 29px;
+    height: 23px;
+    background: url("../images/icon/ico-membership-menu.png") no-repeat center / cover;
+    margin-top: 3px;
+}
+.menu-content:nth-of-type(1) h4{
+    font-size: 14px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #666565;
+}
+.menu-content .menu-content-title{
+    font-size: 18px;
+    font-family: "Noto Sans Kr";
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 26px;
+}
+.menu-content li:not(.menu-content-title){
+    font-size: 16px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #454444;
+    margin-bottom: 18px;
+}
+.menu-content li:last-child{
+    margin-bottom: 0;
+}
+button.logout-btn{
+    margin: 15px 20px 0 auto;
+    display:flex;
+    align-items:center;
+    font-size: 14px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #454444;
+}
+button.logout-btn i{
+    margin-right: 8px;
+    width: 19px;
+    height: 21px;
+    background: url("../images/icon/ico-logout-menu.png") no-repeat center / cover;
+    display: block;
+}
+
 @media all and (max-width: 1920px){
     div.h-inner{
         max-width: 1125px;

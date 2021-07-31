@@ -18,3 +18,11 @@ $('.userMenu').mouseout(function(){
 $('.popup-button').click("click focus", function () {
     $('.no-login-menu').removeClass('show');
 });
+
+$(".ham-btn").click(function(){
+    $(".menu").addClass("show");
+});
+
+$(".menu-close-btn").click(function(){
+    $(".menu").removeClass("show");
+})
