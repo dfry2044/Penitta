@@ -1,0 +1,357 @@
+
+.m-34{
+    margin-left: 34px !important;
+}
+.m-28{
+    margin-left: 28px !important;
+}
+.m-22{
+    margin-left: 22px !important;
+}
+.m-20{
+    margin-left: 20px !important;
+}
+.m-16{
+    margin-left: 16px !important;
+}
+.m-10{
+    margin-left: 10px !important;
+}
+.mb-60{
+    margin-bottom: 60px !important;
+}
+.mb-36{
+    margin-bottom: 36px !important;
+}
+.mb-32{
+    margin-bottom: 32px !important;
+}
+.mb-30{
+    margin-bottom: 30px !important;
+}
+.mb-24{
+    margin-bottom: 24px !important;
+}
+.mb-20{
+    margin-bottom: 20px !important;
+}
+.mb-16{
+    margin-bottom: 16px !important;
+}
+.t-a-l{
+    text-align: left !important;
+}
+.t-a-r{
+    text-align: right !important;
+}
+.l-1{
+    line-height: 1;
+}
+.i-d{
+    display: inline;
+}
+.indent{
+    margin-left: 2em;
+    text-indent: -0.88em;
+    display: block;
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.no-indent{
+    margin-left:0;
+    text-indent: 0;
+}
+.wrap{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    word-break: keep-all;
+}
+.wrap.terms{
+    padding-bottom: 230px;
+}
+.etc-wrap > li{
+    margin-bottom: 22px;
+}
+h2{
+    margin-top: 80px;
+    font-size: 40px;
+    font-family: "Noto Sans Kr";
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+p{
+    text-indent: -0.6em;
+    font-size: 16px;
+    font-family: "Noto Sans Kr";
+    font-weight: 500;
+    color: #252525;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+.terms p{
+    text-indent: 0;
+    margin-bottom: 13px;
+}
+.terms p:last-child{
+    margin-bottom: 40px;
+}
+.terms span{
+    margin-bottom: 14px;
+}
+i{
+    display: block;
+}
+h2+span{
+    font-size: 16px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #000;
+    margin-top: 38px;
+    line-height: 29px;
+    display: block;
+}
+.etc-wrap{
+    padding-top: 68px;
+    padding-bottom: 170px;
+}
+h3{
+    font-size: 20px;
+    font-family: "Noto Sans Kr";
+    font-weight: 600;
+    margin-bottom: 38px;
+}
+h4{
+    font-size: 18px;
+    font-family: "Noto Sans Kr";
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+h4 ~ p{
+    font-size: 16px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    line-height: 2;
+    margin-bottom: 16px;
+    color: #252525;
+}
+h4 ~ p:last-child{
+    margin-bottom: 64px;
+}
+h4 ~ span{
+    margin-bottom: 16px;
+    display: block;
+    font-size: 15px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #262626;
+    line-height: 1.5;
+}
+h4 ~ span:last-child{
+    margin-bottom: 26px;
+}
+h4 + span{
+    margin-bottom: 33px;
+}
+ul li i{
+    font-size: 16px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    margin-bottom: 13px;
+    line-height: 2;
+    text-indent: -1.5em;
+}
+ul li:last-child em{
+    margin-bottom: 0;
+}
+strong{
+    display: block;
+    margin-bottom: 18px;
+    font-size: 16px;
+    font-family: "Noto Sans Kr";
+    font-weight: 600;
+    color: #000;
+}
+.etc-title+span{
+    font-size: 15px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #262626;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    display: block;
+}
+span{
+    font-size: 15px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #262626;
+    line-height: 1.5;
+    display: block;
+}
+table{
+    width: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #cfcfcf;
+    margin-bottom: 50px;
+}
+table thead th{
+    height: 55px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Noto Sans Kr";
+    font-weight: 600;
+    border-right: 1px solid #e6e6e6;
+    padding: 0 30px;
+}
+table tr{
+    border-bottom: 1px solid #e6e6e6;
+}
+table tr:last-child{
+    border-bottom: 1px solid #e6e6e6;
+}
+table td{
+    font-size: 16px;
+    font-family: "Noto Sans Kr";
+    font-weight: 300;
+    color: #000;
+    line-height: 32px;
+    padding: 20px 30px 20px 30px;
+    border-right: 1px solid #e6e6e6;
+}
+table td:last-child{
+    border-right: none;
+}
+table thead th:last-child{
+    border-right: none;
+}
+table.table_style01 th:nth-child(1),
+table.table_style01 th:nth-child(2){
+    width: 510px;
+}
+table.table_style01 th:nth-child(3){
+    width: calc(100% - 1020px);
+}
+table.table_style02 th:nth-child(1){
+    width: 332px;
+}
+table.table_style02 th:nth-child(2){
+    width: 520px
+}
+@media all and (max-widtH:1500px){
+    .wrap{
+        max-width: 768px;
+    }
+}
+@media all and (max-width:1024px){
+    .wrap{
+        max-width:calc(100vw - 40px);
+    }
+    h2{
+        margin-top: 25px;
+        font-size: 21px;
+    }
+    h2+span{
+        font-size: 13px;
+        margin-top: 18px;
+        line-height: 21px;
+    }
+    .etc-wrap{
+        padding: 38px 0 100px 0;
+    }
+    h3{
+        font-size: 15px;
+        margin-bottom: 22px;
+    }
+    h4{
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 16px;
+    }
+    p{
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+    }
+    h4 ~ p:last-child{
+        margin-bottom: 30px !important;
+    }
+    h4 + span{
+        margin-bottom: 14px;
+    }
+    ul li i{
+        margin-bottom: 12px;
+        line-height: 1.5;
+        font-size: 13px;
+    }
+    h4 ~ span{
+        font-size: 13px;
+        margin-bottom: 13px;
+    }
+    h4 ~ p{
+        margin-bottom: 13px;
+    }
+    strong{
+        margin-bottom: 14px;
+    }
+    .mb-24{
+        margin-bottom: 13px !important;
+    }
+    table thead th{
+        font-size: 13px;
+        height: 42px;
+        padding: 0 12px;
+    }
+    table td{
+        font-size: 13px;
+        padding: 12px;
+        line-height: 1.25;
+    }
+    table{
+        margin-bottom: 26px;
+    }
+    .etc-title+span{
+        font-size: 13px;
+        margin-bottom: 24px;
+    }
+    .mb-32{
+        margin-bottom: 20px !important;
+    }
+    span{
+        font-size: 13px;
+    }
+    .indent{
+        font-size: 13px;
+        margin-left: 0;
+        text-indent: 0;
+    }
+    br{
+        display: none;
+    }
+    h5{
+        font-size: 14px;
+    }
+    .l-1{
+        line-height: 1.5;
+    }
+    .mb-16{
+        margin-bottom: 10px !important;
+    }
+    .mb-60{
+        margin-bottom: 30px !important;
+    }
+    strong{
+        font-size: 13px;
+    }
+    .mb-36{
+        margin-bottom: 20px !important;
+    }
+    .wrap.terms{
+        padding-bottom: 100px;
+    }
+    .wrap.terms h2{
+        margin-bottom: 13px;
+    }
+}

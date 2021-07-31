@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penitta-Personal information</title>
+    <script src="plugin/js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="./css/etc.css">
+</head>
+<body class="etc">
+    <header>
+        <h1 class="hidden">Penitta</h1>
+        <div class="h-inner">
+            <nav class="pc nav">
+                <div class="header-left">
+                    <a href="./index.html" class="logo"><img src="images/common/logo.png" alt="로고이미지"></a>
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./story.html">스토리</a></li>
+                        <li><a href="./make_player.html">만들기</a></li>
+                        <li><a href="./tiplate.html">템플릿</a></li>
+                        <li><a href="#">매뉴얼</a></li>
+                        <li><a href="#">멤버십</a></li>
+                    </ul>
+                    <div class="header-notice">
+                        <i>이모티콘</i>
+                        <p>
+                            만들기에 새로운 기능이 추가 되었습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="userMenu">
+                        <a href="#" class="user"><img src="images/icon/ico-user.png" alt="사람이모티콘"></a>
+                        <p class="userNick"><span class="login-Nickname">Nickname님</span></p>
+                        <ul class="no-login-menu">
+                            <li><button class="popup-button">로그인</button></li>
+                            <li><a href="./join.html">회원가입</a></li>
+                        </ul>
+                        <ul class="login-menu">
+                            <li>
+                                <i class="dropdown-head"></i>
+                                <a href="#">나의스토리</a></li>
+                            <li><a href="#">나의정보</a></li>
+                            <li><a href="#">비밀번호 변경</a></li>
+                            <li><a href="#">결제내역</a></li>
+                            <li><a href="#">알림글</a></li>
+                            <li><a href="#">궁금해요</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li class="drop-last">
+                                <i class="dropdown-bottom"></i>
+                                <a href="#">로그아웃</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wrap terms">
+        <h2>이용약관</h2>
+        <ul>
+            <li>
+                <div class="etc-title">
+                    <h3>환영합니다.</h3>
+                </div>                
+                <p>
+                    본 약관은 Penitta 서비스의 이용과 관련하여 Penitta 서비스를 제공하는 AI콜라보㈜(이하 ‘회사’)와 이를 이용하는 Penitta 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 서비스 이용에 
+                    도움이 될 수 있는 내용을 포함하고 있습니다.
+                </p>
+                <p>
+                    Penitta 서비스를 이용하거나 Penitta 서비스 회원으로 가입할 경우 본 약관 및 관련 운영 정책을 확인하여 동의하게 되므로, 잠시 시간을 내어 주의 깊게 살펴봐 주시기 바랍니다.                    
+                </p>
+            </li>
+            <li>
+                <div class="etc-title">
+                    <h3>회원으로 가입하면 Penitta의 서비스를 편리하게 이용할 수 있습니다.</h3>
+                </div>                
+                <p>
+                    여러분은 본 약관을 읽고 동의하신 후 회원 가입을 신청할 수 있으며, 회사는 이에 대한 승낙을 통해 회원 가입 절차를 완료하고, Penitta 서비스 이용 계정(이하 ‘계정’)을 부여합니다. 
+                    <br>
+                    계정이란 회원이 Penitta 서비스에 로그인한 이후 이용하는 서비스 이용 이력을 회원 별로 관리하기 위해 설정한 회원 식별을 말합니다. 회원은 자신의 계정을 통해 다양한 Penitta 서비스를 보다 
+                    <br>
+                    편리하게 이용할 수 있습니다. 
+                </p>
+                <p>
+                    여러분은 회원 가입 후에 계정의 정보 비밀유지에 대한 책임과 계정에서 발생하는 모든 일을 책임지게 됩니다. 계정은 본인만 사용할 수 있으며, 다른 사용자와 공유하거나 명의 이전을 할 수 없습니다. 
+                    <br>
+                    계정이 부정 사용되거나 보안 위협이 의심되는 정황이 발생되면 회사로 즉시 알려야 합니다. 
+                    <br>
+                    이용약관을 준수하지 않거나 당신이 제공한 정보가 거짓 또는 부정확한 경우 등 불미스러운 정황이 확인되면 계정은 정지 또는 종료가 될 수 있습니다.                    
+                </p>
+            </li>
+            <li>
+                <div class="etc-title">
+                    <h3>콘텐츠 소유를 확인하고 동의합니다.</h3>
+                </div>                
+                <p>
+                    회원은 Penitta 서비스를 이용해서 제작되는 스토리를 게시하기 전에 내용 또는 이미지에 대한 적법한 권리를 소유하거나 보유하고 있어야 합니다. 
+                    <br>
+                    회원의 서비스 이용은 회원에게 다른 이용자들로부터 제공된 데이터에 관한 권리를 부여하지 않습니다. 
+                    <br>
+                    다만, Penitta에서 직접적으로 제공하는 폰트 및 이미지 라이브러리는 Penitta를 이용하는 멤버십에 따라 전부 또는 일부의 권리가 부여됩니다.                    
+                </p>
+                <p>
+                    회사는 자체 제작한 콘텐츠와 제3자로부터 저작권을 양수 받은 콘텐츠에 대한 모든 권리를 소유하고 있습니다. 
+                    <br>
+                    Penitta의 콘텐츠는 여러분이 보는 목적으로 Penitta 서비스 상에 게재한 부호, 문자, 음성, 음향, 그림, 사진, 동영상, 링크 등으로 구성된 각종 콘텐츠 자체 또는 파일을 말합니다.                     
+                </p>
+                <p>
+                    회원은 회사의 사전 동의 없이는 Penitta 서비스 또는 서비스에 포함된 소프트웨어의 전부 또는 일부를 복제, 변경, 배포, 판매, 이전, 임대, 담보 제공, 타인에 대한 사용 허락을 하여서는 안됩니다. 
+                    <br>
+                    그에 더하여, 회원은 역설계 또는 Penitta 서비스에 포함된 소프트웨어 소스코드 추출 시도, 서비스의 복제, 분해, 재현, 기타 변경 행위 등을 하여서는 안됩니다.                    
+                </p>
+            </li>
+            <li>
+                <div class="etc-title">
+                    <h3>여러분의 데이터가 서비스 향상을 위해 사용될 수 있습니다. </h3>
+                </div> 
+                <p>
+                    회사는 서비스의 원활한 제공을 위하여 회원이 동의한 목적과 범위 내에서만 개인정보를 수집하고 이용하며, 개인정보 보호 관련 법령에 따라 안전하게 관리합니다. 
+                </p>               
+                <p>
+                    회사는 서비스의 운영, 발전 및 홍보와 새로운 서비스를 개발하기 위한 목적으로 회원의 데이터에 대한 어떤 권리를 부여할 것을 필요로 합니다. 
+                    예를 들어 서버 증설 등의 목적에 따라 각 계정 별로 이미지 사용, 음성변환 문자량, 콘텐츠 배포처 등에 대한 로그를 수집합니다. 또한 고객 지원 요청 시에는 해당 스토리에 접근하여 내용을 볼 수 
+                    있습니다.                    
+                </p>
+                <p>
+                    회사는 Penitta 서비스 및 관련 기술의 이용 및 성과와 관련한 다른 정보를 수집, 이용 및 분석할 수 있고, 그것을 사업적으로 이용하거나 사업과 관련하여 통계적 또는 식별 불가능한 형태로 공개할 수 
+                    있습니다. 여러분의 어떤 정보가 수집 및 이용되는지는 개인정보 취급방침을 통하여 보다 많은 정보를 확인할 수 있습니다.
+                </p>
+                <p>
+                    회사는 Penitta를 통해 제작된 이미지 및 비디오 콘텐츠에 대한 비식별적 메타 데이터를 광고 플랫폼과 공유하여 성과를 분석할 수 있으며, 이는 Penitta의 디자인 엔진 개선을 위해 활용될 수 
+                    <br>
+                    있습니다.                    
+                </p>
+            </li>
+            <li>
+                <div class="etc-title">
+                    <h3>Penitta 서비스 이용과 관련하여 주의사항이 있습니다.</h3>
+                </div>                
+                <p>
+                    회사는 여러분이 서비스를 이용할 수 있도록 최선을 다하고 있습니다. 여러분이 Penitta 서비스를 보다 편리하게 이용하고 Penitta 서비스의 이용 권리 보호를 위해 서비스 이용이 제한될 수 있는 
+                    항목을 안내하고 이에 대한 확인 및 준수를 요청합니다.                    
+                </p>
+                <p>
+                    관련 법령, 본 약관, 운영정책 등을 준수하지 않을 경우 회사는 여러분의 관련 행위 내용을 확인할 수 있으며, 그 확인 결과에 따라 Penitta 서비스 이용에 대한 주의를 당부하거나, 서비스 이용을 일부 
+                    또는 전부, 일시 또는 영구히 정지시키는 등 그 이용을 제한할 수 있습니다. 이러한 이용 제한에도 불구하고 이용계약의 온전한 유지를 기대하기 어려운 경우 여러분과의 이용 계약을 해지할 수 
+                    있습니다.                    
+                </p>
+                <ul>
+                    <li>
+                        <span>
+                            -  불쾌함, 외설스러움, 무례한, 외설적인 내용, 불쾌감, 위협, 불법, 명예 훼손, 침해, 학대, 염증, 괴롭힘, 저속한 내용, 사기성, 사생활 침해 또는 홍보 또는 인격적인 내용의 콘텐츠 인종적, 윤리적, 성적, 
+                            정치적 또는 인본적으로 용납될 수 없는 모든 콘텐츠
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            -  스팸, 정크 메일, 피라미드 (방식), 폰지 (사기), 또는 기타 방법으로 금융 활동 참여를 권유하는 행위
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            -  서비스를 통해 전송되는 모든 콘텐츠의 출처를 위장하기 위해 조작하는 행위
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            -  거짓 개인정보로 등록을 하거나 타인의 명의를 도용하여 계정을 만들고 사용하는 경우
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            -  계정을 판매, 양도, 대여 또는 담보로 제공하거나 다른 사람에게 사용을 허락하는 경우
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            -  승인되지 소프트웨어 코드가 포함된 콘텐츠
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            -  우리가 납득할 수 있는 선에서 바람직하지 않다고 생각되거나 다른 사람이 서비스를 사용하거나 즐기는 데 있어 방해가 되는 내용의 콘텐츠
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            -  형사 범죄, 테러 행위 또는 기타 불법 또는 범죄 행위에 대한 지침을 권장 또는 제공하는 내용의 콘텐츠
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            -  의도적이든 비의도적이든 지역, 국가 및 국제법을 준수하지 않는 모든 종류의 콘텐츠                    
+                        </span>
+                    </li>
+                </ul>
+                <p>
+                    회사는 본 약관을 위반하는 내용의 부적절한 콘텐츠로 간주되는 사용자 콘텐츠에 대해 거부, 이동 또는 삭제에 대한 권리를 보유합니다.
+                </p>
+            </li>
+            <li>
+                <div class="etc-title">
+                    <h3>권리 위반에 대한 의무가 발생합니다.</h3>
+                </div>                
+                <p>
+                    Penitta 서비스에 권리 위반에 대한 책임이 발생하고 권리를 지키기 위해 노력해야 합니다. 
+                    <br>
+                    여러분은 모든 권리 위반에 대해 발생하는 모종의 손해와 손실, 경비, 비용 또는 법적 책임, 발생하는 클레임, 요구, 혐의에 대해 회사에 보상을 약속하고 이에 동의해야 합니다.                    
+                </p>
+            </li>
+            <li>
+                <div class="etc-title">
+                    <h3>책임을 명확히 합니다.</h3>
+                </div>                
+                <p>
+                    회사는 여러분이 Penitta 서비스를 이용함에 있어 회사의 고의 또는 과실로 인하여 손해를 입게 될 경우 관련 법령에 따라 여러분의 손해를 배상합니다. 
+                    <br>
+                    다만, 천재지변 또는 이에 준하는 불가항력으로 인하여 서비스를 제공할 수 없거나 사용자의 고의 또는 과실로 인하여 서비스를 이용할 수 없어 발생한 손해에 대해서 회사는 책임을 부담하지 않습니다.
+                </p>
+                <p>
+                    회사가 손해배상책임을 부담하는 경우에도 통상적으로 예견이 불가능하거나 특별한 사정으로 인한 특별 손해 또는 간접 손해, 기타 징벌적 손해에 대해서는 관련 법령에 특별한 규정이 없는 한 책임을 
+                    <br>
+                    부담하지 않습니다.                    
+                </p>
+                <p>
+                    그리고 관계법령의 변경, 천재지변 또는 이에 준하는 불가항력으로 인한 유료 서비스를 제공할 수 없는 경우에는 유료 서비스 제공에 관한 책임이 면제됩니다. 회원의 귀책사유로 인한 유료 서비스 
+                    <br>
+                    이용 장애 대하여는 회사의 귀책사유가 없는 한 책임을 지지 않습니다.                    
+                </p>
+            </li>
+            <li>
+                <div class="etc-title">
+                    <h3>언제든지 이용계약을 해지할 수 있습니다.</h3>
+                </div>                
+                <p>
+                    회원은 언제든지 Penitta 서비스 이용계약 해지를 신청하여 회원에서 탈퇴할 수 있으며, 회사는 관련 법령 등이 정한 바에 따라 이를 지체 없이 처리하겠습니다. 
+                    <br>
+                    Penitta 서비스 이용계약이 해지되면, 관련 법령 및 개인정보 취급방침에 따라 해당 회원의 정보를 보유할 수 있는 경우를 제외하고, 회원의 모든 데이터는 소멸됨과 동시에 복구할 수 없습니다.                     
+                </p>
+            </li>
+            <li>
+                <div class="etc-title">
+                    <h3>서비스를 제공하기 위해 최선을 다하겠습니다.</h3>
+                </div>                
+                <p>
+                    회사는 연중무휴, 1일 24시간 서비스를 제공하기 위해 최선을 다하고 있습니다. 
+                    <br>
+                    하지만 정보통신 설비 컴퓨터, 서버 등의 보수 점검, 교체, 고장, 통신 두절 등    부득이 서비스 운영의 이유가 있는 경우 서비스의 전부 또는 일부를 중단할 수 있습니다. 
+                    <br>
+                    그리고 회사는 서비스 운영 개선을 위해 필요성이 있는 경우 서비스의 전부 또는 일부를 수정, 변경, 종료할 수 있습니다.                    
+                </p>
+            </li>
+            <li>
+                <div class="etc-title">
+                    <h3>분쟁 해결은 법령 적용하여 절차를 준수합니다.</h3>
+                </div>                
+                <p>
+                    본 약관 또는 Penitta 서비스와 관련된 여러분과 관계에는 대한민국의 법령이 적용됩니다. 
+                    <br>
+                    그리고 본 약관 또는 Penitta 서비스와 관련하여 여러분과 회사 사이에 분쟁이 발생할 경우, 그 분쟁의 처리는 대한민국 ‘민사소송법’에서 정한 절차를 따릅니다. 
+                    <br>
+                    발생된 소송은 회사의 주소를 관할하는 법원을 전속 관할로 지정합니다.                    
+                </p>
+            </li>
+            <li>
+                <div class="etc-title">
+                    <h3>약관 및 운영정책을 게시합니다.</h3>
+                </div>               
+                <p>
+                    회사는 수시로 본 약관, 계정 및 게시물 운영정책을 개정할 수 있습니다. 
+                    <br>
+                    하지만 관련 법령을 위배하지 않는 범위 내에서 개정할 것이며, 사전에 그 개정 이유와 적용 일자를 서비스 7일 전부터 알리도록 하겠습니다. 
+                    <br>
+                    또한 여러분에게 불리할 수 있는 중대한 내용의 약관 변경은 해당 서비스 내 공지하고 가능한 전자적 수단으로 개별적으로 알릴 것입니다. 
+                    <br>
+                    변경된 약관을 게시한 날로부터 효력이 발생되는 날까지 이의신청이 없는 경우 변경된 약관에 따라 서비스를 이용하는 데 동의하는 것으로 간주됩니다.                    
+                </p> 
+            </li>
+            <li>
+                <div class="etc-title">
+                    <h3>부칙</h3>
+                </div>                
+                <p>
+                    본 약관은 2021년 08월 15일부터 적용
+                </p>
+                <p>
+                    Penitta 서비스와 관련하여 궁금하신 사항이 있으시면 고객센터 (대표번호 031-5182-9207, 평일 10:00~17:00)로 문의하시기 바랍니다.
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <h1 class="hidden">Penitta-footer</h1>
+        <div class="footer-inner">
+            <div class="footer-left">
+                <div class="footer-style">
+                    <div>
+                        <a href="#">이용약관</a>
+                        <a href="#">개인정보보호정책</a>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li>㈜에이아이콜라보</li>
+                        <li>대표이사:김종철</li>
+                        <li>경기도 성남시 수정구 대왕판교로 815 기업지원허브 P816호</li>
+                    </ul>
+                    <ul>
+                        <li>사업자등록번호 866-86-01723</li>
+                        <li>제휴 및 문의 <a href="mailto:mk@aicollabo.com" class="iail">mk@aicollabo.com</a></li>
+                    </ul>
+                </div>
+                <p class="Roboto">Copyright &copy;2021AIcollabo Inc. </p>
+                <div class="footer-logo">
+                    <img src="./images/common/logo-footer.png" alt="푸터로고">
+                </div>
+            </div>
+            <div class="footer-right">
+                <a href="#" class="blog"><i></i></a>
+                <a href="#" class="facebook"><i></i></a>
+                <a href="#" class="insta"><i></i></a>
+                <a href="#" class="youtube"><i></i></a>
+            </div>
+        </div>
+    </footer>
+    <div class="login-popup">
+        <div class="login-popup-inner">
+            <div class="login_close">
+                <a href="#"><img src="images/icon/ico-login-close.png" alt="아이콘"></a>
+            </div>
+            <div class="login_list">
+                <div class="login-top">
+                    <h2>로그인</h2>
+                    <div class="input-style">
+                        <input type="text" placeholder="이메일 주소를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='이메일 주소를 입력하세요.'">
+                    </div>
+                    <div class="input-style">
+                        <input type="password" placeholder="비밀번호를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='비밀번호를 입력하세요.'">
+                    </div>
+                    <div class="login-check">
+                        <p id="login-check">자동 로그인</p>
+                    </div>
+                    <div class="login-button">
+                       <div class="input-style">
+                        <input type="button" value="로그인">
+                       </div>
+                    </div>
+                    <div class="people_info">
+                        <a href="./passward.html">비밀번호 찾기</a>
+                        <a href="./join.html">회원가입</a>
+                    </div>
+                </div>
+                <div class="join-social">
+                    <ul>
+                        <li><a href="#"><img src="images/icon/ico-google.png" alt="구글"></a>
+                            <p>구글</p>
+                        </li>
+                        <li><a href="#"><img src="images/icon/ico-naver.png" alt="네이버"></a>
+                            <p>네이버</p>
+                        </li>
+                        <li><a href="#"><img src="images/icon/ico-kakao.png" alt="카카오"></a>
+                            <p>카카오톡</p>
+                        </li>
+                        <li><a href="#"><img src="images/icon/ico-facebook.png" alt="페이스북"></a>
+                            <p>페이스북</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu-content-wrap">
+            <button class="menu-close-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h3>
+                <span class="user-name">Dfry</span>
+                님
+            </h3>
+            <a href="./make_player.html" class="menu-link">
+                <i></i>
+                스토리 만들기
+            </a>
+            <ul class="menu-content">
+                <li>
+                    <a href="#">
+                        <i></i>
+                        <h4>스토리</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i></i>
+                        <h4>템플릿</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i></i>
+                        <h4>매뉴얼</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i></i>
+                        <h4>P멤버쉽</h4>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu-content">
+                <li class="menu-content-title">
+                    나의 공간
+                </li>
+                <li>
+                    <a href="#">나의 스토리</a>
+                </li>
+                <li>
+                    <a href="#">나의 댓글</a>
+                </li>
+                <li>
+                    <a href="#">미완성스토리</a>
+                </li>
+                <li>
+                    <a href="#">담아둔스토리</a>
+                </li>
+                <li>
+                    <a href="#">내려받기</a>
+                </li>
+            </ul>
+            <ul class="menu-content">
+                <li>
+                    <a href="#">알림글</a>
+                </li>
+                <li>
+                    <a href="#">궁금해요</a>
+                </li>
+            </ul>
+            <ul class="menu-content">
+                <li>
+                    <a href="#">나의 정보</a>
+                </li>
+                <li>
+                    <a href="#">비밀번호 변경</a>
+                </li>
+            </ul>
+            <button class="logout-btn">
+                <i></i>
+                로그아웃
+            </button>
+        </div>
+    </div>
+</body>
+</html> 
