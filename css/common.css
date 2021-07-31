@@ -1,3 +1,10 @@
+
+/*0731*/
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 /* sub page header */
 
 /* 0730 수정 */
@@ -312,6 +319,16 @@ footer a, footer p, footer li {
     background: url(../images/icon/ico-footer-youtube.png) no-repeat center / cover;
 }
 
+footer .footer-style div  a:hover {
+    opacity: 0.6;
+    transition: 0.2s ease;
+}
+
+footer .footer-right a:hover {
+    opacity: 0.6;
+    transition: 0.2s ease;
+}
+
 /*popup*/
 
 .login-popup {
@@ -541,12 +558,6 @@ input::-moz-placeholder { color: #a5a5a5; }
 .join-social p{
     font-size: 11px;
     padding-top: 10px;
-}
-.c1 .swiper-container-horizontal > .swiper-pagination-bullets{
-    bottom: 60px !important;
-}
-.c1 .slider-content-area .img-wrap{
-    width: auto;
 }
 }
 
@@ -1111,7 +1122,7 @@ button.logout-btn i{
         width: 15px;
     }
 } */
-@media (max-width: 1500px) {
+/* @media (max-width: 1500px) {
     header{
         height: 60px;
     }
@@ -1137,9 +1148,24 @@ button.logout-btn i{
     header nav .userMenu .user img{
         width: 18px;
     }
+} */
+
+@media (max-width: 1400px){
+    .h-inner {
+        padding: 0 20px;
+    }
 }
 
-@media (max-width: 1125px){
+@media (max-width: 1024px){
+    header {
+        height: 46px;
+    }
+    .h-inner {
+        padding: 0 20px;
+    }
+    .header-left a > img {
+        width: 92px;
+    }
     .header-left > ul , .header-left > div , header div.header-right > div.userMenu {
         display: none;
     }
