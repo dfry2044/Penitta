@@ -212,6 +212,9 @@ header.active {
     line-height: 25px;
     font-weight: 400;
     padding-top: 24px;
+    width: calc(100% - 6em);
+    margin: 0 auto;
+    word-break: keep-all;
 }
 
 .main-list-two .main-content-txt h3 {
@@ -774,6 +777,7 @@ header.active {
         font-size: 14px;
         line-height: 20.75px;
         padding-top: 16px;
+        width: calc(100% - 3em);
     }
     .main-content {
         width: 428px;
