@@ -835,7 +835,7 @@ header div.header-right > div.userMenu {
     transition: 0.3s ease;
     opacity: 0;
     visibility: hidden;
-    z-index: 1000000000000;
+    z-index: 1000000000000000000000000;
 }
 .menu.show{
     opacity: 1;
@@ -846,7 +846,7 @@ header div.header-right > div.userMenu {
     right:-100%;
     width: calc(100% - 18.667vw);
     height: 100%;
-    padding: 20px 20px 42px 28px;
+    padding: 20px 20px 72px 28px;
     background-color: #fff;
     transition: 0.3s ease;
 }
@@ -910,7 +910,7 @@ header div.header-right > div.userMenu {
 .menu-content{
     width: calc(100% - 12px);
     margin-left: auto;
-    padding: 35px 0;
+    padding: 20px 0;
     padding-right: 10px;
     border-bottom: 1px solid #f3f3f3;
 }
@@ -956,6 +956,9 @@ header div.header-right > div.userMenu {
     font-weight: 400;
     color: #666565;
 }
+.menu-content:nth-of-type(1) li{
+    margin-bottom: 0;
+}
 .menu-content .menu-content-title{
     font-size: 18px;
     font-family: "Noto Sans Kr";
@@ -963,12 +966,12 @@ header div.header-right > div.userMenu {
     color: #000;
     margin-bottom: 26px;
 }
-.menu-content li:not(.menu-content-title){
+.menu-content li{
     font-size: 16px;
     font-family: "Noto Sans Kr";
     font-weight: 400;
     color: #454444;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 .menu-content li:last-child{
     margin-bottom: 0;

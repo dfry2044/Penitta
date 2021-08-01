@@ -47,8 +47,12 @@ var swiper = new Swiper(".mySwiper2", {
         1920: {
             slidesPerView: 4,
             slidesPerGroup: 4,
-            spaceBetween: 20,
         },
+        1024: {
+            slidesPerView: 'auto',
+            freeMode: true,
+            spaceBetween: 20,
+        }
       }
 });
 
@@ -137,3 +141,11 @@ $('.c4-react > button:nth-child(3)').click(function(){
 $('.comment-ico-close').click(function(){
     $('.comment-popup').removeClass('active');
 });
+
+$(".filter-open-btn").click(function(){
+    $(".filter-popup").addClass("show");
+})
+
+$(".filter-popup-close-btn").click(function(){
+    $(".filter-popup").removeClass("show");
+})

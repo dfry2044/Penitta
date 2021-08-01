@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./plugin/css/swiper.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="./css/story-search.css">
+    <link rel="stylesheet" href="./css/story.css">
     <link rel="stylesheet" href="css/common.css">
 
     <title>story-name</title>
@@ -75,94 +76,628 @@
     <div class="wrap">
         <div class="template-wrap">
             <div class="template-inner name-inner">
-                <h2><span>쉐프스토리</span> 님이 작성하신 스토리를 둘러보세요.</h2>
-                <div class="t-top-wrap">
-                    <div class="template_search name_search">
-                        <P class="t-search-head">총 1295개</P>
-                        <p class="t-search-result">&quot;자전거&quot; 검색결과 <span class="t-search-Num Roboto">630</span></p>
-                        <div class="t-search-right text-right">
+                <h2><span>쉐프스토리</span> 님이 
+                    <br class="mo">
+                    작성하신 스토리를 둘러보세요.</h2>
+                <div class="c4_wrap">
+                    <div class="text-top">
+                        <div class="text-left">
+                            <em>총 1295개</em>
+                        </div>
+                        <div class="text-right">
                             <button href="#"><span>최신순</span></button>
                             <button href="#"><span>인기순</span></button>
                         </div>
                     </div>
-                </div>
-                <div class="t-box-list t-list-inner">
-                    <ul class="t-list">
-                        <li class="t-list_item t-js-load">
-                            <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner01.jpg" alt="템플릿1"></a>
-                            </div>
-                                                                                <p class="list-box-header">MTB자전거 쉽게 점프하는 방법</p>
-                        </li>
-                        <li class="t-list_item t-js-load">
-                            <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner02.jpg" alt="템플릿2"></a>
-                            </div>
-                                                                                <p class="list-box-header">MTB자전거 쉽게 점프하는 방법</p>
-                        </li>
-                        <li class="t-list_item t-js-load">
-                            <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner03.jpg" alt="템플릿3"></a>
-                            </div>
-                                                                                <p>MTB자전거 쉽게 점프하는 방법</p>
-                        </li>
-                        <li class="t-list_item t-js-load">
-                            <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner04.jpg" alt="템플릿4"></a>
-                            </div>
-                                                                                <p>MTB자전거 쉽게 점프하는 방법</p>
-                        </li>
-                        <li class="t-list_item t-js-load">
-                            <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner01.jpg" alt="템플릿1"></a>
-                            </div>
-                                                                                <p>MTB자전거 쉽게 점프하는 방법</p>
-                        </li>
-                        <li class="t-list_item t-js-load">
-                            <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner02.jpg" alt="템플릿2"></a>
-                            </div>
-                                                                                <p>MTB자전거 쉽게 점프하는 방법</p>
-                        </li>
-                        <li class="t-list_item t-js-load">
-                            <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner03.jpg" alt="템플릿3"></a>
-                            </div>
-                                                                                <p>MTB자전거 쉽게 점프하는 방법</p>
-                        </li>
-                        <li class="t-list_item t-js-load">
-                            <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner04.jpg" alt="템플릿4"></a>
-                            </div>
-                                                                                <p>MTB자전거 쉽게 점프하는 방법</p>
-                        </li><li class="t-list_item t-js-load">
-                            <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner01.jpg" alt="템플릿1"></a>
-                            </div>
-                                                                                <p>MTB자전거 쉽게 점프하는 방법</p>
-                        </li>
-                        <li class="t-list_item t-js-load">
-                            <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner02.jpg" alt="템플릿2"></a>
-                            </div>
-                                                                                <p>MTB자전거 쉽게 점프하는 방법</p>
-                        </li>
-                        <li class="t-list_item t-js-load">
-                            <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner03.jpg" alt="템플릿3"></a>
-                            </div>
-                                                                                <p>MTB자전거 쉽게 점프하는 방법</p>
-                        </li>
-                        <li class="t-list_item t-js-load">
-                            <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner04.jpg" alt="템플릿4"></a>
-                            </div>
-                                                                                <p>MTB자전거 쉽게 점프하는 방법</p>
-                        </li>
-                    </ul>
-                </div>
-                <div id="t-js-btn-wrap" class="t-btn-wrap">
-                    <a class="t-button" href="#none">더보기 (12/250)</a>
+                    <div class="c4-list">
+                        <div id="js-lode" class="list-inner">
+                            <ul class="story-lists">
+                                <li class="list_item js-load">
+                                    <div class="list-top new">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">MTB자전거 쉽게 점프하는 방법</h3></a>
+                                        <p class="story-sub-head">쉐프스토리</p>
+                                        <span class="Roboto ">30분전</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto ">30분전</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top new">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">사랑하기 좋은 날</h3></a>
+                                        <p class="story-sub-head">이금희에요</p>
+                                        <span class="Roboto">21.03.05</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.03.05</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top new">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">연예인 만드는 방법</h3></a>
+                                        <p class="story-sub-head">엔터선생님</p>
+                                        <span class="Roboto">21.03.05</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.03.05</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top new">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">떠나려면 제주도지</h3></a>
+                                        <p class="story-sub-head">엄마아이스크림</p>
+                                        <span class="Roboto">21.03.05</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.03.05</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">일과 삶을 분리하는 워라블</h3></a>
+                                        <p class="story-sub-head">쉐프스토리</p>
+                                        <span class="Roboto">21.04.21</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.04.21</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">우리 장맛의 비밀을 찾아서</h3></a>
+                                        <p class="story-sub-head">이금희에요</p>
+                                        <span class="Roboto">21.04.21</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.04.21</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">샤넬 출신 퍼스널 쇼퍼가 채팅으로 추천해주는<br>명품을 만나보자!</h3></a>
+                                        <p class="story-sub-head">엔터선생님</p>
+                                        <span class="Roboto">21.04.21</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.04.21</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">멋지게 사는 방법</h3></a>
+                                        <p class="story-sub-head">엄마아이스크림</p>
+                                        <span class="Roboto">21.04.21</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.04.21</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">MTB자전거 쉽게 점프하는 방법</h3></a>
+                                        <p class="story-sub-head">쉐프스토리</p>
+                                        <span class="Roboto">30분전</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">30분전</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">사랑하기 좋은 날</h3></a>
+                                        <p class="story-sub-head">이금희에요</p>
+                                        <span class="Roboto">21.03.05</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.03.05</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">연예인 만드는 방법</h3></a>
+                                        <p class="story-sub-head">엔터선생님</p>
+                                        <span class="Roboto">21.03.05</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.03.05</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">떠나려면 제주도지</h3></a>
+                                        <p class="story-sub-head">엄마아이스크림</p>
+                                        <span class="Roboto">21.03.05</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.03.05</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">일과 삶을 분리하는 워라블</h3></a>
+                                        <p class="story-sub-head">쉐프스토리</p>
+                                        <span class="Roboto">21.04.21</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.04.21</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">우리 장맛의 비밀을 찾아서</h3></a>
+                                        <p class="story-sub-head">이금희에요</p>
+                                        <span class="Roboto">21.04.21</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.04.21</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">샤넬 출신 퍼스널 쇼퍼가 채팅으로 추천해주는<br>명품을 만나보자!</h3></a>
+                                        <p class="story-sub-head">엔터선생님</p>
+                                        <span class="Roboto">21.04.21</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.04.21</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">멋지게 사는 방법</h3></a>
+                                        <p class="story-sub-head">엄마아이스크림</p>
+                                        <span class="Roboto">21.04.21</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.04.21</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">MTB자전거 쉽게 점프하는 방법</h3></a>
+                                        <p class="story-sub-head">쉐프스토리</p>
+                                        <span class="Roboto">30분전</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">30분전</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">사랑하기 좋은 날</h3></a>
+                                        <p class="story-sub-head">이금희에요</p>
+                                        <span class="Roboto">21.03.05</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.03.05</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">연예인 만드는 방법</h3></a>
+                                        <p class="story-sub-head">엔터선생님</p>
+                                        <span class="Roboto">21.03.05</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.03.05</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">떠나려면 제주도지</h3></a>
+                                        <p class="story-sub-head">엄마아이스크림</p>
+                                        <span class="Roboto">21.03.05</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.03.05</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">일과 삶을 분리하는 워라블</h3></a>
+                                        <p class="story-sub-head">쉐프스토리</p>
+                                        <span class="Roboto">21.04.21</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.04.21</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">우리 장맛의 비밀을 찾아서</h3></a>
+                                        <p class="story-sub-head">이금희에요</p>
+                                        <span class="Roboto">21.04.21</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.04.21</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">샤넬 출신 퍼스널 쇼퍼가 채팅으로 추천해주는<br>명품을 만나보자!</h3></a>
+                                        <p class="story-sub-head">엔터선생님</p>
+                                        <span class="Roboto">21.04.21</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.04.21</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list_item js-load">
+                                    <div class="list-top">
+                                        <a href="javascript:return false;"><img src="images/main/slide/c2/background-img01.jpg" alt="사진"></a>
+                                        <a href="#"><h3 class="story-head">멋지게 사는 방법</h3></a>
+                                        <p class="story-sub-head">엄마아이스크림</p>
+                                        <span class="Roboto">21.04.21</span>
+                                    </div>
+                                    <div class="list-bot">
+                                        <span class="Roboto">21.04.21</span>
+                                        <div class="c4-react">
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="Roboto">30</button>
+                                            <button class="card-etc">
+                                                <i></i>
+                                            </button>
+                                            <div class="card-etc-tooltip">
+                                                <button><i class="ico-bookmark"></i>북마크</button>
+                                                <button><i class="ico-tag"></i>태그</button>
+                                                <button><i class="ico-share"></i>공유</button>
+                                                <button><i class="ico-report"></i>신고</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="js-btn-wrap" class="btn-wrap">
+                            <a class="button" href="#none">더보기 (12/250)</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -288,11 +823,274 @@
             </div>
         </div>
     </div>
+    <div class="share-popup">
+        <div class="share-popup-inner">
+            <i class="share-ico-close"></i>
+            <div class="share-top-box">
+                <h2>공유하기</h2>
+                <div class="share-top share-ico">
+                    <div class="share-email">
+                        <a href="#"><i></i></a>
+                        <p>이메일</p>
+                    </div>
+                    <div class="share-facebook">
+                        <a href="#"><i></i></a>
+                        <p>페이스북</p>
+                    </div>
+                    <div class="share-insta">
+                        <a href="#"><i></i></a>
+                        <p>인스타그램</p>
+                    </div>
+                    <div class="share-kakaotalk">
+                        <a href="#"><i></i></a>
+                        <p>카카오톡</p>
+                    </div>
+                </div>
+                <div class="share-middle share-ico">
+                    <div class="share-twitter">
+                        <a href="#"><i></i></a>
+                        <p>트위터</p>
+                    </div>
+                    <div class="share-band">
+                        <a href="#"><i></i></a>
+                        <p>밴드</p>
+                    </div>
+                    <div class="share-kakaostory">
+                        <a href="#"><i></i></a>
+                        <p>카카오스토리</p>
+                    </div>
+                    <div class="share-navercafe">
+                        <a href="#"><i></i></a>
+                        <p>네이버카페</p>
+                    </div>
+                </div>
+            </div>
+            <div class="share-bottom">
+                <div class="share-input-box">
+                    <input class="share-url" type="url" placeholder="http://www.penitta.com/wnrrht223xdi_13" style="color: #000;">
+                    <button class="share-url-button">URL 복사</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tag-popup">
+        <div class="tag-popup-inner">
+            <i class="tag-ico-close"></i>
+            <div class="tag-top-box">
+                <h2><span>#</span>태그</h2>
+                <ul class="tag-category">
+                    <li><a href="#"># 등산</a></li>
+                    <li><a href="#"># 운동</a></li>                    
+                    <li><a href="#"># 여름휴가</a></li>                    
+                </ul>
+                <ul class="tag-category">
+                    <li><a href="#"># 재미</a></li>
+                    <li><a href="#"># 취미생활</a></li>                    
+                    <li><a href="#"># 자전거</a></li>                    
+                    <li><a href="#"># MTB동아리</a></li>                    
+                </ul>
+                <ul class="tag-category">
+                    <li><a href="#"># 힐링</a></li>
+                    <li><a href="#"># 리프레쉬</a></li>                    
+                    <li><a href="#"># 주말</a></li>                    
+                </ul>
+            </div>
+            <div class="tag-bottom">
+                <div class="tag-input-box">
+                    <p>스토리를 작성하실 때 <span>#태그</span>를 넣어주세요!
+                    <br>태그 기능으로 더 편리하게 스토리를 검색하실 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="view-popup">
+        <div class="view-popup-inner">
+            <i class="view-ico-close"></i>
+            <div class="view-player">
+                <div class="view-player-img">
+                    <img src="./images/story/popup/frame00.jpg" alt="view메인이미지">
+                </div>
+                <div class="view-player-in">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                        <br>eiusmod tempor incididunt ut labore et
+
+                        <span>dolore magna aliqua. Nisl tincidunt eget nullam non Lorem ipsum 
+                            <br>dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            <br>tempor incididunt ut labore et dolore magna aliqua. 
+                            <br>Nisl tincidunt eget nullam non</span></p>
+                    <div class="view-play">
+                        <input type="range" value="0" style="color: rgb(0, 0, 0);">
+                    </div>
+                    <div class="play-icon-box">
+                        <div class="play-icon-left">
+                            <div class="play-icon">
+                               <button></button>
+                            </div>
+                            <div class="volum-icon">
+                                <button></button>
+                            </div>
+                            <span class="Roboto">0:27/10:00</span>
+                        </div>
+                        <div class="play-icon-right">
+                            <button></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-play-bot">
+                    <div class="view-bot-left">
+                        <p>떠나고 싶다</p>
+                        <span>21.03.05</span>
+                    </div>
+                    <div class="c4-react">
+                        <button class="Roboto">30</button>
+                        <button class="Roboto">30</button>
+                        <button class="Roboto">30</button>
+                        <button class="card-etc">
+                            <i></i>
+                        </button>
+                        <div class="card-etc-tooltip">
+                            <button><i class="ico-bookmark"></i>북마크</button>
+                            <button><i class="ico-tag"></i>태그</button>
+                            <button><i class="ico-share"></i>공유</button>
+                            <button><i class="ico-report"></i>신고</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="comment-popup">
+        <div class="comment-popup-inner">
+            <i class="comment-ico-close"></i>
+            <div class="comment-popup-box">
+                <h2 class="pc">댓글 314개</h2>
+                <h2 class="mo">댓글 <span>4</span></h2>
+                <div class="comment-box">
+                    <p>나이름</p>
+                    <textarea name="popup-comment" class="popup-comment" placeholder="주제와 무관한 댓글 및 악플은 삭제될 수 있습니다." ></textarea>
+                    <div class="comemnt-box-bot">
+                        <div class="comment-camera">
+                            <i></i>
+                        </div>
+                        <div class="comment-pic">
+                            <i></i>
+                        </div>
+                        <div class="comment-button">
+                            <button>등록</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="comment-list-wrap">
+                <li class="comment-list">
+                    <div class="comment-list-top">
+                        <p>김길자</p>
+                        <button class="card-etc">
+                            <i></i>
+                        </button>
+                        <div class="comment-etc-tooltip">
+                            <button class="edit-button">수정</button>
+                            <button class="comment-clear">삭제</button>
+                        </div>
+                    </div>
+                    <p class="popup-comment-result">
+                        매우 좋아요. 너무 깊고 훌륭합니다.
+                        <br>보고 너무 좋아서 어떻게 설명을 할 수가 없네요.
+                    </p>
+                    <div class="popup-comment-react">
+                        <button>30</button>
+                        <button>30</button>
+                    </div>
+                </li>
+                <li class="comment-list">
+                    <div class="comment-list-top">
+                        <p>김길자</p>
+                        <button class="card-etc">
+                            <i></i>
+                        </button>
+                        <div class="comment-etc-tooltip">
+                            <button class="edit-button">수정</button>
+                            <button class="comment-clear">삭제</button>
+                        </div>
+                    </div>
+                    <p class="popup-comment-result">
+                        매우 좋아요. 너무 깊고 훌륭합니다.
+                        <br>보고 너무 좋아서 어떻게 설명을 할 수가 없네요.
+                    </p>
+                    <div class="popup-comment-react">
+                        <button>30</button>
+                        <button>30</button>
+                    </div>
+                </li>
+                <li class="comment-list">
+                    <div class="comment-list-top">
+                        <p>김길자</p>
+                        <button class="card-etc">
+                            <i></i>
+                        </button>
+                        <div class="comment-etc-tooltip">
+                            <button class="edit-button">수정</button>
+                            <button class="comment-clear">삭제</button>
+                        </div>
+                    </div>
+                    <p class="popup-comment-result">
+                        매우 좋아요. 너무 깊고 훌륭합니다.
+                        <br>보고 너무 좋아서 어떻게 설명을 할 수가 없네요.
+                    </p>
+                    <div class="popup-comment-react">
+                        <button>30</button>
+                        <button>30</button>
+                    </div>
+                </li>
+                <li class="comment-list">
+                    <div class="comment-list-top">
+                        <p>김길자</p>
+                        <button class="card-etc">
+                            <i></i>
+                        </button>
+                        <div class="comment-etc-tooltip">
+                            <button class="edit-button">수정</button>
+                            <button class="comment-clear">삭제</button>
+                        </div>
+                    </div>
+                    <p class="popup-comment-result">
+                        매우 좋아요. 너무 깊고 훌륭합니다.
+                        <br>보고 너무 좋아서 어떻게 설명을 할 수가 없네요.
+                    </p>
+                    <div class="popup-comment-react">
+                        <button>30</button>
+                        <button>30</button>
+                    </div>
+                </li>
+                <li class="comment-list">
+                    <div class="comment-list-top">
+                        <p>김길자</p>
+                        <button class="card-etc">
+                            <i></i>
+                        </button>
+                        <div class="comment-etc-tooltip">
+                            <button class="edit-button">수정</button>
+                            <button class="comment-clear">삭제</button>
+                        </div>
+                    </div>
+                    <p class="popup-comment-result">
+                        매우 좋아요. 너무 깊고 훌륭합니다.
+                        <br>보고 너무 좋아서 어떻게 설명을 할 수가 없네요.
+                    </p>
+                    <div class="popup-comment-react">
+                        <button>30</button>
+                        <button>30</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
     <script src="./js/category.js"></script>
+    <script src="js/make.js"></script> 
     <script src="js/story.js"></script>
+    <script src="js/toggle.js"></script>
     <script src="js/popup.js"></script>
     <script src="js/common.js"></script>
-    <script src="js/make.js"></script>
 </body>
 
 </html>
