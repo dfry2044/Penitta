@@ -1,0 +1,205 @@
+header {
+    height: 64px;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    border-bottom: #000 solid 2px;
+}
+.nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    width: 121px;
+    height: 38px;
+}
+
+.nav img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav p {
+    white-space: nowrap;
+    letter-spacing: -1px;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.email-join-icon{
+    padding: 94px 0 42px;
+}
+
+.email-join-icon i{
+    display: block;
+    width: 175px;
+    height: 180px;
+    background: url(../images/icon/ico-email-join.png) no-repeat center / cover;
+    margin: 0 auto;
+}
+.wrap > p {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.wrap > p:nth-child(2) {
+    padding-bottom: 9px;
+}
+
+.wrap > p:nth-child(3) {
+    padding-bottom: 28px;
+}
+
+.wrap > p span {
+    font-weight: 700;
+}
+.wrap > p em {
+    font-weight: 700;
+    color: #ff7800;
+}
+
+.wrap > span {
+    display: block;
+    font-size: 20px;
+    line-height: 29px;
+    color: #464646;
+    padding-bottom: 47px;
+    letter-spacing: -1px;
+}
+
+.email-button-style {
+    display: block;
+    width: 238px;
+    height: 57px;
+    background-color: #ff7800;
+    border-radius: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.email-button-style button {
+    color: #fff;
+    font-family: 'Noto Sans KR';
+    letter-spacing: 0px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.wrap > em {
+    display: block;
+    font-size: 18px;
+    color: #808080;
+    font-weight: 300;
+    padding: 34px 0 6px;
+    border-top: 1px solid #e8e8e8;
+}
+.wrap > a {
+    display: block;
+    font-size: 18px;
+    color: #808080;
+    font-weight: 300;
+    padding-bottom: 127px;
+}
+
+.email-bottom {
+    height: 102px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #e4e3e3;
+    padding: 0 49px;
+}
+
+.email-bottom > p {
+    text-align: start;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -1px;
+    color: #666666;
+    font-weight: 300;
+}
+
+.email-pw-icon{
+    padding: 94px 0 42px;
+}
+
+.email-pw-icon i{
+    display: block;
+    width: 180px;
+    height: 191px;
+    background: url(../images/icon/ico-email-pw.png) no-repeat center / cover;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    height: 209px;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    padding: 33px 49px 54px;
+}
+
+.footer-logo {
+    padding-bottom: 22px;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul:nth-child(2) {
+    padding-bottom: 11px;
+}
+footer ul:nth-child(3) {
+    padding-bottom: 13px;
+}
+footer ul li {
+    font-size: 14px;
+    color: #898989;
+    letter-spacing: -1px;
+    white-space: nowrap;
+    padding-right: 19px;
+    font-weight: 300;
+}
+
+footer ul li a {
+    color: #898989;
+    position: relative;
+}
+
+footer ul li a::after {
+    content: '';
+    display: block;
+    width: 111px;
+    height: 1px;
+    background-color: #898989;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+footer ul li:last-child {
+    padding-right: 0;
+}
+
+footer p {
+    font-size: 14px;
+    color: #acacac;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
