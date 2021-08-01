@@ -181,6 +181,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    z-index: 99;
 }
 
 .ico-group  {
@@ -196,37 +197,44 @@
 }
 
 .ico-group > button:first-child{
-    padding-right: 9px;
+    margin-right: 9px;
 }
 .ico-group > button:nth-child(2){
-    padding-right: 9px;
+    margin-right: 9px;
 }
 .ico-group > button::before {
-    padding-right: 5px;
+    margin-right: 5px;
 }
 
 .ico-group > button:first-child::before {
     content: "";
     display: block;
     width: 27px;
-    height: 22px;
-    background: url(../images/icon/ico-eye.png) no-repeat center center / auto;
+    height: 15px;
+    background: url(../images/icon/ico-eye.png) no-repeat center center / cover;
 }
 
 .ico-group > button:nth-child(2)::before {
     content: "";
     display: block;
-    width: 22px;
-    height: 22px;
-    background: url(../images/icon/ico-heart.png) no-repeat center center / auto;
+    width: 21px;
+    height: 18px;
+    background: url(../images/icon/ico-heart.png) no-repeat center center / cover;
 }
 
 .ico-group > button:nth-child(3)::before {
     content: "";
     display: block;
     width: 22px;
-    height: 22px;
-    background: url(../images/icon/ico-Balloon.png) no-repeat center center / auto;
+    height: 20px;
+    background: url(../images/icon/ico-Balloon.png) no-repeat center center / cover;
+}
+
+.ico-group > button:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 20px;
 }
 
 .my-card .card-bottom .card-down{
@@ -242,7 +250,7 @@
     transition: 0.3s ease;
 }
 .my-card .card-bottom .card-down:hover i{
-    background: url("../images/icon/ico-download-black.png") no-repeat center / cover;
+    background: url("../images/icon/ico-mypage-black.png") no-repeat center / cover;
 }
 .my-card .card-bottom .card-etc i{
     width: 3px;
@@ -685,6 +693,10 @@ ul.my-comment-inner li .preview-head {
     .card-bottom-right > span {
         font-size: 13.5px;
     }
+    .mo{
+        display: none;
+    }
+    
 }
 
 @media all and (max-width:1500px) {
@@ -701,8 +713,17 @@ ul.my-comment-inner li .preview-head {
 }
 
 @media all and (max-width:1024px){
+    .mo{
+        display: block;
+    }
+    .card-bottom-right > span{
+        display: none;
+    }
+    .my-card .my-card-inner{
+        max-width: calc(100% - 40px);
+    }
     .my-card{
-        padding: 36px 0 130px;
+        padding: 18px 0 130px;
     }
     .my-tab{
         height: 50px;
@@ -713,11 +734,193 @@ ul.my-comment-inner li .preview-head {
     .my-tab .my-tab-inner ul{
         height: 100%;
         width: 100%;
+        overflow-x: scroll;
     }
     .my-tab .my-tab-inner li{
         width: 50%;
+        padding: 0 20px;
+    }
+    .my-page .my-tab .my-tab-inner ul{
+        left: auto;
+        transform: translate(0,0);
+        justify-content: flex-start;
+    }
+    .my-page .my-tab .my-tab-inner li{
+        width: max-content;
+        height: 100%;
+        transform: translateY(0);
     }
     .my-tab .my-tab-inner li button{
         font-size: 15px;
+        letter-spacing: -1px;
+        white-space: nowrap;
     }
+    .my-card ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 12px;
+    }
+    .my-card ul li {
+        margin-bottom: 22px;
+        width: 100%;
+        height: 100%;
+        min-height: 214px;
+    }
+    .my-card li>a {
+        width: 100%;
+        height: auto;
+    }
+    .my-card .my-card-top {
+        margin-bottom: 15px;
+
+    }
+    .my-card ul li h2 {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 13px;
+    }
+    .my-card .my-card-inner .card-total {
+        font-size: 13px;
+        padding-bottom: 0;
+    }
+    .my-card li.new div.new-tooltip::after {
+        width: 45px;
+        height: 25px;
+        font-size: 11.66px;
+        right: 0;
+        bottom: auto;
+        top: 168px;
+    }
+    .togle-box {
+        width: 41px;
+        height: 20px;
+        position: absolute;
+        right: 0;
+        bottom: 31px;
+    }
+    .togle-box > button {
+        font-size: 11.66px;
+    }
+    .my-card li.new div.new-tooltip::after {
+        width: 45px;
+        height: 25px;
+        font-size: 11.66px;
+        right: 0;
+        bottom: auto;
+        top: 137px;
+    }
+    .ico-group > button:first-child::before {
+        width: 19px;
+        height: 12px;
+    }
+    .ico-group > button:nth-child(2)::before {
+        width: 17px;
+        height: 14px;
+    }
+    .ico-group > button:nth-child(3)::before {
+        width: 15px;
+        height: 14px;
+    }
+    .ico-group > button::before {
+        padding-right: 0;
+        margin-right: 3px;
+    }
+    .my-card .card-bottom .card-down {
+        width: 20px;
+        height: 15px;
+        margin-right: 9px;
+    }
+    .ico-group > button {
+        font-size: 11.66px;
+    }
+    .my-card ul li h2 {
+        letter-spacing: -1px;
+        line-height: 20px;
+        margin-bottom: 6px;
+    }
+    .my-card ul li .card-img-wrap {
+        margin-bottom: 11px;
+    }
+    .my-card ul li p {
+        margin-bottom: 10px;
+    }
+    .my-card .card-bottom .card-etc i {
+        width: 2px;
+        height: 12px;
+    }
+    .my-card .card-bottom .card-down i {
+        width: 18px;
+        height: 14px;
+    }
+    .my-card ul.my-comment-inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    ul.my-comment-inner {
+        border-top: none;
+    }
+    .my-comment-ico{
+        display: none;
+    }
+    .comment-middle > .comment-txt {
+        font-size: 15px;
+        line-height: 21.33px;
+        letter-spacing: -1px;
+        margin-bottom: 9px;
+        padding: 0 12px 0 0;
+    }
+    .comment-middle {
+        display:flex;
+        flex-direction: column;
+    }
+    .my-card ul li p {
+        font-size: 11.67px;
+        margin-bottom: 13px;
+    }
+    .comment-bottom {
+        padding-top: 0px;
+    }
+    ul.my-comment-inner li .preview-head{
+        font-size: 11.67px;
+        padding-bottom: 0;
+        margin-bottom: 5px;
+        color: #474747;
+    }
+    .my-comment-inner > li.new {
+        height: 100%;
+        min-height: 143px;
+        padding: 22px 0 10px;
+    }
+    .comment-img {
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    .my-card ul li p span {
+        font-size: 11.67px;
+        color: #5d5c5c;
+        margin-right: 6px;
+    }
+    .my-card ul li p {
+        font-size: 13px;
+    }
+    .my-card .card-bottom .ico-trash i {
+        width: 15px;
+        height: 15px;
+        background: url(../images/icon/ico-trash.png)no-repeat center / cover;
+    }
+    .my-card .card-bottom .ico-trash:hover {
+        width: 15px;
+        height: 15px;
+        background: url(../images/icon/ico-trash-hover.png)no-repeat center / cover;
+    }
+    .my-card ul li strong {
+        display: none;
+    }
+
+    li .card-bottom p {
+        padding-top: 3px;
+    }
+}
+
+@media (max-width: 366px) {
 }

@@ -1163,8 +1163,9 @@ button.logout-btn i{
     header {
         height: 46px;
     }
-    .h-inner {
-        padding: 0 20px;
+    div.h-inner {
+        max-width: calc(100% - 40px);
+        padding: 0;
     }
     .header-left a > img {
         width: 92px;

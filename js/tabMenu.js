@@ -120,3 +120,10 @@ $(function() {
         }
     });
   });
+
+  $(".my-page .my-tab-inner button").click(function(){
+
+    $(".my-page .my-tab-inner").find("ul").animate({
+        scrollLeft : $(this).offset().left - 20
+    },350)
+})
