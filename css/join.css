@@ -256,6 +256,87 @@ input::-moz-placeholder {
     height: 50px;
 }
 
+@media all and (max-width: 1920px) {
+    .join_inner {
+        width: 420px;
+        min-width: 350px;
+        height: 638px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 62.5%;
+        padding: 0 40px;
+        border-radius: 15px;
+    }
+    .join_inner > h2 {
+        font-size: 30.76px;
+        padding: 46px 0 33px 0;
+    }
+    .input-style {
+        width: 100%;
+        height: 47px;
+        font-size: 1rem;
+        /* color: #a5a5a5; */
+        border: #dfdfdf solid 1px;
+        border-radius: 5px;
+        letter-spacing: -1px;
+        padding-left: 0;
+        margin-bottom: 8px;
+    }
+    .input-style input {
+        font-size: 12px;
+    }
+    .flex-box > .input-style:first-child {
+        height: 47px;
+        border-radius: 5px;
+    }
+    .flex-box > .input-style:last-child {
+        height: 47px;
+        margin-left: 4px;
+        margin-bottom: 0;
+        border-radius: 5px;
+    }
+    .flex-box > .input-style:last-child input {
+        font-size: 12px;
+    }
+    .join-top > .join-emo:last-child {
+        margin-top: 8px;
+    }
+    
+    .join-top > div:nth-child(3) {
+        margin-top: 8px;
+    }
+    .join-check > p, .join-check > a {
+        font-size: 12px;
+    }
+    .join-check > p::before {
+        width: 24px;
+        height: 24px;
+        margin-right: 6px;
+    }
+    .join-bottom {
+        padding: 15px 0 24px;
+    }
+    .join-bottom > a {
+        height: 47px;
+        font-size: 14px;
+        margin-top: 25px;
+    }
+    .join-social > ul {;
+        padding: 18px 0 0;
+    }
+    .join-social li > a > img {
+        width: 38px;
+        height: 38px;
+    }
+    .join-social p {
+        font-size: 11.26px;
+        padding-top: 8px;
+    }
+    .join-bottom > div:first-child {
+        padding-bottom: 8px;
+    }
+}
+
 @media all and (max-width: 1024px) {
     header {
         display: none;
