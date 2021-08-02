@@ -502,6 +502,54 @@ input::-moz-placeholder { color: #a5a5a5; }
 }
 
 
+/* 0802 추가 */
+
+.comment-popup .comment-edit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-popup .comment-edit {
+    width: 100%;
+}
+
+.comment-popup .comment-edit {
+    display: none;
+}
+
+.comment-popup .comment-edit.click {
+    display: flex;
+}
+
+.comment-popup .comment-edit-click2.active{
+    display: none !important;
+}
+
+.comment-popup .comment-edit-click.active {
+    display: none !important;
+}
+
+.edit-box-style {
+    width: 100%;
+    height: 130px;
+    border: #e3e3e3 solid 1px;
+    border-radius: 8px;
+}
+
+#ce-box {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    resize: none;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 14px;
+    letter-spacing: -1px;
+    font-size: 14px;
+    font-family: 'Noto Sans KR';
+}
+
 /* 0802 수정 */
 @media (max-width: 1920px) {
 .login-popup-inner{
@@ -568,6 +616,98 @@ input::-moz-placeholder { color: #a5a5a5; }
 .join-social p{
     font-size: 11px;
     padding-top: 10px;
+}
+}
+@media (max-width: 1920px) {
+.card-etc i{
+    width: 2px;
+    height: 14px;
+    background: url(../images/icon/ico-etc.png) no-repeat center / cover;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.card-etc:hover > i {
+    width: 2px;
+    height: 14px;
+    background: url(../images/icon/ico-etc-black.png) no-repeat center / cover;
+    transition: 0.3s ease;
+}
+.card-etc-tooltip{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+    width: 90px;
+    height: 132px;
+    border: 1px solid #bababa;
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+.card-etc-tooltip.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-etc-tooltip button {
+    width: 100%;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #2f2c2c;
+    position: relative;
+    transition: 0.3s ease;
+}
+.card-etc-tooltip button:hover{
+    background-color: #dddddd;
+}
+.card-etc-tooltip button::after {
+    content: "";
+    width: 72px;
+    height: 1px;
+    background-color: #f0f0f0;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card-etc-tooltip button:last-child::after{
+    display: none;
+}
+
+.card-etc-tooltip button > i {
+    margin-right: 8px;
+}
+
+.card-etc-tooltip button > i.ico-bookmark {
+    width: 10px;
+    height: 15px;
+    background: url(../images/icon/ico-bookmark.png)no-repeat center / cover;
+}
+
+.card-etc-tooltip button > i.ico-tag {
+    width: 15px;
+    height: 15px;
+    background: url(../images/icon/ico-tag.png)no-repeat center / cover;
+}
+
+.card-etc-tooltip button > i.ico-share {
+    width: 13px;
+    height: 15px;
+    background: url(../images/icon/ico-share.png)no-repeat center / cover;
+}
+
+.card-etc-tooltip button > i.ico-report {
+    width: 15px;
+    height: 15px;
+    background: url(../images/icon/ico-report.png)no-repeat center / cover;
 }
 }
 
@@ -1786,6 +1926,55 @@ textarea::placeholder {
 
 .filter-popup {
     display: none;
+}
+
+.edit-button-list > div {
+    width: 82px;
+    height: 32px;
+    border: #e3e3e3 solid 1px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.edit-button-list > div:hover {
+    border: #fe811c solid 1px;
+    background-color: #fe811c;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.edit-button-list button {
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR';
+    outline: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease;
+}
+
+.edit-button-list > div:hover > button{
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+.edit-button-list {
+    margin-left: 9px;
+}
+
+.edit-button-box {
+    margin-bottom: 8px;
+}
+
+.comment-content{
+    display:block
+}
+.comment-content.hide{
+    display:none
 }
 
 @media all and (max-width: 1920px){

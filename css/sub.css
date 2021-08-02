@@ -545,7 +545,7 @@ ul.my-comment-inner li .preview-head {
     margin-top: 39px;
 }
 
-.comment-edit {
+.card-list .comment-edit {
     display: flex;
     justify-content: space-between;
 }
@@ -554,7 +554,7 @@ ul.my-comment-inner li .preview-head {
     width: 100%;
 }
 
-.comment-edit {
+.card-list .comment-edit {
     width: 100%;
 }
 
@@ -632,31 +632,24 @@ ul.my-comment-inner li .preview-head {
 }
 
 /* 댓글 수정창 */
-.comment-edit {
+.card-list .comment-edit {
     display: none;
 }
 
-.comment-edit.click {
+.card-list .comment-edit.click {
     display: flex;
 }
 
-.comment-edit-click2.active{
+.card-list .comment-edit-click2.active{
     display: none !important;
 }
 
-.comment-edit-click.active {
+.card-list .comment-edit-click.active {
     display: none !important;
 }
 /* ---- */
 
-.comment-content{
-    display:block
-}
-.comment-content.hide{
-    display:none
-}
-
-.comment-list {
+.comment-list.card-list {
     height: inherit;
     }
 
@@ -710,7 +703,7 @@ ul.my-comment-inner li .preview-head {
     .mo{
         display: none;
     }
-    .comment-list {
+    .comment-list.card-list {
     height: inherit;
     }
 }

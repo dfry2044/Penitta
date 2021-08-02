@@ -84,6 +84,12 @@ $('.list-top > a').click(function(){
     scrollDisable();
 });
 
+$('.c2 .c2-list-top > a').click(function(){
+    $('.view-popup').addClass('active');
+
+    scrollDisable();
+});
+
 $('.view-ico-close').click(function(){
     $('.view-popup').removeClass('active');
 
@@ -140,7 +146,6 @@ var MY_PAGE     = 'sub(html)/mypage.html?index=';
 var MY_PAGE2    = '../sub(html)/mypage.html?index=';
 var NC_PW       = "login(html)/changenickname&pw.html?index=";
 var NC_PW2       = "../login(html)/changenickname&pw.html?index=";
-alert(window.location.href);
 function setChilValue(index){
     switch (index) {
         case 01: case 02: case 03: case 04: case 05: 
