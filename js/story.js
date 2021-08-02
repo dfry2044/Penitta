@@ -34,9 +34,9 @@ $(window).scroll(function () {
 
 //c2 swiper
 var swiper = new Swiper(".mySwiper2", {
-    slidesPerView: 4,
-    slidesPerGroup: 4,
-    spaceBetween: 1,
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    spaceBetween: 36,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
@@ -44,10 +44,6 @@ var swiper = new Swiper(".mySwiper2", {
         clickable: true,
     },
     breakpoints: {
-        1920: {
-            slidesPerView: 4,
-            slidesPerGroup: 4,
-        },
         1024: {
             slidesPerView: 'auto',
             freeMode: true,
@@ -80,9 +76,11 @@ var storyicoRotationEnd = $(".story-select-content");
 
 templateItem.click(function(){
     templatePreviewContent.addClass("show");
+    scrollDisable();
 })
 templatePreviewCloseBtn.click(function(){
     templatePreviewContent.removeClass("show");
+    scrollAble();
 })
 
 storyicoRotationStart.click(function(){
@@ -99,53 +97,71 @@ storyico.click(function(){
     storyico.removeClass("active");
 })
 
-templatePreviewContent.on('scroll touchmove mousewheel', function(e){
+// templatePreviewContent.on('scroll touchmove mousewheel', function(e){
 
-    e.preventDefault();
+//     e.preventDefault();
     
-    e.stopPropagation(); 
+//     e.stopPropagation(); 
     
-    return false;
-})
+//     return false;
+// })
 
 
 $('.card-etc-tooltip > button:nth-child(3)').click(function(){
     $('.share-popup').addClass('active');
+    scrollDisable();
 });
 
 $('.share-ico-close').click(function(){
     $('.share-popup').removeClass('active');
+    scrollAble();
 });
 
 $('.card-etc-tooltip > button:nth-child(2)').click(function(){
     $('.tag-popup').addClass('active');
+    scrollDisable();
 });
 
 $('.tag-ico-close').click(function(){
     $('.tag-popup').removeClass('active');
+    scrollAble();
 });
 
 $('.list-top > a').click(function(){
     $('.view-popup').addClass('active');
+
+    scrollDisable();
 });
 
 $('.view-ico-close').click(function(){
     $('.view-popup').removeClass('active');
+
+    scrollAble();
 });
 
 $('.c4-react > button:nth-child(3)').click(function(){
     $('.comment-popup').addClass('active');
+    scrollDisable();
 });
-
 
 $('.comment-ico-close').click(function(){
     $('.comment-popup').removeClass('active');
+    scrollAble();
 });
 
 $(".filter-open-btn").click(function(){
     $(".filter-popup").addClass("show");
+    scrollDisable();
 })
 
 $(".filter-popup-close-btn").click(function(){
     $(".filter-popup").removeClass("show");
+    scrollAble();
 })
+
+function scrollDisable(){
+    $('body').addClass('scrollDisable');
+}
+function scrollAble(){
+    $('body').removeClass('scrollDisable');
+}

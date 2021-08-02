@@ -3,6 +3,10 @@
 body{
     width: 100vw;
     overflow-x: hidden;
+    overflow-y: auto;
+}
+body.scrollDisable{
+    overflow: hidden;
 }
 
 /* sub page header */
@@ -836,6 +840,7 @@ header div.header-right > div.userMenu {
     opacity: 0;
     visibility: hidden;
     z-index: 1000000000000000000000000;
+    overflow-y: scroll;
 }
 .menu.show{
     opacity: 1;
@@ -849,6 +854,8 @@ header div.header-right > div.userMenu {
     padding: 20px 20px 72px 28px;
     background-color: #fff;
     transition: 0.3s ease;
+    min-height: 700px;
+    overflow-y: scroll;
 }
 .menu.show .menu-content-wrap{
     right: 0;
@@ -966,6 +973,7 @@ header div.header-right > div.userMenu {
     color: #000;
     margin-bottom: 26px;
 }
+.menu
 .menu-content li{
     font-size: 16px;
     font-family: "Noto Sans Kr";
@@ -1163,9 +1171,8 @@ button.logout-btn i{
     header {
         height: 46px;
     }
-    div.h-inner {
-        max-width: calc(100% - 40px);
-        padding: 0;
+    .h-inner {
+        padding: 0 20px;
     }
     .header-left a > img {
         width: 92px;

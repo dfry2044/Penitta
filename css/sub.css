@@ -176,6 +176,9 @@
     margin-bottom: 20px;
     display: inline-block;
 }
+.my-card ul li p.mo{
+    display: none;
+}
 .my-card ul li .card-bottom{
     display: flex;
     justify-content: space-between;
@@ -797,6 +800,7 @@ ul.my-comment-inner li .preview-head {
         position: absolute;
         right: 0;
         bottom: 31px;
+        z-index: 99;
     }
     .togle-box > button {
         font-size: 11.66px;
@@ -919,6 +923,9 @@ ul.my-comment-inner li .preview-head {
 
     li .card-bottom p {
         padding-top: 3px;
+    }
+    .my-card ul li p.mo{
+        display: block;
     }
 }
 

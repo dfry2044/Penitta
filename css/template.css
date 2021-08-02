@@ -512,6 +512,9 @@ padding: 30px 0 158px 0;
     .t-input-search{
         width: 70%;
     }
+    .template .t-input-search{
+        width: 92.5%;
+    }
     .template_search{
         padding: 24px 0 16px 0;
     }
@@ -562,12 +565,14 @@ padding: 30px 0 158px 0;
         opacity: 1;
         transition: 0.3s ease;
         overflow-y: scroll;
+        max-height: max-content;
+        overflow-y: scroll;
     }
     .preview-content .preview-title{
         border-bottom: none;
         position: relative;
         text-align: center;
-        padding: 0 20px;
+        padding: 0 20px 20px;
     }
     .preview-content .preview-btn-group{
         position: absolute;
@@ -590,8 +595,7 @@ padding: 30px 0 158px 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
-        padding: 20px;
-        padding-bottom: 38px;
+        padding: 0 0 38px 20px;
     }
     .preview-content ul li{
         margin: 0;

@@ -25,7 +25,7 @@ tabBtn.click(function(){
 });
 
 editButton.click(function(){
-    titleIdx = $(this).closest(".new").index();
+    titleIdx = $(this).closest(".comment-item").index();
 
     commentEdit.eq(titleIdx).addClass("click");
     commentBox.eq(titleIdx).addClass("active");
@@ -33,7 +33,7 @@ editButton.click(function(){
 });
 
 editButtonAfter.click(function(){
-    titleIdx = $(this).closest(".new").index();
+    titleIdx = $(this).closest(".comment-item").index();
 
     commentEdit.eq(titleIdx).removeClass("click");
     commentBox.eq(titleIdx).removeClass("active");
@@ -41,7 +41,7 @@ editButtonAfter.click(function(){
 });
 
 editButtonEsc.click(function(){
-    titleIdx = $(this).closest(".new").index();
+    titleIdx = $(this).closest(".comment-item").index();
 
     commentEdit.eq(titleIdx).removeClass("click");
     commentBox.eq(titleIdx).removeClass("active");
@@ -73,7 +73,6 @@ function toggleAccordion(el) {
    
    if (targetText.contains('show')) {
     titleIdx = $(this).closest(".item").index();
-        console.log(titleIdx);
        targetText.remove('show');
        targetAccIcon.classList.remove('anime');
        target.classList.remove('accordionTitleActive');
@@ -94,7 +93,6 @@ function toggleAccordion(el) {
          
       })
       titleIdx = $(this).closest(".item").index();
-        console.log(titleIdx);
 
         targetText.add('show');
         target.classList.add('accordionTitleActive');

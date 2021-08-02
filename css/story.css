@@ -53,10 +53,6 @@
     height: 61%;
 }
 
-.c2-inner {
-    margin-right: 20px;
-}
-
 .top-text {
     max-width: 1500px;
     margin: 0 auto;
@@ -86,10 +82,6 @@
     z-index: 99;
 }
 
-.c2 .swiper-slide .sub {
-    display: grid;
-    grid-template-columns: 40px 1fr;
-}
 
 .sub > p {
     font-size: 15px;
@@ -109,7 +101,6 @@
     display: block;
     overflow: hidden;
     width: 100%;
-    border-radius: 10px;
 }
 
 .swiper-slide img {
@@ -156,8 +147,7 @@
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 54px;
-    left: 42px;
-    text-align: left;
+    text-align: center;
 }
 
 .swiper-pagination-bullet {
@@ -262,6 +252,8 @@
     height: 20px;
     background: url(../images/icon/ico-search.png) no-repeat center right / cover;
     cursor: pointer;
+    position: absolute;
+    right: 20px;
 }
 
 .search_input:focus {
@@ -513,7 +505,7 @@
 }
 
 .c2-swiper-inner{
-    max-width: 1558px;
+    max-width: 1500px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -1449,6 +1441,11 @@ textarea::placeholder {
 .comment-popup-box > h2.mo{
     display: none;
 }
+
+.filter-popup{
+    display: none;
+}
+
 @media all and (max-width:1920px){
     .top-text {
         max-width: 1125px;
@@ -1459,9 +1456,6 @@ textarea::placeholder {
     }
     .c2-swiper-inner{
         max-width: 1170px;
-    }
-    .c2 .swiper-slide .sub{
-        grid-template-columns: 30px 1fr;
     }
     .mySwiper2  {
     }
@@ -1590,7 +1584,7 @@ textarea::placeholder {
         height: 19px;
         line-height: 19px;
         font-size: 8.25px;
-        top: 246px;
+        top: 247px;
     }
     .list-top > a > h3{
         font-size: 13.5px;
@@ -2134,9 +2128,7 @@ textarea::placeholder {
 
 }
 @media all and (max-width:1500px){
-    .list-top.new::after{
-        top: 186px;
-    }
+
 }
 
 @media all and (max-width:1024px) {
@@ -2396,7 +2388,9 @@ textarea::placeholder {
         opacity: 0;
         visibility: hidden;
         transition: 0.3s ease;
+        display: block;
     }
+    
     .filter-popup .filter-popup-inner{
         position: absolute;
         bottom: -100%;
@@ -2444,10 +2438,11 @@ textarea::placeholder {
     }
     .search_container{
         margin: 0 auto;
-        width: calc(100% - 40px);
+        width: 100%;
+        max-width: calc(100% - 40px);
     }
     .search_input{
-        width: calc(100% - 20px);
+        width: 100%;
     }
     .search_input::placeholder{
         text-align: center;
@@ -2564,5 +2559,9 @@ textarea::placeholder {
     .view-play-bot > div > button:first-child{
         position: absolute;
         left: 0px;
+    }
+
+    .category li{
+        padding: 10px 23px;
     }
 }

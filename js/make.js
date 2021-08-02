@@ -236,9 +236,6 @@ makeSlideNextBtn.click(function(){
         makeSlideWrap.eq(slideItemIdx).find(makeSlideItem).removeClass("active");
 
         makeSlideWrap.eq(slideItemIdx).find(makeSlideItem).eq(slideIdx).addClass("active");
-        console.log(
-            makeSlideWrap.eq(slideItemIdx).find(makeSlideItem).eq(slideIdx)
-        )
     }
 })
 

@@ -26,11 +26,3 @@ $(".ham-btn").click(function(){
 $(".menu-close-btn").click(function(){
     $(".menu").removeClass("show");
 })
-
-$(".menu").on('scroll touchmove mousewheel', function(e){
-    e.preventDefault();
-
-    e.stopPropagation();
-
-    return false;
-})

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./plugin/css/swiper.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="./css/story.css">
+    <link rel="stylesheet" href="./css/sub.css">
     <link rel="stylesheet" href="css/common.css">
 
     <title>Penitta-story</title>
@@ -91,7 +92,6 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="sub sub-list1" href="#">
-                                        <p class="Roboto">Pet & Life</p>
                                         <div class="c2-flex-style">
                                             <a href="#"><img src="images/story/story-c1/contents00.jpg" alt="반려동물"></a>
                                             <a href="#">
@@ -105,7 +105,6 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="sub sub-list1" href="#">
-                                        <p class="Roboto">Pet & Life</p>
                                         <div class="c2-flex-style">
                                             <a href="#"><img src="images/story/story-c1/contents00.jpg" alt="반려동물"></a>
                                             <a href="#">
@@ -119,7 +118,6 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="sub sub-list1" href="#">
-                                        <p class="Roboto">Pet & Life</p>
                                         <div class="c2-flex-style">
                                             <a href="#"><img src="images/story/story-c1/contents00.jpg" alt="반려동물"></a>
                                             <a href="#">
@@ -133,7 +131,6 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="sub sub-list1" href="#">
-                                        <p class="Roboto">Pet & Life</p>
                                         <div class="c2-flex-style">
                                             <a href="#"><img src="images/story/story-c1/contents00.jpg" alt="반려동물"></a>
                                             <a href="#">
@@ -147,7 +144,6 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="sub sub-list1" href="#">
-                                        <p class="Roboto">Pet & Life</p>
                                         <div class="c2-flex-style">
                                             <a href="#"><img src="images/story/story-c1/contents00.jpg" alt="반려동물"></a>
                                             <a href="#">
@@ -161,7 +157,6 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="sub sub-list1" href="#">
-                                        <p class="Roboto">Pet & Life</p>
                                         <div class="c2-flex-style">
                                             <a href="#"><img src="images/story/story-c1/contents00.jpg" alt="반려동물"></a>
                                             <a href="#">
@@ -175,7 +170,6 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="sub sub-list1" href="#">
-                                        <p class="Roboto">Pet & Life</p>
                                         <div class="c2-flex-style">
                                             <a href="#"><img src="images/story/story-c1/contents00.jpg" alt="반려동물"></a>
                                             <a href="#">
@@ -189,7 +183,6 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="sub sub-list1" href="#">
-                                        <p class="Roboto">Pet & Life</p>
                                         <div class="c2-flex-style">
                                             <a href="#"><img src="images/story/story-c1/contents00.jpg" alt="반려동물"></a>
                                             <a href="#">
@@ -1128,7 +1121,8 @@
         <div class="comment-popup-inner">
             <i class="comment-ico-close"></i>
             <div class="comment-popup-box">
-                <h2>댓글 314개</h2>
+                <h2 class="pc">댓글 314개</h2>
+                <h2 class="mo">댓글 <span>3</span></h2>
                 <div class="comment-box">
                     <p>나이름</p>
                     <textarea name="popup-comment" class="popup-comment" placeholder="주제와 무관한 댓글 및 악플은 삭제될 수 있습니다." ></textarea>
@@ -1146,7 +1140,40 @@
                 </div>
             </div>
             <ul class="comment-list-wrap">
-                <li class="comment-list">
+                <li class="comment-list comment-item">
+                    <div class="comment-list-top">
+                        <p>김길자</p>
+                        <button class="card-etc">
+                            <i></i>
+                        </button>
+                        <div class="comment-etc-tooltip">
+                            <button class="edit-button">수정</button>
+                            <button class="comment-clear">삭제</button>
+                        </div>
+                    </div>
+                    <p class="popup-comment-result">
+                        매우 좋아요. 너무 깊고 훌륭합니다.
+                        <br>보고 너무 좋아서 어떻게 설명을 할 수가 없네요.
+                    </p>
+                    <div class="popup-comment-react">
+                        <button>30</button>
+                        <button>30</button>
+                    </div>
+                    <div class="comment-edit">
+                        <div class="edit-box-style">
+                            <textarea name="comment-edit-box" id="ce-box" placeholder="" >매우 좋아요. 너무 깊고 훌륭합니다. 보고 너무 좋아서 어떻게 설명을 할 수가 없네요.</textarea>
+                        </div>
+                        <div class="edit-button-list">
+                            <div class="edit-button-box">
+                                <button>수정</button>
+                            </div>
+                            <div class="noedit-button-box">
+                                <button>취소</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="comment-list comment-item">
                     <div class="comment-list-top">
                         <p>김길자</p>
                         <button class="card-etc">
@@ -1166,7 +1193,7 @@
                         <button>30</button>
                     </div>
                 </li>
-                <li class="comment-list">
+                <li class="comment-list comment-item">
                     <div class="comment-list-top">
                         <p>김길자</p>
                         <button class="card-etc">
@@ -1186,7 +1213,7 @@
                         <button>30</button>
                     </div>
                 </li>
-                <li class="comment-list">
+                <li class="comment-list comment-item">
                     <div class="comment-list-top">
                         <p>김길자</p>
                         <button class="card-etc">
@@ -1206,27 +1233,7 @@
                         <button>30</button>
                     </div>
                 </li>
-                <li class="comment-list">
-                    <div class="comment-list-top">
-                        <p>김길자</p>
-                        <button class="card-etc">
-                            <i></i>
-                        </button>
-                        <div class="comment-etc-tooltip">
-                            <button class="edit-button">수정</button>
-                            <button class="comment-clear">삭제</button>
-                        </div>
-                    </div>
-                    <p class="popup-comment-result">
-                        매우 좋아요. 너무 깊고 훌륭합니다.
-                        <br>보고 너무 좋아서 어떻게 설명을 할 수가 없네요.
-                    </p>
-                    <div class="popup-comment-react">
-                        <button>30</button>
-                        <button>30</button>
-                    </div>
-                </li>
-                <li class="comment-list">
+                <li class="comment-list comment-item">
                     <div class="comment-list-top">
                         <p>김길자</p>
                         <button class="card-etc">
@@ -1385,5 +1392,6 @@
     <script src="js/toggle.js"></script>
     <script src="js/popup.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/tabMenu.js"></script>
 </body>
 </html>
