@@ -381,7 +381,8 @@ footer .footer-right a:hover {
     padding: 18px 0 44px;
 }
 
-.input-style {
+/* 0802 수정 */
+.login-popup .input-style {
     width: 100%;
     height: 61px;
     color: #a5a5a5;
@@ -391,7 +392,7 @@ footer .footer-right a:hover {
     margin-bottom: 12px;
 }
 
-.input-style > input {
+.login-popup .input-style > input {
     outline: none;
     border: none;
     display: flex;
@@ -440,12 +441,14 @@ footer .footer-right a:hover {
     padding-left: 0;
 }
 
-.login-button input {
+/*0802 수정*/
+.login-popup .login-button input {
     color: #fff !important;
     letter-spacing: -1px;
     cursor: pointer;
     justify-content: center;
     font-size: 18px;
+    text-align: center;
 }
 
 .people_info > a {
@@ -471,7 +474,6 @@ footer .footer-right a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 32px 0 190px;
 }
 
 .join-social li {
@@ -499,10 +501,12 @@ input::-moz-placeholder { color: #a5a5a5; }
     height: 55px;
 }
 
-@media (max-width: 1500px) {
+
+/* 0802 수정 */
+@media (max-width: 1920px) {
 .login-popup-inner{
-    width: 340px;
-    height: 412px;
+    width: 434px;
+    height: 518px;
 }
 .login_close > a{
     padding: 14px 14px 0 0;
@@ -512,52 +516,54 @@ input::-moz-placeholder { color: #a5a5a5; }
     height: 10px;
 }
 .login_list{
-    padding: 0 38px;
+    padding: 0 41px;
 }
 .login-top > h2{
-    font-size: 21px; 
-    padding: 20px 0 25px 0
+    font-size: 27px; 
+    padding: 25px 0 31px 0;
 }
-.input-style{
+.login-popup .input-style{
     padding-left: 15px;
-    height: 36px;
+    height: 47px;
 
     margin-bottom: 7px;
 }
-.input-style > input{
+.login-popup .input-style > input{
     font-size: 12px;
     letter-spacing: 0;
 }
 .login-check > p::before{
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
 }
 .login-check > p{
     font-size: 11px;
 }
 .login-check > p.active::before {
-    background: #fe811c url(../images/icon/ico-join-check.png) no-repeat center center / 7px 6px;
+    background: #fe811c url(../images/icon/ico-join-check.png) no-repeat center center / 10px 7px;
 }
-.login-button > .input-style{
-    height: 35px;
-    font-size: 11px;
+.login-popup .login-button > .input-style{
+    height: 46px;
     margin: 17px 0 15px 0;
 }
+.login-popup .login-button > .input-style input{
+    font-size: 13.5px;
+}
 .people_info > a{
-    font-size: 9px;
+    font-size: 11.5px;
 }
 .login-top{
-    padding-bottom: 20px;
+    padding-bottom: 36px;
 }
 .join-social > ul{
-    padding-top: 15px;
+    padding-top: 24px;
 }
 .join-social li{
-    margin-right: 14px;
+    margin-right: 18px;
 }
 .join-social li > a > img{
-    width: 30px;
-    height: 30px;
+    width: 38px;
+    height: 38px;
 }
 .join-social p{
     font-size: 11px;
