@@ -287,13 +287,13 @@ header.active {
     clip-path: inset(0% 0% 0% 0% round 10px);
 }
 
-.c2-list-top  > a {
+.list-top .c2-list-top  > a {
     width: 100%;
     height: 100%;
     position: relative;
     display: block;
 }
-.c2-list-top > a::after{
+.list-top.new .c2-list-top > a::after{
     content: "new";
     width: 43px;
     height: 24px;
@@ -310,7 +310,6 @@ header.active {
     color: #ffffff;
     text-transform: uppercase;
     z-index: 10;
-
 }
 .list-bot {
     display: flex;
