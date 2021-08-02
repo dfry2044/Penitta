@@ -48,6 +48,8 @@ editButtonAfter.click(function(){
 editButtonEsc.click(function(){
     titleIdx = $(this).closest(".comment-item").index();
 
+    $(this).closest(".comment-item").find(".comment-content").removeClass("hide");
+
     commentEdit.eq(titleIdx).removeClass("click");
     commentBox.eq(titleIdx).removeClass("active");
     editButtonClear.eq(titleIdx).removeClass("active");

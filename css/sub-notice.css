@@ -73,7 +73,7 @@
     display: flex;
     align-items: center;
   }
-  .title-left > em {
+  .my-card ul li em {
     display: block;
     font-size: 16px;
     font-weight: 400 !important;
@@ -84,6 +84,8 @@
     background-color: #d1d1d1;
     border-radius: 100px;
     margin-right: 11px !important;
+    white-space: nowrap;
+    color: #fff;
   }
   .title-right {
     margin-right: 46px;
@@ -168,3 +170,82 @@
   .accIcon > i.show{
     background: url(../images/icon/ico-mn-uparrow.png)no-repeat center / cover;
   }
+
+  .mo{
+    display: none;
+  }
+
+  @media all and (max-width: 1024px) {
+  .title-right > p {
+    text-indent: -9999999999px;
+  }
+    .my-card ul {
+      display:flex;
+  }
+  .title-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .my-notice-inner > p {
+    font-size: 21.66px;
+    font-weight: 600;
+    align-items: flex-start;
+    padding-top: 22px;
+    text-align: center;
+    line-height: 32.67px;
+  }
+  .my-tab .my-tab-inner ul {
+     overflow-x: inherit;
+  }
+  .my-tab {
+    height: 110px;
+  }
+  .my-card {
+    padding: 26px 0 64px;
+  }
+  .my-card .my-card-top {
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eeeded;
+  }
+  .my-card ul li em {
+    font-size: 12px;
+    padding: 0 13px;
+    height: 25px;
+    line-height: 25px;
+  }
+  .my-card ul li h2 {
+    line-height: 17px;
+    font-size: 15px;
+    padding: 13px 0 11px;
+  }
+  .accordionTitle:before, .accordionTitle:after {
+    display: none;
+  }
+  .my-card ul li {
+    padding: 20px 0;
+    border-bottom: 1px solid #f3f3f3;
+  }
+  .accordionTitle {
+    height: inherit;
+    font-size: 18px;
+  }
+  .my-card ul li p {
+    font-size: 11.66px;
+    line-height: 14px;
+  }
+  .accordion .item .text.show {
+    line-height: 19px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    padding: 14px 56px 23px 14px;
+    letter-spacing: -1px;
+    word-break: keep-all;
+    margin-top: 16px;
+  }
+  .QnA-tab{
+    height: 145px;
+  }
+}

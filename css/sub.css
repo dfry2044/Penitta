@@ -656,6 +656,10 @@ ul.my-comment-inner li .preview-head {
     display:none
 }
 
+.comment-list {
+    height: inherit;
+    }
+
 @media all and (max-width:1920px) {
     .my-card .my-card-inner .card-total {
         font-size: 14px;
@@ -706,7 +710,9 @@ ul.my-comment-inner li .preview-head {
     .mo{
         display: none;
     }
-    
+    .comment-list {
+    height: inherit;
+    }
 }
 
 @media all and (max-width:1500px) {

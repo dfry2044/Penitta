@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -7,21 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="./plugin/js/swiper.min.js"></script>
-    <script src="./plugin/js/gsap.min.js"></script>
-    <script src="./plugin/js/ScrollTrigger.min.js"></script>
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./plugin/css/swiper.css">
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="./css/story-search.css">
-    <link rel="stylesheet" href="./css/template.css">
-    <link rel="stylesheet" href="css/common.css">
+    <script src="../plugin/js/swiper.min.js"></script>
+    <script src="../plugin/js/gsap.min.js"></script>
+    <script src="../plugin/js/ScrollTrigger.min.js"></script>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../plugin/css/swiper.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/common.css">
 
-    <title>story-search</title>
+    <title>Penitta-template</title>
 </head>
 
-<body>
+<body class="template">
     <div id="skip">
         <a rel="bookmark" href="#content">본문바로가기</a>
     </div>
@@ -30,12 +28,12 @@
         <div class="h-inner">
             <nav class="pc nav">
                 <div class="header-left">
-                    <a href="./index.html" class="logo"><img src="images/common/logo.png" alt="로고이미지"></a>
+                    <a href="../index.html" class="logo"><img src="../images/common/logo.png" alt="로고이미지"></a>
                     <ul>
-                        <li><a href="./index.html">HOME</a></li>
-                        <li class="active"><a href="./story.html">스토리</a></li>
-                        <li><a href="./make_player.html">만들기</a></li>
-                        <li><a href="./template.html">템플릿</a></li>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="../story.html">스토리</a></li>
+                        <li><a href="../make_player.html">만들기</a></li>
+                        <li class="active"><a href="../template.html">템플릿</a></li>
                         <li><a href="#">매뉴얼</a></li>
                         <li><a href="#">멤버십</a></li>
                     </ul>
@@ -48,11 +46,11 @@
                 </div>
                 <div class="header-right">
                     <div class="userMenu">
-                        <a href="#" class="user"><img src="images/icon/ico-user.png" alt="사람이모티콘"></a>
+                        <a href="#" class="user"><img src="../images/icon/ico-user.png" alt="사람이모티콘"></a>
                         <p class="userNick"><span class="login-Nickname">Nickname님</span></p>
                         <ul class="no-login-menu">
                             <li><button class="popup-button">로그인</button></li>
-                            <li><a href="./join.html">회원가입</a></li>
+                            <li><a href="../join.html">회원가입</a></li>
                         </ul>
                         <ul class="login-menu">
                             <li>
@@ -69,6 +67,9 @@
                                 <a href="#">로그아웃</a></li>
                         </ul>
                     </div>
+                    <div class="ham-btn">
+                        <span class="line">전체메뉴</span>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -76,24 +77,12 @@
     <div class="wrap">
         <div class="template-wrap">
             <div class="template-inner">
-                <h2>스토리 하나로 마음이 이어지는 공간입니다.</h2>
+                <h2>마음에 드는 
+                    <br class="mo">
+                    <span>템플릿</span>으로 시작해보세요.
+                </h2>
                 <div class="t-top-wrap">
                     <div class="input-stlye">
-                        <div class="make-category-select">
-                            <button class="story-select-top">
-                                <span>제목</span>
-                                <i class="story-select-ico"></i>
-                            </button>
-                            <div class="story-select-content">
-                                <ul>
-                                    <li>
-                                        <button>선택</button>
-                                    </li>
-                                    <li><button>제목</button></li>
-                                    <li><button>태그</button></li>
-                                </ul>
-                            </div>
-                        </div>
                         <input class="t-input-search" type="text" placeholder="검색어를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='검색어를 입력하세요.'" style="color: #a5a5a5;">
                         <span class="form-control-clear form-control-feedback hidden">검색어 삭제</span>
                         <i class="t-search-ico"></i>
@@ -111,72 +100,72 @@
                     <ul class="t-list">
                         <li class="t-list_item t-js-load">
                             <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner01.jpg" alt="템플릿1"></a>
+                                <a href="#"><img src="../images/template/banner01.jpg" alt="템플릿1"></a>
                             </div>
                                                                                 <p class="list-box-header">MTB자전거 쉽게 점프하는 방법</p>
                         </li>
                         <li class="t-list_item t-js-load">
                             <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner02.jpg" alt="템플릿2"></a>
+                                <a href="#"><img src="../images/template/banner02.jpg" alt="템플릿2"></a>
                             </div>
                                                                                 <p class="list-box-header">MTB자전거 쉽게 점프하는 방법</p>
                         </li>
                         <li class="t-list_item t-js-load">
                             <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner03.jpg" alt="템플릿3"></a>
+                                <a href="#"><img src="../images/template/banner03.jpg" alt="템플릿3"></a>
                             </div>
                                                                                 <p>MTB자전거 쉽게 점프하는 방법</p>
                         </li>
                         <li class="t-list_item t-js-load">
                             <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner04.jpg" alt="템플릿4"></a>
+                                <a href="#"><img src="../images/template/banner04.jpg" alt="템플릿4"></a>
                             </div>
                                                                                 <p>MTB자전거 쉽게 점프하는 방법</p>
                         </li>
                         <li class="t-list_item t-js-load">
                             <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner01.jpg" alt="템플릿1"></a>
+                                <a href="#"><img src="../images/template/banner01.jpg" alt="템플릿1"></a>
                             </div>
                                                                                 <p>MTB자전거 쉽게 점프하는 방법</p>
                         </li>
                         <li class="t-list_item t-js-load">
                             <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner02.jpg" alt="템플릿2"></a>
+                                <a href="#"><img src="../images/template/banner02.jpg" alt="템플릿2"></a>
                             </div>
                                                                                 <p>MTB자전거 쉽게 점프하는 방법</p>
                         </li>
                         <li class="t-list_item t-js-load">
                             <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner03.jpg" alt="템플릿3"></a>
+                                <a href="#"><img src="../images/template/banner03.jpg" alt="템플릿3"></a>
                             </div>
                                                                                 <p>MTB자전거 쉽게 점프하는 방법</p>
                         </li>
                         <li class="t-list_item t-js-load">
                             <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner04.jpg" alt="템플릿4"></a>
+                                <a href="#"><img src="../images/template/banner04.jpg" alt="템플릿4"></a>
                             </div>
                                                                                 <p>MTB자전거 쉽게 점프하는 방법</p>
                         </li><li class="t-list_item t-js-load">
                             <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner01.jpg" alt="템플릿1"></a>
+                                <a href="#"><img src="../images/template/banner01.jpg" alt="템플릿1"></a>
                             </div>
                                                                                 <p>MTB자전거 쉽게 점프하는 방법</p>
                         </li>
                         <li class="t-list_item t-js-load">
                             <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner02.jpg" alt="템플릿2"></a>
+                                <a href="#"><img src="../images/template/banner02.jpg" alt="템플릿2"></a>
                             </div>
                                                                                 <p>MTB자전거 쉽게 점프하는 방법</p>
                         </li>
                         <li class="t-list_item t-js-load">
                             <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner03.jpg" alt="템플릿3"></a>
+                                <a href="#"><img src="../images/template/banner03.jpg" alt="템플릿3"></a>
                             </div>
                                                                                 <p>MTB자전거 쉽게 점프하는 방법</p>
                         </li>
                         <li class="t-list_item t-js-load">
                             <div class="t-list-box">
-                                <a href="#"><img src="images/template/banner04.jpg" alt="템플릿4"></a>
+                                <a href="#"><img src="../images/template/banner04.jpg" alt="템플릿4"></a>
                             </div>
                                                                                 <p>MTB자전거 쉽게 점프하는 방법</p>
                         </li>
@@ -211,7 +200,7 @@
                 </div>
                 <p class="Roboto">Copyright &copy;2021AIcollabo Inc. </p>
                 <div class="footer-logo">
-                    <img src="./images/common/logo-footer.png" alt="푸터로고">
+                    <img src="../images/common/logo-footer.png" alt="푸터로고">
                 </div>
             </div>
             <div class="footer-right">
@@ -235,38 +224,38 @@
             </div>
             <ul>
                 <li>
-                    <img src="./images/template/preview/preview01.png" alt="template-preview">
+                    <img src="../images/template/preview/preview01.png" alt="template-preview">
                 </li>
                 <li>
-                    <img src="./images/template/preview/preview02.png" alt="template-preview">
+                    <img src="../images/template/preview/preview02.png" alt="template-preview">
                 </li>
                 <li>
-                    <img src="./images/template/preview/preview03.png" alt="template-preview">
+                    <img src="../images/template/preview/preview03.png" alt="template-preview">
                 </li>
                 <li>
-                    <img src="./images/template/preview/preview04.png" alt="template-preview">
+                    <img src="../images/template/preview/preview04.png" alt="template-preview">
                 </li>
                 <li>
-                    <img src="./images/template/preview/preview05.png" alt="template-preview">
+                    <img src="../images/template/preview/preview05.png" alt="template-preview">
                 </li>
                 <li>
-                    <img src="./images/template/preview/preview06.png" alt="template-preview">
+                    <img src="../images/template/preview/preview06.png" alt="template-preview">
                 </li>
                 <li>
-                    <img src="./images/template/preview/preview07.png" alt="template-preview">
+                    <img src="../images/template/preview/preview07.png" alt="template-preview">
                 </li>
                 <li>
-                    <img src="./images/template/preview/preview08.png" alt="template-preview">
+                    <img src="../images/template/preview/preview08.png" alt="template-preview">
                 </li>
             </ul>
-            <a href="./make_player.html">스토리 만들기</a>
+            <a href="../make_player.html">스토리 만들기</a>
         </div>
     </div>
     
     <div class="login-popup">
         <div class="login-popup-inner">
             <div class="login_close">
-                <a href="#"><img src="images/icon/ico-login-close.png" alt="아이콘"></a>
+                <a href="#"><img src="../images/icon/ico-login-close.png" alt="아이콘"></a>
             </div>
             <div class="login_list">
                 <div class="login-top">
@@ -286,22 +275,22 @@
                        </div>
                     </div>
                     <div class="people_info">
-                        <a href="./passward.html">비밀번호 찾기</a>
-                        <a href="./join.html">회원가입</a>
+                        <a href="../passward.html">비밀번호 찾기</a>
+                        <a href="../join.html">회원가입</a>
                     </div>
                 </div>
                 <div class="join-social">
                     <ul>
-                        <li><a href="#"><img src="images/icon/ico-google.png" alt="구글"></a>
+                        <li><a href="#"><img src="../images/icon/ico-google.png" alt="구글"></a>
                             <p>구글</p>
                         </li>
-                        <li><a href="#"><img src="images/icon/ico-naver.png" alt="네이버"></a>
+                        <li><a href="#"><img src="../images/icon/ico-naver.png" alt="네이버"></a>
                             <p>네이버</p>
                         </li>
-                        <li><a href="#"><img src="images/icon/ico-kakao.png" alt="카카오"></a>
+                        <li><a href="#"><img src="../images/icon/ico-kakao.png" alt="카카오"></a>
                             <p>카카오톡</p>
                         </li>
-                        <li><a href="#"><img src="images/icon/ico-facebook.png" alt="페이스북"></a>
+                        <li><a href="#"><img src="../images/icon/ico-facebook.png" alt="페이스북"></a>
                             <p>페이스북</p>
                         </li>
                     </ul>
@@ -309,11 +298,10 @@
             </div>
         </div>
     </div>
-    <script src="./js/category.js"></script>
-    <script src="js/story.js"></script>
-    <script src="js/popup.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/make.js"></script>
+    <script src="../js/category.js"></script>
+    <script src="../js/story.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/common.js"></script>
 </body>
 
 </html>

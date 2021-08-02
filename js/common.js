@@ -27,6 +27,37 @@ $(".menu-close-btn").click(function(){
     $(".menu").removeClass("show");
 })
 
+// template preview
+var templateItem = $(".t-list_item");
+var templatePreviewCloseBtn = $(".preview-close-btn");
+var templatePreviewContent = $(".template-preview");
+var storyicoRotationStart = $(".story-select-top");
+var storyico = $('.story-select-ico');
+var storyicoRotationEnd = $(".story-select-content");
+
+templateItem.click(function(){
+    templatePreviewContent.addClass("show");
+    scrollDisable();
+})
+templatePreviewCloseBtn.click(function(){
+    templatePreviewContent.removeClass("show");
+    scrollAble();
+})
+
+storyicoRotationStart.click(function(){
+    storyico.addClass("active");
+})
+storyicoRotationEnd.click(function(){
+    storyico.removeClass("active");
+})
+
+storyico.click(function(){
+    storyico.addClass("active");
+})
+storyico.click(function(){
+    storyico.removeClass("active");
+})
+
 $('.card-etc-tooltip > button:nth-child(3)').click(function(){
     $('.share-popup').addClass('active');
     scrollDisable();
@@ -59,7 +90,12 @@ $('.view-ico-close').click(function(){
     scrollAble();
 });
 
-$('.c4-react > button:nth-child(3)').click(function(){
+$('.c4-react > button.comment-popup-open').click(function(){
+    $('.comment-popup').addClass('active');
+    scrollDisable();
+});
+
+$('.comment-popup-open').click(function(){
     $('.comment-popup').addClass('active');
     scrollDisable();
 });
