@@ -966,20 +966,23 @@ header div.header-right > div.userMenu {
 .menu-content:nth-of-type(1) li{
     margin-bottom: 0;
 }
-.menu-content .menu-content-title{
+
+.menu .menu-content li{
+    margin-bottom: 15px;
+}
+.menu .menu-content li button,
+.menu .menu-content li a{
+    font-size: 16px;
+    font-family: "Noto Sans Kr";
+    font-weight: 400;
+    color: #454444;
+}
+.menu .menu-content li.menu-content-title{
     font-size: 18px;
     font-family: "Noto Sans Kr";
     font-weight: 600;
     color: #000;
     margin-bottom: 26px;
-}
-.menu
-.menu-content li{
-    font-size: 16px;
-    font-family: "Noto Sans Kr";
-    font-weight: 400;
-    color: #454444;
-    margin-bottom: 15px;
 }
 .menu-content li:last-child{
     margin-bottom: 0;

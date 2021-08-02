@@ -121,3 +121,58 @@ function scrollDisable(){
 function scrollAble(){
     $('body').removeClass('scrollDisable');
 }
+
+/*
+    mypage -> 나의 스토리 (1)
+    mypage -> 나의 댓글 (2)
+    mypage -> 미완성스토리 (3)
+    mypage -> 담아둔스토리 (4)
+    mypage -> 내려받기 (5)
+  
+    changenickname&pw -> 닉네임 (6)
+    changenickname&pw -> 비밀번호 (7)
+*/
+
+var MY_PAGE     = 'sub(html)/mypage.html?index=';
+var NC_PW       = "login(html)/changenickname&pw.html?index=";
+
+function setChilValue(index){
+    switch (index) {
+        case 1: case 2: case 3: case 4: case 5: 
+            window.location.href = MY_PAGE + index;
+            break;
+
+        case 6: case 7:
+            window.location.href = NC_PW + index;
+            break;
+
+        default:
+            
+            break;
+    }
+}
+
+$(document).ready(function () {
+    var val = location.href.substr(
+        location.href.lastIndexOf('=') + 1
+    );
+    var tab = $(".my-tab .my-tab-inner li");
+
+    switch (Number(val)) {
+        case 1: case 2: case 3: case 4: case 5:
+            tab.removeClass("active");
+            tab.eq(val - 1).addClass("active");
+            
+            break;
+
+        case 6: case 7:
+            tab.removeClass("active");
+            tab.eq(val - 6).addClass("active");
+
+            break;
+
+        default:
+            console.log("fail");
+            break;
+    }
+});
