@@ -27,6 +27,9 @@ tabBtn.click(function(){
 editButton.click(function(){
     titleIdx = $(this).closest(".comment-item").index();
 
+    $(this).closest(".comment-content").addClass("hide");
+    $(this).closest(".comment-etc-tooltip").removeClass("show");
+
     commentEdit.eq(titleIdx).addClass("click");
     commentBox.eq(titleIdx).addClass("active");
     editButtonClear.eq(titleIdx).addClass("active");
@@ -34,6 +37,8 @@ editButton.click(function(){
 
 editButtonAfter.click(function(){
     titleIdx = $(this).closest(".comment-item").index();
+
+    $(this).closest(".comment-item").find(".comment-content").removeClass("hide");
 
     commentEdit.eq(titleIdx).removeClass("click");
     commentBox.eq(titleIdx).removeClass("active");
@@ -47,7 +52,6 @@ editButtonEsc.click(function(){
     commentBox.eq(titleIdx).removeClass("active");
     editButtonClear.eq(titleIdx).removeClass("active");
 });
-
 
 // 삭제키
 // removeButton.click(function() {

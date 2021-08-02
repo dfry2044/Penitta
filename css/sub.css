@@ -649,6 +649,13 @@ ul.my-comment-inner li .preview-head {
 }
 /* ---- */
 
+.comment-content{
+    display:block
+}
+.comment-content.hide{
+    display:none
+}
+
 @media all and (max-width:1920px) {
     .my-card .my-card-inner .card-total {
         font-size: 14px;
