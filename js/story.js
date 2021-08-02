@@ -129,7 +129,7 @@ $('.view-ico-close').click(function(){
     scrollAble();
 });
 
-$('.c4-react > button:nth-child(3)').click(function(){
+$('.c4-react > button.comment-popup-open').click(function(){
     $('.comment-popup').addClass('active');
     scrollDisable();
 });
