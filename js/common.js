@@ -123,6 +123,9 @@ function scrollAble(){
 }
 
 /*
+    main -> sub 이동 (0n)
+    sub -> sub 이동 (n)
+
     mypage -> 나의 스토리 (1)
     mypage -> 나의 댓글 (2)
     mypage -> 미완성스토리 (3)
@@ -134,16 +137,26 @@ function scrollAble(){
 */
 
 var MY_PAGE     = 'sub(html)/mypage.html?index=';
+var MY_PAGE2    = '../sub(html)/mypage.html?index=';
 var NC_PW       = "login(html)/changenickname&pw.html?index=";
-
+var NC_PW2       = "../login(html)/changenickname&pw.html?index=";
+alert(window.location.href);
 function setChilValue(index){
     switch (index) {
-        case 1: case 2: case 3: case 4: case 5: 
+        case 01: case 02: case 03: case 04: case 05: 
             window.location.href = MY_PAGE + index;
             break;
 
-        case 6: case 7:
+        case 1: case 2: case 3: case 4: case 5: 
+            window.location.href = MY_PAGE2 + index;
+            break;
+
+        case 06: case 07:
             window.location.href = NC_PW + index;
+            break;
+
+        case 6: case 7:
+            window.location.href = NC_PW2 + index;
             break;
 
         default:
@@ -165,7 +178,19 @@ $(document).ready(function () {
             
             break;
 
+        case 01: case 02: case 03: case 04: case 05:
+            tab.removeClass("active");
+            tab.eq(val - 1).addClass("active");
+            
+            break;
+
         case 6: case 7:
+            tab.removeClass("active");
+            tab.eq(val - 6).addClass("active");
+
+            break;
+
+        case 06: case 07:
             tab.removeClass("active");
             tab.eq(val - 6).addClass("active");
 
