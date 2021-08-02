@@ -44,12 +44,18 @@ var swiper = new Swiper(".mySwiper2", {
         clickable: true,
     },
     breakpoints: {
+        1920: {
+            slidesPerView: '3',
+            slidesPerGroup: 3,
+            freeMode: false,
+            spaceBetween: 27,
+        },
         1024: {
             slidesPerView: 'auto',
             freeMode: true,
             spaceBetween: 20,
-        }
-      }
+        },
+      },
 });
 
 //c4 button
