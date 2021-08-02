@@ -649,6 +649,13 @@ ul.my-comment-inner li .preview-head {
 }
 /* ---- */
 
+.comment-content{
+    display:block
+}
+.comment-content.hide{
+    display:none
+}
+
 @media all and (max-width:1920px) {
     .my-card .my-card-inner .card-total {
         font-size: 14px;
@@ -786,13 +793,26 @@ ul.my-comment-inner li .preview-head {
         font-size: 13px;
         padding-bottom: 0;
     }
-    .my-card li.new div.new-tooltip::after {
+    .my-card li.new div.new-tooltip{
+        display: none;
+    }
+    .my-card ul li .card-img-wrap:after{
+        content: "new";
+        position: absolute;
+        right: 0;
+        background-color: #799e14;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Noto Sans Kr";
+        font-weight: 400;
+        color: #ffffff;
+        text-transform: uppercase;
         width: 45px;
         height: 25px;
         font-size: 11.66px;
         right: 0;
-        bottom: auto;
-        top: 168px;
+        bottom: 1px;
     }
     .togle-box {
         width: 41px;
@@ -804,14 +824,6 @@ ul.my-comment-inner li .preview-head {
     }
     .togle-box > button {
         font-size: 11.66px;
-    }
-    .my-card li.new div.new-tooltip::after {
-        width: 45px;
-        height: 25px;
-        font-size: 11.66px;
-        right: 0;
-        bottom: auto;
-        top: 137px;
     }
     .ico-group > button:first-child::before {
         width: 19px;
