@@ -146,27 +146,72 @@ var MY_PAGE     = 'sub(html)/mypage.html?index=';
 var MY_PAGE2    = '../sub(html)/mypage.html?index=';
 var NC_PW       = "login(html)/changenickname&pw.html?index=";
 var NC_PW2       = "../login(html)/changenickname&pw.html?index=";
+
+
 function setChilValue(index){
-    switch (index) {
-        case 01: case 02: case 03: case 04: case 05: 
-            window.location.href = MY_PAGE + index;
-            break;
-
-        case 1: case 2: case 3: case 4: case 5: 
-            window.location.href = MY_PAGE2 + index;
-            break;
-
-        case 06: case 07:
-            window.location.href = NC_PW + index;
-            break;
-
-        case 6: case 7:
-            window.location.href = NC_PW2 + index;
-            break;
-
-        default:
-            
-            break;
+    var url = window.location.href;
+    url = url.split("/");
+    url = url[url.length -2]
+    
+    if(
+        url == "sub(html)" ||
+        url == "login(html)"
+    ){
+        var href = window.location.href;
+        var thisfilefullname = document.URL.substring(document.URL.lastIndexOf("/") + 1, document.URL.length);
+        
+        href = href.replace(thisfilefullname,'').slice(0,-1);
+        href = href.replace(url,'');
+        
+        switch (index) {
+            case 01: case 02: case 03: case 04: case 05: 
+                location = href + MY_PAGE + index;
+                break;
+    
+            case 1: case 2: case 3: case 4: case 5: 
+                location = href + MY_PAGE + index;
+                break;
+    
+            case 06: case 07:
+                location = href + NC_PW + index;
+                break;
+    
+            case 6: case 7:
+                location = href + NC_PW + index;
+                break;
+    
+            default:
+                
+                break;
+        }
+    }else{
+        var href = window.location.href;
+        var thisfilefullname = document.URL.substring(document.URL.lastIndexOf("/") + 1, document.URL.length);
+        
+        href = href.replace(thisfilefullname,'').slice(0,-1);
+        href = href.replace(url,'');
+        
+        switch (index) {
+            case 01: case 02: case 03: case 04: case 05: 
+                location = MY_PAGE + index;
+                break;
+    
+            case 1: case 2: case 3: case 4: case 5: 
+                location = MY_PAGE + index;
+                break;
+    
+            case 06: case 07:
+                location = NC_PW + index;
+                break;
+    
+            case 6: case 7:
+                location = NC_PW + index;
+                break;
+    
+            default:
+                
+                break;
+        }
     }
 }
 
