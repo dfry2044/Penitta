@@ -1,10 +1,13 @@
 var tabBtn = $(".my-tab-inner li");
 var tabContent = $(".my-card .card-list");
-var editButton = $(".edit-button");
+var editButton1 = $(".comment-popup .edit-button");
+var editButton2 = $(".card-list .edit-button");
 var commentEdit = $(".comment-edit");
 var commentBox = $(".comment-edit-click");
-var editButtonAfter = $(".edit-button-box > button");
-var editButtonEsc = $(".noedit-button-box > button");
+var editButtonAfter1 = $(".comment-popup .edit-button-box > button");
+var editButtonAfter2 = $(".card-list .edit-button-box > button");
+var editButtonEsc1= $(".comment-popup .noedit-button-box > button");
+var editButtonEsc2 = $(".card-list .noedit-button-box > button");
 var editButtonClear = $(".comment-edit-click2");
 var removeButton = $(".comment-clear");
 var titleBox = $(".title-left > em");
@@ -24,35 +27,67 @@ tabBtn.click(function(){
     tabBtn.eq(idx).addClass("active");
 });
 
-editButton.click(function(){
-    titleIdx = $(this).closest(".comment-item").index();
+editButton1.click(function(){
+    titleIdx = $(this).closest(".comment-popup .comment-item").index();
 
     $(this).closest(".comment-content").addClass("hide");
     $(this).closest(".comment-etc-tooltip").removeClass("show");
 
-    commentEdit.eq(titleIdx).addClass("click");
-    commentBox.eq(titleIdx).addClass("active");
-    editButtonClear.eq(titleIdx).addClass("active");
+    $(".comment-popup .comment-item").find(commentEdit).eq(titleIdx).addClass("click");
+    $(".comment-popup .comment-item").find(commentBox).eq(titleIdx).addClass("active");
+    $(".comment-popup .comment-item").find(editButtonClear).eq(titleIdx).addClass("active");
 });
 
-editButtonAfter.click(function(){
+editButton2.click(function(){
+    titleIdx = $(this).closest(".card-list .comment-item").index();
+
+    $(this).closest(".comment-content").addClass("hide");
+    $(this).closest(".comment-etc-tooltip").removeClass("show");
+
+    $(".card-list .comment-item").find(commentEdit).eq(titleIdx).addClass("click");
+    $(".card-list .comment-item").find(commentBox).eq(titleIdx).addClass("active");
+    $(".card-list .comment-item").find(editButtonClear).eq(titleIdx).addClass("active");
+});
+
+editButtonAfter1.click(function(){
+    titleIdx = $(this).closest(".comment-popup .comment-item").index();
+
+    $(this).closest(".comment-item").find(".comment-content").removeClass("hide");
+
+    $(".comment-popup .comment-item").find(commentEdit).eq(titleIdx).removeClass("click");
+    
+    $(".comment-popup .comment-item").find(commentBox).eq(titleIdx).removeClass("active");
+    $(".comment-popup .comment-item").find(editButtonClear).eq(titleIdx).removeClass("active");
+});
+
+editButtonAfter2.click(function(){
+    titleIdx = $(this).closest(".card-list .comment-item").index();
+
+    $(this).closest(".comment-item").find(".comment-content").removeClass("hide");
+
+    $(".card-list .comment-item").find(commentEdit).eq(titleIdx).removeClass("click");
+    $(".card-list .comment-item").find(commentBox).eq(titleIdx).removeClass("active");
+    $(".card-list .comment-item").find(editButtonClear).eq(titleIdx).removeClass("active");
+});
+
+editButtonEsc1.click(function(){
+    titleIdx = $(this).closest(".comment-popup .comment-item").index();
+
+    $(this).closest(".comment-item").find(".comment-content").removeClass("hide");
+
+    $(".comment-popup .comment-item").find(commentEdit).eq(titleIdx).removeClass("click");
+    $(".comment-popup .comment-item").find(commentBox).removeClass("active");
+    $(".comment-popup .comment-item").find(editButtonClear).eq(titleIdx).removeClass("active");
+});
+
+editButtonEsc2.click(function(){
     titleIdx = $(this).closest(".comment-item").index();
 
     $(this).closest(".comment-item").find(".comment-content").removeClass("hide");
 
-    commentEdit.eq(titleIdx).removeClass("click");
-    commentBox.eq(titleIdx).removeClass("active");
-    editButtonClear.eq(titleIdx).removeClass("active");
-});
-
-editButtonEsc.click(function(){
-    titleIdx = $(this).closest(".comment-item").index();
-
-    $(this).closest(".comment-item").find(".comment-content").removeClass("hide");
-
-    commentEdit.eq(titleIdx).removeClass("click");
-    commentBox.eq(titleIdx).removeClass("active");
-    editButtonClear.eq(titleIdx).removeClass("active");
+    $(".card-list .comment-item").find(commentEdit).eq(titleIdx).removeClass("click");
+    $(".card-list .comment-item").find(commentBox).eq(titleIdx).removeClass("active");
+    $(".card-list .comment-item").find(editButtonClear).eq(titleIdx).removeClass("active");
 });
 
 // 삭제키

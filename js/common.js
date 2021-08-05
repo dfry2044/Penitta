@@ -84,6 +84,12 @@ $('.list-top > a').click(function(){
     scrollDisable();
 });
 
+$('.c2 .c2-list-top > a').click(function(){
+    $('.view-popup').addClass('active');
+
+    scrollDisable();
+});
+
 $('.view-ico-close').click(function(){
     $('.view-popup').removeClass('active');
 
