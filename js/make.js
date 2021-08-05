@@ -514,3 +514,82 @@ tagInputOpenBtn.click(function(){
 tagInputCloseBtn.click(function(){
     tagInputMobile.removeClass("show");
 })
+
+// canvas resize
+var mainCanvas = $(".make-canvas-wrap .main-img");
+var winW = $(window).innerWidth();
+var winH = $(window).innerHeight();
+var mainCanvasWidth;
+var mainCanvasHeight;
+var mainList = $(".make-list");
+var mainListW = mainList.innerWidth();
+var mainEditer = $(".make-editer");
+var mainEditerW = mainEditer.innerWidth();
+var header = $("header");
+var headerH = header.innerHeight();
+
+// if($(".make-canvas").innerWidth() - winW - mainListW - mainEditerW -)
+// if(winW >= 1700){
+//     mainCanvas.css({
+//         width: "900px",
+//         height: "900px"
+//     })
+// }else{
+//     mainCanvas.css({
+//         width: winW - mainListW - mainEditerW - 100,
+//         height: winW - mainListW - mainEditerW - 100
+//     })
+// }
+
+// if(winH <= 880){
+//     mainCanvas.css({
+//         width: winH - headerH - 65 - 100,
+//         height: winH - headerH - 65 - 100
+//     })
+// }
+
+// $(window).resize(function(){
+//     mainCanvasWidth = mainCanvas.innerWidth();
+//     mainCanvasHeight = mainCanvas.innerHeight();
+//     winW = $(window).innerWidth();
+//     winH = $(window).innerHeight();
+
+
+    
+//     if(winW >= 1700){
+//         return false;
+//     }else{
+//         if(winW - mainListW - mainEditerW >= 100){
+//             mainCanvas.css({
+//                 width: winW - mainListW - mainEditerW - 100,
+//                 height: winW - mainListW - mainEditerW - 100
+//             })
+//         }else{
+//             return false;
+//         }
+//     }
+    
+//     if(winH >= 1080){
+//         return false;
+//     }else{
+//         if(winH - headerH - 65 >= 100){
+//             mainCanvas.css({
+//                 width: winW - mainListW - mainEditerW - 100,
+//                 height: winW - mainListW - mainEditerW - 100
+//             })
+//             if(winW - mainListW - mainEditerW >= 100){
+//                 mainCanvas.css({
+//                     width: winW - mainListW - mainEditerW - 100,
+//                     height: winW - mainListW - mainEditerW - 100
+//                 })
+//             }else{
+//                 mainCanvas.css({
+//                     width: winH - headerH - 65 - 100,
+//                     height: winH - headerH - 65 - 100
+//                 })
+//             }
+//         }else{
+//             return false;
+//         }
+//     }
+// })

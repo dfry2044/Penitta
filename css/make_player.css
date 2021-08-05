@@ -225,9 +225,7 @@ body{
     z-index: 500;
     width: calc(100vw - 676px);
     height: calc(100vh - 75px);
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-grow: 1;
 }
 .make-canvas-inner{
     position: relative;
@@ -235,27 +233,48 @@ body{
     height: 100%;
 }
 .make-img-container{  
-/* 0728 수정 */
-    width: 50%;
-    max-width: 80%;
-    height: auto;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+
+}
+.make-canvas-wrap .main-img{
+    border:1px solid #bbbec1;
+    background-color: #fff;
+    position:relative;
+    width: 100%;
+    max-width:100%;
+    height:100%;
+    max-height:100%;
+}
+.make-slide-wrap-pc{
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    width: 100%;
+    height:100%;
+}
+.canvas-bg{
+    position: relative !important;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.make-slide-img-group.active{
 }
 .make-canvas-wrap{
     width: 100%;
     height: 100%;
     max-width:100%;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items:center
+    display: grid;
+    grid-template-columns: minmax(50px, auto) fit-content(80%) minmax(50px, auto);
+    grid-template-rows: minmax(50px, auto) fit-content(80%) minmax(50px, auto);
 }
 /* 0727 수정 */
 .make-canvas-wrap > *:nth-child(1){
@@ -298,7 +317,10 @@ body{
 .make-slide-img-group.active{
 /* 0728 수정 */    
     width: 100%;
-    height:100%;
+    max-width:100%;
+    min-height: 100%;
+    max-height: 100%;
+    height: auto;
     display:block;
     overflow:hidden;
     position:absolute;
@@ -309,18 +331,14 @@ body{
 .make-slide-img-group{
     max-width:100%;
     height:100%;
-    display:none;
-}
-.make-canvas-wrap .main-img{
-    width: 100%;
-    height: 100%;
-    padding-top: 100%;
-    border: 1px solid #bbbec1;
-    position: relative;
 }
 .make-img-container img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
     max-width: 100%;
-    max-height: 100%;
     object-fit: cover;
 }
 
@@ -336,7 +354,7 @@ body{
     display: flex;
     left: -2.1%;
     left: 0;
-    top: -8.470588235294118vh;
+    top: -65px;
 }
 .make-header .make-category-select{
     min-width: 120px;
@@ -2472,14 +2490,6 @@ header .mo{
 .autoplay-btn.play i:nth-child(2){
     opacity:1;
 }
-/* .swiper-container-fade .swiper-slide{
-    width:auto !important;
-} */
-.make-slide-wrap-pc{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
 
 .make-slide-wrap-pc img.active{
     position:absolute;
@@ -2487,6 +2497,11 @@ header .mo{
     opacity:1;
     top: 0;
     left:0;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    height: auto;
 }
 .make-slide-wrap-pc img{
     position:absolute;
