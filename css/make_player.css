@@ -1,17 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 body{
     overflow:hidden;
 }
@@ -239,42 +225,41 @@ body{
     align-items: center;
     grid-column: 2/3;
     grid-row: 2/3;
-    width: 100%;
-    height: 100%;
-
+    /* width: 100%;
+    height: 100%; */
+    min-width: 100%;
+    min-height: 100%;
 }
 .make-canvas-wrap .main-img{
     border:1px solid #bbbec1;
     background-color: #fff;
     position:relative;
-    width: 100%;
-    max-width:100%;
+    width: max-content;
     height:100%;
-    max-height:100%;
 }
 .make-slide-wrap-pc{
     display:flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     position:absolute;
     width: 100%;
-    height:100%;
+    height: 100%;
+    overflow: hidden;
 }
 .canvas-bg{
     position: relative !important;
-    max-width: 100%;
-    max-height: 100%;
-
-}
-.make-slide-img-group.active{
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    min-width: auto;
+    max-height: 100% !important
 }
 .make-canvas-wrap{
-    width: 100%;
     height: 100%;
     max-width:100%;
     position: relative;
     display: grid;
     grid-template-columns: minmax(50px, auto) fit-content(80%) minmax(50px, auto);
-    grid-template-rows: minmax(50px, auto) fit-content(80%) minmax(50px, auto);
+    grid-template-rows: minmax(100px, auto) fit-content(80%) minmax(100px, auto);
 }
 /* 0727 수정 */
 .make-canvas-wrap > *:nth-child(1){
@@ -316,10 +301,10 @@ body{
 
 .make-slide-img-group.active{
 /* 0728 수정 */    
-    width: 100%;
+    /* width: 100%;
     max-width:100%;
     min-height: 100%;
-    max-height: 100%;
+    max-height: 100%; */
     height: auto;
     display:block;
     overflow:hidden;
@@ -327,10 +312,18 @@ body{
     top:0;
     left:0;
     background-color: #fff;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    z-index: 99;
 }
 .make-slide-img-group{
-    max-width:100%;
-    height:100%;
+    /* max-width:100%;
+    height:100%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 .make-img-container img{
     position: absolute;
@@ -338,7 +331,8 @@ body{
     top: 0;
     bottom: 0;
     right: 0;
-    max-width: 100%;
+    width: auto;
+    height: auto;
     object-fit: cover;
 }
 
@@ -917,7 +911,7 @@ body{
     margin-top: 8px;
 }
 .make-editer-tab-content{
-    height: calc(100% - 66px);
+    height: calc(100% - 68px);
     overflow: scroll;
     border-radius: 0 0 25px 25px;
     overflow: hidden;
@@ -1063,7 +1057,7 @@ body{
     background-color: #fff;
     border-radius: 25px;
     margin-top: 3px;
-    min-height: 200px;
+    height: max-content;
 }
 .voice-editer{
     padding:20px 28px;
@@ -2497,11 +2491,9 @@ header .mo{
     opacity:1;
     top: 0;
     left:0;
-    width: 100%;
-    max-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    height: auto;
+    /* width: 100%; */
+    /* min-height: 100%; */
+    /* height: auto; */
 }
 .make-slide-wrap-pc img{
     position:absolute;
@@ -2510,8 +2502,10 @@ header .mo{
     z-index: 0;
     opacity:0;
     transition:0.5s ease;
-    width: auto;
-    height: auto;
+    /* width: auto;
+    height: auto; */
+    /* max-width:100%;
+    max-height:100%; */
 }
 .make-editer .source{
     position: absolute;
@@ -2778,33 +2772,6 @@ header .mo{
         line-height: 24px;
         margin-bottom: 14px;
     }
-    .preview-editer .preview-text .preview-tag{
-        font-size: 11px;
-        line-height: 24px;
-    }
-    .preview-editer .preview-close-btn i{
-        width: 12px;
-        height: 12px;
-    }
-    .preview-editer .preview-editer-content .preview-number{
-        font-size: 14px;
-        margin-bottom: 14px;
-    }
-    .preview-controller button{
-        width: 26px;
-        height: 26px;
-    }
-    .preview-controller .prev-btn .icon-group, .preview-controller .next-btn .icon-group{
-        width: 7px;
-        height: 9px;
-    }
-    .preview-controller .btn-group::after{
-        margin: 0 7px;
-    }
-    .autoplay-btn .icon-group{
-        width: 9px;
-        height: 11px;
-    }
 }
 @media all and (max-width:1280px){
     .make-final{
@@ -2857,6 +2824,9 @@ header .mo{
     }
 }
 @media all and (max-width:1024px){
+    header{
+        height: 8vw
+    }
     .pc{
         display: none;
     }
@@ -2947,7 +2917,7 @@ header .mo{
     }
     .make-main{
         grid-template-columns: none;
-        grid-template-rows: calc(22.155vw) calc(100vh - 22.155vw - 25.846vw - 60px) 22.400vw;
+        grid-template-rows: 22.155vw calc(100vh - 22.155vw - 27vw - 4.923vw) 22.400vw;
     }
     .make-main > *:nth-child(1){
         -ms-grid-row:1;
@@ -2980,8 +2950,7 @@ header .mo{
     }
     .swiper-container{
         width: calc(100% - 18.462vw);
-        height: 17.231vw ;
-        height: auto;
+        height: 100%;
         margin: 0;
     }
     .swiper-container.make-slide-wrap{
@@ -3052,13 +3021,6 @@ header .mo{
     .wrap{
         height: 100%;
     }
-    /* .make-canvas-wrap {
-        display:inline-grid;
-        -ms-grid-columns: minmax(5.371vw, auto) fit-content(100%) minmax(5.371vw, auto);
-        grid-template-columns: minmax(5.371vw, auto) fit-content(100%) minmax(5.371vw, auto);
-        -ms-grid-rows: minmax(50px, auto) fit-content(100%) minmax(50px, auto);
-        grid-template-rows: minmax(50px, auto) fit-content(100%) minmax(50px, auto);
-    } */
     .make-canvas-wrap > *:nth-child(1) {
         -ms-grid-row:1;
         -ms-grid-column:1;
@@ -3304,7 +3266,7 @@ header .mo{
         position:absolute;
         left:50%;
         transform:translateX(-50%);
-        width: 53.333vw;
+        width: 70%;
     }
     .make-footer .source-input input{
         text-align: center;
@@ -3366,12 +3328,9 @@ header .mo{
         opacity:1;
         visibility:visible;
     }
-    .make-img-container{
-        height: auto;
-        width:75%;
-    }
     .make-canvas-wrap{
         height: 100%;
+        grid-template-rows: minmax(50px, auto) fit-content(80%) minmax(50px, auto);
     }
     .swiper-slide{
         width: 100% !important;
@@ -3404,8 +3363,9 @@ header .mo{
         font-size: 11px;
     }
     .swiper-slide img{
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     .swiper-pagination{
         text-align: left;
@@ -3532,6 +3492,7 @@ header .mo{
         height: 30px;
         font-size: 12px;
         padding: 0 10px;
+        width: 100%;
     }
     .select .select-content li button{
         padding: 5px;
@@ -3905,17 +3866,16 @@ header .mo{
     .bgm-volume{
         padding: 24px 20px 70px;
     }
+    .canvas-bg{
+        opacity: 0;
+        visibility: hidden;
+    }
 }
-
 @media all and (max-width:450px){
     .make-canvas-wrap{
-        display:flex;
         margin:auto;
     }
     .make-img-container{
         display:flex;
-    }
-    .make-canvas-wrap .main-img{
-        height:max-content;
     }
 }
