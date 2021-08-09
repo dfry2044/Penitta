@@ -1,6 +1,6 @@
 .my-tab{
     width: 100%;
-    height: 140px;
+    height: 73px;
     border-bottom: 1px solid #f1f1f1;
     background-color: #fafafa;
 }
@@ -16,7 +16,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    height: 50%;
+    height: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -443,6 +443,11 @@ ul.my-comment-inner li p {
     font-family: 'Noto sans KR';
     margin-bottom: 0;
 }
+
+.comment-list {
+    border-bottom: none;
+}
+
 .my-comment-top > .card-total {
     padding-bottom: 18px;
 }

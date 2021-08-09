@@ -201,7 +201,7 @@ input::-ms-clear {display:none;} /*pc에서 보여지는 삭제는 안보이게 
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    padding: 70px 0 140px;
     background-color: #f8f8f8;
 }
 

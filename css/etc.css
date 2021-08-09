@@ -1,41 +1,43 @@
-
-.m-34{
+*{
+    letter-spacing: -1px;
+}
+.wrap .m-34{
     margin-left: 34px !important;
 }
-.m-28{
+.wrap .m-28{
     margin-left: 28px !important;
 }
-.m-22{
+.wrap .m-22{
     margin-left: 22px !important;
 }
-.m-20{
+.wrap .m-20{
     margin-left: 20px !important;
 }
-.m-16{
+.wrap .m-16{
     margin-left: 16px !important;
 }
-.m-10{
+.wrap .m-10{
     margin-left: 10px !important;
 }
-.mb-60{
+.wrap .mb-60{
     margin-bottom: 60px !important;
 }
-.mb-36{
+.wrap .mb-36{
     margin-bottom: 36px !important;
 }
-.mb-32{
+.wrap .mb-32{
     margin-bottom: 32px !important;
 }
-.mb-30{
+.wrap .mb-30{
     margin-bottom: 30px !important;
 }
-.mb-24{
+.wrap .mb-24{
     margin-bottom: 24px !important;
 }
-.mb-20{
+.wrap .mb-20{
     margin-bottom: 20px !important;
 }
-.mb-16{
+.wrap .mb-16{
     margin-bottom: 16px !important;
 }
 .t-a-l{
@@ -48,11 +50,11 @@
     line-height: 1;
 }
 .i-d{
-    display: inline;
+    display: inline !important;
 }
-.indent{
+.wrap .indent{
     margin-left: 2em;
-    text-indent: -0.88em;
+    text-indent: -1.1em;
     display: block;
     margin-bottom: 0;
     font-size: 15px;
@@ -65,16 +67,17 @@
 .wrap{
     width: 100%;
     max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     word-break: keep-all;
 }
 .wrap.terms{
     padding-bottom: 230px;
 }
-.etc-wrap > li{
+> li{
     margin-bottom: 22px;
 }
-h2{
+.wrap h2{
     margin-top: 80px;
     font-size: 40px;
     font-family: "Noto Sans Kr";
@@ -82,7 +85,7 @@ h2{
     color: #000;
     text-align: center;
 }
-p{
+.wrap p{
     text-indent: -0.6em;
     font-size: 16px;
     font-family: "Noto Sans Kr";
@@ -101,10 +104,10 @@ p{
 .terms span{
     margin-bottom: 14px;
 }
-i{
+.wrap i{
     display: block;
 }
-h2+span{
+.wrap h2+span{
     font-size: 16px;
     font-family: "Noto Sans Kr";
     font-weight: 400;
@@ -112,12 +115,13 @@ h2+span{
     margin-top: 38px;
     line-height: 29px;
     display: block;
+    margin-bottom: 40px;
 }
-.etc-wrap{
+.wrap{
     padding-top: 68px;
     padding-bottom: 170px;
 }
-h3{
+.wrap h3{
     font-size: 20px;
     font-family: "Noto Sans Kr";
     font-weight: 600;
@@ -156,7 +160,7 @@ h4 ~ span:last-child{
 h4 + span{
     margin-bottom: 33px;
 }
-ul li i{
+.wrap ul li i{
     font-size: 16px;
     font-family: "Noto Sans Kr";
     font-weight: 400;
@@ -164,10 +168,10 @@ ul li i{
     line-height: 2;
     text-indent: -1.5em;
 }
-ul li:last-child em{
+.wrap ul li:last-child em{
     margin-bottom: 0;
 }
-strong{
+.wrap strong{
     display: block;
     margin-bottom: 18px;
     font-size: 16px;
@@ -184,7 +188,7 @@ strong{
     margin-bottom: 32px;
     display: block;
 }
-span{
+.wrap span{
     font-size: 15px;
     font-family: "Noto Sans Kr";
     font-weight: 400;
@@ -234,45 +238,81 @@ table.table_style01 th:nth-child(2){
     width: 510px;
 }
 table.table_style01 th:nth-child(3){
-    width: calc(100% - 1020px);
+    width: 200px;
 }
-table.table_style02 th:nth-child(1){
+table.table-style02 th:nth-child(3){
+    width: 250px;
+}
+table.table-style02 th:nth-child(1){
     width: 332px;
 }
-table.table_style02 th:nth-child(2){
+table.table-style02 th:nth-child(2){
     width: 520px
+}
+table.table-style02 tr:not(:first-child) td{
+    border-right: 1px solid #e6e6e6;
 }
 @media all and (max-widtH:1500px){
     .wrap{
         max-width: 768px;
+        max-width: calc(100% - 40px);
+    }
+    .wrap p{
+        font-size: 14px !important;
+    }
+    .wrap span{
+        font-size: 14px !important;
+    }
+    .wrap i{
+        font-size: 14px !important;
+    }
+    h4{
+        font-size: 16px;
     }
 }
 @media all and (max-width:1024px){
+    .etc-wrap li:last-child span{
+        margin-bottom: 0;
+    }
+    .terms.wrap li:last-child p:last-child{
+        margin-bottom: 0;
+    }
+    .wrap .indent{
+        margin-left: 0;
+        text-indent: 0;
+    }
     .wrap{
         max-width:calc(100vw - 40px);
+        padding-top: 28px;
+        padding-bottom: 0;
     }
-    h2{
-        margin-top: 25px;
+    .wrap h2{
+        margin-top: 0;
         font-size: 21px;
     }
-    h2+span{
+    .wrap h2+span{
         font-size: 13px;
         margin-top: 18px;
         line-height: 21px;
+        margin-bottom: 28px;
     }
     .etc-wrap{
-        padding: 38px 0 100px 0;
+        padding: 0 0 100px 0;
     }
-    h3{
+    .wrap h3{
         font-size: 15px;
-        margin-bottom: 22px;
+        margin-bottom: 20px;
     }
-    h4{
+    .terms h3{
+        margin-bottom: 16px;
+        line-height: 1.25;
+    }
+    .wrap h4{
         font-size: 14px;
         line-height: 1.5;
         margin-bottom: 16px;
     }
-    p{
+    .wrap p{
         font-size: 13px !important;
         line-height: 1.5 !important;
     }
@@ -282,22 +322,23 @@ table.table_style02 th:nth-child(2){
     h4 + span{
         margin-bottom: 14px;
     }
-    ul li i{
+    .wrap ul li i{
         margin-bottom: 12px;
         line-height: 1.5;
         font-size: 13px;
+        text-indent: -1.2em;
     }
     h4 ~ span{
         font-size: 13px;
-        margin-bottom: 13px;
+        margin-bottom: 12px;
     }
     h4 ~ p{
         margin-bottom: 13px;
     }
-    strong{
+    .wrap strong{
         margin-bottom: 14px;
     }
-    .mb-24{
+    .wrap .mb-24{
         margin-bottom: 13px !important;
     }
     table thead th{
@@ -317,11 +358,11 @@ table.table_style02 th:nth-child(2){
         font-size: 13px;
         margin-bottom: 24px;
     }
-    .mb-32{
+    .wrap .mb-32{
         margin-bottom: 20px !important;
     }
-    span{
-        font-size: 13px;
+    .wrap span{
+        font-size: 12px !important;
     }
     .indent{
         font-size: 13px;
@@ -331,22 +372,22 @@ table.table_style02 th:nth-child(2){
     br{
         display: none;
     }
-    h5{
+    .wrap h5{
         font-size: 14px;
     }
     .l-1{
         line-height: 1.5;
     }
-    .mb-16{
+    .wrap .mb-16{
         margin-bottom: 10px !important;
     }
-    .mb-60{
+    .wrap .mb-60{
         margin-bottom: 30px !important;
     }
-    strong{
+    .wrap strong{
         font-size: 13px;
     }
-    .mb-36{
+    .wrap .mb-36{
         margin-bottom: 20px !important;
     }
     .wrap.terms{
@@ -354,5 +395,32 @@ table.table_style02 th:nth-child(2){
     }
     .wrap.terms h2{
         margin-bottom: 13px;
+    }
+     
+     .wrap h4 ~ span.m-34:last-child{
+        margin-left: 16px !important;
+    }
+    .wrap .mb-30{
+        margin-bottom: 22px !important;
+    }
+    .wrap p{
+        margin-bottom: 12px;
+        line-height: 1.25;
+    }
+    .wrap .m-16 {
+        margin-left: 12px !important;
+    }
+    .m-mb-4{
+        margin-bottom: 4px !important;
+    }
+    .terms p:last-child{
+        margin-bottom: 28px;
+    }
+    .terms span{
+        margin-bottom: 8px;
+        font-weight:500;
+    }
+    .terms p{
+        margin-bottom: 14px;
     }
 }

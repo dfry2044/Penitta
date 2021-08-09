@@ -1,13 +1,14 @@
 
 /*join-wrap*/
 
+/* 0805수정 */
 .join_wrap{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
     background-color: #f8f8f8;
+    padding: 70px 0 92px;
 }
 
 .join_inner {
@@ -101,6 +102,11 @@ input::-moz-placeholder {
     transform: translateY(50%);
 }
 
+/* 0809 수정 */
+.join-nickname > button {
+    right: 95px;
+}
+
 .join-top > .join-emo:last-child {
     margin-top: 12px;
 }
@@ -122,9 +128,6 @@ input::-moz-placeholder {
     margin-bottom: 0;
 }
 
-.join-nickname > button {
-    right: 20.5%;
-}
 
 .flex-box > .input-style:last-child {
     display: inline-block;
@@ -284,6 +287,9 @@ input::-moz-placeholder {
     }
     .input-style input {
         font-size: 12px;
+    }
+    .join-nickname > button {
+        right: 25.5%;
     }
     .flex-box > .input-style:first-child {
         height: 47px;
@@ -483,8 +489,8 @@ input::-moz-placeholder {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
     background-color: #f8f8f8;
+    padding: 70px 0 140px;
 }
 
 .join-failed-inner {

@@ -31,9 +31,9 @@
                     <a href="../index.html" class="logo"><img src="../images/common/logo.png" alt="로고이미지"></a>
                     <ul>
                         <li><a href="../index.html">HOME</a></li>
-                        <li><a href="../story.html">스토리</a></li>
-                        <li><a href="../make_player.html">만들기</a></li>
-                        <li><a href="../template.html">템플릿</a></li>
+                        <li><a href="../sub(html)/story.html">스토리</a></li>
+                        <li><a href="../sub(html)/make_player.html">만들기</a></li>
+                        <li><a href="../sub(html)/template.html">템플릿</a></li>
                         <li><a href="#">매뉴얼</a></li>
                         <li><a href="#">멤버십</a></li>
                     </ul>
@@ -50,17 +50,17 @@
                         <p class="userNick"><span class="login-Nickname">Nickname님</span></p>
                         <ul class="no-login-menu">
                             <li><button class="popup-button">로그인</button></li>
-                            <li><a href="../join.html">회원가입</a></li>
+                            <li><a href="join.html">회원가입</a></li>
                         </ul>
                         <ul class="login-menu">
                             <li>
                                 <i class="dropdown-head"></i>
-                                <a href="#">나의스토리</a></li>
-                            <li><a href="#">나의정보</a></li>
-                            <li><a href="#">비밀번호 변경</a></li>
+                                <a href="../sub(html)/mypage.html">나의스토리</a></li>
+                            <li><a href="#" onclick="setChilValue(06)">나의정보</a></li>
+                            <li><a href="#" onclick="setChilValue(07)">비밀번호 변경</a></li>
                             <li><a href="#">결제내역</a></li>
-                            <li><a href="#">알림글</a></li>
-                            <li><a href="#">궁금해요</a></li>
+                            <li><a href="../etc(html)/notice-page.html">알림글</a></li>
+                            <li><a href="../etc(html)/QnA-page.html">궁금해요</a></li>
                             <li><a href="#">고객센터</a></li>
                             <li class="drop-last">
                                 <i class="dropdown-bottom"></i>
@@ -119,8 +119,8 @@
             <div class="footer-left">
                 <div class="footer-style">
                     <div>
-                        <a href="#">이용약관</a>
-                        <a href="#">개인정보보호정책</a>
+                        <a href="../etc(html)/terms.html">이용약관</a>
+                        <a href="../etc(html)/Personal-information.html">개인정보보호정책</a>
                     </div>
                 </div>
                 <div>
@@ -150,7 +150,7 @@
     <div class="login-popup">
         <div class="login-popup-inner">
             <div class="login_close">
-                <a href="#"><img src="../images/icon/ico-login-close.png" alt="아이콘"></a>
+                <a href="javascript:return false;"><img src="../images/icon/ico-login-close.png" alt="아이콘"></a>
             </div>
             <div class="login_list">
                 <div class="login-top">
@@ -170,8 +170,8 @@
                        </div>
                     </div>
                     <div class="people_info">
-                        <a href="../passward.html">비밀번호 찾기</a>
-                        <a href="../join.html">회원가입</a>
+                        <a href="passward.html">비밀번호 찾기</a>
+                        <a href="join.html">회원가입</a>
                     </div>
                 </div>
                 <div class="join-social">
@@ -191,6 +191,89 @@
                     </ul>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu-content-wrap">
+            <button class="menu-close-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h3>
+                <span class="user-name">Dfry</span>
+                님
+            </h3>
+            <a href="../sub(html)/make_player.html" class="menu-link">
+                <i></i>
+                스토리 만들기
+            </a>
+            <ul class="menu-content">
+                <li>
+                    <a href="../sub(html)/story.html">
+                        <i></i>
+                        <h4>스토리</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="../sub(html)/template.html">
+                        <i></i>
+                        <h4>템플릿</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i></i>
+                        <h4>매뉴얼</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i></i>
+                        <h4>P멤버쉽</h4>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu-content">
+                <li class="menu-content-title">
+                    나의 공간
+                </li>
+                <li>
+                    <button onclick="setChilValue(1)">나의 스토리</button>
+                </li>
+                <li>
+                    <button onclick="setChilValue(2)">나의 댓글</button>
+                </li>
+                <li>
+                    <button onclick="setChilValue(3)">미완성스토리</button>
+                </li>
+                <li>
+                    <button onclick="setChilValue(4)">담아둔스토리</button>
+                </li>
+                <li>
+                    <button onclick="setChilValue(5)">내려받기</button>
+                </li>
+            </ul>
+            <ul class="menu-content">
+                <li>
+                    <a href="../etc(html)/notice-page.html">알림글</a>
+                </li>
+                <li>
+                    <a href="../etc(html)/QnA-page.html">궁금해요</a>
+                </li>
+            </ul>
+            <ul class="menu-content">
+                <li>
+                    <button onclick="setChilValue(6)">나의 정보</button>
+                </li>
+                <li>
+                    <button onclick="setChilValue(7)">비밀번호 변경</button>
+                </li>
+            </ul>
+            <button class="logout-btn">
+                <i></i>
+                로그아웃
+            </button>
         </div>
     </div>
     <script src="../js/category.js"></script>
