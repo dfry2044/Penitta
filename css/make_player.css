@@ -1156,6 +1156,8 @@ body{
     padding: 10px 0;
     z-index: 500;
     overflow: visible;
+    display:flex;
+    flex-direction: column;
 }
 .select .select-content ul li{
     width:100%;
