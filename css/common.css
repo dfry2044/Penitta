@@ -337,7 +337,7 @@ footer .footer-right a:hover {
 .card-etc{
     display: flex;
     justify-content: center;
-    padding: 5px;
+    padding: 7px;
 }
 
 /*popup*/
@@ -624,8 +624,6 @@ input::-moz-placeholder { color: #a5a5a5; }
     font-size: 11px;
     padding-top: 10px;
 }
-}
-@media (max-width: 1920px) {
 .card-etc i{
     width: 2px;
     height: 14px;
@@ -1984,11 +1982,8 @@ textarea::placeholder {
     display:none
 }
 
+
 @media all and (max-width: 1920px){
-    /* div.h-inner{
-        max-width: 1125px;
-    
-    } */
     header nav ul li a {
         font-size: 15px;
         white-space: nowrap;
@@ -2014,8 +2009,8 @@ textarea::placeholder {
         max-width: 1125px;
         padding-bottom: 54px;
     }
-
-    .footer-right {
+ /*
+   .footer-right {
         margin-top: 38px;
     }
     
@@ -2083,6 +2078,11 @@ textarea::placeholder {
         height: 15px;
         background: url(../images/icon/ico-footer-youtube.png) no-repeat center / cover;
     }
+
+
+
+
+    */
     /* share-popup */
 
     .share-popup-inner {
