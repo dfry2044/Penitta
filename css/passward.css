@@ -46,7 +46,7 @@
     letter-spacing: -1px;
 }
 
-.input-style {
+.passward-wrap .input-style {
     width: 100%;
     height: 61px;
     /*color: #a5a5a5;*/
@@ -56,7 +56,7 @@
 
 }
 
-.input-style > input {
+.passward-wrap .input-style > input {
     width: 100%;
     height: 100%;
     color: #000;
@@ -160,7 +160,7 @@ input::-moz-placeholder {
 }
 
 .passward-bot > .input-style {
-    width: 220px;
+    width: 100%;
     height: 61px;
     border: #b4b4b4 solid 1px;
     border-radius: 100px;
@@ -168,13 +168,25 @@ input::-moz-placeholder {
     cursor: pointer;
 }
 
-.passward-bot input {
+.passward-bot a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #000;
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
+    header {
+        display: none;
+    }
+    .passward-wrap {
+        padding: 0;
+    }
     .passward-inner {
+        border: none;
         width: inherit;
         padding: 27px 20px 0 20px;
     }
@@ -187,10 +199,15 @@ input::-moz-placeholder {
     .passward-inner > p {
         line-height: 16px;
         font-size: 14px;
+        padding: 18px 0 24px;
     }
     
+    .passward-button > .input-style:first-child {
+        margin-bottom: 20px;
+    }
+
     .passward-inner > .input-style {
-        margin-bottom: 48px;
+        margin-bottom: 30px;
     }
 
     .input-style {
@@ -214,11 +231,7 @@ input::-moz-placeholder {
     .passward-bot {
         display: flex;
         justify-content: space-between;
-        padding: 23px 0 227px;
-    }
-
-    .passward-bot > .input-style {
-        width: 49%;
+        padding: 18px 0 0;
     }
     
     footer {
@@ -226,137 +239,3 @@ input::-moz-placeholder {
     }
 
 }
-
-/* @media all and (max-width:1500px){
-    header{
-        height: 60px;
-    }
-    .header-left{
-        height: 60px;
-    }
-    header div.header-right > div.userMenu{
-        height: 60px;
-    }
-    div.h-inner{
-        width: 100%;
-        max-width: 1160px;
-        padding: 0;
-    }
-    header .logo{
-        margin-right: 50px;
-    }
-    .footer > div {
-        width: 100%;
-    }
-    header nav ul li a{
-        font-size: 12px;
-    }
-    header .logo img{
-        width: 72px;
-    }
-    header nav .userMenu .user img{
-        width: 15px;
-    }
-    header nav .userMenu .ham img{
-        width: 15px;
-    }
-    footer > div{
-        max-width: 875px;
-    }
-    footer > div .logo{
-        width: 73px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 20px;
-    }
-    footer > div div:nth-of-type(2) div a{
-        margin-top: 0;
-        font-size: 11px;
-    }
-    footer > div div:nth-of-type(2) div{
-        margin-bottom: 15px;
-    }
-    footer > div div:nth-of-type(2) ul li{
-        font-size: 10px;
-    }
-    footer > div div:nth-of-type(2) ul li > a{
-        font-size: 10px;
-    }
-    footer > div div:nth-of-type(2) address{
-        font-size: 10px;
-        margin-top: 30px;
-    }
-    footer > div div:nth-of-type(3) a{
-    }
-    footer > div div:nth-of-type(3) a.blog{
-        width: 24px;
-        height: 15px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    footer > div div:nth-of-type(3) a.facebook{
-        width: 24px;
-        height: 15px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    footer > div div:nth-of-type(3) a.insta{
-        width: 24px;
-        height: 15px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    footer > div div:nth-of-type(3) a.youtube{
-        width: 24px;
-        height: 15px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    .passward-inner{
-        min-width: auto;
-        max-width: 264px;
-        width: 100%;
-        padding-top: 0;
-    }
-    .passward-inner > h2{
-        font-size: 24px;
-        padding-top: 82px;
-    }
-    .passward-inner > p{
-        padding: 10px 0 25px 0;
-        font-size: 11px;
-        line-height: 18px;
-    }
-    .passward-inner > .input-style{
-        height: 36px;
-        border-radius: 5px;
-        margin-bottom: 25px;
-    }
-    .input-style{
-        height: 36px;
-        border-radius: 5px;
-    }
-    .input-style > input{
-        font-size: 11px;
-        padding: 0 10px;
-    }
-    .input-style.white > input{
-        font-size: 11px;
-        letter-spacing: 0;
-    }
-    .passward-bot{
-        padding: 17px 0 132px 0;
-    }
-    .passward-bot > .input-style{
-        height: 36px;
-        width: 130px;
-    }
-    .passward-button > .input-style:first-child{
-        margin-bottom: 7px;
-    }
-} */

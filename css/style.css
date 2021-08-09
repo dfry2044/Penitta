@@ -63,6 +63,7 @@ header.active {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
+    padding-top: 113px;
 }
 .main-txt h3 {
     font-size: 52px;
@@ -984,6 +985,7 @@ header.active {
 
     .main-top {
         justify-content: space-between;
+        padding-top: 0;
     }
 
     .main-txt{

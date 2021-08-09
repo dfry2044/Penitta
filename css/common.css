@@ -115,7 +115,7 @@ header .header-notice i{
     margin-right: 10px;
 }
 
-header .header-notice p{
+header .header-notice a{
     font-size: 14px;
     font-family: "Noto Sans Kr";
     font-weight: 300;
