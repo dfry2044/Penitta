@@ -51,7 +51,7 @@
   }
 
 .template-inner {
-    max-width: 1500px;
+    max-width: 1125px;
     width: 100%;
     margin: 0 auto;
 }
@@ -199,7 +199,7 @@ input::-ms-clear {display:none;}
 
 .t-list_item > .t-list-box {
     width: 100%;
-    height: 352px;
+    height: 265px;
     position: relative;
 }
 /*  new 박스  */
@@ -344,6 +344,8 @@ padding: 30px 0 158px 0;
     height:267px;
     margin-bottom:20px;
 }
+
+/*0807수정*/
 .preview-content a{
     font-size: 16px;
     font-family: "Noto Sans Kr";
@@ -362,9 +364,6 @@ padding: 30px 0 158px 0;
 @media all and (max-width: 1920px){
     .template-inner {
         max-width: 1125px;
-    }
-    .t-list_item > .t-list-box{
-    height: 265px;
     }
     .t-list-box::before{
         width: 33px;
@@ -452,22 +451,8 @@ padding: 30px 0 158px 0;
     }
 }
 @media (max-width: 1500px) {
-    .t-list_item > .t-list-box {
-        height: 197.5px;
-    }
-    .template-inner{
-        width: 100%;
-        max-width: 880px;
-    }
     .t-list > .t-list_item{
-        /* width: calc(100% / 4 - 10px); */
         margin-bottom: 10px;
-    }
-    .template-inner > h2{
-        width: 100%;
-        max-width: 880px;
-        font-size: 20px;
-        padding: 87px 0 50px 0;
     }
     #t-js-btn-wrap{
         padding: 40px 0 80px 0;

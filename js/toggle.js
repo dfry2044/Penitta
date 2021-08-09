@@ -13,9 +13,18 @@ var etcTooltipBtn = $(".card-etc");
 var etcTooltip = $(".card-etc-tooltip");
 
 $(document).on('click',function(e){
-    if(e.target.parentElement.classList.value == `card-etc` || e.target.parentElement.classList.value == "card-etc ico-trash"){
+    console.log(e.target.classList.value);
+    if( 
+        e.target.parentElement.classList.value == `card-etc` || 
+        e.target.parentElement.classList.value == "card-etc ico-trash"
+        ){
         e.target.parentElement.nextElementSibling.classList.add("show")
-    }else{
+    }else if(
+        e.target.classList.value == "card-etc"
+    ){
+        e.target.nextElementSibling.classList.add("show")
+    }
+    else{
         etcTooltip.removeClass("show");
     }
 })

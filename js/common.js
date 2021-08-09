@@ -147,7 +147,6 @@ var MY_PAGE2    = '../sub(html)/mypage.html?index=';
 var NC_PW       = "login(html)/changenickname&pw.html?index=";
 var NC_PW2       = "../login(html)/changenickname&pw.html?index=";
 
-
 function setChilValue(index){
     var url = window.location.href;
     url = url.split("/");
@@ -155,7 +154,8 @@ function setChilValue(index){
     
     if(
         url == "sub(html)" ||
-        url == "login(html)"
+        url == "login(html)" ||
+        url == "etc(html)"
     ){
         var href = window.location.href;
         var thisfilefullname = document.URL.substring(document.URL.lastIndexOf("/") + 1, document.URL.length);

@@ -34,9 +34,13 @@ $(window).scroll(function () {
 
 //c2 swiper
 var swiper = new Swiper(".mySwiper2", {
+    navigation: {
+        nextEl: ".swiper-button-next3",
+        prevEl: ".swiper-button-prev3",
+      },
     slidesPerView: 3,
     slidesPerGroup: 3,
-    spaceBetween: 36,
+    spaceBetween: 38,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
@@ -51,7 +55,8 @@ var swiper = new Swiper(".mySwiper2", {
             spaceBetween: 27,
         },
         1024: {
-            slidesPerView: 'auto',
+            slidesPerView: '2',
+            slidesPerGroup: 2,
             freeMode: true,
             spaceBetween: 20,
         },
