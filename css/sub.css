@@ -243,7 +243,6 @@
 .my-card .card-bottom .card-down{
     width: 20px;
     height: 15px;
-    margin-right: 20px;
 }
 .my-card .card-bottom .card-down i{
     width: 20px;
@@ -853,7 +852,6 @@ ul.my-comment-inner li .preview-head {
     .my-card .card-bottom .card-down {
         width: 20px;
         height: 15px;
-        margin-right: 9px;
     }
     .ico-group > button {
         font-size: 11.66px;

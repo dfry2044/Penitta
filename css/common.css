@@ -21,6 +21,7 @@ header {
     border-bottom: #ebe9e9 solid 1px;
 }
 
+
 /* 0729 수정 */
 div.h-inner {
     width: 100%;
@@ -2630,6 +2631,12 @@ textarea::placeholder {
 
 @media (max-width: 1024px){
     header {
+        height: 46px;
+    }
+    .header-left.active {
+        height: 46px;
+    }
+    .ani_fixed {
         height: 46px;
     }
     .h-inner {

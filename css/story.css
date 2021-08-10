@@ -260,6 +260,7 @@
 .search_container_wrap {
     display: flex;
     justify-content: space-between;
+    padding-top: 70px;
 }
 
 .search_container {

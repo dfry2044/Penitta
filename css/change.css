@@ -287,7 +287,7 @@ padding: 70px 0 35px;
 }
 
 @media all and (max-width:1024px){
-    header, footer {
+    .result-pop header , .result-pop footer {
         display: none;
     }
     .join-back {
