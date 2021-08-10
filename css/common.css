@@ -1950,7 +1950,7 @@ textarea::placeholder {
 
 .edit-button-list button {
     background-color: transparent;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     font-family: 'Noto Sans KR';
     outline: none;
@@ -2009,7 +2009,7 @@ textarea::placeholder {
         max-width: 1125px;
         padding-bottom: 54px;
     }
- /*
+ 
    .footer-right {
         margin-top: 38px;
     }
@@ -2019,7 +2019,7 @@ textarea::placeholder {
     }
     
     .footer-style > div > a {
-        font-size: 15px;
+        font-size: 16px;
     }
     .footer-style > div > a:first-child {
         padding-right: 24px;
@@ -2028,7 +2028,7 @@ textarea::placeholder {
         padding-top: 10px;
     }
     .footer-left > div li {
-        font-size: 11px;
+        font-size: 14px;
     }
     
     .footer-left > div li::after{
@@ -2037,7 +2037,7 @@ textarea::placeholder {
     }
     
     .footer-left > p {
-        font-size: 11.25px;
+        font-size: 13.25px;
         padding: 20px 0 31px;
     }
     
@@ -2045,13 +2045,15 @@ textarea::placeholder {
         width: 108px;
         height: 31px;
     }
-    
+
+
+    /*
     .footer-right {
         width: 121px;
     }
     
     
-    .blog > i {
+     .blog > i {
         display: block;
         width: 21px;
         height: 18px;
@@ -2077,12 +2079,12 @@ textarea::placeholder {
         width: 20px;
         height: 15px;
         background: url(../images/icon/ico-footer-youtube.png) no-repeat center / cover;
-    }
+    } */
 
 
 
 
-    */
+   
     /* share-popup */
 
     .share-popup-inner {
@@ -2460,7 +2462,7 @@ textarea::placeholder {
     }
 
     .comment-box p {
-        font-size: 11.5px;
+        font-size: 12.5px;
         margin-bottom: 12px;
     }
 
@@ -2512,7 +2514,7 @@ textarea::placeholder {
     }
 
     .comment-list-top > p {
-        font-size: 11.5px;
+        font-size: 12.5px;
     }
 
     .popup-comment-result {
@@ -2614,7 +2616,11 @@ textarea::placeholder {
     }
 } */
 
-
+@media (max-width: 1500px) {
+    .footer-inner {
+        padding: 0 20px;
+    }
+}
 
 @media (max-width: 1400px){
     .h-inner {

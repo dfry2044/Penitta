@@ -110,7 +110,7 @@
     position: relative;
 }
 .make-category-select .story-select-top{
-    font-size: 15px;
+    font-size: 17px;
     font-family: "Noto Sans Kr";
     font-weight:400;
     color: #000;
@@ -532,11 +532,12 @@ padding: 30px 0 158px 0;
 .name_search {
     padding-top: 0;
 }
+
+.story-search-wrap .s-input-search {
+    width: 77.6%;
+}
+
 @media all and (max-width: 1920px){
-    div.h-inner{
-        max-width:1606px;
-        padding: 0;
-    }
     .template-inner {
         max-width: 1125px;
     }
@@ -637,6 +638,9 @@ padding: 30px 0 158px 0;
     .name_search {
         padding-top: 0 ;
     }
+    .story-search-wrap .s-input-search {
+        width: 82.6%;
+    }
 }
 @media (max-width: 1500px) {
     .template-inner{
@@ -649,7 +653,6 @@ padding: 30px 0 158px 0;
     }
     .template-inner > h2{
         width: 100%;
-        max-width: 880px;
         font-size: 20px;
         padding: 87px 0 50px 0;
     }
@@ -686,5 +689,22 @@ padding: 30px 0 158px 0;
     .template-inner > h2{
         padding: 30px 0 23px 0;
         line-height: 1.5;
+    }
+    .story-search-wrap .s-input-search {
+        width: 84.6%;
+        padding-right: 36px;
+        font-size: 15px;
+    }
+    .story-search-wrap .input-stlye > span {
+        right: 12%;
+    }
+    .make-category-select {
+        min-width: 80px;
+    }
+}
+
+@media all and (max-width:1024px) {
+    .story-search-wrap .s-input-search {
+        width: 65.6%;
     }
 }

@@ -722,7 +722,7 @@ header.active {
     text-align: center;
 }
 .c6-text h3{
-    font-size: 38px;
+    font-size: 34px;
     font-family: "Noto Sans Kr";
     font-weight: 300;
     color: #242424;
@@ -839,6 +839,17 @@ header.active {
         padding-top: 0;
     }
 
+    .main-content-txt h3 {
+        font-size: 16px;
+    }
+    .main-tag-txt {
+        padding-top: 8px;
+    }
+
+    .main-tag-txt span {
+        font-size: 12px;
+    }
+
     .main-txt{
         padding-top: 37px;
     }
@@ -857,6 +868,9 @@ header.active {
         line-height: 20px;
         padding-bottom: 29px;
     }
+    .main-content-txt h3 {
+    font-size: 16px;
+}
     .main-button {
         padding: 0 25px 41px 0;
     }
@@ -899,6 +913,7 @@ header.active {
         width: calc(100% - 7em);
         margin: 0 auto;
         line-height: 16.67px;
+        padding-top: 8px;
     }
 
     .main-list-two .main-content-txt p {

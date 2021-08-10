@@ -13,7 +13,6 @@ var etcTooltipBtn = $(".card-etc");
 var etcTooltip = $(".card-etc-tooltip");
 
 $(document).on('click',function(e){
-    console.log(e.target.classList.value);
     if( 
         e.target.parentElement.classList.value == `card-etc` || 
         e.target.parentElement.classList.value == "card-etc ico-trash"

@@ -368,6 +368,7 @@ body{
             align-items: center;
     position: relative;
     margin-right: 0.938vw;
+    border: none;
 }
 .make-header .make-category-select.mo{
     display: none;
@@ -2827,7 +2828,7 @@ header .mo{
 }
 @media all and (max-width:1024px){
     header{
-        height: 8vw
+        height: 50px
     }
     .pc{
         display: none;
@@ -2878,23 +2879,23 @@ header .mo{
         display: block;
     }
     .mo-bgm-btn{
-        width: 4.923vw;
-        height: 5.231vw;
+        width: 18px;
+        height: 20px;
     }
     .mo-bgm-btn i{background-image: url("../images/icon/ico-bgm-gray-m.png");}
     .mo-play-btn{
-        width: 5.538vw;
-        height: 5.5555vw;
+        width: 20px;
+        height: 20px;
     }
     .mo-play-btn i{background-image: url("../images/icon/ico-play-gray-m.png");}
     .mo-download-btn{
-        width: 5.231vw;
-        height: 5.231vw;
+        width: 20px;
+        height: 20px;
     }
     .mo-download-btn i{background-image: url("../images/icon/ico-download-gray-m.png");}
     .mo-upload-btn{
-        width: 5.538vw;
-        height: 5.231vw;
+        width: 20px;
+        height: 20px;
     }
     .mo-upload-btn i{background-image: url("../images/icon/ico-upload-orange-m.png");}
 

@@ -7,12 +7,12 @@ $('.login_close img').click(function(){
 });
 
 $('.userMenu').mouseover(function(){
-        $('.no-login-menu').addClass('show');
+    $('.no-login-menu').addClass('show');
 });
 
 
 $('.userMenu').mouseout(function(){
-        $('.no-login-menu').removeClass('show');
+    $('.no-login-menu').removeClass('show');
 });
 
 $('.popup-button').click("click focus", function () {
@@ -251,3 +251,15 @@ $(document).ready(function () {
             break;
     }
 });
+
+//var = sct;
+
+//$('.select-content').mouseover(function(){
+//    sct = $(this).closest(".make-editer-tab-content").index();
+//    $(".make-editer-tab-content").find('.select-content').eq(sct).addClass("show");
+//});
+
+//$('.select-content').mouseover(function(){
+//    sct = $(this).closest(".make-editer-tab-content").index();
+//    $(".make-editer-tab-content").find('.select-content').eq(sct).removeClass("show");
+//});

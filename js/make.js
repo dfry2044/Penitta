@@ -29,6 +29,16 @@ var sizeSelectTitle = $(".size-choice-select .select-top span");
 
 var expanded = false;
 
+var selectKindArray = [
+     "category"
+    ,"bgm"
+    ,"voice"
+    ,"speed"
+    ,"font"
+    ,"weight"
+    ,"size"
+]
+
 function showSelect(kind){
     if(!expanded){
         expanded = true;
@@ -68,6 +78,27 @@ function showSelect(kind){
         }
     }
 }
+
+function hideSelect(target){
+    var classString = target.parentElement.classList.value;
+
+    selectKindArray.forEach(function(el,index,arr2){
+        console.log(
+            el
+        )
+        if(
+            target.parentElement.classList.value == el
+        ){
+            console.log(target);
+        }
+    })
+}
+
+$(document).on('click',function(e){
+    var target = e.target;
+
+    hideSelect(target);
+})
 
 categorySelect.click(function(){
     showSelect("category");

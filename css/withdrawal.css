@@ -180,7 +180,9 @@ input::-ms-clear {display:none;} /*pc에서 보여지는 삭제는 안보이게 
     display: none;
 }
 
+/*
 @media all and (max-width: 1920px) {
+    
     .withdrawal_inner {
         width: 420px;
         height: 646px;
@@ -234,6 +236,7 @@ input::-ms-clear {display:none;} /*pc에서 보여지는 삭제는 안보이게 
         font-size: 12px;
     }
 }
+*/
 
 @media all and (max-width: 1024px) {
     header {
