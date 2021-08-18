@@ -137,7 +137,7 @@
        text-overflow: ellipsis;
     white-space: nowrap;
 }
-.make-category-select .story-select-content{
+.make-category-select .qna-select-content{
     position: absolute;
     top: -6px;
     left: -27px;
@@ -158,12 +158,12 @@
     z-index: 50000;
     overflow: hidden;
 }
-.make-category-select .story-select-content ul{
+.make-category-select .qna-select-content ul{
     width: 100%;
     top: 0;
     z-index: 500;
 }
-.make-category-select .story-select-content li button{
+.make-category-select .qna-select-content li button{
     font-size: 16px;
     font-family: "Noto Sans Kr";
     font-weight: 400;
@@ -172,15 +172,15 @@
     -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
-.make-category-select.show .story-select-content {
+.make-category-select.show .qna-select-content {
     opacity: 1;
     visibility: visible;
 }
-.make-category-select .story-select-content li:hover{
+.make-category-select .qna-select-content li:hover{
     opacity: 1;
     background-color: #f7f7f7;
 }
-.make-category-select .story-select-content li:first-child{
+.make-category-select .qna-select-content li:first-child{
     padding-top: 6px;
 }
 .make-category-select button{
@@ -199,10 +199,10 @@
     padding: 10px 6px;
     position: relative;
 }
-.make-category-select .story-select-content li:last-child {
+.make-category-select .qna-select-content li:last-child {
     padding-bottom: 6px;
 }
-.make-category-select .story-select-content li:last-child button::after{
+.make-category-select .qna-select-content li:last-child button::after{
     display: none;
 }
 
@@ -229,7 +229,7 @@
     padding: 0;
 }
 
-.story-select-content button {
+.qna-select-content button {
 padding: 13px 25px;
 }
 
@@ -241,6 +241,9 @@ padding: 13px 25px;
     background-color: #f1f1f1;
 }
 
+.c4-react > button::before {
+ margin-right: 3px;
+}
   /*  */
 
 .t-input-search {
@@ -302,16 +305,8 @@ input::-ms-clear {display:none;}
 .input-stlye {
     position:relative;
 }
-.input-stlye > span {
-    position:absolute;
-    bottom: 50%;
-    transform: translateY(50%);
-    right:6%;
-    width:24px; 
-    height:25px;
-    background:url(../images/icon/ico-ts-esc.png) no-repeat 0 0 / cover; 
-    text-indent:-9999px;
-    cursor: pointer;
+.story-search-wrap .input-stlye > span {
+    right:8.4%;
 }
 
 .t-search-right > button {
@@ -541,6 +536,9 @@ padding: 30px 0 158px 0;
     .template-inner {
         max-width: 1125px;
     }
+    .story-search-wrap .input-stlye > span {
+        right: 6.4%;
+    }
     .s-input-search {
         font-size: 13.5px;
     }
@@ -609,21 +607,21 @@ padding: 30px 0 158px 0;
         width: 80.8%;
         padding-right: 36px;
     }
-    .make-category-select .story-select-content{
+    .make-category-select .qna-select-content{
         top: 1px;
         left: -20px;
         width: 108px;
     }
-    .story-select-content button {
+    .qna-select-content button {
         padding: 10px 20px;
     }
-    .make-category-select .story-select-content li button {
+    .make-category-select .qna-select-content li button {
         font-size: 12px;
     }
-    .make-category-select .story-select-content li:first-child {
+    .make-category-select .qna-select-content li:first-child {
         padding-top: 5px;
     }
-    .make-category-select .story-select-content li:last-child {
+    .make-category-select .qna-select-content li:last-child {
         padding-bottom: 5px;
     }
     .story-select-top::after {
@@ -643,6 +641,15 @@ padding: 30px 0 158px 0;
     }
 }
 @media (max-width: 1500px) {
+    .list_item > div > div > button {
+        margin-right: 5px;
+    }
+    .list_item > div > div > button:nth-child(2) {
+        margin-right: 5px;
+    }
+    .c4-react > button:last-of-type {
+        margin-right: 0;
+    }
     .template-inner{
         width: 100%;
         max-width: 880px;
@@ -703,7 +710,7 @@ padding: 30px 0 158px 0;
         min-width: 65px;
     }
     .story-search-wrap .s-input-search {
-        width: 68.6%;
+        width: calc(100% - 95px);
         padding-left: 12px;
         font-size: 14px;
     }

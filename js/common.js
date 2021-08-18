@@ -34,6 +34,7 @@ var templatePreviewContent = $(".template-preview");
 var storyicoRotationStart = $(".story-select-top");
 var storyico = $('.story-select-ico');
 var storyicoRotationEnd = $(".story-select-content");
+var storyicoRotationEnd_div = $(".qna-select-inner div");
 
 templateItem.click(function(){
     templatePreviewContent.addClass("show");
@@ -55,6 +56,9 @@ storyico.click(function(){
     storyico.addClass("active");
 })
 storyico.click(function(){
+    storyico.removeClass("active");
+})
+storyicoRotationEnd_div.click(function(){
     storyico.removeClass("active");
 })
 

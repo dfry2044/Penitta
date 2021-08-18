@@ -14,7 +14,7 @@
 
 .my-card {
     padding-top: 44px;
-    padding-bottom: 222px;
+    padding-bottom: 205px;
 }
 
 .change-nickname-inner {
@@ -286,6 +286,18 @@ padding: 70px 0 35px;
     height: 15px;
 }
 
+.go-withdrawal {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: right;
+    padding-bottom: 22px;
+    color: #a2a2a2;
+}
+.my-card {
+    border-bottom: none;
+}
 @media all and (max-width:1024px){
     .result-pop header , .result-pop footer {
         display: none;
@@ -351,6 +363,9 @@ padding: 70px 0 35px;
     .done-input-style > a{
         font-size: 15px;
     }
+    .join_success header, .join_success footer {
+        display: none;
+    }
     body.done{
         height: 100vh;
     }
@@ -359,5 +374,8 @@ padding: 70px 0 35px;
         height: calc(100% - 60px - 295px);
     }
     body.done .change-done-wrap{
+    }
+    .go-withdrawal {
+        max-width: 333px;
     }
 }

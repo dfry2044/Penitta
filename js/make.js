@@ -1,6 +1,7 @@
 // select
 var categorySelect = $(".make-category-select");
 var categorySelectItem = categorySelect.find(".select-content li");
+var categorySelectItem_div = categorySelect.find(".select-content .qna-select-inner div");
 var categorySelectTitle = categorySelect.find(".select-top span");
 
 var bgmSelect = $(".bgm-choice-select .bgm-select");
@@ -28,6 +29,7 @@ var sizeSelectItem = $(".size-choice-select .select-content li");
 var sizeSelectTitle = $(".size-choice-select .select-top span");
 
 var expanded = false;
+var thisOpenSelect;
 
 var selectKindArray = [
      "category"
@@ -40,6 +42,7 @@ var selectKindArray = [
 ]
 
 function showSelect(kind){
+    
     if(!expanded){
         expanded = true;
         
@@ -79,32 +82,18 @@ function showSelect(kind){
     }
 }
 
-function hideSelect(target){
-    var classString = target.parentElement.classList.value;
-
-    selectKindArray.forEach(function(el,index,arr2){
-        console.log(
-            el
-        )
-        if(
-            target.parentElement.classList.value == el
-        ){
-            console.log(target);
-        }
-    })
-}
-
-$(document).on('click',function(e){
-    var target = e.target;
-
-    hideSelect(target);
-})
-
 categorySelect.click(function(){
     showSelect("category");
 })
 categorySelectItem.click(function(){
     var thisText = $(this).text();
+    
+    categorySelectTitle.text(thisText);
+})
+
+categorySelectItem_div.click(function(){
+    var thisText = $(this).text();
+    
     categorySelectTitle.text(thisText);
 })
 
@@ -154,6 +143,10 @@ sizeSelect.click(function(){
 sizeSelectItem.click(function(){
     var thisText = $(this).text();
     sizeSelectTitle.text(thisText);
+})
+
+$(".select-content").mouseleave(function(){
+    $(this).parent(".select").removeClass("show");
 })
 
 // input-hover
@@ -558,69 +551,3 @@ var mainEditer = $(".make-editer");
 var mainEditerW = mainEditer.innerWidth();
 var header = $("header");
 var headerH = header.innerHeight();
-
-// if($(".make-canvas").innerWidth() - winW - mainListW - mainEditerW -)
-// if(winW >= 1700){
-//     mainCanvas.css({
-//         width: "900px",
-//         height: "900px"
-//     })
-// }else{
-//     mainCanvas.css({
-//         width: winW - mainListW - mainEditerW - 100,
-//         height: winW - mainListW - mainEditerW - 100
-//     })
-// }
-
-// if(winH <= 880){
-//     mainCanvas.css({
-//         width: winH - headerH - 65 - 100,
-//         height: winH - headerH - 65 - 100
-//     })
-// }
-
-// $(window).resize(function(){
-//     mainCanvasWidth = mainCanvas.innerWidth();
-//     mainCanvasHeight = mainCanvas.innerHeight();
-//     winW = $(window).innerWidth();
-//     winH = $(window).innerHeight();
-
-
-    
-//     if(winW >= 1700){
-//         return false;
-//     }else{
-//         if(winW - mainListW - mainEditerW >= 100){
-//             mainCanvas.css({
-//                 width: winW - mainListW - mainEditerW - 100,
-//                 height: winW - mainListW - mainEditerW - 100
-//             })
-//         }else{
-//             return false;
-//         }
-//     }
-    
-//     if(winH >= 1080){
-//         return false;
-//     }else{
-//         if(winH - headerH - 65 >= 100){
-//             mainCanvas.css({
-//                 width: winW - mainListW - mainEditerW - 100,
-//                 height: winW - mainListW - mainEditerW - 100
-//             })
-//             if(winW - mainListW - mainEditerW >= 100){
-//                 mainCanvas.css({
-//                     width: winW - mainListW - mainEditerW - 100,
-//                     height: winW - mainListW - mainEditerW - 100
-//                 })
-//             }else{
-//                 mainCanvas.css({
-//                     width: winH - headerH - 65 - 100,
-//                     height: winH - headerH - 65 - 100
-//                 })
-//             }
-//         }else{
-//             return false;
-//         }
-//     }
-// })

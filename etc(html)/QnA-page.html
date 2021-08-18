@@ -78,6 +78,27 @@
         <div class="my-tab QnA-tab">
             <div class="my-tab-inner my-notice-inner">
                 <p>Q&A에서 <br class="mo">궁금하신 사항을 확인해 보세요.</p>
+                <div class="input-stlye">
+                    <div class="make-category-select">
+                        <button class="story-select-top select-top">
+                            <span>전체</span>
+                            <i class="story-select-ico"></i>
+                        </button>
+                        <div class="qna-select-content select-content">
+                            <div class="qna-select-inner">
+                                <div>
+                                    <button>전체</button>
+                                </div>
+                                <div><button>제작</button></div>
+                                <div><button>가입</button></div>
+                                <div><button>음성</button></div>
+                                <div><button>결제</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="s-input-search" type="text" placeholder="검색어를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='검색어를 입력하세요.'" style="color: #a5a5a5;">
+                    <i class="t-search-ico"></i>
+                </div>
                 <ul>
                     <li class="active">
                         <button>
@@ -863,10 +884,14 @@
                     </div>
                     <button class="card-more-btn">
                         더보기 <span>(12/250)</span> <i></i>
-                    </button>                    
+                    </button>                
                 </div>
             </div>
         </div>
+        
+        <button class="card-more-btn qna-btn">
+            <i></i> <span>문의하기</span>
+        </button>    
     </div>
 
     <footer>
@@ -1032,7 +1057,31 @@
             </button>
         </div>
     </div>
+    <div class="qna-popup">
+        <div class="qna-popup-inner">
+            <div class="qna-esc">
+                <i></i>
+            </div>
+            <h2>문의하기</h2>
+            <div class="qna-input-style">
+                <input class="qna-input  name" type="text" placeholder="이름" onfocus="this.placeholder=''" onblur="this.placeholder='이름'" style="color: rgb(0, 0, 0);">
+            </div>
+            <div class="qna-input-style">
+                <input class="qna-input email" type="text" placeholder="이메일 주소" onfocus="this.placeholder=''" onblur="this.placeholder='이메일 주소'" style="color: rgb(0, 0, 0);">
+            </div>
+            <div class="qna-input-style">
+                <input class="qna-input head" type="text" placeholder="제목" onfocus="this.placeholder=''" onblur="this.placeholder='제목'" style="color: rgb(0, 0, 0);">
+            </div>
+            <div class="qna-input-txtstyle">
+                <textarea name="qna-box" id="qna-box" placeholder="무엇을 도와 드릴까요?"></textarea>
+            </div>
+            <div class="qna-result-button">
+                <button>보내기</button>
+            </div>
+        </div>
+    </div>
     <script src="../js/toggle.js"></script>
+    <script src="../js/make.js"></script>
     <script src="../js/tabMenu.js"></script>
     <script src="../js/story.js"></script>
     <script src="../js/category.js"></script>

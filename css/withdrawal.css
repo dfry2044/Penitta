@@ -242,6 +242,9 @@ input::-ms-clear {display:none;} /*pc에서 보여지는 삭제는 안보이게 
     header {
         display: none;
     }
+    .withdrawal_wrap {
+        padding: 0;
+    }
     .back-icon {
         text-align: start;
     }

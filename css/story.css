@@ -260,7 +260,7 @@
 .search_container_wrap {
     display: flex;
     justify-content: space-between;
-    padding-top: 70px;
+    padding-top: 111px;
 }
 
 .search_container {
@@ -628,6 +628,10 @@ padding: 13px 25px;
     color: #8E8E8E;
 }
 
+.c4-react > button::before {
+    margin-right: 5px;
+}
+
 .list_item > div > div > button:first-child{
     margin-right: 9px;
 }
@@ -860,6 +864,9 @@ padding: 13px 25px;
         max-width: 1125px;
         padding: 56px 0 38px;
     }
+    .search_container_wrap {
+        padding-top: 74px;
+    }
     .c2-swiper-inner{
         max-width: 1125px;
     }
@@ -1022,6 +1029,9 @@ padding: 13px 25px;
     .c4-react > button{
         font-size: 9.75px;
     }
+    .c4-react > button::before {
+        margin-right: 0;
+    }
     .list_item > div > div > button:first-child::before{
         background-size: 24px 14px;
     }
@@ -1055,18 +1065,19 @@ padding: 13px 25px;
     .c6 {
         padding: 46px 0 54px;
     }
-    .c6-text h3 {
-        font-size: 18.75px;
+     .c6-text h3 {
+        font-size: 26px;
         margin-bottom: 10px;
     }
     .c6-text p {
-        font-size: 12.55px;
+        font-size: 15px;
         margin-bottom: 22px;
     }
     .c6-text a {
-        font-size: 12px;
-        width: 145px;
-        height: 36px;
+        font-size: 14px;
+        width: 162px;
+        height: 44px;
+        font-weight: 500;
         border-radius: 25px;
         box-shadow: 0 10px 10px 0 rgb(0 0 0 / 3%);
     }

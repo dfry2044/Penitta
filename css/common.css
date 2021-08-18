@@ -209,9 +209,9 @@ footer {
     background-color: #141414;
 }
 
+/* 0812 수정 */
 footer a, footer p, footer li {
     color: #fff;
-    letter-spacing: -1px;
 }
 
 .footer-inner {
@@ -980,6 +980,59 @@ header div.header-right > div.userMenu {
     display: flex;
 }
 
+/*login-menu 0818추가*/
+
+.login-menu > li i {
+    margin-right: 10px;
+}
+.login-menu > li:nth-child(2) i {
+    width: 22px;
+    height: 23px;
+    background: url(../images/icon/ico-login-icon1.png) no-repeat center / cover;
+}
+
+.login-menu > li:nth-child(3) i {
+    width: 18px;
+    height: 23px;
+    background: url(../images/icon/ico-login-icon2.png) no-repeat center / cover;
+}
+
+.login-menu > li:nth-child(4) i {
+    width: 22px;
+    height: 19px;
+    background: url(../images/icon/ico-login-icon3.png) no-repeat center / cover;
+}
+
+.login-menu > li:nth-child(5) i {
+    width: 22px;
+    height: 25px;
+    background: url(../images/icon/ico-login-icon4.png) no-repeat center / cover;
+}
+
+.login-menu > li:nth-child(6) i {
+    width: 24px;
+    height: 24px;
+    background: url(../images/icon/ico-login-icon5.png) no-repeat center / cover;
+}
+
+.login-menu > li:nth-child(7) i {
+    width: 25px;
+    height: 22px;
+    background: url(../images/icon/ico-login-icon6.png) no-repeat center / cover;
+}
+
+.login-menu > li:nth-child(8) i {
+    width: 23px;
+    height: 22px;
+    background: url(../images/icon/ico-login-icon7.png) no-repeat center / cover;
+}
+
+.userMenu > .login-menu > li:first-child > a {
+    padding-left: 13px;
+}
+
+/*//login-menu 0818추가*/
+
 /* menu - mobile */
 .menu{ 
     position: fixed;
@@ -1744,20 +1797,20 @@ textarea::placeholder {
     align-items: center;
 }
 
-.comment-camera i {
-    display: block;
+.comment-camera button {
     width: 21px;
     height: 18px;
     background: url(../images/icon/ico-comment-camera.png) no-repeat center / cover;
     margin-right: 13px;
+    text-indent: -9999999999px;
 }
 
-.comment-pic i {
-    display: block;
+.comment-pic button {
     width: 23px;
     height: 19px;
     background: url(../images/icon/ico-comment-pic.png) no-repeat center / cover;
     margin-right: 18px;
+    text-indent: -9999999999px;
 }
 
 .comment-button {
@@ -1985,6 +2038,13 @@ textarea::placeholder {
 
 
 @media all and (max-width: 1920px){
+        /* 0812 수정 */
+    div.h-inner {
+        width: 100%;
+        height: 100%;
+        max-width: 1125px;
+        margin: 0 auto;
+    }
     header nav ul li a {
         font-size: 15px;
         white-space: nowrap;
@@ -2619,7 +2679,7 @@ textarea::placeholder {
 
 @media (max-width: 1500px) {
     .footer-inner {
-        padding: 0 20px;
+        padding: 0 20px 54px 20px;
     }
 }
 

@@ -1061,7 +1061,7 @@ body{
     height: max-content;
 }
 .voice-editer{
-    padding:20px 28px;
+    padding:18px 28px;
 }
 .voice-title{
     padding-bottom: 12px;
@@ -2851,7 +2851,7 @@ header .mo{
         display:flex !important;
     }
     header h1 a img{
-        width: 20vw;
+        width: 74px;
     }
     header .mo ul{
         display: -webkit-box;
@@ -2862,10 +2862,10 @@ header .mo{
                 align-items: center;
     }
     header .mo li{
-        margin-left: 4vw!important;
+        margin-left: 16px !important;
     }
     header .mo li:last-child{
-        margin-left: 8.308vw !important;
+        margin-left: 32px !important;
     }
     header button{
         position: relative;
@@ -2920,7 +2920,7 @@ header .mo{
     }
     .make-main{
         grid-template-columns: none;
-        grid-template-rows: 22.155vw calc(100vh - 22.155vw - 27vw - 4.923vw) 22.400vw;
+        grid-template-rows: 82px calc(100vh - 50px - 82px - 85px) 85px;
     }
     .make-main > *:nth-child(1){
         -ms-grid-row:1;
@@ -2936,7 +2936,7 @@ header .mo{
     }
     .make-list{
         width: 100vw;
-        padding: 2.462vw 4.308vw;
+        padding: 7px 16px;
         height: -webkit-max-content;
         height: -moz-max-content;
         height: max-content;
@@ -2952,7 +2952,7 @@ header .mo{
         bottom: 0;
     }
     .swiper-container{
-        width: calc(100% - 18.462vw);
+        width: calc(100% - 72px);
         height: 100%;
         margin: 0;
     }
@@ -2968,15 +2968,15 @@ header .mo{
     }
     .make-list ul .make-list-item{
         height: 100% !important;
-        width: 17.231vw !important;
+        width: 65px !important;
         margin: 0;
     }
     .make-list ul .make-list-item img{
         border-radius: 8px;
     }
     .make-list-item-addBtn{
-        width:17.231vw;
-        height: 17.231vw;
+        width: 64px;
+        height: 64px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2986,12 +2986,12 @@ header .mo{
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        border: 2px dashed #979595;
-        border-radius: 8px;
+        border: 1px dashed #979595;
+        border-radius: 4px;
     }
     .make-list-item-addBtn i{
-        width: 4vw;
-        height: 4vw;
+        width: 15px;
+        height: 15px;
         background: url("../images/icon/ico-plus-gray-m.png") no-repeat center / cover;
     }
     .make-list-mo{
@@ -3003,7 +3003,7 @@ header .mo{
                 justify-content: space-between;
     }
     .make-editer{
-        height: 22.400vw;
+        height: 84px;
         top: auto;
         right:auto;
         left:0;
@@ -3018,7 +3018,7 @@ header .mo{
     }
     .make-canvas{
         width: 100vw;
-        height: calc(100vh - 22.400vw);
+        height: calc(100vh - 84px);
         height: 100%;
     }
     .wrap{
@@ -3124,8 +3124,8 @@ header .mo{
         margin-left: 6px;
     }
     #nondisclosure + label i{
-        width:1.953vw;
-        height: 1.270vw;
+        width: 10px;
+        height: 8px;
     }
     .make-tag-btn{
         width:100%;
@@ -3151,9 +3151,9 @@ header .mo{
     }
     .make-editer-tab-mo{
         background-color: #fff;
-        border-radius: 6.348vw 6.348vw 0 0;
+        border-radius: 25px 25px 0 0;
         height:100%;
-        padding-bottom:4.923vw;
+        padding-bottom: 0;
     }
     .make-editer-tab-mo ul{
         display: -webkit-box;
@@ -3182,7 +3182,7 @@ header .mo{
         height: 100%;
     }
     .make-editer-tab-mo ul li button{
-        font-size:1.953vw;
+        font-size: 11px;
         font-family:"Noto Sans Kr";
         font-weight:500;
         color:#a5a9af;
@@ -3206,33 +3206,33 @@ header .mo{
         margin-top: 1.367vw;
     }
     .make-editer-tab-mo ul li:nth-child(1) i{
-        width: 4.102vw;
-        height: 4.102vw;
+        width: 20px;
+        height: 20px;
         background: url("../images/icon/ico-img-gray-m.png") no-repeat center / cover;
     }
     .make-editer-tab-mo ul li:nth-child(2) i{
-        width: 4.102vw;
-        height: 4.102vw;
+        width: 20px;
+        height: 20px;
         background: url("../images/icon/ico-gif-gray-m.png") no-repeat center / cover;
     }
     .make-editer-tab-mo ul li:nth-child(3) i{
-        width: 5.566vw;
-        height: 4.004vw;
+        width: 29px;
+        height: 20px;
         background: url("../images/icon/ico-upload-gray-m.png") no-repeat center / cover;
     }
     .make-editer-tab-mo ul li:nth-child(4) i{
-        width: 4.102vw;
-        height: 4.102vw;
+        width: 20px;
+        height: 20px;
         background: url("../images/icon/ico-template-gray-m.png") no-repeat center / cover;
     }
     .make-editer-tab-mo ul li:nth-child(5) i{
-        width: 4.6vw;
-        height: 4.102vw;
+        width: 20px;
+        height: 20px;
         background: url("../images/icon/ico-text-gray-m.png") no-repeat center / cover;
     }
     .make-editer-tab-mo ul li:nth-child(6) i{
-        width: 3.516vw;
-        height: 4.004vw;
+        width: 18px;
+        height: 20px;
         background: url("../images/icon/ico-voice-gray-m.png") no-repeat center / cover;
     }
     .make-footer{
@@ -3339,7 +3339,7 @@ header .mo{
         width: 100% !important;
     }
     .make-list ul .make-list-item{
-        margin-right: 1.333vw !important;
+        margin-right: 5px!important;
     }
     .make-header .make-category-select.pc{
         display: none;
@@ -3388,6 +3388,7 @@ header .mo{
         background-color: #fff;
         position: relative;
         border-radius: 0;
+        padding-top: 10px;
     }
     .make-editer.mo.show{
         bottom: 75%;
@@ -3609,7 +3610,7 @@ header .mo{
         display: block;
     }
     .upload-btn-mo{
-        width: 200px;
+        width: 50%;
         height: 40px;
         border-radius: 25px;
         border: 1px solid #d8d8d8;
@@ -3626,23 +3627,24 @@ header .mo{
         position: absolute;
         left: 5px;
         bottom: 7.5px;
-        width: 50%;
+        width: max-content;
         height: max-content;
         border-radius: 25px;
         background-color: rgba(0, 0, 0, 0.5);
-        font-size: 6px;
+        font-size: 1.6vw;
         font-family: "Roboto";
         font-weight: 300;
         color: #fff;
         display: flex;
         justify-content: space-between;
         align-items:center;
-        padding: 2px 5px;
+        padding: 1vw 1vw;
     }
     .make-editer.mo .source i{
-        width: 5px;
-        height: 5px;
+        width: 1vw;
+        height: 1vw;
         background: url("../images/icon/ico-source-w.png") no-repeat center / cover;
+        margin-left: 5px;
     }
     .make-footer .make-slide .make-slide-number{
         font-size: 16px;

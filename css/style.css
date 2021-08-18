@@ -24,11 +24,6 @@ header.active {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
-.footer-inner {
-    max-width: 1500px;
-    padding-bottom: 54px;
-}
-
 .wrap {
     padding-top: 95px;
 }
@@ -40,9 +35,13 @@ header.active {
     height: 100%;
 }
 
-.mySwiper1 {
+/* .mySwiper1 {
     padding-left: calc(100% - 2387px);
+} */
+.mySwiper1 {
+    padding-left: 173px;
 }
+
 
 .c1::before {
     content: '';
@@ -66,7 +65,7 @@ header.active {
     display: flex;
     align-items: flex-end;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1125px;
     margin: 0 auto;
     padding-top: 113px;
 }
@@ -517,8 +516,8 @@ header.active {
 }
 
 @media (max-width: 1920px) {
-    .main-button { 
-        padding: 0 0 87px 314px;
+    .main-button {
+        padding: 0px 0 76px 470px;
     }
     .c3-wrap {
         width: calc(100% - 520px);
@@ -602,8 +601,8 @@ header.active {
     height: 6.5vw;
     border-radius: 6vw;
     position: absolute;
-    top: 34%;
-    left: 61%;
+    top: 31%;
+    left: 60.5%;
     transform: translateX(-50%);
     background: black;
     color: white;
@@ -766,7 +765,182 @@ header.active {
 
  
 @media all and (max-width:1920px){
+    .c1::before {
+        width: 481px;
+        height: 481px;
+        bottom: -72px;
+        left: 84px;
+    }
+
+    .mySwiper1 {
+        padding-left: 130px;
+    }
+    .c1 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+        width: 76px;
+        height: 76px;
+        background: rgba(0, 0, 0, 0.7) url(../images/icon/ico-main-Larrow.png) no-repeat center /24px 20px;
+        left: 41px;
+    }
+
+    .c1 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+        width: 76px;
+        height: 76px;
+        background: rgba(0, 0, 0, 0.7) url(../images/icon/ico-main-Rarrow.png) no-repeat center /24px 20px;
+        right: 57px;
+    }
+    .main-top {
+        display: flex;
+    }
+    .main-txt {
+        max-width: 1125px;
+    }
+    .main-txt h3 {
+        font-size: 39px;
+    }
+    .main-txt p{
+        font-size: 39px;
+        padding: 9px 0 24px;
+    }
+    .main-txt em {
+        font-size: 15px;
+    }
+
+    .main-button a::before {
+        width: 75px;
+        height: 75px;
+        left: -28PX;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .main-button i {
+        width: 18px;
+        height: 15px;
+    }
+    .main-button p {
+        font-size: 16px;
+    }
+    .main-content-txt h3 {
+        font-size: 20px;
+    }
+    .main-list-two .main-content-txt h3{
+        font-size: 17px;
+    }
+    .main-content-txt p {
+        font-size: 14px;
+        line-height: 20.75px;
+        padding-top: 16px;
+        width: calc(100% - 3em);
+    }
+    .main-content {
+        width: 428px;
+        height: 428px;
+    }
+    .main-list-two .main-content {
+        width: 214px;
+        height: 214px;
+    }
+    .main-tag-txt {
+        padding-top: 15px;
+        width: calc(100% - 2em);
+        margin: 0 auto;
+    }
+
+    .main-tag-txt span{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .c2-wrap {
+        max-width: 1125px;
+    }
+    .c2-wrap > p {
+        font-size: 18px;
+        margin: 76px 0 0;
+    }
+    .mySwiper2 {
+        padding: 26px 0 30px;
+    }
+    .list-top > a > h3 {
+        font-size: 13.5px;
+        padding-top: 15px;
+    }
+    .list-top > p, .list-bot {
+        padding-top: 9px;
+        font-size: 9.75px;
+    }
+    .c4-react > button {
+        font-size: 9.75px;
+    }
+
+    .list-bot > div > button:first-child::before {
+        width: 21px;
+        height: 12px;
+    }
     
+    .list-bot > div > button:nth-child(2)::before {
+        width: 17px;
+        height: 15px;
+    }
+    
+    .list-bot > div > button:nth-child(3)::before {
+        width: 16px;
+        height: 15px;
+    }
+    
+    .list-bot {
+        padding-top: 24px;
+    }
+    .c2 .swiper-button-prev2, .swiper-container-rtl .swiper-button-next2 {
+        top: 9px;
+        right: 59px;
+    }
+    .c2 .swiper-button-next2, .swiper-container-rtl .swiper-button-prev2 {
+        top: 9px;
+    }
+
+    .c5 .sec-inner {
+        max-width: 1125px;
+        padding: 50px 0;
+    }
+    
+    .c5 .sec-inner ul h3 {
+        font-size: 15px;
+        margin-bottom: 14px;
+    }
+
+    .c5 .sec-inner ul p {
+        font-size: 12.25px;
+        line-height: 19px;
+    }
+
+    .c5 .sec-inner ul div:first-child {
+        margin-right: 10px;
+    }
+    .c6 {
+        padding: 46px 0 54px;
+    }
+    .c6-text h3 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .c6-text p {
+        font-size: 15px;
+        margin-bottom: 22px;
+    }
+    .c6-text a {
+        font-size: 14px;
+        width: 162px;
+        height: 44px;
+        font-weight: 500;
+        border-radius: 25px;
+        box-shadow: 0 10px 10px 0 rgb(0 0 0 / 3%);
+    }
+
+    .c5 .sec-inner ul li{
+        width: 260px;
+        display:flex;
+        align-items: flex-start;
+    }
+
     .c4-react > button {
         font-size: 9.75px;
     }
@@ -788,6 +962,7 @@ header.active {
         width: 31px;
         height: 9px;
     }
+    
 } 
 @media (max-width: 1500px) {
     .c3 div{

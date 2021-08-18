@@ -635,6 +635,10 @@ ul.my-comment-inner li .preview-head {
     background: url("../images/icon/ico-trash-hover.png") no-repeat center / cover;
 }
 
+.card-bottom-right > .card-down {
+    margin-right: 14px;
+}
+
 /* 댓글 수정창 */
 .card-list .comment-edit {
     display: none;
@@ -655,7 +659,11 @@ ul.my-comment-inner li .preview-head {
 
 .comment-list.card-list {
     height: inherit;
-    }
+}
+
+.footer-inner {
+    max-width: 1500px;
+}
 
 @media all and (max-width:1920px) {
     .my-card .my-card-inner .card-total {
@@ -728,6 +736,9 @@ ul.my-comment-inner li .preview-head {
 @media all and (max-width:1024px){
     .mo{
         display: block;
+    }
+    .card-bottom-right > .card-down {
+        margin-right: 0;
     }
     .card-bottom-right > span{
         display: none;

@@ -587,6 +587,9 @@ padding: 70px 0 35px;
 }
 
 @media all and (max-width:1024px){
+    .join-failed-wrap {
+        padding: 0;
+    }
     .join-failed-inner{
         width: calc(100vw - 40px);
     }
